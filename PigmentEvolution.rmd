@@ -30,9 +30,22 @@ mydata <- mydata[1:695,1:17]
 
 ```{r, echo = F}
 
-genera<-sapply(strsplit(as.character(mydata[,5]),"_"),function(x) x[1])
 
-data <- data.frame(species = mydata[,5], genus = genera, family = mydata[,3])
+
+genera<-sapply(strsplit(as.character(mydata[,5]),"_"),function(x) x[1])
+epithet<-sapply(strsplit(as.character(mydata[,5]),"_"),function(x) x[2])
+
+library(Taxonstand)
+correctednames <- TPL(genus = genera, species = epithet, infrasp = NULL,infra = TRUE, corr = TRUE, diffchar = 2, max.distance = 1,version = "1.1", encoding = "UTF-8", author = TRUE,drop.lower.level = FALSE, file = "", silent = TRUE, repeats = 6)
+write.csv(correctednames,"correctednames.csv", row.names = FALSE)
+
+
+species <- paste(correctednames$New.Genus,correctednames$New.Species, sep = "_")
+duplicated(species)
+species[250] <- "Silene_adscendens"
+species[421] <- "Centaurium_grandiflorum"
+
+data <- data.frame(species = species, genus = correctednames$New.Genus, family = mydata[,3])
 my.phylo.maker <- phylo.maker(data, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list = TRUE, output.tree = FALSE, scenarios = c("S1","S2","S3"), r = 1)
 
 pdffn = paste0("myphylo", ".scenario3.pdf")

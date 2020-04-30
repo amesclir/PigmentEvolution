@@ -74,7 +74,7 @@ Monocotyledoneae,Asparagales,Orchidaceae,,Serapias_vomeracea,Spain,Purple,Purple
 Monocotyledoneae,Asparagales,Asphodelaceae,,Asphodelus_albus,Spain,White/Green,White,1,0  ,0,0,1,2,0,,1
 Monocotyledoneae,Asparagales,Asphodelaceae,,Asphodelus_fistulosus,Spain,White/Red,White,1,1  ,0,0,0,2,0,,1
 Monocotyledoneae,Asparagales,Asphodelaceae,,Asphodelus_ramosus,Spain,White/Red,White,1,1  ,0,0,1,3,0,,2
-Monocotyledoneae,Asparagales,Asphodelaceae,,Asphodelus_teniofolius,Spain,White/Green,White,1,0  ,0,0,1,2,0,,1
+Monocotyledoneae,Asparagales,Asphodelaceae,,Asphodelus_tenuifolius,Spain,White/Green,White,1,0  ,0,0,1,2,0,,1
 Monocotyledoneae,Asparagales,Asphodelaceae,,Aloe_plicatilis,Bibliog.,Orange,Orange,1,NA,NA,1,NA,NA,0,"Lawrence et al. 1939, Camara et al. 1995",NA
 Monocotyledoneae,Asparagales,Asphodelaceae,,Simethis_planifolia,Spain,White/Pink,White,1,1  ,0,0,0,2,0,,1
 Monocotyledoneae,Commelinales,Commelinaceae,,Commelina_erecta,Brasil,Blue,Blue,1,1,0,0,0,2,1,,1
@@ -412,7 +412,7 @@ Eudicotyledoneae,Gentianales,Apocynaceae,,Allamanda_cathartica,Bibliog.,Yellow,Y
 Eudicotyledoneae,Gentianales,Apocynaceae,,Carissa_macrocarpa,Ornam.,White,White,1,0,0,0,0,1,0,,0
 Eudicotyledoneae,Gentianales,Apocynaceae,,Nerium_oleander,Spain,Pink,Pink,1,1  ,0,0,0,2,0,,1
 Eudicotyledoneae,Gentianales,Apocynaceae,,Mandevilla_tenuifolia,Brasil,Blue,Blue,1,1,0,0,0,2,1,,1
-Eudicotyledoneae,Gentianales,Apocynaceae,,Prestonia,Brasil,Yellow,Yellow,1,0,0,1,1,3,0,,2
+Eudicotyledoneae,Gentianales,Apocynaceae,,Prestonia_sp,Brasil,Yellow,Yellow,1,0,0,1,1,3,0,,2
 Eudicotyledoneae,Gentianales,Apocynaceae,,Schubertia_grandiflora,Brasil,White,White,1,0,0,0,0,1,0,,0
 Eudicotyledoneae,Gentianales,Apocynaceae,,Temnadenia_violacea,Brasil,Pink/Green,Pink,1,1,0,0,1,3,0,,2
 Eudicotyledoneae,Gentianales,Apocynaceae,,Vinca_major,Bibliog.,Blue,Blue,1,1  ,0,0,0,2,1,"Kay et al. 1981, Tatsuzawa 2015",1
@@ -540,7 +540,7 @@ Eudicotyledoneae,Malpighiales,Linaceae,,Linum_usitatissimum,Spain,Blue,Blue,1,1 
 Eudicotyledoneae,Malpighiales,Malpighiaceae,,Banisteriopsis_campestris,Brasil,Pink,Pink,1,1,0,0,0,2,0,,1
 Eudicotyledoneae,Malpighiales,Malpighiaceae,,Banisteriopsis_stellaris,Brasil,White,White,1,0,0,0,1,2,0,,1
 Eudicotyledoneae,Malpighiales,Malpighiaceae,,Byrsonima_basiloba,Brasil,Yellow,Yellow,0,0,0,1,0,1,0,,0
-Eudicotyledoneae,Malpighiales,Malpighiaceae,,Byrsonima_cf_intermedia,Brasil,Yellow,Yellow,0,0,0,1,0,1,0,,0
+Eudicotyledoneae,Malpighiales,Malpighiaceae,,Byrsonima_intermedia,Brasil,Yellow,Yellow,0,0,0,1,0,1,0,,0
 Eudicotyledoneae,Malpighiales,Malpighiaceae,,Byrsonima_dealbata,Brasil,Yellow,Yellow,0,0,0,1,0,1,0,,0
 Eudicotyledoneae,Malpighiales,Ochnaceae,,Luxemburgia_ciliosa,Brasil,Yellow,Yellow,0,0,0,1,0,1,0,,0
 Eudicotyledoneae,Malpighiales,Passifloraceae,,Passiflora_amethystina,Ornam.,Pink,Pink,1,1  ,0,0,0,2,0,,1
@@ -588,7 +588,7 @@ Eudicotyledoneae,Myrtales,Melastomataceae,,Miconia_irwinii,Brasil,White,White,1,
 Eudicotyledoneae,Myrtales,Melastomataceae,,Miconia_rubiginosa,Brasil,White,White,1,0,0,0,0,1,0,,0
 Eudicotyledoneae,Myrtales,Melastomataceae,,Microlicia_amplexicaulis,Brasil,Pink/White,Pink,1,0,0,0,0,1,0,,0
 Eudicotyledoneae,Myrtales,Melastomataceae,,Microlicia_cardiophora,Brasil,Pink,Pink,1,1,0,0,0,2,0,,1
-Eudicotyledoneae,Myrtales,Melastomataceae,,Microlicia_cariophylla,Brasil,Pink,Pink,1,1,0,0,0,2,0,,1
+Eudicotyledoneae,Myrtales,Melastomataceae,,Microlicia_caryophylla,Brasil,Pink,Pink,1,1,0,0,0,2,0,,1
 Eudicotyledoneae,Myrtales,Melastomataceae,,Pleroma_heteromalla,Brasil,Pink/White,Pink,1,1,0,0,0,2,0,,1
 Eudicotyledoneae,Myrtales,Melastomataceae,,Siphanthera_arenaria,Brasil,Pink,Pink,1,1,0,0,0,2,0,,1
 Eudicotyledoneae,Myrtales,Myrtaceae,,Campomanesia_pubescens,Brasil,White,White,1,0,0,0,0,1,0,,0
