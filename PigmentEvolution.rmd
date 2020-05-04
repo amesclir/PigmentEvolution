@@ -4,7 +4,7 @@ author: "Marcial"
 date: "01/09/2019"
 output: html_document
 editor_options: 
-  chunk_output_type: inline
+  chunk_output_type: console
 ---
 1. Install and load packages
 
@@ -21,7 +21,7 @@ library(V.PhyloMaker)
 ```{r, echo = F}
 mydata <- read.csv("./PIGMENT_EVOLUTION_V4.csv") 
 dim(mydata)
-mydata <- mydata[1:695,1:17]
+mydata <- mydata[1:693,1:17]
 ```
 
 
@@ -42,26 +42,43 @@ write.csv(correctednames,"correctednames.csv", row.names = FALSE)
 
 species <- paste(correctednames$New.Genus,correctednames$New.Species, sep = "_")
 duplicated(species)
-species[250] <- "Silene_adscendens"
-species[421] <- "Centaurium_grandiflorum"
+
+mydata[,5] <- as.character(mydata[,5])
+mydata[,5][duplicated(species)]
+species[duplicated(species)]
+species[duplicated(species)] <- mydata[,5][duplicated(species)]
+
+duplicated(species)
+
+#mydata[,5][duplicated(species, fromLast = TRUE)]
+#species[duplicated(species, fromLast = TRUE)]
+#species[duplicated(species, fromLast = TRUE)] <- mydata[,5][duplicated(species, fromLast = TRUE)]
+
+#duplicated(species)
 
 data <- data.frame(species = species, genus = correctednames$New.Genus, family = mydata[,3])
 my.phylo.maker <- phylo.maker(data, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list = TRUE, output.tree = FALSE, scenarios = c("S1","S2","S3"), r = 1)
 
+
+speciesnamesversions <- cbind(as.character(mydata[,5]), paste(correctednames$New.Genus,correctednames$New.Species, sep = "_"), species )
+
+my.phylo.maker$scenario.3$tip.label <- speciesnamesversions[,1][match(my.phylo.maker$scenario.3$tip.label,speciesnamesversions[,3])]
 pdffn = paste0("myphylo", ".scenario3.pdf")
-pdf(file=pdffn, width=6, height=30)
+pdf(file=pdffn, width=6, height=60)
 plot(my.phylo.maker$scenario.3, cex = 0.5)
 dev.off()
 write.tree(my.phylo.maker$scenario.3, file = "mytree3.tree")
 
+my.phylo.maker$scenario.2$run.1$tip.label <- speciesnamesversions[,1][match(my.phylo.maker$scenario.2$run.1$tip.label,speciesnamesversions[,3])]
 pdffn = paste0("myphylo", ".scenario2.pdf")
-pdf(file=pdffn, width=6, height=30)
+pdf(file=pdffn, width=6, height=60)
 plot(my.phylo.maker$scenario.2$run.1, cex = 0.5)
 dev.off()
 write.tree(my.phylo.maker$scenario.2$run.1, file = "mytree2.tree")
 
+my.phylo.maker$scenario.1$tip.label <- speciesnamesversions[,1][match(my.phylo.maker$scenario.1$tip.label,speciesnamesversions[,3])]
 pdffn = paste0("myphylo", ".scenario1.pdf")
-pdf(file=pdffn, width=6, height=30)
+pdf(file=pdffn, width=6, height=60)
 plot(my.phylo.maker$scenario.1, cex = 0.5)
 dev.off()
 write.tree(my.phylo.maker$scenario.1, file = "mytree1.tree")
@@ -131,11 +148,11 @@ Stochastic mapping Anthocyanins
 
 mtree<-make.simmap(tree,Anthocyanins,model="ER", nsim=1)
 mtree
-cols<-setNames(c("blue","red"),levels(as.factor(Anthocyanins)))
+cols<-setNames(c("red","blue"),levels(as.factor(Anthocyanins)))
 
 pdffn = paste0("BSM_1map_Anthocyanins.pdf")
-pdf(file=pdffn, width=50, height=50)
-plot(mtree,cols,type="fan",fsize=0.6,ftype="i")
+pdf(file=pdffn, width=27, height=27)
+plotSimmap(mtree, cols, type="fan",ftype="i",fsize=0.6, offset=1)
 add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
     y=0.8*par()$usr[3],fsize=0.8)
 dev.off()
@@ -146,22 +163,12 @@ mtrees.Anthocyanins<-make.simmap(tree,Anthocyanins,model="ER",nsim=100)
 pd.Anthocyanins<-summary(mtrees.Anthocyanins)
 pd.Anthocyanins
 
-pdffn = paste0("BSMs100_Anthocyanins_v1.pdf")
-pdf(file=pdffn, width=6, height=12)
-plot(sample(mtrees.Anthocyanins,1)[[1]],cols, fsize=0.1,ftype="i",
-    ylim=c(-2,Ntip(tree)))
-nodelabels(pie=pd.Anthocyanins$ace,piecol=cols,cex=0.2)
-add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
-    vertical=FALSE)
-dev.off()
-
 ############################################
 # Open a PDF
 ############################################
-pdffn = paste0("BSMs100_Anthocyanins_v2.pdf")
-pdf(file=pdffn, width=6, height=100)
-plot(sample(mtrees.Anthocyanins,1)[[1]],cols,fsize=0.6,ftype="i",
-    ylim=c(-2,Ntip(tree)))
+pdffn = paste0("BSMs100_Anthocyanins_v1.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotSimmap(sample(mtrees.Anthocyanins,1)[[1]],cols,fsize=0.6,ftype="i", offset = 1)
 nodelabels(pie=pd.Anthocyanins$ace,piecol=cols,cex=0.5)
 add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
     vertical=FALSE)
@@ -171,18 +178,14 @@ add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
 dev.off()
 
 
-obj.Anthocyanins<-densityMap(mtrees.Anthocyanins,states=levels(Anthocyanins)[2:1],plot=FALSE)
+obj.Anthocyanins<-densityMap(mtrees.Anthocyanins,states=levels(as.factor(Anthocyanins))[2:1],plot=FALSE)
 
-pdffn = paste0("BSMs100_Anthocyanins_v3.pdf")
-pdf(file=pdffn, width=6, height=12)
-plot(obj.Anthocyanins,fsize=c(0.1,1))
-dev.off()
 
 ############################################
 # Open a PDF
 ############################################
-pdffn = paste0("BSMs100_Anthocyanins_v4.pdf")
-pdf(file=pdffn, width=6, height=100)
+pdffn = paste0("BSMs100_Anthocyanins_v2.pdf")
+pdf(file=pdffn, width=6, height=60)
 plot(obj.Anthocyanins,fsize=c(0.6,1))
 dev.off()
 ```
@@ -251,13 +254,13 @@ Stochastic mapping Aurones
 
 mtree<-make.simmap(tree,Aurones,model="ARD", nsim=1)
 mtree
-cols<-setNames(c("blue","red"),levels(as.factor(Aurones)))
+cols<-setNames(c("red","blue"),levels(as.factor(Aurones)))
 
 pdffn = paste0("BSM_1map_Aurones.pdf")
-pdf(file=pdffn, width=50, height=50)
-plot(mtree,cols,type="fan",fsize=0.6,ftype="i")
+pdf(file=pdffn, width=27, height=27)
+plotSimmap(mtree,type="fan",cols, fsize=0.6,ftype="i", offset = 1)
 add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
-    y=0.8*par()$usr[3],fsize=0.8)
+    y=0.8*par()$usr[3],fsize=2)
 dev.off()
 
 mtrees.Aurones<-make.simmap(tree,Aurones,model="ARD",nsim=100)
@@ -267,23 +270,13 @@ pd.Aurones<-summary(mtrees.Aurones)
 pd.Aurones
 
 
-pdffn = paste0("BSMs100_Aurones_v1.pdf")
-pdf(file=pdffn, width=6, height=12)
-plot(sample(mtrees.Aurones,1)[[1]],cols, fsize=0.1,ftype="i",
-    ylim=c(-2,Ntip(tree)))
-nodelabels(pie=pd$ace,piecol=cols,cex=0.2)
-add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
-    vertical=FALSE)
-dev.off()
-
 ############################################
 # Open a PDF
 ############################################
-pdffn = paste0("BSMs100_Aurones_v2.pdf")
-pdf(file=pdffn, width=6, height=100)
-plot(sample(mtrees.Aurones,1)[[1]],cols,fsize=0.6,ftype="i",
-    ylim=c(-2,Ntip(tree)))
-nodelabels(pie=pd$ace,piecol=cols,cex=0.5)
+pdffn = paste0("BSMs100_Aurones_v1.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotSimmap(sample(mtrees.Aurones,1)[[1]],cols,fsize=0.6,ftype="i", offset = 1)
+nodelabels(pie=pd.Aurones$ace,piecol=cols,cex=0.5)
 add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
     vertical=FALSE)
 ############################################
@@ -292,18 +285,13 @@ add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
 dev.off()
 
 
-obj.Aurones<-densityMap(mtrees.Aurones,states=levels(Aurones)[2:1],plot=FALSE)
-
-pdffn = paste0("BSMs100_Aurones_v3.pdf")
-pdf(file=pdffn, width=6, height=12)
-plot(obj.Aurones,fsize=c(0.1,1))
-dev.off()
+obj.Aurones<-densityMap(mtrees.Aurones,states=levels(as.factor(Aurones))[2:1],plot=FALSE)
 
 ############################################
 # Open a PDF
 ############################################
-pdffn = paste0("BSMs100_Aurones_v4.pdf")
-pdf(file=pdffn, width=6, height=100)
+pdffn = paste0("BSMs100_Aurones_v2.pdf")
+pdf(file=pdffn, width=6, height=60)
 plot(obj.Aurones,fsize=c(0.6,1))
 dev.off()
 
@@ -372,13 +360,13 @@ Stochastic mapping Carotenoids
 
 mtree<-make.simmap(tree,Carotenoids,model="ARD", nsim=1)
 mtree
-cols<-setNames(c("blue","red"),levels(as.factor(Carotenoids)))
+cols<-setNames(c("red","blue"),levels(as.factor(Carotenoids)))
 
 pdffn = paste0("BSM_1map_Carotenoids.pdf")
-pdf(file=pdffn, width=50, height=50)
-plot(mtree,cols,type="fan",fsize=0.6,ftype="i")
+pdf(file=pdffn, width=27, height=27)
+plotSimmap(mtree,cols,type="fan",fsize=0.6,ftype="i", offset = 1)
 add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
-    y=0.8*par()$usr[3],fsize=0.8)
+    y=0.8*par()$usr[3],fsize=2)
 dev.off()
 
 mtrees.Carotenoids<-make.simmap(tree,Carotenoids,model="ARD",nsim=100)
@@ -388,43 +376,29 @@ pd.Carotenoids<-summary(mtrees.Carotenoids)
 pd.Carotenoids
 
 
-pdffn = paste0("BSMs100_Carotenoids_v1.pdf")
-pdf(file=pdffn, width=6, height=12)
-plot(sample(mtrees.Carotenoids,1)[[1]],cols, fsize=0.1,ftype="i",
-    ylim=c(-2,Ntip(tree)))
-nodelabels(pie=pd.Carotenoids$ace,piecol=cols,cex=0.2)
-add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
-    vertical=FALSE)
-dev.off()
-
 ############################################
 # Open a PDF
 ############################################
-pdffn = paste0("BSMs100_Carotenoids_v2.pdf")
-pdf(file=pdffn, width=6, height=100)
-plot(sample(mtrees.Carotenoids,1)[[1]],cols,fsize=0.6,ftype="i",
-    ylim=c(-2,Ntip(tree)))
+pdffn = paste0("BSMs100_Carotenoids_v1.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotSimmap(sample(mtrees.Carotenoids,1)[[1]],cols,fsize=0.6,ftype="i", offset = 1)
 nodelabels(pie=pd.Carotenoids$ace,piecol=cols,cex=0.5)
 add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
-    vertical=FALSE)
+    vertical=FALSE,fsize=2)
 ############################################
 # Close PDF
 ############################################
 dev.off()
 
 
-obj.Carotenoids<-densityMap(mtrees.Carotenoids,states=levels(Carotenoids)[2:1],plot=FALSE)
+obj.Carotenoids<-densityMap(mtrees.Carotenoids,states=levels(as.factor(Carotenoids))[2:1],plot=FALSE)
 
-pdffn = paste0("BSMs100_Carotenoids_v3.pdf")
-pdf(file=pdffn, width=6, height=12)
-plot(obj.Carotenoids,fsize=c(0.1,1))
-dev.off()
 
 ############################################
 # Open a PDF
 ############################################
-pdffn = paste0("BSMs100_Carotenoids_v4.pdf")
-pdf(file=pdffn, width=6, height=100)
+pdffn = paste0("BSMs100_Carotenoids_v2.pdf")
+pdf(file=pdffn, width=6, height=60)
 plot(obj.Carotenoids,fsize=c(0.6,1))
 dev.off()
 
@@ -493,13 +467,13 @@ Stochastic mapping Chlorophylls
 
 mtree<-make.simmap(tree,Chlorophylls,model="ARD", nsim=1)
 mtree
-cols<-setNames(c("blue","red"),levels(as.factor(Chlorophylls)))
+cols<-setNames(c("red","blue"),levels(as.factor(Chlorophylls)))
 
 pdffn = paste0("BSM_1map_Chlorophylls.pdf")
-pdf(file=pdffn, width=50, height=50)
-plot(mtree,cols,type="fan",fsize=0.6,ftype="i")
+pdf(file=pdffn, width=27, height=27)
+plotSimmap(mtree,cols,type="fan",fsize=0.6,ftype="i", offset = 1)
 add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
-    y=0.8*par()$usr[3],fsize=0.8)
+    y=0.8*par()$usr[3],fsize=2)
 dev.off()
 
 mtrees.Chlorophylls<-make.simmap(tree,Chlorophylls,model="ARD",nsim=100)
@@ -509,22 +483,13 @@ pd.Chlorophylls<-summary(mtrees.Chlorophylls)
 pd.Chlorophylls
 
 
-pdffn = paste0("BSMs100_Chlorophylls_v1.pdf")
-pdf(file=pdffn, width=6, height=12)
-plot(sample(mtrees.Chlorophylls,1)[[1]],cols, fsize=0.1,ftype="i",
-    ylim=c(-2,Ntip(tree)))
-nodelabels(pie=pd.Chlorophylls$ace,piecol=cols,cex=0.2)
-add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
-    vertical=FALSE)
-dev.off()
 
 ############################################
 # Open a PDF
 ############################################
-pdffn = paste0("BSMs100_Chlorophylls_v2.pdf")
-pdf(file=pdffn, width=6, height=100)
-plot(sample(mtrees.Chlorophylls,1)[[1]],cols,fsize=0.6,ftype="i",
-    ylim=c(-2,Ntip(tree)))
+pdffn = paste0("BSMs100_Chlorophylls_v1.pdf")
+pdf(file=pdffn, width=6, height=60)
+plot(sample(mtrees.Chlorophylls,1)[[1]],cols,fsize=0.6,ftype="i",offset=1)
 nodelabels(pie=pd.Chlorophylls$ace,piecol=cols,cex=0.5)
 add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
     vertical=FALSE)
@@ -534,19 +499,246 @@ add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
 dev.off()
 
 
-obj.Chlorophylls<-densityMap(mtrees.Chlorophylls,states=levels(Chlorophylls)[2:1],plot=FALSE)
-
-pdffn = paste0("BSMs100_Chlorophylls_v3.pdf")
-pdf(file=pdffn, width=6, height=12)
-plot(obj.Chlorophylls,fsize=c(0.1,1))
-dev.off()
+obj.Chlorophylls<-densityMap(mtrees.Chlorophylls,states=levels(as.factor(Chlorophylls))[2:1],plot=FALSE)
 
 ############################################
 # Open a PDF
 ############################################
-pdffn = paste0("BSMs100_Chlorophylls_v4.pdf")
-pdf(file=pdffn, width=6, height=100)
+pdffn = paste0("BSMs100_Chlorophylls_v2.pdf")
+pdf(file=pdffn, width=6, height=60)
 plot(obj.Chlorophylls,fsize=c(0.6,1))
 dev.off()
 
 ```
+
+
+
+ML reconstruction number of pigments.
+
+```{r}
+
+names(mydata)
+NPigments <- mydata[,14]
+names(NPigments) <- mydata[,5]
+tree <- multi2di(my.phylo.maker$scenario.2$run.1)
+library(phytools)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+
+NPigments<-NPigments[!is.na(NPigments)]
+tipstoremove <- setdiff(tree$tip.label,names(NPigments))
+tree <- drop.tip(tree, tipstoremove)
+
+cols<-setNames(c("red","blue","green","yellow","orange"),levels(as.factor(NPigments)))
+
+
+pdffn = paste0("NPigments.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(NPigments[tree$tip.label],
+    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+fitER.NPigments<-ace(NPigments, tree,model="ER",type="discrete")
+fitER.NPigments
+
+pdffn = paste0("ML_ER_NPigments.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(NPigments[tree$tip.label],
+    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=fitER.NPigments$lik.anc,piecol=cols,cex=0.2)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+fitARD.NPigments<-ace(NPigments,tree,model="ARD",type="discrete")
+fitARD.NPigments
+pdffn = paste0("ML_ARD_NPigments.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(NPigments[tree$tip.label],
+    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=fitARD.NPigments$lik.anc,piecol=cols,cex=0.2)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+fitSYM.NPigments<-ace(NPigments,tree,model="SYM",type="discrete")
+fitSYM.NPigments
+pdffn = paste0("ML_SYM_NPigments.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(NPigments[tree$tip.label],
+    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=fitSYM.NPigments$lik.anc,piecol=cols,cex=0.2)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+
+```
+
+
+Stochastic mapping Number of Pigments: This could take very long, we are not goint to do it for now.
+```{r}
+
+mtree<-make.simmap(tree,NPigments,model="ARD", nsim=1)
+mtree
+cols<-setNames(c("red","blue", "green", "yellow", "orange"),levels(as.factor(NPigments)))
+
+pdffn = paste0("BSM_1map_NPigments.pdf")
+pdf(file=pdffn, width=50, height=50)
+plot(mtree,cols,type="fan",fsize=0.6,ftype="i")
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=0.8)
+dev.off()
+
+mtrees.NPigments<-make.simmap(tree,NPigments,model="ARD",nsim=100)
+
+
+pd.NPigments<-summary(mtrees.NPigments)
+pd.NPigments
+
+
+
+############################################
+# Open a PDF
+############################################
+pdffn = paste0("BSMs100_NPigments_v1.pdf")
+pdf(file=pdffn, width=6, height=100)
+plot(sample(mtrees.NPigments,1)[[1]],cols,fsize=0.6,ftype="i",
+    ylim=c(-2,Ntip(tree)))
+nodelabels(pie=pd.NPigments$ace,piecol=cols,cex=0.5)
+add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
+    vertical=FALSE)
+############################################
+# Close PDF
+############################################
+dev.off()
+
+
+obj.NPigments<-densityMap(mtrees.NPigments,states=levels(as.factor(NPigments))[2:1],plot=FALSE)
+
+############################################
+# Open a PDF
+############################################
+pdffn = paste0("BSMs100_NPigments_v2.pdf")
+pdf(file=pdffn, width=6, height=100)
+plot(obj.NPigments,fsize=c(0.6,1))
+dev.off()
+
+```
+
+
+
+ML reconstruction BlueFlowers
+
+```{r}
+
+names(mydata)
+BlueFlowers <- mydata[,15]
+names(BlueFlowers) <- mydata[,5]
+tree <- multi2di(my.phylo.maker$scenario.2$run.1)
+library(phytools)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+
+BlueFlowers<-BlueFlowers[!is.na(BlueFlowers)]
+tipstoremove <- setdiff(tree$tip.label,names(BlueFlowers))
+tree <- drop.tip(tree, tipstoremove)
+
+cols<-setNames(c("red","blue"),levels(as.factor(BlueFlowers)))
+
+
+pdffn = paste0("BlueFlowers.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(BlueFlowers[tree$tip.label],
+    levels(as.factor(BlueFlowers))),piecol=cols,cex=0.1)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+fitER.BlueFlowers<-ace(BlueFlowers, tree,model="ER",type="discrete")
+fitER.BlueFlowers
+
+pdffn = paste0("ML_ER_BlueFlowers.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(BlueFlowers[tree$tip.label],
+    levels(as.factor(BlueFlowers))),piecol=cols,cex=0.1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=fitER.BlueFlowers$lik.anc,piecol=cols,cex=0.2)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+fitARD.BlueFlowers<-ace(BlueFlowers,tree,model="ARD",type="discrete")
+fitARD.BlueFlowers
+pdffn = paste0("ML_ARD_BlueFlowers.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(BlueFlowers[tree$tip.label],
+    levels(as.factor(BlueFlowers))),piecol=cols,cex=0.1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=fitARD.BlueFlowers$lik.anc,piecol=cols,cex=0.2)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+```
+
+
+Stochastic mapping BlueFlowers
+```{r}
+
+mtree<-make.simmap(tree,BlueFlowers,model="ARD", nsim=1)
+mtree
+cols<-setNames(c("red","blue"),levels(as.factor(BlueFlowers)))
+
+pdffn = paste0("BSM_1map_BlueFlowers.pdf")
+pdf(file=pdffn, width=27, height=27)
+plotSimmap(mtree,cols,type="fan",fsize=0.6,ftype="i", offset = 1)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+mtrees.BlueFlowers<-make.simmap(tree,BlueFlowers,model="ARD",nsim=100)
+
+
+pd.BlueFlowers<-summary(mtrees.BlueFlowers)
+pd.BlueFlowers
+
+
+
+############################################
+# Open a PDF
+############################################
+pdffn = paste0("BSMs100_BlueFlowers_v1.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotSimmap(sample(mtrees.BlueFlowers,1)[[1]],cols,fsize=0.6,ftype="i", offset = 1)
+nodelabels(pie=pd.BlueFlowers$ace,piecol=cols,cex=0.5)
+add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
+    vertical=FALSE)
+############################################
+# Close PDF
+############################################
+dev.off()
+
+
+obj.BlueFlowers<-densityMap(mtrees.BlueFlowers,states=levels(as.factor(BlueFlowers))[2:1],plot=FALSE)
+
+############################################
+# Open a PDF
+############################################
+pdffn = paste0("BSMs100_BlueFlowers_v2.pdf")
+pdf(file=pdffn, width=6, height=60)
+plot(obj.BlueFlowers,fsize=c(0.6,1))
+dev.off()
+
+```
+
