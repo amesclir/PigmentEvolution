@@ -592,10 +592,10 @@ mtree
 cols<-setNames(c("red","blue", "green", "yellow", "orange"),levels(as.factor(NPigments)))
 
 pdffn = paste0("BSM_1map_NPigments.pdf")
-pdf(file=pdffn, width=50, height=50)
-plot(mtree,cols,type="fan",fsize=0.6,ftype="i")
+pdf(file=pdffn, width=27, height=27)
+plotSimmap(mtree,cols,type="fan",fsize=0.6,ftype="i", offset=1)
 add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
-    y=0.8*par()$usr[3],fsize=0.8)
+    y=0.8*par()$usr[3],fsize=2)
 dev.off()
 
 mtrees.NPigments<-make.simmap(tree,NPigments,model="ARD",nsim=100)
@@ -610,9 +610,8 @@ pd.NPigments
 # Open a PDF
 ############################################
 pdffn = paste0("BSMs100_NPigments_v1.pdf")
-pdf(file=pdffn, width=6, height=100)
-plot(sample(mtrees.NPigments,1)[[1]],cols,fsize=0.6,ftype="i",
-    ylim=c(-2,Ntip(tree)))
+pdf(file=pdffn, width=6, height=60)
+plotSimmap(sample(mtrees.NPigments,1)[[1]],cols,fsize=0.6,ftype="i",offset = 1)
 nodelabels(pie=pd.NPigments$ace,piecol=cols,cex=0.5)
 add.simmap.legend(colors=cols[2:1],prompt=FALSE,x=0,y=-4,
     vertical=FALSE)
@@ -628,9 +627,10 @@ obj.NPigments<-densityMap(mtrees.NPigments,states=levels(as.factor(NPigments))[2
 # Open a PDF
 ############################################
 pdffn = paste0("BSMs100_NPigments_v2.pdf")
-pdf(file=pdffn, width=6, height=100)
+pdf(file=pdffn, width=6, height=60)
 plot(obj.NPigments,fsize=c(0.6,1))
 dev.off()
+
 
 ```
 
