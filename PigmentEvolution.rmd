@@ -56,7 +56,7 @@ duplicated(species)
 
 #duplicated(species)
 
-data <- data.frame(species = species, genus = correctednames$New.Genus, family = mydata[,3])
+loaddata <- data.frame(species = species, genus = correctednames$New.Genus, family = mydata[,3])
 my.phylo.maker <- phylo.maker(data, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list = TRUE, output.tree = FALSE, scenarios = c("S1","S2","S3"), r = 1)
 
 
@@ -194,7 +194,7 @@ dev.off()
 Phylogenetic signal of Anthocyanins
 ```{r}
 
-library(geiger)
+#library(geiger)
 Anthocyanins[Anthocyanins==0] <- 2
 lambda.Anthocyanins <- fitDiscrete(tree, Anthocyanins, model = "ER", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Anthocyanins
@@ -312,7 +312,7 @@ dev.off()
 Phylogenetic signal of Aurones
 ```{r}
 
-library(geiger)
+#library(geiger)
 Aurones[Aurones==0] <- 2
 lambda.Aurones <- fitDiscrete(tree, Aurones, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Aurones
@@ -430,7 +430,7 @@ dev.off()
 Phylogenetic signal of Carotenoids
 ```{r}
 
-library(geiger)
+#library(geiger)
 Carotenoids[Carotenoids==0] <- 2
 lambda.Carotenoids <- fitDiscrete(tree, Carotenoids, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Carotenoids
@@ -547,7 +547,7 @@ dev.off()
 Phylogenetic signal of Chlorophylls
 ```{r}
 
-library(geiger)
+#library(geiger)
 Chlorophylls[Chlorophylls==0] <- 2
 lambda.Chlorophylls <- fitDiscrete(tree, Chlorophylls, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Chlorophylls
@@ -670,7 +670,7 @@ dev.off()
 Phylogenetic signal of NPigments
 ```{r}
 
-library(geiger)
+#library(geiger)
 NPigments[NPigments==0] <- "zero"
 lambda.NPigments <- fitDiscrete(tree, NPigments, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.NPigments
@@ -788,7 +788,7 @@ dev.off()
 Phylogenetic signal of BlueFlowers
 ```{r}
 
-library(geiger)
+#library(geiger)
 BlueFlowers[BlueFlowers==0] <- 2
 lambda.BlueFlowers <- fitDiscrete(tree, BlueFlowers, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.BlueFlowers
@@ -814,7 +814,7 @@ Aurones<-Aurones[!is.na(Aurones)]
 setdiff(names(Anthocyanins),names(Aurones))
 setdiff(names(Aurones),names(Anthocyanins))
 Anthocyanins <- Anthocyanins[which(names(Anthocyanins) %in% names(Aurones))]
-Aurones<- Aurones[which(names(Anthocyanins) %in% names(Aurones))]
+Aurones<- Aurones[which(names(Aurones) %in% names(Anthocyanins) )]
 tipstoremove <- setdiff(tree$tip.label,names(Anthocyanins))
 tree <- drop.tip(tree, tipstoremove)
 
@@ -839,6 +839,43 @@ fit.x.ER
 fit.y.ER
 
 
+names(mydata)
+Anthocyanins <- mydata[,10]
+names(Anthocyanins) <- mydata[,5]
+Carotenoids <- mydata[,12]
+names(Carotenoids) <- mydata[,5]
+
+tree <- multi2di(my.phylo.maker$scenario.1)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+
+Anthocyanins<-Anthocyanins[!is.na(Anthocyanins)]
+Carotenoids<-Carotenoids[!is.na(Carotenoids)]
+setdiff(names(Anthocyanins),names(Carotenoids))
+setdiff(names(Carotenoids),names(Anthocyanins))
+Anthocyanins <- Anthocyanins[which(names(Anthocyanins) %in% names(Carotenoids))]
+Carotenoids<- Carotenoids[which(names(Carotenoids) %in% names(Anthocyanins) )]
+tipstoremove <- setdiff(tree$tip.label,names(Anthocyanins))
+tree <- drop.tip(tree, tipstoremove)
+
+x <-  Anthocyanins
+x[x==0] <- "N.An"
+x[x==1] <- "An"
+y <- Carotenoids
+y[y==0] <- "N.Ca"
+y[y==1] <- "Ca"
+fit.xy<-fitPagel(tree,x,y)
+fit.x<-fitPagel(tree,x,y,dep.var="x")
+fit.y<-fitPagel(tree,x,y,dep.var="y")
+fit.xy.ER<-fitPagel(tree,x,y, model = "ER")
+fit.x.ER<-fitPagel(tree,x,y,dep.var="x",model = "ER")
+fit.y.ER<-fitPagel(tree,x,y,dep.var="y",model = "ER")
+
+fit.xy
+fit.x
+fit.y
+fit.xy.ER
+fit.x.ER
+fit.y.ER
 
 ```
 
