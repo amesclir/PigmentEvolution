@@ -795,3 +795,50 @@ lambda.BlueFlowers
 
 ```
 
+Dependent or independen evolution
+
+```{r}
+library(phytools)
+
+names(mydata)
+Anthocyanins <- mydata[,10]
+names(Anthocyanins) <- mydata[,5]
+Aurones <- mydata[,11]
+names(Aurones) <- mydata[,5]
+
+tree <- multi2di(my.phylo.maker$scenario.1)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+
+Anthocyanins<-Anthocyanins[!is.na(Anthocyanins)]
+Aurones<-Aurones[!is.na(Aurones)]
+setdiff(names(Anthocyanins),names(Aurones))
+setdiff(names(Aurones),names(Anthocyanins))
+Anthocyanins <- Anthocyanins[which(names(Anthocyanins) %in% names(Aurones))]
+Aurones<- Aurones[which(names(Anthocyanins) %in% names(Aurones))]
+tipstoremove <- setdiff(tree$tip.label,names(Anthocyanins))
+tree <- drop.tip(tree, tipstoremove)
+
+x <-  Anthocyanins
+x[x==0] <- "N.An"
+x[x==1] <- "An"
+y <- Aurones
+y[y==0] <- "N.Au"
+y[y==1] <- "Au"
+fit.xy<-fitPagel(tree,x,y)
+fit.x<-fitPagel(tree,x,y,dep.var="x")
+fit.y<-fitPagel(tree,x,y,dep.var="y")
+fit.xy.ER<-fitPagel(tree,x,y, model = "ER")
+fit.x.ER<-fitPagel(tree,x,y,dep.var="x",model = "ER")
+fit.y.ER<-fitPagel(tree,x,y,dep.var="y",model = "ER")
+
+fit.xy
+fit.x
+fit.y
+fit.xy.ER
+fit.x.ER
+fit.y.ER
+
+
+
+```
+
