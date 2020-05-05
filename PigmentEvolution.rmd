@@ -191,6 +191,17 @@ dev.off()
 ```
 
 
+Phylogenetic signal of Anthocyanins
+```{r}
+
+library(geiger)
+Anthocyanins[Anthocyanins==0] <- 2
+lambda.Anthocyanins <- fitDiscrete(tree, Anthocyanins, model = "ER", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Anthocyanins
+
+```
+
+
 
 ML reconstruction Aurones
 
@@ -298,6 +309,18 @@ dev.off()
 ```
 
 
+Phylogenetic signal of Aurones
+```{r}
+
+library(geiger)
+Aurones[Aurones==0] <- 2
+lambda.Aurones <- fitDiscrete(tree, Aurones, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Aurones
+
+```
+
+
+
 ML reconstruction Carotenoids
 
 ```{r}
@@ -401,6 +424,16 @@ pdffn = paste0("BSMs100_Carotenoids_v2.pdf")
 pdf(file=pdffn, width=6, height=60)
 plot(obj.Carotenoids,fsize=c(0.6,1))
 dev.off()
+
+```
+
+Phylogenetic signal of Carotenoids
+```{r}
+
+library(geiger)
+Carotenoids[Carotenoids==0] <- 2
+lambda.Carotenoids <- fitDiscrete(tree, Carotenoids, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Carotenoids
 
 ```
 
@@ -511,6 +544,15 @@ dev.off()
 
 ```
 
+Phylogenetic signal of Chlorophylls
+```{r}
+
+library(geiger)
+Chlorophylls[Chlorophylls==0] <- 2
+lambda.Chlorophylls <- fitDiscrete(tree, Chlorophylls, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Chlorophylls
+
+```
 
 
 ML reconstruction number of pigments.
@@ -625,6 +667,16 @@ dev.off()
 
 ```
 
+Phylogenetic signal of NPigments
+```{r}
+
+library(geiger)
+NPigments[NPigments==0] <- "zero"
+lambda.NPigments <- fitDiscrete(tree, NPigments, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.NPigments
+
+```
+
 
 
 ML reconstruction BlueFlowers
@@ -730,6 +782,16 @@ pdffn = paste0("BSMs100_BlueFlowers_v2.pdf")
 pdf(file=pdffn, width=6, height=60)
 plot(obj.BlueFlowers,fsize=c(0.6,1))
 dev.off()
+
+```
+
+Phylogenetic signal of BlueFlowers
+```{r}
+
+library(geiger)
+BlueFlowers[BlueFlowers==0] <- 2
+lambda.BlueFlowers <- fitDiscrete(tree, BlueFlowers, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.BlueFlowers
 
 ```
 
