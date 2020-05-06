@@ -877,5 +877,161 @@ fit.xy.ER
 fit.x.ER
 fit.y.ER
 
+
+names(mydata)
+Anthocyanins <- mydata[,10]
+names(Anthocyanins) <- mydata[,5]
+Chlorophylls <- mydata[,13]
+names(Chlorophylls) <- mydata[,5]
+
+tree <- multi2di(my.phylo.maker$scenario.1)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+
+Anthocyanins<-Anthocyanins[!is.na(Anthocyanins)]
+Chlorophylls<-Chlorophylls[!is.na(Chlorophylls)]
+setdiff(names(Anthocyanins),names(Chlorophylls))
+setdiff(names(Chlorophylls),names(Anthocyanins))
+Anthocyanins <- Anthocyanins[which(names(Anthocyanins) %in% names(Chlorophylls))]
+Chlorophylls<- Chlorophylls[which(names(Chlorophylls) %in% names(Anthocyanins) )]
+tipstoremove <- setdiff(tree$tip.label,names(Anthocyanins))
+tree <- drop.tip(tree, tipstoremove)
+
+x <-  Anthocyanins
+x[x==0] <- "N.An"
+x[x==1] <- "An"
+y <- Chlorophylls
+y[y==0] <- "N.Ch"
+y[y==1] <- "Ch"
+fit.xy<-fitPagel(tree,x,y)
+fit.x<-fitPagel(tree,x,y,dep.var="x")
+fit.y<-fitPagel(tree,x,y,dep.var="y")
+fit.xy.ER<-fitPagel(tree,x,y, model = "ER")
+fit.x.ER<-fitPagel(tree,x,y,dep.var="x",model = "ER")
+fit.y.ER<-fitPagel(tree,x,y,dep.var="y",model = "ER")
+
+fit.xy
+fit.x
+fit.y
+fit.xy.ER
+fit.x.ER
+fit.y.ER
+
+
+names(mydata)
+Aurones <- mydata[,11]
+names(Aurones) <- mydata[,5]
+Carotenoids <- mydata[,12]
+names(Carotenoids) <- mydata[,5]
+
+tree <- multi2di(my.phylo.maker$scenario.1)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+
+Aurones<-Aurones[!is.na(Aurones)]
+Carotenoids<-Carotenoids[!is.na(Carotenoids)]
+setdiff(names(Aurones),names(Carotenoids))
+setdiff(names(Carotenoids),names(Aurones))
+Aurones <- Aurones[which(names(Aurones) %in% names(Carotenoids))]
+Carotenoids<- Carotenoids[which(names(Carotenoids) %in% names(Aurones) )]
+tipstoremove <- setdiff(tree$tip.label,names(Aurones))
+tree <- drop.tip(tree, tipstoremove)
+
+x <-  Aurones
+x[x==0] <- "N.Au"
+x[x==1] <- "Au"
+y <- Carotenoids
+y[y==0] <- "N.Ca"
+y[y==1] <- "Ca"
+fit.xy<-fitPagel(tree,x,y)
+fit.x<-fitPagel(tree,x,y,dep.var="x")
+fit.y<-fitPagel(tree,x,y,dep.var="y")
+fit.xy.ER<-fitPagel(tree,x,y, model = "ER")
+fit.x.ER<-fitPagel(tree,x,y,dep.var="x",model = "ER")
+fit.y.ER<-fitPagel(tree,x,y,dep.var="y",model = "ER")
+
+fit.xy
+fit.x
+fit.y
+fit.xy.ER
+fit.x.ER
+fit.y.ER
+  
+
+names(mydata)
+Aurones <- mydata[,11]
+names(Aurones) <- mydata[,5]
+Chlorophylls <- mydata[,13]
+names(Chlorophylls) <- mydata[,5]
+
+tree <- multi2di(my.phylo.maker$scenario.1)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+
+Aurones<-Aurones[!is.na(Aurones)]
+Chlorophylls<-Chlorophylls[!is.na(Chlorophylls)]
+setdiff(names(Aurones),names(Chlorophylls))
+setdiff(names(Chlorophylls),names(Aurones))
+Aurones <- Aurones[which(names(Aurones) %in% names(Chlorophylls))]
+Chlorophylls<- Chlorophylls[which(names(Chlorophylls) %in% names(Aurones) )]
+tipstoremove <- setdiff(tree$tip.label,names(Aurones))
+tree <- drop.tip(tree, tipstoremove)
+
+x <-  Aurones
+x[x==0] <- "N.Au"
+x[x==1] <- "Au"
+y <- Chlorophylls
+y[y==0] <- "N.Ch"
+y[y==1] <- "Ch"
+fit.xy<-fitPagel(tree,x,y)
+fit.x<-fitPagel(tree,x,y,dep.var="x")
+fit.y<-fitPagel(tree,x,y,dep.var="y")
+fit.xy.ER<-fitPagel(tree,x,y, model = "ER")
+fit.x.ER<-fitPagel(tree,x,y,dep.var="x",model = "ER")
+fit.y.ER<-fitPagel(tree,x,y,dep.var="y",model = "ER")
+
+fit.xy
+fit.x
+fit.y
+fit.xy.ER
+fit.x.ER
+fit.y.ER
+
+
+names(mydata)
+Carotenoids <- mydata[,12]
+names(Carotenoids) <- mydata[,5]
+Chlorophylls <- mydata[,13]
+names(Chlorophylls) <- mydata[,5]
+
+tree <- multi2di(my.phylo.maker$scenario.1)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+
+Carotenoids<-Carotenoids[!is.na(Carotenoids)]
+Chlorophylls<-Chlorophylls[!is.na(Chlorophylls)]
+setdiff(names(Carotenoids),names(Chlorophylls))
+setdiff(names(Chlorophylls),names(Carotenoids))
+Carotenoids <- Carotenoids[which(names(Carotenoids) %in% names(Chlorophylls))]
+Chlorophylls<- Chlorophylls[which(names(Chlorophylls) %in% names(Carotenoids) )]
+tipstoremove <- setdiff(tree$tip.label,names(Carotenoids))
+tree <- drop.tip(tree, tipstoremove)
+
+x <-  Carotenoids
+x[x==0] <- "N.Ca"
+x[x==1] <- "Ca"
+y <- Chlorophylls
+y[y==0] <- "N.Ch"
+y[y==1] <- "Ch"
+fit.xy<-fitPagel(tree,x,y)
+fit.x<-fitPagel(tree,x,y,dep.var="x")
+fit.y<-fitPagel(tree,x,y,dep.var="y")
+fit.xy.ER<-fitPagel(tree,x,y, model = "ER")
+fit.x.ER<-fitPagel(tree,x,y,dep.var="x",model = "ER")
+fit.y.ER<-fitPagel(tree,x,y,dep.var="y",model = "ER")
+
+fit.xy
+fit.x
+fit.y
+fit.xy.ER
+fit.x.ER
+fit.y.ER
+
 ```
 
