@@ -93,7 +93,7 @@ ML reconstruction Anthocyanins
 names(mydata)
 Anthocyanins <- mydata[,10]
 names(Anthocyanins) <- mydata[,5]
-tree <- multi2di(my.phylo.maker$scenario.1)
+tree <- multi2di(my.phylo.maker$scenario.2$run.1)
 library(phytools)
 tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
 
@@ -1032,6 +1032,174 @@ fit.y
 fit.xy.ER
 fit.x.ER
 fit.y.ER
+
+```
+
+
+Analyses with corHMM
+```{r}
+
+library(corHMM)
+
+names(mydata)
+Anthocyanins <- cbind (as.character(mydata[,5][!is.na(mydata[,10])]),mydata[,10][!is.na(mydata[,10])])
+tree <- multi2di(my.phylo.maker$scenario.2$run.1)
+library(phytools)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Anthocyanins[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+pp.Anthocyanins<-corHMM(tree,Anthocyanins,rate.cat=2,node.states="marginal")
+pp.Anthocyanins
+pp.Anthocyanins.1<-corHMM(tree,Anthocyanins,rate.cat=1,node.states="marginal")
+pp.Anthocyanins.1
+
+pdffn = paste0("Anthocyanins2rates.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Anthocyanins$states,cex=0.5, pie.cex=0.5,title="Anthocyanins 2 rates")
+dev.off()
+
+pdffn = paste0("Anthocyanins2rates.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Anthocyanins$states,cex=0.5, pie.cex=0.5,title="Anthocyanins 2 rates")
+dev.off()
+
+
+cols <- c("white", "black", "red", "yellow")
+pdffn = paste0("Anthocyanins2ratesfan.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Anthocyanins$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+names(mydata)
+Aurones <- cbind (as.character(mydata[,5][!is.na(mydata[,11])]),mydata[,11][!is.na(mydata[,11])])
+tree <- multi2di(my.phylo.maker$scenario.2$run.1)
+library(phytools)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Aurones[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+pp.Aurones<-corHMM(tree,Aurones,rate.cat=2,node.states="marginal")
+pp.Aurones
+pp.Aurones.1<-corHMM(tree,Aurones,rate.cat=1,node.states="marginal")
+pp.Aurones.1
+
+pdffn = paste0("Aurones2rates.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Aurones$states,cex=0.5, pie.cex=0.5,title="Aurones 2 rates")
+dev.off()
+
+
+
+cols <- c("white", "black", "red", "yellow")
+pdffn = paste0("Aurones2ratesfan.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Aurones$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+names(mydata)
+Carotenoids <- cbind (as.character(mydata[,5][!is.na(mydata[,12])]),mydata[,12][!is.na(mydata[,12])])
+tree <- multi2di(my.phylo.maker$scenario.2$run.1)
+library(phytools)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Carotenoids[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+pp.Carotenoids<-corHMM(tree,Carotenoids,rate.cat=2,node.states="marginal")
+pp.Carotenoids
+pp.Carotenoids.1<-corHMM(tree,Carotenoids,rate.cat=1,node.states="marginal")
+pp.Carotenoids.1
+
+pdffn = paste0("Carotenoids2rates.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Carotenoids$states,cex=0.5, pie.cex=0.5,title="Carotenoids 2 rates")
+dev.off()
+
+
+cols <- c("white", "black", "red", "yellow")
+pdffn = paste0("Carotenoids2ratesfan.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Carotenoids$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+names(mydata)
+Chlorophylls <- cbind (as.character(mydata[,5][!is.na(mydata[,13])]),mydata[,13][!is.na(mydata[,13])])
+tree <- multi2di(my.phylo.maker$scenario.2$run.1)
+library(phytools)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Chlorophylls[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+pp.Chlorophylls<-corHMM(tree,Chlorophylls,rate.cat=2,node.states="marginal")
+pp.Chlorophylls
+pp.Chlorophylls.1<-corHMM(tree,Chlorophylls,rate.cat=1,node.states="marginal")
+pp.Chlorophylls.1
+
+pdffn = paste0("Chlorophylls2rates.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Chlorophylls$states,cex=0.5, pie.cex=0.5,title="Chlorophylls 2 rates")
+dev.off()
+
+
+cols <- c("white", "black", "red", "yellow")
+pdffn = paste0("Chlorophylls2ratesfan.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Chlorophylls$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+names(mydata)
+Anthocyanins <- mydata[,10]
+names(Anthocyanins) <- mydata[,5]
+Aurones <- mydata[,11]
+names(Aurones) <- mydata[,5]
+
+tree <- multi2di(my.phylo.maker$scenario.1)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+
+Anthocyanins<-Anthocyanins[!is.na(Anthocyanins)]
+Aurones<-Aurones[!is.na(Aurones)]
+setdiff(names(Anthocyanins),names(Aurones))
+setdiff(names(Aurones),names(Anthocyanins))
+Anthocyanins <- Anthocyanins[which(names(Anthocyanins) %in% names(Aurones))]
+Aurones<- Aurones[which(names(Aurones) %in% names(Anthocyanins) )]
+tipstoremove <- setdiff(tree$tip.label,names(Anthocyanins))
+tree <- drop.tip(tree, tipstoremove)
+Anthocyanins.Aurones <- cbind(names(Anthocyanins), Anthocyanins, Aurones)
+
+
+#pp.Anthocyanins.Aurones.ER.null<-corDISC(tree,Anthocyanins.Aurones,ntraits=2,model="ER", node.states="marginal")
+#pp.Anthocyanins.Aurones.ER.null
+#pp.Anthocyanins.Aurones.ARD.null<-corDISC(tree,Anthocyanins.Aurones,ntraits=2,model="ARD", node.states="marginal")
+#pp.Anthocyanins.Aurones.ARD.null
+#pp.Anthocyanins.Aurones.paint<-corPAINT(tree,Anthocyanins.Aurones,ntraits=2,model=c("ER","ARD"), node.states="marginal")
+#pp.Anthocyanins.Aurones.paint
+#We need here a column to define the selective regimes!!!!! Ask to Edur
 
 ```
 
