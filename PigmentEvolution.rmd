@@ -622,6 +622,19 @@ add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
 dev.off()
 
+ARDstep <- matrix(c(0, 1, 0, 0, 2, 0, 3, 0, 0, 4, 0, 5, 0, 0, 6, 0), 4)
+fitARDstep.NPigments<-ace(NPigments,tree,model=ARDstep,type="discrete")
+fitARDstep.NPigments
+pdffn = paste0("ML_ARDstep_NPigments.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(NPigments[tree$tip.label],
+    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=fitARDstep.NPigments$lik.anc,piecol=cols,cex=0.2)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
 
 ```
 
@@ -629,7 +642,7 @@ dev.off()
 Stochastic mapping Number of Pigments: This could take very long, we are not goint to do it for now.
 ```{r}
 
-mtree<-make.simmap(tree,NPigments,model="ARD", nsim=1)
+mtree<-make.simmap(tree,NPigments,model=ARDstep, nsim=1)
 mtree
 cols<-setNames(c("red","blue", "green", "yellow"),levels(as.factor(NPigments)))
 
@@ -640,7 +653,7 @@ add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
 dev.off()
 
-mtrees.NPigments<-make.simmap(tree,NPigments,model="ARD",nsim=100)
+mtrees.NPigments<-make.simmap(tree,NPigments,model=ARDstep,nsim=100)
 
 
 pd.NPigments<-summary(mtrees.NPigments)
@@ -838,6 +851,13 @@ fit.xy.ER
 fit.x.ER
 fit.y.ER
 
+fit.x.Anthocyanins.Aurones <-fit.x
+pdffn = paste0("fit.x.Anthocyanins.Aurones.pdf")
+pdf(file=pdffn, width=8, height=8)
+plot(fit.x.Anthocyanins.Aurones,lwd.by.rate=TRUE,
+    main=c("a) Independent model",
+    "b) Dependent (Anthocyanins | Aurones) model"))
+dev.off()
 
 names(mydata)
 Anthocyanins <- mydata[,10]
@@ -876,6 +896,14 @@ fit.y
 fit.xy.ER
 fit.x.ER
 fit.y.ER
+
+fit.x.Anthocyanins.Carotenoids <-fit.x
+pdffn = paste0("fit.x.Anthocyanins.Carotenoids.pdf")
+pdf(file=pdffn, width=8, height=8)
+plot(fit.x.Anthocyanins.Carotenoids,lwd.by.rate=TRUE,
+    main=c("a) Independent model",
+    "b) Dependent (Anthocyanins | Carotenoids) model"))
+dev.off()
 
 
 names(mydata)
@@ -993,6 +1021,33 @@ fit.y
 fit.xy.ER
 fit.x.ER
 fit.y.ER
+
+fit.xy.Aurones.Chlorophylls <-fit.xy
+pdffn = paste0("fit.xy.Aurones.Chlorophylls.pdf")
+pdf(file=pdffn, width=8, height=8)
+plot(fit.xy.Aurones.Chlorophylls,lwd.by.rate=TRUE,
+    main=c("a) Independent model",
+    "b) Dependent (Aurones | Chlorophylls) model"))
+dev.off()
+
+#Dependent (x & y) model rate matrix:
+#                Au|Ch      Au|N.Ch      N.Au|Ch    N.Au|N.Ch
+#Au|Ch     -0.05872631  0.023052923  0.035673388  0.000000000
+#Au|N.Ch    0.00000000 -0.061260843  0.000000000  0.061260843
+#N.Au|Ch    0.00000000  0.000000000 -0.023353560  0.023353560
+#N.Au|N.Ch  0.00000000  0.002789035  0.005895684 -0.008684719
+#Model fit:
+#            log-likelihood      AIC
+#independent      -274.3709 556.7418
+#dependent        -269.4757 554.9514
+fit.xy.c<-fitPagel2(tree,x,y, dep.var = "xyc")
+fit.xy.c
+pdffn = paste0("fit.xy.c.Aurones.Chlorophylls.pdf")
+pdf(file=pdffn, width=8, height=8)
+plot(fit.xy.c,lwd.by.rate=TRUE,
+    main=c("a) Independent model",
+    "b) Dependent (Aurones | Chlorophylls) model (constrained)"))
+dev.off()
 
 
 names(mydata)
