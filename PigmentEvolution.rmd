@@ -197,9 +197,13 @@ Phylogenetic signal of Anthocyanins
 #library(geiger)
 Anthocyanins[Anthocyanins==0] <- 2
 lambda.Anthocyanins <- fitDiscrete(tree, Anthocyanins, model = "ER", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-lambda.Anthocyanins <- fitDiscrete(tree, Anthocyanins, model = "ER", transform = "lambda")
-
+lambda.Anthocyanins.bm <- fitDiscrete(tree, Anthocyanins, model = "ER", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+tree.lambda <- rescale(tree, "lambda")
+tree.lambda(0)
+lambda.Anthocyanins.0 <- fitDiscrete(tree.lambda(0), Anthocyanins, model = "ER", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Anthocyanins
+lambda.Anthocyanins.bm
+lambda.Anthocyanins.0
 
 ```
 
@@ -317,9 +321,13 @@ Phylogenetic signal of Aurones
 #library(geiger)
 Aurones[Aurones==0] <- 2
 lambda.Aurones <- fitDiscrete(tree, Aurones, model = "ARD", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-lambda.Aurones <- fitDiscrete(tree, Aurones, model = "ARD", transform = "lambda")
-
+lambda.Aurones.bm <- fitDiscrete(tree, Aurones, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+tree.lambda <- rescale(tree, "lambda")
+tree.lambda(0)
+lambda.Aurones.0 <- fitDiscrete(tree.lambda(0), Aurones, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Aurones
+lambda.Aurones.bm
+lambda.Aurones.0
 
 ```
 
@@ -437,9 +445,12 @@ Phylogenetic signal of Carotenoids
 #library(geiger)
 Carotenoids[Carotenoids==0] <- 2
 lambda.Carotenoids <- fitDiscrete(tree, Carotenoids, model = "ARD", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-lambda.Carotenoids <- fitDiscrete(tree, Carotenoids, model = "ARD", transform = "lambda")
+lambda.Carotenoids.bm <- fitDiscrete(tree, Carotenoids, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+tree.lambda <- rescale(tree, "lambda")
+lambda.Carotenoids.0 <- fitDiscrete(tree.lambda(0), Carotenoids, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Carotenoids
-
+lambda.Carotenoids.bm
+lambda.Carotenoids.0
 ```
 
 
@@ -555,8 +566,12 @@ Phylogenetic signal of Chlorophylls
 #library(geiger)
 Chlorophylls[Chlorophylls==0] <- 2
 lambda.Chlorophylls <- fitDiscrete(tree, Chlorophylls, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-lambda.Chlorophylls <- fitDiscrete(tree, Chlorophylls, model = "ARD", transform = "lambda")
+lambda.Chlorophylls.bm <- fitDiscrete(tree, Chlorophylls, model = "ARD", transform = "none", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+tree.lambda <- rescale(tree, "lambda")
+lambda.Chlorophylls.0 <- fitDiscrete(tree.lambda(0), Chlorophylls, model = "ARD", transform = "none", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Chlorophylls
+lambda.Chlorophylls.bm
+lambda.Chlorophylls.0
 
 ```
 
@@ -659,7 +674,8 @@ Chlorophylls[Chlorophylls==0] <- 2
 #Chlorophylls[is.na(Chlorophylls)] <- "3"
 Chlorophylls
 
-cols<-setNames(c("lightpink","#e75480","purple","#301934"),levels(as.factor(NPigments)))
+#cols<-setNames(c("lightpink","#e75480","purple","#301934"),levels(as.factor(NPigments)))
+cols<-setNames(c("white","lightgrey","#555555","black"),levels(as.factor(NPigments)))
 cols5<-setNames(c("lightyellow","lightgrey"),levels(as.factor(Flavonoids)))
 cols2<-setNames(c("blue","lightgrey"),levels(as.factor(Anthocyanins)))
 cols3<-setNames(c("orange","lightgrey"),levels(as.factor(Carotenoids)))
@@ -789,12 +805,18 @@ dev.off()
 Phylogenetic signal of NPigments
 ```{r}
 
-#library(geiger)
+library(geiger)
 NPigments[NPigments==0] <- "zero"
 lambda.NPigments <- fitDiscrete(tree, NPigments, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-lambda.NPigments <- fitDiscrete(tree, NPigments, model = "ARD", transform = "lambda")
+lambda.NPigments.bm <- fitDiscrete(tree, NPigments, model = "ARD", transform = "none", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+
+tree.lambda <- rescale(tree, "lambda")
+tree.lambda(0)
+lambda.NPigments.0 <- fitDiscrete(tree.lambda(0), NPigments, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 
 lambda.NPigments
+lambda.NPigments.bm
+lambda.NPigments.0
 
 ```
 
@@ -1216,24 +1238,31 @@ pp.Anthocyanins<-corHMM(tree,Anthocyanins,rate.cat=2,node.states="marginal")
 pp.Anthocyanins
 pp.Anthocyanins.1<-corHMM(tree,Anthocyanins,rate.cat=1,node.states="marginal")
 pp.Anthocyanins.1
+pp.Anthocyanins.2<-corHMM(tree,Anthocyanins,rate.cat=2, model = "ER", node.states="marginal")
+pp.Anthocyanins.2
+pp.Anthocyanins.3<-corHMM(tree,Anthocyanins,rate.cat=1, model = "ER", node.states="marginal")
+pp.Anthocyanins.3
 
-pdffn = paste0("Anthocyanins2rates.pdf")
+simmap.Anthocyanins <- makeSimmap(tree=tree, data=Anthocyanins, model=pp.Anthocyanins.2$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Anthocyanins)
+
+pdffn = paste0("Anthocyanins2rates.ER.pdf")
 pdf(file=pdffn, width=6, height=60)
-plotRECON(tree,pp.Anthocyanins$states,cex=0.5, pie.cex=0.5,title="Anthocyanins 2 rates")
+plotRECON(tree,pp.Anthocyanins.2$states,cex=0.5, pie.cex=0.5,title="Anthocyanins 2 rates ER")
 dev.off()
 
-pdffn = paste0("Anthocyanins2rates.pdf")
+pdffn = paste0("Anthocyanins2rates.ER.pdf")
 pdf(file=pdffn, width=6, height=60)
-plotRECON(tree,pp.Anthocyanins$states,cex=0.5, pie.cex=0.5,title="Anthocyanins 2 rates")
+plotRECON(tree,pp.Anthocyanins.2$states,cex=0.5, pie.cex=0.5,title="Anthocyanins 2 rates ER")
 dev.off()
 
 
-cols <- c("white", "black", "red", "yellow")
-pdffn = paste0("Anthocyanins2ratesfan.pdf")
+cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
+pdffn = paste0("Anthocyanins2ratesfanER.pdf")
 pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
-    pie=pp.Anthocyanins$states,piecol=cols,cex=0.2)
+    pie=pp.Anthocyanins.2$states,piecol=cols,cex=0.2)
 dev.off()
 
 
@@ -1249,6 +1278,13 @@ pp.Aurones<-corHMM(tree,Aurones,rate.cat=2,node.states="marginal")
 pp.Aurones
 pp.Aurones.1<-corHMM(tree,Aurones,rate.cat=1,node.states="marginal")
 pp.Aurones.1
+pp.Aurones.2<-corHMM(tree,Aurones,model = "ER", rate.cat=2,node.states="marginal")
+pp.Aurones.2
+pp.Aurones.3<-corHMM(tree,Aurones,model = "ER", rate.cat=1,node.states="marginal")
+pp.Aurones.3
+
+simmap.Aurones <- makeSimmap(tree=tree, data=Aurones, model=pp.Aurones$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Aurones)
 
 pdffn = paste0("Aurones2rates.pdf")
 pdf(file=pdffn, width=6, height=60)
@@ -1256,8 +1292,7 @@ plotRECON(tree,pp.Aurones$states,cex=0.5, pie.cex=0.5,title="Aurones 2 rates")
 dev.off()
 
 
-
-cols <- c("white", "black", "red", "yellow")
+cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
 pdffn = paste0("Aurones2ratesfan.pdf")
 pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
@@ -1278,6 +1313,13 @@ pp.Carotenoids<-corHMM(tree,Carotenoids,rate.cat=2,node.states="marginal")
 pp.Carotenoids
 pp.Carotenoids.1<-corHMM(tree,Carotenoids,rate.cat=1,node.states="marginal")
 pp.Carotenoids.1
+pp.Carotenoids.2<-corHMM(tree,Carotenoids,model = "ER", rate.cat=2,node.states="marginal")
+pp.Carotenoids.2
+pp.Carotenoids.3<-corHMM(tree,Carotenoids,model = "ER", rate.cat=1,node.states="marginal")
+pp.Carotenoids.3
+
+simmap.Carotenoids <- makeSimmap(tree=tree, data=Carotenoids, model=pp.Carotenoids$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Carotenoids)
 
 pdffn = paste0("Carotenoids2rates.pdf")
 pdf(file=pdffn, width=6, height=60)
@@ -1306,6 +1348,13 @@ pp.Chlorophylls<-corHMM(tree,Chlorophylls,rate.cat=2,node.states="marginal")
 pp.Chlorophylls
 pp.Chlorophylls.1<-corHMM(tree,Chlorophylls,rate.cat=1,node.states="marginal")
 pp.Chlorophylls.1
+pp.Chlorophylls.2<-corHMM(tree,Chlorophylls,model = "ER", rate.cat=2,node.states="marginal")
+pp.Chlorophylls.2
+pp.Chlorophylls.3<-corHMM(tree,Chlorophylls,model = "ER",rate.cat=1,node.states="marginal")
+pp.Chlorophylls.3
+
+simmap.Chlorophylls <- makeSimmap(tree=tree, data=Chlorophylls, model=pp.Chlorophylls$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Chlorophylls)
 
 pdffn = paste0("Chlorophylls2rates.pdf")
 pdf(file=pdffn, width=6, height=60)
