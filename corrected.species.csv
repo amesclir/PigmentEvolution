@@ -1,0 +1,1124 @@
+"","SORTER","Submitted_Name","Submitted_Author","Submitted_Genus","Submitted_Rank","Name_in_database","Author_in_database","Genus_in_database","Rank_in_database","ID_in_database","Name_set","Fuzzy","Score","name.dist","author.dist","New_name","New_author","New_ID","Family","Name_spLev","Accepted_SPNAME","NOTE"
+"845",1,"Nymphaea nouchali","","Nymphaea",2,"Nymphaea nouchali","Burm.fil.","Nymphaea",2,15869,1,FALSE,0.8,0,NA,NA,NA,NA,"Nymphaeaceae",NA,"Nymphaea nouchali",NA
+"844",2,"Nuphar lutea","","Nuphar",2,"Nuphar lutea","(L.) Sibth. &  Sm.","Nuphar",2,15811,1,FALSE,0.8,0,NA,NA,NA,NA,"Nymphaeaceae",NA,"Nuphar lutea",NA
+"1325",3,"Victoria amazonica","","Victoria",2,"Victoria amazonica","(Poepp.) Sowerby","Victoria",2,15910,1,FALSE,0.8,0,NA,NA,NA,NA,"Nymphaeaceae",NA,"Victoria amazonica",NA
+"258",4,"Chimonanthus praecox","","Chimonanthus",2,"Chimonanthus praecox","(L.) Link","Chimonanthus",2,20866,1,FALSE,0.8,0,NA,NA,NA,NA,"Calycanthaceae",NA,"Chimonanthus praecox",NA
+"174",5,"Calycanthus floridus","","Calycanthus",2,"Calycanthus floridus","L.","Calycanthus",2,20858,1,FALSE,0.8,0,NA,NA,NA,NA,"Calycanthaceae",NA,"Calycanthus floridus",NA
+"175",6,"Calycanthus occidentalis","","Calycanthus",2,"Calycanthus occidentalis","Hook. &  Arn.","Calycanthus",2,20860,1,FALSE,0.8,0,NA,NA,NA,NA,"Calycanthaceae",NA,"Calycanthus occidentalis",NA
+"665",7,"Laurus nobilis","","Laurus",2,"Laurus nobilis","L.","Laurus",2,24001,1,FALSE,0.8,0,NA,NA,NA,NA,"Lauraceae",NA,"Laurus nobilis",NA
+"1290",8,"Umbellularia californica","","Umbellularia",2,"Umbellularia californica","(Hook. &  Arn.) Nutt.","Umbellularia",2,23284,1,FALSE,0.8,0,NA,NA,NA,NA,"Lauraceae",NA,"Umbellularia californica",NA
+"88",9,"Aristolochia baetica","","Aristolochia",2,"Aristolochia baetica","L.","Aristolochia",2,20364,1,FALSE,0.8,0,NA,NA,NA,NA,"Aristolochiaceae",NA,"Aristolochia baetica",NA
+"637",10,"Isotrema californicum","","Isotrema",2,"Isotrema californicum","(Torr.) H.Huber","Isotrema",2,20321,1,FALSE,0.8,0,NA,NA,NA,NA,"Aristolochiaceae",NA,"Isotrema californicum",NA
+"89",11,"Aristolochia paucinervis","","Aristolochia",2,"Aristolochia paucinervis","Pomel","Aristolochia",2,20687,1,FALSE,0.8,0,NA,NA,NA,NA,"Aristolochiaceae",NA,"Aristolochia paucinervis",NA
+"94",12,"Asarum caudatum","","Asarum",2,"Asarum caudatum","Lindl.","Asarum",2,20128,1,FALSE,0.8,0,NA,NA,NA,NA,"Aristolochiaceae",NA,"Asarum caudatum",NA
+"63",13,"Anemopsis californica","","Anemopsis",2,"Anemopsis californica","(Nutt.) Hook. &  Arn.","Anemopsis",2,16245,1,FALSE,0.8,0,NA,NA,NA,NA,"Saururaceae",NA,"Anemopsis californica",NA
+"406",14,"Duguetia furfuracea","","Duguetia",2,"Duguetia furfuracea","(A.St.-Hil.) Saff.","Duguetia",2,26304,1,FALSE,0.8,0,NA,NA,NA,NA,"Annonaceae",NA,"Duguetia furfuracea",NA
+"1347",15,"Xylopia aromatica","","Xylopia",2,"Xylopia aromatica","(Lam.) Mart.","Xylopia",2,26116,1,FALSE,0.8,0,NA,NA,NA,NA,"Annonaceae",NA,"Xylopia aromatica",NA
+"707",16,"Liriodendron tulipifera","","Liriodendron",2,"Liriodendron tulipifera","L.","Liriodendron",2,25835,1,FALSE,0.8,0,NA,NA,NA,NA,"Magnoliaceae",NA,"Liriodendron tulipifera",NA
+"756",17,"Magnolia biondii","","Magnolia",2,"Magnolia biondii","Pamp.","Magnolia",2,25457,1,FALSE,0.8,0,NA,NA,NA,NA,"Magnoliaceae",NA,"Magnolia biondii",NA
+"757",18,"Magnolia sprengeri","","Magnolia",2,"Magnolia sprengeri","Pamp.","Magnolia",2,25775,1,FALSE,0.8,0,NA,NA,NA,NA,"Magnoliaceae",NA,"Magnolia sprengeri",NA
+"28",19,"Alisma lanceolatum","","Alisma",2,"Alisma lanceolatum","With.","Alisma",2,32823,1,FALSE,0.8,0,NA,NA,NA,NA,"Alismataceae",NA,"Alisma lanceolatum",NA
+"87",20,"Arisarum simorrhinum","","Arisarum",2,"Arisarum simorrhinum"," Durieu","Arisarum",2,32142,1,FALSE,0.8,0,NA,NA,NA,NA,"Araceae",NA,"Arisarum simorrhinum",NA
+"92",21,"Arum italicum","","Arum",2,"Arum italicum"," Mill.","Arum",2,32748,1,FALSE,0.8,0,NA,NA,NA,NA,"Araceae",NA,"Arum italicum",NA
+"93",22,"Arum maculatum","","Arum",2,"Arum maculatum","L.","Arum",2,32756,1,FALSE,0.8,0,NA,NA,NA,NA,"Araceae",NA,"Arum maculatum",NA
+"132",23,"Biarum arundanum","","Biarum",2,"Biarum arundanum","Boiss. &  Reut.","Biarum",2,32698,1,FALSE,0.8,0,NA,NA,NA,NA,"Araceae",NA,"Biarum arundanum",NA
+"161",24,"Butomus umbellatus","","Butomus",2,"Butomus umbellatus","L.","Butomus",2,32957,1,FALSE,0.8,0,NA,NA,NA,NA,"Butomaceae",NA,"Butomus umbellatus",NA
+"14",25,"Acis autumnalis","","Acis",2,"Acis autumnalis","(L.) Herb.","Acis",2,78835,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Acis autumnalis",NA
+"31",26,"Allium ampeloprasum","","Allium",2,"Allium ampeloprasum"," L.","Allium",2,77055,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium ampeloprasum",NA
+"32",27,"Allium falcifolium","","Allium",2,"Allium falcifolium","Hook. &  Arn.","Allium",2,77357,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium falcifolium",NA
+"33",28,"Allium membranaceum","","Allium",2,"Allium membranaceum","Munz & D.D.Keck ex Ownbey","Allium",2,77658,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium membranaceum",NA
+"34",29,"Allium neapolitanum","","Allium",2,"Allium neapolitanum","Cirillo","Allium",2,77697,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium neapolitanum",NA
+"36",30,"Allium roseum","","Allium",2,"Allium roseum"," L.","Allium",2,77872,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium roseum",NA
+"37",31,"Allium subvillosum","","Allium",2,"Allium subvillosum","Salzm. ex Schult. &  Schult.fil.","Allium",2,78014,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium subvillosum",NA
+"39",32,"Allium triquetrum","","Allium",2,"Allium triquetrum","L.","Allium",2,78073,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium triquetrum",NA
+"42",33,"Allium unifolium","","Allium",2,"Allium unifolium","Kellogg","Allium",2,78095,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium unifolium",NA
+"44",34,"Allium ursinum","","Allium",2,"Allium ursinum"," L.","Allium",2,78097,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Allium ursinum",NA
+"532",35,"Galanthus nivalis","","Galanthus",2,"Galanthus nivalis","L.","Galanthus",2,78862,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Galanthus nivalis",NA
+"823",36,"Narcissus assoanus","","Narcissus",2,"Narcissus assoanus"," Dufour ex Schult. &  Schult.fil.","Narcissus",2,78926,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Narcissus assoanus",NA
+"824",37,"Narcissus cuatrecasasii","","Narcissus",2,"Narcissus cuatrecasasii","Casas, Laínz & Ruiz Rejón","Narcissus",2,78960,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Narcissus cuatrecasasii",NA
+"825",38,"Narcissus obsoletus","","Narcissus",2,"Narcissus obsoletus","(Haw.) Spach","Narcissus",2,79003,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Narcissus obsoletus",NA
+"829",39,"Narcissus serotinus","","Narcissus",2,"Narcissus serotinus","L.","Narcissus",2,79025,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Narcissus serotinus",NA
+"826",40,"Narcissus papyraceus","","Narcissus",2,"Narcissus papyraceus","Ker Gawl.","Narcissus",2,79005,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Narcissus papyraceus",NA
+"827",41,"Narcissus X perezlarae","","Narcissus",2,"Narcissus X perezlarae","Font Quer","Narcissus",2,79109,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Narcissus X perezlarae",NA
+"834",42,"Nerine bowdenii","","Nerine",2,"Nerine bowdenii","W.Watson","Nerine",2,78558,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Nerine bowdenii",NA
+"1281",43,"Tulbaghia violacea","","Tulbaghia",2,"Tulbaghia violacea"," Harv.","Tulbaghia",2,78182,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Tulbaghia violacea",NA
+"842",44,"Nothoscordum gracile","","Nothoscordum",2,"Nothoscordum gracile","(Dryand. ex Aiton) Stearn","Nothoscordum",2,78241,1,FALSE,0.8,0,NA,NA,NA,NA,"Amaryllidaceae",NA,"Nothoscordum gracile",NA
+"140",45,"Bloomeria crocea","","Bloomeria",2,"Bloomeria crocea","(Torr.) Coville","Bloomeria",2,82062,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Bloomeria crocea",NA
+"149",46,"Brodiaea californica","","Brodiaea",2,"Brodiaea californica"," Lindl. ex Lem.","Brodiaea",2,82102,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Brodiaea californica",NA
+"1361",47,"Brodiaea elegans elegans","","Brodiaea",2,"Brodiaea elegans ssp. elegans",NA,"Brodiaea",3,82109,1,FALSE,0.55,5,NA,NA,NA,NA,"Asparagaceae",NA,"Brodiaea elegans",NA
+"151",48,"Brodiaea kinkiensis","","Brodiaea",2,"Brodiaea kinkiensis","Niehaus","Brodiaea",2,82114,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Brodiaea kinkiensis",NA
+"152",49,"Brodiaea orcuttii","","Brodiaea",2,"Brodiaea orcuttii","(Greene) Baker","Brodiaea",2,82117,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Brodiaea orcuttii",NA
+"153",50,"Brodiaea pallida","","Brodiaea",2,"Brodiaea pallida","Hoover","Brodiaea",2,82118,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Brodiaea pallida",NA
+"259",51,"Chlorogalum pomeridianum","","Chlorogalum",2,"Chlorogalum pomeridianum"," (DC.) Kunth","Chlorogalum",2,81574,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Chlorogalum pomeridianum",NA
+"378",52,"Dichelostemma capitatum","","Dichelostemma",2,"Dichelostemma capitatum"," (Bentham) Alph.Wood","Dichelostemma",2,82092,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Dichelostemma capitatum",NA
+"379",53,"Dichelostemma ida-maia","","Dichelostemma",2,"Dichelostemma ida-maia","(Wood) Greene","Dichelostemma",2,82097,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Dichelostemma ida-maia",NA
+"380",54,"Dichelostemma volubile","","Dichelostemma",2,"Dichelostemma volubile","(Kellogg) A.Heller","Dichelostemma",2,82099,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Dichelostemma volubile",NA
+"383",55,"Dipcadi serotinum","","Dipcadi",2,"Dipcadi serotinum","(L.) Medicus","Dipcadi",2,82190,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Dipcadi serotinum",NA
+"600",56,"Hesperoyucca whipplei","","Hesperoyucca",2,"Hesperoyucca whipplei","(Torr.) Trel.","Hesperoyucca",2,81605,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Hesperoyucca whipplei",NA
+"617",57,"Hyacinthoides hispanica","","Hyacinthoides",2,"Hyacinthoides hispanica","(Mill.) Rothm.","Hyacinthoides",2,83167,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Hyacinthoides hispanica",NA
+"619",58,"Hyacinthoides non-scripta","","Hyacinthoides",2,"Hyacinthoides non-scripta","(L.) Chouard ex Rothm.","Hyacinthoides",2,83171,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Hyacinthoides non-scripta",NA
+"679",59,"Leopoldia comosa","","Leopoldia",2,"Leopoldia comosa","(L.) Parl.","Leopoldia",2,83176,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Leopoldia comosa",NA
+"758",60,"Maianthemum racemosum","","Maianthemum",2,"Maianthemum racemosum"," (L.) Link","Maianthemum",2,80318,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Maianthemum racemosum",NA
+"759",61,"Maianthemum stellatum","","Maianthemum",2,"Maianthemum stellatum","(Linnaeus) Link","Maianthemum",2,80324,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Maianthemum stellatum",NA
+"815",62,"Muscari neglectum","","Muscari",2,"Muscari neglectum","Guss. ex Ten.","Muscari",2,83276,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Muscari neglectum",NA
+"878",63,"Ornithogalum baeticum","","Ornithogalum",2,"Ornithogalum baeticum","Boiss.","Ornithogalum",2,82527,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Ornithogalum baeticum",NA
+"881",64,"Ornithogalum umbellatum","","Ornithogalum",2,"Ornithogalum umbellatum","L.","Ornithogalum",2,82624,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Ornithogalum umbellatum",NA
+"880",65,"Ornithogalum narbonense","","Ornithogalum",2,"Ornithogalum narbonense","L.","Ornithogalum",2,564148,1,FALSE,0.8,0,NA,"Loncomelos narbonensis","(L.) Raf.",82493,"Asparagaceae",NA,"Loncomelos narbonensis","Multiple results"
+"989",66,"Prospero autumnale","","Prospero",2,"Prospero autumnale"," (L.) Salisb.","Prospero",2,83197,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Prospero autumnale",NA
+"1107",67,"Scilla bifolia","","Scilla",2,"Scilla bifolia","L.","Scilla",2,83383,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Scilla bifolia",NA
+"1108",68,"Scilla cretica","","Scilla",2,"Scilla cretica","(Boiss. & Heldr.) Speta","Scilla",2,566181,1,FALSE,0.8,0,NA,"Scilla nana ssp. nana",NA,83417,"Asparagaceae",NA,"Scilla nana",NA
+"1109",69,"Scilla peruviana","","Scilla",2,"Scilla peruviana","L.","Scilla",2,564083,1,FALSE,0.8,0,NA,"Melomphis peruviana","(L.) Raf.",82483,"Asparagaceae",NA,"Melomphis peruviana",NA
+"1274",70,"Triteleia ixioides","","Triteleia",2,"Triteleia ixioides"," (Aiton fil.) Greene","Triteleia",2,82077,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Triteleia ixioides",NA
+"1275",71,"Triteleia laxa","","Triteleia",2,"Triteleia laxa","Benth.","Triteleia",2,82083,1,FALSE,0.8,0,NA,NA,NA,NA,"Asparagaceae",NA,"Triteleia laxa",NA
+"330",72,"Crocus laevigatus","","Crocus",2,"Crocus laevigatus","Bory & Chaub.","Crocus",2,73287,1,FALSE,0.8,0,NA,NA,NA,NA,"Iridaceae",NA,"Crocus laevigatus",NA
+"331",73,"Crocus vernus","","Crocus",2,"Crocus vernus","(L.) Hill","Crocus",2,73392,1,FALSE,0.8,0,NA,NA,NA,NA,"Iridaceae",NA,"Crocus vernus",NA
+"564",74,"Gladiolus communis","","Gladiolus",2,"Gladiolus communis","L.","Gladiolus",2,72556,1,FALSE,0.8,0,NA,NA,NA,NA,"Iridaceae",NA,"Gladiolus communis",NA
+"565",75,"Gladiolus italicus","","Gladiolus",2,"Gladiolus italicus","Mill.","Gladiolus",2,72628,1,FALSE,0.8,0,NA,NA,NA,NA,"Iridaceae",NA,"Gladiolus italicus",NA
+"628",76,"Iris douglasiana","","Iris",2,"Iris douglasiana","Torr.","Iris",2,547167,1,FALSE,0.8,0,NA,"Limniris macrosiphon","(Torr.) Rodion.",74114,"Iridaceae",NA,"Limniris macrosiphon","Multiple results"
+"629",77,"Iris fernaldii","","Iris",2,"Iris fernaldii","R. C. Foster","Iris",2,547128,1,FALSE,0.8,0,NA,"Limniris fernaldii","(R.C.Foster) Rodion.",74101,"Iridaceae",NA,"Limniris fernaldii",NA
+"631",78,"Iris innominata","","Iris",2,"Iris innominata","L. F. Hend.","Iris",2,547153,1,FALSE,0.8,0,NA,"Limniris innominata","(L.F.Hend.) Rodion.",74111,"Iridaceae",NA,"Limniris innominata",NA
+"630",79,"Iris foetidissima","","Iris",2,"Iris foetidissima","L.","Iris",2,546768,1,FALSE,0.8,0,NA,"Chamaeiris foetidissima","(L.) Medik.",74015,"Iridaceae",NA,"Chamaeiris foetidissima",NA
+"632",80,"Iris planifolia","","Iris",2,"Iris planifolia","(Mill.) Fiori & Paol.","Iris",2,547879,1,FALSE,0.8,0,NA,"Juno planifolia","(Mill.) Asch.",74358,"Iridaceae",NA,"Juno planifolia",NA
+"633",81,"Iris pseudacorus","","Iris",2,"Iris pseudacorus","L.","Iris",2,547191,1,FALSE,0.8,0,NA,"Limniris pseudacorus","(L.) Fuss",74119,"Iridaceae",NA,"Limniris pseudacorus",NA
+"634",82,"Iris tenax","","Iris",2,"Iris tenax","Douglas","Iris",2,547285,1,FALSE,0.8,0,NA,"Limniris tenax ssp. tenax",NA,74130,"Iridaceae",NA,"Limniris tenax",NA
+"812",83,"Moraea sisyrinchium","","Moraea",2,"Moraea sisyrinchium","Ker Gawl.","Moraea",2,74639,1,FALSE,0.8,0,NA,NA,NA,NA,"Iridaceae",NA,"Moraea sisyrinchium",NA
+"1050",84,"Romulea bulbocodium","","Romulea",2,"Romulea bulbocodium"," (L.) Sebast. &  Mauri","Romulea",2,73004,1,FALSE,0.8,0,NA,NA,NA,NA,"Iridaceae",NA,"Romulea bulbocodium",NA
+"1174",85,"Sisyrinchium bellum","","Sisyrinchium",2,"Sisyrinchium bellum","S.Watson","Sisyrinchium",2,74772,1,FALSE,0.8,0,NA,NA,NA,NA,"Iridaceae",NA,"Sisyrinchium bellum",NA
+"1175",86,"Sisyrinchium californicum","","Sisyrinchium",2,"Sisyrinchium californicum","(Ker Gawl.) Aiton fil.","Sisyrinchium",2,74788,1,FALSE,0.8,0,NA,NA,NA,NA,"Iridaceae",NA,"Sisyrinchium californicum",NA
+"1176",87,"Sisyrinchium vaginatum","","Sisyrinchium",2,"Sisyrinchium vaginatum"," Spreng.","Sisyrinchium",2,74967,1,FALSE,0.8,0,NA,NA,NA,NA,"Iridaceae",NA,"Sisyrinchium vaginatum",NA
+"1272",88,"Trimezia truncata","","Trimezia",2,"Trimezia truncata","Ravenna","Trimezia",2,549034,1,FALSE,0.8,0,NA,"Pseudotrimezia truncata","(Ravenna) Lovo & A.Gil",75006,"Iridaceae",NA,"Pseudotrimezia truncata",NA
+"49",89,"Anacamptis pyramidalis","","Anacamptis",2,"Anacamptis pyramidalis","(L.) Rich.","Anacamptis",2,42347,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Anacamptis pyramidalis",NA
+"241",90,"Cephalanthera longifolia","","Cephalanthera",2,"Cephalanthera longifolia","(L.) Fritsch","Cephalanthera",2,46953,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Cephalanthera longifolia",NA
+"358",91,"Dactylorhiza fuchsii","","Dactylorhiza",2,"Dactylorhiza fuchsii"," (Druce) Soó","Dactylorhiza",2,42782,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Dactylorhiza fuchsii",NA
+"433",92,"Epipactis gigantea","","Epipactis",2,"Epipactis gigantea","Douglas ex Hook.","Epipactis",2,46784,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Epipactis gigantea",NA
+"571",93,"Gomesa hydrophila","","Gomesa",2,"Gomesa hydrophila","(Barb.Rodr.) M.W.Chase & N.H.Williams","Gomesa",2,60106,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Gomesa hydrophila",NA
+"605",94,"Himantoglossum robertianum","","Himantoglossum",2,"Himantoglossum robertianum","(Loisel.) P.Delforge","Himantoglossum",2,41102,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Himantoglossum robertianum",NA
+"653",95,"Koellensteinia tricolor","","Koellensteinia",2,"Koellensteinia tricolor","(Lindl.) Rchb.fil.","Koellensteinia",2,60901,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Koellensteinia tricolor",NA
+"868",96,"Ophrys fusca","","Ophrys",2,"Ophrys fusca"," Link","Ophrys",2,41216,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Ophrys fusca",NA
+"869",97,"Ophrys lutea","","Ophrys",2,"Ophrys lutea"," (Gouan) Cav.","Ophrys",2,41366,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Ophrys lutea",NA
+"872",98,"Ophrys tenthredinifera","","Ophrys",2,"Ophrys tenthredinifera"," Willd.","Ophrys",2,41514,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Ophrys tenthredinifera",NA
+"873",99,"Orchis anthropophora","","Orchis",2,"Orchis anthropophora","(L.) All.","Orchis",2,42424,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Orchis anthropophora",NA
+"874",100,"Orchis italica","","Orchis",2,"Orchis italica","Poir.","Orchis",2,42428,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Orchis italica",NA
+"877",101,"Orchis mascula","","Orchis",2,"Orchis mascula"," (L.) L.","Orchis",2,42430,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Orchis mascula",NA
+"1133",102,"Serapias cordigera","","Serapias",2,"Serapias cordigera"," L.","Serapias",2,42178,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Serapias cordigera",NA
+"1134",103,"Serapias parviflora","","Serapias",2,"Serapias parviflora"," Parl.","Serapias",2,42217,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Serapias parviflora",NA
+"1135",104,"Serapias vomeracea","","Serapias",2,"Serapias vomeracea"," (Burm.fil.) Briq.","Serapias",2,42229,1,FALSE,0.8,0,NA,NA,NA,NA,"Orchidaceae",NA,"Serapias vomeracea",NA
+"101",105,"Asphodelus albus","","Asphodelus",2,"Asphodelus albus"," Mill.","Asphodelus",2,75370,1,FALSE,0.8,0,NA,NA,NA,NA,"Xanthorrhoeaceae",NA,"Asphodelus albus",NA
+"103",106,"Asphodelus fistulosus","","Asphodelus",2,"Asphodelus fistulosus"," L.","Asphodelus",2,75381,1,FALSE,0.8,0,NA,NA,NA,NA,"Xanthorrhoeaceae",NA,"Asphodelus fistulosus",NA
+"104",107,"Asphodelus ramosus","","Asphodelus",2,"Asphodelus ramosus"," L.","Asphodelus",2,75390,1,FALSE,0.8,0,NA,NA,NA,NA,"Xanthorrhoeaceae",NA,"Asphodelus ramosus",NA
+"105",108,"Asphodelus tenuifolius","","Asphodelus",2,"Asphodelus tenuifolius","Cav.","Asphodelus",2,75396,1,FALSE,0.8,0,NA,NA,NA,NA,"Xanthorrhoeaceae",NA,"Asphodelus tenuifolius",NA
+"45",109,"Aloe plicatilis","","Aloe",2,"Aloe plicatilis","(L.) Mill.","Aloe",2,550269,1,FALSE,0.8,0,NA,"Kumara plicatilis","(L.) Klopper & Gideon F.Sm.",75747,"Xanthorrhoeaceae",NA,"Kumara plicatilis",NA
+"1169",110,"Simethis planifolia","","Simethis",2,"Simethis planifolia","(L.) Gren.","Simethis",2,552184,1,FALSE,0.8,0,NA,"Simethis mattiazzii","(Vand.) G.López & C.E.Jarvis",76840,"Xanthorrhoeaceae",NA,"Simethis mattiazzii",NA
+"308",111,"Commelina erecta","","Commelina",2,"Commelina erecta"," L.","Commelina",2,86885,1,FALSE,0.8,0,NA,NA,NA,NA,"Commelinaceae",NA,"Commelina erecta",NA
+"1248",112,"Tradescantia pallida","","Tradescantia",2,"Tradescantia pallida","(Rose) D.R.Hunt","Tradescantia",2,87368,1,FALSE,0.8,0,NA,NA,NA,NA,"Commelinaceae",NA,"Tradescantia pallida",NA
+"1249",113,"Tradescantia virginiana","","Tradescantia",2,"Tradescantia virginiana","L.","Tradescantia",2,87400,1,FALSE,0.8,0,NA,NA,NA,NA,"Commelinaceae",NA,"Tradescantia virginiana",NA
+"830",114,"Narthecium ossifragum","","Narthecium",2,"Narthecium ossifragum","(L.) Hudson","Narthecium",2,33517,1,FALSE,0.8,0,NA,NA,NA,NA,"Nartheciaceae",NA,"Narthecium ossifragum",NA
+"303",115,"Colchicum autumnale","","Colchicum",2,"Colchicum autumnale"," L.","Colchicum",2,37002,1,FALSE,0.8,0,NA,NA,NA,NA,"Colchicaceae",NA,"Colchicum autumnale",NA
+"1090",116,"Sandersonia aurantiaca","","Sandersonia",2,"Sandersonia aurantiaca","Hook.","Sandersonia",2,36912,1,FALSE,0.8,0,NA,NA,NA,NA,"Colchicaceae",NA,"Sandersonia aurantiaca",NA
+"168",117,"Calochortus albus","","Calochortus",2,"Calochortus albus","(Benth.) Douglas ex Benth.","Calochortus",2,37517,1,FALSE,0.8,0,NA,NA,NA,NA,"Liliaceae",NA,"Calochortus albus",NA
+"170",118,"Calochortus luteus","","Calochortus",2,"Calochortus luteus","Douglas ex Lindl.","Calochortus",2,37562,1,FALSE,0.8,0,NA,NA,NA,NA,"Liliaceae",NA,"Calochortus luteus",NA
+"171",119,"Calochortus venustus","","Calochortus",2,"Calochortus venustus","Douglas ex Benth.","Calochortus",2,37606,1,FALSE,0.8,0,NA,NA,NA,NA,"Liliaceae",NA,"Calochortus venustus",NA
+"300",120,"Clintonia andrewsiana","","Clintonia",2,"Clintonia andrewsiana","Torr.","Clintonia",2,37614,1,FALSE,0.8,0,NA,NA,NA,NA,"Liliaceae",NA,"Clintonia andrewsiana",NA
+"524",121,"Fritillaria affinis","","Fritillaria",2,"Fritillaria affinis","(Schult.) Sealy","Fritillaria",2,38068,1,FALSE,0.8,0,NA,NA,NA,NA,"Liliaceae",NA,"Fritillaria affinis",NA
+"525",122,"Fritillaria lusitanica","","Fritillaria",2,"Fritillaria lusitanica","Wikstr.","Fritillaria",2,38153,1,FALSE,0.8,0,NA,NA,NA,NA,"Liliaceae",NA,"Fritillaria lusitanica",NA
+"687",123,"Lilium pardalinum","","Lilium",2,"Lilium pardalinum"," Kellogg","Lilium",2,38351,1,FALSE,0.8,0,NA,NA,NA,NA,"Liliaceae",NA,"Lilium pardalinum",NA
+"686",124,"Lilium ochraceum","","Lilium",2,"Lilium ochraceum","Franch.","Lilium",2,493718,1,FALSE,0.8,0,NA,"Lilium primulinum var. ochraceum","(Franch.) Stearn",38369,"Liliaceae",NA,"Lilium primulinum",NA
+"1283",125,"Tulipa sylvestris","","Tulipa",2,"Tulipa sylvestris"," L.","Tulipa",2,37984,1,FALSE,0.8,0,NA,NA,NA,NA,"Liliaceae",NA,"Tulipa sylvestris",NA
+"1247",126,"Toxicoscordion fremontii","","Toxicoscordion",2,"Toxicoscordion fremontii","(Torr.) Rydb.","Toxicoscordion",2,36284,1,FALSE,0.8,0,NA,NA,NA,NA,"Melanthiaceae",NA,"Toxicoscordion fremontii",NA
+"1269",127,"Trillium albidum","","Trillium",2,"Trillium albidum"," J.D.Freeman","Trillium",2,36395,1,FALSE,0.8,0,NA,NA,NA,NA,"Melanthiaceae",NA,"Trillium albidum",NA
+"1270",128,"Trillium chloropetalum","","Trillium",2,"Trillium chloropetalum","(Torr.) T.J.Howell","Trillium",2,36404,1,FALSE,0.8,0,NA,NA,NA,NA,"Melanthiaceae",NA,"Trillium chloropetalum",NA
+"1271",129,"Trillium ovatum","","Trillium",2,"Trillium ovatum","Pursh","Trillium",2,36427,1,FALSE,0.8,0,NA,NA,NA,NA,"Melanthiaceae",NA,"Trillium ovatum",NA
+"1346",130,"Xerophyllum tenax","","Xerophyllum",2,"Xerophyllum tenax","(Pursh) Nutt.","Xerophyllum",2,36344,1,FALSE,0.8,0,NA,NA,NA,NA,"Melanthiaceae",NA,"Xerophyllum tenax",NA
+"1177",131,"Smilax aspera","","Smilax",2,"Smilax aspera","L.","Smilax",2,37151,1,FALSE,0.8,0,NA,NA,NA,NA,"Smilacaceae",NA,"Smilax aspera",NA
+"118",132,"Barbacenia flava","","Barbacenia",2,"Barbacenia flava","Mart. ex Steud.","Barbacenia",2,34613,1,FALSE,0.8,0,NA,NA,NA,NA,"Velloziaceae",NA,"Barbacenia flava",NA
+"1297",133,"Vellozia epidendroides","","Vellozia",2,"Vellozia epidendroides","Mart.","Vellozia",2,34755,1,FALSE,0.8,0,NA,NA,NA,NA,"Velloziaceae",NA,"Vellozia epidendroides",NA
+"1040",134,"Rhynchospora consanguinea","","Rhynchospora",2,"Rhynchospora consanguinea","(Kunth) Boeckeler","Rhynchospora",2,98571,1,FALSE,0.8,0,NA,NA,NA,NA,"Cyperaceae",NA,"Rhynchospora consanguinea",NA
+"899",135,"Paepalanthus bromelioides","","Paepalanthus",2,"Paepalanthus bromelioides","Silveira","Paepalanthus",2,96288,1,FALSE,0.8,0,NA,NA,NA,NA,"Eriocaulaceae",NA,"Paepalanthus bromelioides",NA
+"1349",136,"Xyris asperula","","Xyris",2,"Xyris asperula","Mart.","Xyris",2,94849,1,FALSE,0.8,0,NA,NA,NA,NA,"Xyridaceae",NA,"Xyris asperula",NA
+"1351",137,"Xyris itatiayensis","","Xyris",2,"Xyris itatiayensis","(Malme) Wand. &  Sajo","Xyris",2,95004,1,FALSE,0.8,0,NA,NA,NA,NA,"Xyridaceae",NA,"Xyris itatiayensis",NA
+"1352",138,"Xyris piranii","","Xyris",2,"Xyris piranii","Wand.","Xyris",2,95104,1,FALSE,0.8,0,NA,NA,NA,NA,"Xyridaceae",NA,"Xyris piranii",NA
+"1353",139,"Xyris subsetigera","","Xyris",2,"Xyris subsetigera","Malme","Xyris",2,95171,1,FALSE,0.8,0,NA,NA,NA,NA,"Xyridaceae",NA,"Xyris subsetigera",NA
+"1354",140,"Xyris trachyphylla","","Xyris",2,"Xyris trachyphylla","Mart.","Xyris",2,95195,1,FALSE,0.8,0,NA,NA,NA,NA,"Xyridaceae",NA,"Xyris trachyphylla",NA
+"1056",141,"Roscoea alpina","","Roscoea",2,"Roscoea alpina","Royle","Roscoea",2,89639,1,FALSE,0.8,0,NA,NA,NA,NA,"Zingiberaceae",NA,"Roscoea alpina",NA
+"64",142,"Angelica breweri","","Angelica",2,"Angelica breweri","A.Gray","Angelica",2,405271,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Angelica breweri",NA
+"65",143,"Angelica capitellata","","Angelica",2,"Angelica capitellata","(A.Gray) Spalik, Reduron & S.R.Downie","Angelica",2,405275,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Angelica capitellata",NA
+"67",144,"Anthriscus sylvestris","","Anthriscus",2,"Anthriscus sylvestris"," (L.) Hoffm.","Anthriscus",2,403040,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Anthriscus sylvestris",NA
+"265",145,"Cicuta douglasii","","Cicuta",2,"Cicuta douglasii","(DC.) J.M.Coult. &  Rose","Cicuta",2,402539,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Cicuta douglasii",NA
+"363",146,"Daucus carota","","Daucus",2,"Daucus carota"," L.","Daucus",2,403435,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Daucus carota",NA
+"478",147,"Eryngium pinnatisectum","","Eryngium",2,"Eryngium pinnatisectum","Jeps.","Eryngium",2,401876,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Eryngium pinnatisectum",NA
+"512",148,"Foeniculum vulgare","","Foeniculum",2,"Foeniculum vulgare","Mill.","Foeniculum",2,403535,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Foeniculum vulgare",NA
+"599",149,"Heracleum maximum","","Heracleum",2,"Heracleum maximum","Bartram","Heracleum",2,1184542,1,FALSE,0.8,0,NA,"Heracleum sphondylium ssp. montanum","(Schleich. ex Gaudin) Briq.",405216,"Apiaceae",NA,"Heracleum sphondylium",NA
+"652",150,"Klotzschia rhizophylla","","Klotzschia",2,"Klotzschia rhizophylla","Urb.","Klotzschia",2,401488,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Klotzschia rhizophylla",NA
+"710",151,"Lomatium observatorium","","Lomatium",2,"Lomatium observatorium","Constance & Ertter","Lomatium",2,404864,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Lomatium observatorium",NA
+"848",152,"Oenanthe crocata","","Oenanthe",2,"Oenanthe crocata","L.","Oenanthe",2,402552,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Oenanthe crocata",NA
+"851",153,"Oenanthe globulosa","","Oenanthe",2,"Oenanthe globulosa","L.","Oenanthe",2,402558,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Oenanthe globulosa",NA
+"852",154,"Oenanthe sarmentosa","","Oenanthe",2,"Oenanthe sarmentosa","C.Presl ex DC.","Oenanthe",2,402581,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Oenanthe sarmentosa",NA
+"890",155,"Osmorhiza berteroi","","Osmorhiza",2,"Osmorhiza berteroi","DC.","Osmorhiza",2,403017,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Osmorhiza berteroi",NA
+"931",156,"Perideridia kelloggii","","Perideridia",2,"Perideridia kelloggii","(A.Gray) Mathias","Perideridia",2,402649,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Perideridia kelloggii",NA
+"932",157,"Perideridia lemmonii","","Perideridia",2,"Perideridia lemmonii","(J.M.Coult. &  Rose) T.I.Chuang & Constance","Perideridia",2,402650,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Perideridia lemmonii",NA
+"1243",158,"Torilis arvensis","","Torilis",2,"Torilis arvensis"," (Huds.) Link","Torilis",2,403320,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Torilis arvensis",NA
+"1244",159,"Torilis nodosa","","Torilis",2,"Torilis nodosa","(L.) Gaertn.","Torilis",2,403333,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Torilis nodosa",NA
+"1237",160,"Thapsia transtagana","","Thapsia",2,"Thapsia transtagana","Brot.","Thapsia",2,403404,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Thapsia transtagana",NA
+"1091",161,"Sanicula crassicaulis","","Sanicula",2,"Sanicula crassicaulis","Poepp. ex DC.","Sanicula",2,401970,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Sanicula crassicaulis",NA
+"1105",162,"Scandix pecten-veneris","","Scandix",2,"Scandix pecten-veneris","L.","Scandix",2,403010,1,FALSE,0.8,0,NA,NA,NA,NA,"Apiaceae",NA,"Scandix pecten-veneris",NA
+"80",163,"Aralia californica","","Aralia",2,"Aralia californica","S.Watson","Aralia",2,399799,1,FALSE,0.8,0,NA,NA,NA,NA,"Araliaceae",NA,"Aralia californica",NA
+"11",164,"Achillea millefolium","","Achillea",2,"Achillea millefolium"," L.","Achillea",2,383313,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Achillea millefolium",NA
+"50",165,"Anacyclus clavatus","","Anacyclus",2,"Anacyclus clavatus","(Desf.) Pers.","Anacyclus",2,383463,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Anacyclus clavatus",NA
+"51",166,"Anacyclus radiatus","","Anacyclus",2,"Anacyclus radiatus"," Loisel.","Anacyclus",2,383471,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Anacyclus radiatus",NA
+"255",167,"Chamaemelum fuscatum","","Chamaemelum",2,"Chamaemelum fuscatum","(Gren. &  Godr.) Vasc.","Chamaemelum",2,384179,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Chamaemelum fuscatum",NA
+"304",168,"Coleostephus myconis","","Coleostephus",2,"Coleostephus myconis"," (L.) Rchb.fil.","Coleostephus",2,384060,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Coleostephus myconis",NA
+"568",169,"Glebionis coronaria","","Glebionis",2,"Glebionis coronaria","(L.) Tzvelev","Glebionis",2,384276,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Glebionis coronaria",NA
+"569",170,"Glebionis segetum","","Glebionis",2,"Glebionis segetum","(L.) Fourr.","Glebionis",2,384277,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Glebionis segetum",NA
+"684",171,"Leucanthemum vulgare","","Leucanthemum",2,"Leucanthemum vulgare"," Lam.","Leucanthemum",2,384166,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Leucanthemum vulgare",NA
+"784",172,"Matricaria chamomilla","","Matricaria",2,"Matricaria chamomilla","L.","Matricaria",2,383480,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Matricaria chamomilla",NA
+"1230",173,"Tanacetum camphoratum","","Tanacetum",2,"Tanacetum camphoratum","Less.","Tanacetum",2,1140361,1,FALSE,0.8,0,NA,"Tanacetum bipinnatum ssp. bipinnatum",NA,383537,"Asteraceae",NA,"Tanacetum bipinnatum",NA
+"1273",174,"Tripleurospermum inodorum","","Tripleurospermum",2,"Tripleurospermum inodorum","(L.) Sch.-Bip","Tripleurospermum",2,383702,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Tripleurospermum inodorum",NA
+"121",175,"Bellis cordifolia","","Bellis",2,"Bellis cordifolia","(Kunze) Willk.","Bellis",2,385002,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Bellis cordifolia",NA
+"122",176,"Bellis sylvestris","","Bellis",2,"Bellis sylvestris"," Cirillo","Bellis",2,385011,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Bellis sylvestris",NA
+"113",177,"Baccharis salicifolia","","Baccharis",2,"Baccharis salicifolia"," (Ruiz & Pav.) Pers.","Baccharis",2,386326,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Baccharis salicifolia",NA
+"316",178,"Corethrogyne filaginifolia","","Corethrogyne",2,"Corethrogyne filaginifolia","(Hook. &  Arn.) Nutt.","Corethrogyne",2,388452,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Corethrogyne filaginifolia",NA
+"446",179,"Ericameria cuneata","","Ericameria",2,"Ericameria cuneata","(A.Gray) McClatchie","Ericameria",2,386764,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Ericameria cuneata",NA
+"447",180,"Ericameria ericoides","","Ericameria",2,"Ericameria ericoides","(Less.) Jeps.","Ericameria",2,386768,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Ericameria ericoides",NA
+"448",181,"Ericameria nauseosa","","Ericameria",2,"Ericameria nauseosa","(Pall. ex Pursh) Nesom & G.I.Baird","Ericameria",2,386780,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Ericameria nauseosa",NA
+"449",182,"Ericameria suffruticosa","","Ericameria",2,"Ericameria suffruticosa","(Nutt.) Nesom","Ericameria",2,386825,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Ericameria suffruticosa",NA
+"450",183,"Erigeron coulteri","","Erigeron",2,"Erigeron coulteri","Porter & Coult.","Erigeron",2,387413,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Erigeron coulteri",NA
+"451",184,"Erigeron glacialis","","Erigeron",2,"Erigeron glacialis","(Nutt.) A.Nelson","Erigeron",2,387492,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Erigeron glacialis",NA
+"453",185,"Erigeron glaucus","","Erigeron",2,"Erigeron glaucus","Ker Gawl.","Erigeron",2,387495,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Erigeron glaucus",NA
+"455",186,"Erigeron philadelphicus","","Erigeron",2,"Erigeron philadelphicus","L.","Erigeron",2,387663,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Erigeron philadelphicus",NA
+"507",187,"Eurybia integrifolia","","Eurybia",2,"Eurybia integrifolia","(Nutt.) Nesom","Eurybia",2,388111,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Eurybia integrifolia",NA
+"508",188,"Eurybia radulina","","Eurybia",2,"Eurybia radulina","(A.Gray) Nesom","Eurybia",2,388120,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Eurybia radulina",NA
+"573",189,"Grindelia hirsutula","","Grindelia",2,"Grindelia hirsutula","Hook. &  Arn.","Grindelia",2,388327,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Grindelia hirsutula",NA
+"574",190,"Gutierrezia californica","","Gutierrezia",2,"Gutierrezia californica","(DC.) Torr. &  A.Gray","Gutierrezia",2,387892,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Gutierrezia californica",NA
+"577",191,"Hazardia detonsa","","Hazardia",2,"Hazardia detonsa","(Greene) Greene","Hazardia",2,388376,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Hazardia detonsa",NA
+"578",192,"Hazardia squarrosa","","Hazardia",2,"Hazardia squarrosa","(Hook. &  Arn.) Greene","Hazardia",2,388382,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Hazardia squarrosa",NA
+"602",193,"Heterotheca grandiflora","","Heterotheca",2,"Heterotheca grandiflora","Nutt.","Heterotheca",2,387210,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Heterotheca grandiflora",NA
+"1369",194,"Heterotheca sessiliflora bolanderi","","Heterotheca",2,"Heterotheca sessiliflora ssp. bolanderi","(A. Gray) Semple","Heterotheca",3,1148183,1,FALSE,0.55,5,NA,"Heterotheca bolanderi","(A.Gray) V.L.Harms",387196,"Asteraceae",NA,"Heterotheca bolanderi",NA
+"1192",195,"Solidago elongata","","Solidago",2,"Solidago elongata","Nutt.","Solidago",2,386902,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Solidago elongata",NA
+"1193",196,"Solidago spathulata","","Solidago",2,"Solidago spathulata","DC.","Solidago",2,386999,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Solidago spathulata",NA
+"1374",197,"Solidago velutina californica","","Solidago",2,"Solidago velutina ssp. californica","(Nutt.) Semple","Solidago",3,1147698,1,FALSE,0.55,5,NA,"Solidago californica","Nutt.",387014,"Asteraceae",NA,"Solidago californica",NA
+"1227",198,"Symphyotrichum chilense","","Symphyotrichum",2,"Symphyotrichum chilense","(Nees) Nesom","Symphyotrichum",2,387966,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Symphyotrichum chilense",NA
+"1228",199,"Symphyotrichum lentum","","Symphyotrichum",2,"Symphyotrichum lentum","(Greene) Nesom","Symphyotrichum",2,388013,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Symphyotrichum lentum",NA
+"1229",200,"Symphyotrichum spathulatum","","Symphyotrichum",2,"Symphyotrichum spathulatum","(Lindl.) Nesom","Symphyotrichum",2,388060,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Symphyotrichum spathulatum",NA
+"208",201,"Carduus bourgaeanus","","Carduus",2,"Carduus bourgaeanus","(Bolle) Sch. Bip. ex Boiss.","Carduus",2,1101010,1,FALSE,0.8,0,NA,"Carduus bourgaei","Kazmi",360264,"Asteraceae",NA,"Carduus bourgaei",NA
+"209",202,"Carduus tenuiflorus","","Carduus",2,"Carduus tenuiflorus"," Curtis","Carduus",2,360400,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Carduus tenuiflorus",NA
+"212",203,"Carthamus caeruleus","","Carthamus",2,"Carthamus caeruleus","L.","Carthamus",2,1103898,1,FALSE,0.8,0,NA,"Carduncellus caeruleus","(L.) C.Presl",361754,"Asteraceae",NA,"Carduncellus caeruleus",NA
+"229",204,"Centaurea pullata","","Centaurea",2,"Centaurea pullata"," L.","Centaurea",2,361407,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Centaurea pullata",NA
+"232",205,"Centaurea sphaerocephala","","Centaurea",2,"Centaurea sphaerocephala","L.","Centaurea",2,361539,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Centaurea sphaerocephala",NA
+"268",206,"Cirsium andersonii","","Cirsium",2,"Cirsium andersonii","(A.Gray) Petr.","Cirsium",2,359651,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Cirsium andersonii",NA
+"269",207,"Cirsium brevistylum","","Cirsium",2,"Cirsium brevistylum","Cronquist","Cirsium",2,359697,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Cirsium brevistylum",NA
+"270",208,"Cirsium fontinale","","Cirsium",2,"Cirsium fontinale","(Greene) Jeps.","Cirsium",2,359802,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Cirsium fontinale",NA
+"272",209,"Cirsium occidentale","","Cirsium",2,"Cirsium occidentale","(Nutt.) Jeps.","Cirsium",2,359959,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Cirsium occidentale",NA
+"274",210,"Cirsium palustre","","Cirsium",2,"Cirsium palustre","(L.) Scop.","Cirsium",2,359983,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Cirsium palustre",NA
+"271",211,"Cirsium japonicum","","Cirsium",2,"Cirsium japonicum","Fisch. ex DC.","Cirsium",2,359865,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Cirsium japonicum",NA
+"334",212,"Crupina vulgaris","","Crupina",2,"Crupina vulgaris","(Pers.) Cass.","Crupina",2,361880,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Crupina vulgaris",NA
+"347",213,"Cynara humilis","","Cynara",2,"Cynara humilis","L.","Cynara",2,359581,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Cynara humilis",NA
+"531",214,"Galactites tomentosa","","Galactites",2,"Galactites tomentosa","Moench","Galactites",2,359568,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Galactites tomentosa",NA
+"778",215,"Mantisalca duriaei","","Mantisalca",2,"Mantisalca duriaei","(Spach) Briq. &  Cavill.","Mantisalca",2,362007,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Mantisalca duriaei",NA
+"779",216,"Mantisalca salmantica","","Mantisalca",2,"Mantisalca salmantica","(L.) Briq. &  Cavill.","Mantisalca",2,362008,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Mantisalca salmantica",NA
+"843",217,"Notobasis syriaca","","Notobasis",2,"Notobasis syriaca","(L.) Cass.","Notobasis",2,359622,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Notobasis syriaca",NA
+"166",218,"Calendula arvensis","","Calendula",2,"Calendula arvensis","L.","Calendula",2,377427,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Calendula arvensis",NA
+"167",219,"Calendula officinalis","","Calendula",2,"Calendula officinalis","L.","Calendula",2,377436,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Calendula officinalis",NA
+"26",220,"Agoseris grandiflora","","Agoseris",2,"Agoseris grandiflora","(Nutt.) Greene","Agoseris",2,377215,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Agoseris grandiflora",NA
+"58",221,"Andryala integrifolia","","Andryala",2,"Andryala integrifolia","L.","Andryala",2,368272,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Andryala integrifolia",NA
+"264",222,"Cichorium intybus","","Cichorium",2,"Cichorium intybus"," L.","Cichorium",2,377097,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Cichorium intybus",NA
+"328",223,"Crepis vesicaria","","Crepis",2,"Crepis vesicaria"," L.","Crepis",2,365651,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Crepis vesicaria",NA
+"558",224,"Geropogon hybridus","","Geropogon",2,"Geropogon hybridus","(L.) Sch.Bip.","Geropogon",2,364420,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Geropogon hybridus",NA
+"580",225,"Hedypnois rhagadioloides","","Hedypnois",2,"Hedypnois rhagadioloides"," (L.) F.W.Schmidt","Hedypnois",2,365190,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Hedypnois rhagadioloides",NA
+"598",226,"Helminthotheca echioides","","Helminthotheca",2,"Helminthotheca echioides","(L) Holub","Helminthotheca",2,365117,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Helminthotheca echioides",NA
+"604",227,"Hieracium albiflorum","","Hieracium",2,"Hieracium albiflorum","Hook.","Hieracium",2,368503,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Hieracium albiflorum",NA
+"675",228,"Leontodon hispidus","","Leontodon",2,"Leontodon hispidus"," L.","Leontodon",2,365224,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Leontodon hispidus",NA
+"677",229,"Leontodon saxatilis","","Leontodon",2,"Leontodon saxatilis","Lam.","Leontodon",2,1111692,1,FALSE,0.8,0,NA,"Thrincia saxatilis","(Lam.) Holub & Moravec",365201,"Asteraceae",NA,"Thrincia saxatilis","Multiple results"
+"762",230,"Malacothrix floccifera","","Malacothrix",2,"Malacothrix floccifera","(DC.) S.F.Blake","Malacothrix",2,377229,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Malacothrix floccifera",NA
+"962",231,"Pilosella arguta","","Pilosella",2,"Pilosella arguta","(Nutt.) Sch. Bip, fratt.","Pilosella",2,1115239,1,FALSE,0.8,0,NA,"Hieracium argutum","Nutt.",368786,"Asteraceae",NA,"Hieracium argutum",NA
+"963",232,"Pilosella horrida","","Pilosella",2,"Pilosella horrida","(Fr.) F. W. Schultz & Sch. Bip.","Pilosella",2,1118081,1,FALSE,0.8,0,NA,"Hieracium horridum","Fr.",371458,"Asteraceae",NA,"Hieracium horridum",NA
+"1019",233,"Reichardia gaditana","","Reichardia",2,"Reichardia gaditana"," (Willk.) Cout.","Reichardia",2,364766,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Reichardia gaditana",NA
+"966",234,"Podospermum laciniatum","","Podospermum",2,"Podospermum laciniatum","(L.) DC.","Podospermum",2,1192369,1,FALSE,0.8,0,NA,"Scorzonera laciniata","L.",408201,"Asteraceae",NA,"Scorzonera laciniata",NA
+"1021",235,"Reichardia intermedia","","Reichardia",2,"Reichardia intermedia","(Jan ex DC.) Cout.","Reichardia",2,364769,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Reichardia intermedia",NA
+"1027",236,"Rhagadiolus edulis","","Rhagadiolus",2,"Rhagadiolus edulis","Gaertn.","Rhagadiolus",2,365357,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Rhagadiolus edulis",NA
+"1194",237,"Sonchus oleraceus","","Sonchus",2,"Sonchus oleraceus","L.","Sonchus",2,364922,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Sonchus oleraceus",NA
+"1195",238,"Sonchus radicatus","","Sonchus",2,"Sonchus radicatus","Aiton","Sonchus",2,364938,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Sonchus radicatus",NA
+"1242",239,"Tolpis barbata","","Tolpis",2,"Tolpis barbata","(L.) Gaertn.","Tolpis",2,377106,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Tolpis barbata",NA
+"1251",240,"Tragopogon porrifolius","","Tragopogon",2,"Tragopogon porrifolius"," L.","Tragopogon",2,364513,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Tragopogon porrifolius",NA
+"1292",241,"Urospermum picroides","","Urospermum",2,"Urospermum picroides","(L.) Scop. ex F.W.Schmidt","Urospermum",2,364977,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Urospermum picroides",NA
+"314",242,"Coreopsis gigantea","","Coreopsis",2,"Coreopsis gigantea","(Kellogg) Hall","Coreopsis",2,396355,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Coreopsis gigantea",NA
+"1003",243,"Rafinesquia neomexicana","","Rafinesquia",2,"Rafinesquia neomexicana","A.Gray","Rafinesquia",2,377283,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Rafinesquia neomexicana",NA
+"1219",244,"Stephanomeria virgata","","Stephanomeria",2,"Stephanomeria virgata"," Benth.","Stephanomeria",2,377279,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Stephanomeria virgata",NA
+"315",245,"Coreopsis maritima","","Coreopsis",2,"Coreopsis maritima","(Nutt.) Hook.fil.","Coreopsis",2,396376,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Coreopsis maritima",NA
+"324",246,"Cosmos sulphureus","","Cosmos",2,"Cosmos sulphureus","Cav.","Cosmos",2,396474,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Cosmos sulphureus",NA
+"133",247,"Bidens pilosa","","Bidens",2,"Bidens pilosa","L.","Bidens",2,396657,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Bidens pilosa",NA
+"1",248,"Acritopappus","","Acritopappus",1,"Acritopappus",NA,"Acritopappus",1,NA,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Acritopappus","Matching only genus level"
+"802",249,"Mikania cipoensis","","Mikania",2,"Mikania cipoensis","G.M.Barroso","Mikania",2,394200,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Mikania cipoensis",NA
+"1226",250,"Symphyopappus reticulatus","","Symphyopappus",2,"Symphyopappus reticulatus","Baker","Symphyopappus",2,395787,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Symphyopappus reticulatus",NA
+"1225",251,"Symphyopappus cuneatus","","Symphyopappus",2,"Symphyopappus cuneatus","(DC.) Sch.Bip. ex Baker","Symphyopappus",2,395780,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Symphyopappus cuneatus",NA
+"1048",252,"Richterago arenaria","","Richterago",2,"Richterago arenaria","(Baker) Roque","Richterago",2,357162,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Richterago arenaria",NA
+"588",253,"Helichrysum buddleioides","","Helichrysum",2,"Helichrysum buddleioides","DC. ex Wight","Helichrysum",2,388935,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Helichrysum buddleioides",NA
+"1345",254,"Xerochrysum bracteatum","","Xerochrysum",2,"Xerochrysum bracteatum","(Vent.) Tzvelev","Xerochrysum",2,390747,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Xerochrysum bracteatum",NA
+"947",255,"Phagnalon saxatile","","Phagnalon",2,"Phagnalon saxatile","(L.) Cass.","Phagnalon",2,388528,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Phagnalon saxatile",NA
+"993",256,"Pseudognaphalium californicum","","Pseudognaphalium",2,"Pseudognaphalium californicum","(DC.) Anderb.","Pseudognaphalium",2,389512,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Pseudognaphalium californicum",NA
+"995",257,"Pseudognaphalium stramineum","","Pseudognaphalium",2,"Pseudognaphalium stramineum","(Kunth) Anderb.","Pseudognaphalium",2,389593,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Pseudognaphalium stramineum",NA
+"115",258,"Baileya multiradiata","","Baileya",2,"Baileya multiradiata","Harv. &  Gray ex Torr.","Baileya",2,391979,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Baileya multiradiata",NA
+"583",259,"Helenium puberulum","","Helenium",2,"Helenium puberulum","DC.","Helenium",2,391939,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Helenium puberulum",NA
+"106",260,"Aspilia jolyana","","Aspilia",2,"Aspilia jolyana","G.M.Barroso","Aspilia",2,397512,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Aspilia jolyana",NA
+"114",261,"Bahiopsis laciniata","","Bahiopsis",2,"Bahiopsis laciniata","(A.Gray) E.E.Schill. &  Panero","Bahiopsis",2,398043,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Bahiopsis laciniata",NA
+"298",262,"Clibadium trianae","","Clibadium",2,"Clibadium trianae","(Hieron.) S.F.Blake","Clibadium",2,397060,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Clibadium trianae",NA
+"422",263,"Encelia californica","","Encelia",2,"Encelia californica","Nutt.","Encelia",2,397638,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Encelia californica",NA
+"585",264,"Helianthus annuus","","Helianthus",2,"Helianthus annuus","L.","Helianthus",2,397797,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Helianthus annuus",NA
+"586",265,"Helianthus californicus","","Helianthus",2,"Helianthus californicus","DC.","Helianthus",2,397803,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Helianthus californicus",NA
+"590",266,"Heliomeris multiflora","","Heliomeris",2,"Heliomeris multiflora","Nutt.","Heliomeris",2,398032,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Heliomeris multiflora",NA
+"657",267,"Lasthenia californica","","Lasthenia",2,"Lasthenia californica"," DC. ex Lindl.","Lasthenia",2,392893,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Lasthenia californica",NA
+"1068",268,"Rudbeckia hirta","","Rudbeckia",2,"Rudbeckia hirta","L.","Rudbeckia",2,398314,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Rudbeckia hirta",NA
+"1326",269,"Viguiera dentata","","Viguiera",2,"Viguiera dentata","(Cavanilles) Spreng.","Viguiera",2,398233,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Viguiera dentata",NA
+"1306",270,"Verbesina hastata","","Verbesina",2,"Verbesina hastata","(Kellogg) Kellogg ex Curran","Verbesina",2,398552,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Verbesina hastata",NA
+"1342",271,"Wedelia hispida","","Wedelia",2,"Wedelia hispida","Kunth","Wedelia",2,1168036,1,FALSE,0.8,0,NA,"Wedelia acapulcensis var. hispida","(Kunth) Strother",397312,"Asteraceae",NA,"Wedelia acapulcensis",NA
+"1343",272,"Wyethia angustifolia","","Wyethia",2,"Wyethia angustifolia","(DC.) Nutt.","Wyethia",2,397756,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Wyethia angustifolia",NA
+"1344",273,"Wyethia mollis","","Wyethia",2,"Wyethia mollis","A.Gray","Wyethia",2,397762,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Wyethia mollis",NA
+"107",274,"Asteriscus aquaticus","","Asteriscus",2,"Asteriscus aquaticus","(L.) Less.","Asteriscus",2,391437,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Asteriscus aquaticus",NA
+"393",275,"Dittrichia viscosa","","Dittrichia",2,"Dittrichia viscosa"," (L.) Greuter","Dittrichia",2,391414,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Dittrichia viscosa",NA
+"900",276,"Pallenis maritima","","Pallenis",2,"Pallenis maritima"," (L.) Greuter","Pallenis",2,391429,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Pallenis maritima",NA
+"901",277,"Pallenis spinosa","","Pallenis",2,"Pallenis spinosa"," (L.) Cass.","Pallenis",2,391432,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Pallenis spinosa",NA
+"999",278,"Pulicaria arabica","","Pulicaria",2,"Pulicaria arabica"," (L.) Cass.","Pulicaria",2,391309,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Pulicaria arabica",NA
+"66",279,"Anisocarpus madioides","","Anisocarpus",2,"Anisocarpus madioides","Nutt.","Anisocarpus",2,392988,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Anisocarpus madioides",NA
+"91",280,"Arnica latifolia","","Arnica",2,"Arnica latifolia","Bong.","Arnica",2,392959,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Arnica latifolia",NA
+"173",281,"Calycadenia truncata","","Calycadenia",2,"Calycadenia truncata","DC.","Calycadenia",2,393106,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Calycadenia truncata",NA
+"467",282,"Eriophyllum confertiflorum","","Eriophyllum",2,"Eriophyllum confertiflorum","(DC.) A.Gray","Eriophyllum",2,392864,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Eriophyllum confertiflorum",NA
+"468",283,"Eriophyllum lanatum","","Eriophyllum",2,"Eriophyllum lanatum","(Pursh) Forbes","Eriophyllum",2,392868,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Eriophyllum lanatum",NA
+"469",284,"Eriophyllum staechadifolium","","Eriophyllum",2,"Eriophyllum staechadifolium","Lag.","Eriophyllum",2,392884,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Eriophyllum staechadifolium",NA
+"609",285,"Holocarpha macradenia","","Holocarpha",2,"Holocarpha macradenia","(DC.) Greene","Holocarpha",2,393083,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Holocarpha macradenia",NA
+"614",286,"Hulsea heterochroma","","Hulsea",2,"Hulsea heterochroma","A.Gray","Hulsea",2,392928,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Hulsea heterochroma",NA
+"674",287,"Layia platyglossa","","Layia",2,"Layia platyglossa","(Fisch. &  C.A.Mey.) A.Gray","Layia",2,393138,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Layia platyglossa",NA
+"753",288,"Madia elegans","","Madia",2,"Madia elegans","D.Don","Madia",2,392995,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Madia elegans",NA
+"754",289,"Madia gracilis","","Madia",2,"Madia gracilis","(Sm.) D.D.Keck & J.C.Clausen ex Applegate","Madia",2,392998,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Madia gracilis",NA
+"755",290,"Madia sativa","","Madia",2,"Madia sativa","Molina","Madia",2,393000,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Madia sativa",NA
+"1298",291,"Venegasia carpesioides","","Venegasia",2,"Venegasia carpesioides","DC.","Venegasia",2,392924,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Venegasia carpesioides",NA
+"20",292,"Adenocaulon bicolor","","Adenocaulon",2,"Adenocaulon bicolor","Hook.","Adenocaulon",2,357064,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Adenocaulon bicolor",NA
+"1276",293,"Trixis californica","","Trixis",2,"Trixis californica","Kellogg","Trixis",2,356507,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Trixis californica",NA
+"933",294,"Perityle emoryi","","Perityle",2,"Perityle emoryi","Torr.","Perityle",2,393323,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Perityle emoryi",NA
+"934",295,"Perityle incana","","Perityle",2,"Perityle incana","A.Gray","Perityle",2,393335,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Perityle incana",NA
+"2",296,"Calea","","Calea",1,"Calea",NA,"Calea",1,NA,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Calea","Matching only genus level"
+"639",297,"Jacobaea aquatica","","Jacobaea",2,"Jacobaea aquatica","(Hill) G.Gaertn., B.Mey. &  Scherb.","Jacobaea",2,381230,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Jacobaea aquatica",NA
+"930",298,"Pericallis cruenta","","Pericallis",2,"Pericallis cruenta","(L´Hér.) Webb & Berthel.","Pericallis",2,380971,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Pericallis cruenta",NA
+"1130",299,"Senecio elegans","","Senecio",2,"Senecio elegans","L.","Senecio",2,379258,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Senecio elegans",NA
+"1131",300,"Senecio gallicus","","Senecio",2,"Senecio gallicus","Chaix","Senecio",2,379350,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Senecio gallicus",NA
+"644",301,"Jaumea carnosa","","Jaumea",2,"Jaumea carnosa","(Less.) A.Gray","Jaumea",2,392821,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Jaumea carnosa",NA
+"683",302,"Lessingianthus psilophyllus","","Lessingianthus",2,"Lessingianthus psilophyllus","(DC.) H.Rob.","Lessingianthus",2,363305,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Lessingianthus psilophyllus",NA
+"736",303,"Lychnophora humillima","","Lychnophora",2,"Lychnophora humillima","Sch. Bip.","Lychnophora",2,1108459,1,FALSE,0.8,0,NA,"Lychnocephalus humillimus","(Sch.Bip.) Loeuille, Semir & Pirani",363639,"Asteraceae",NA,"Lychnocephalus humillimus",NA
+"737",304,"Lychnophora rupestris","","Lychnophora",2,"Lychnophora rupestris","Semir","Lychnophora",2,363668,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Lychnophora rupestris",NA
+"3",305,"Vernonia","","Vernonia",1,"Vernonia",NA,"Vernonia",1,NA,1,FALSE,0.8,0,NA,NA,NA,NA,"Asteraceae",NA,"Vernonia","Matching only genus level"
+"192",306,"Campanula collina","","Campanula",2,"Campanula collina"," Sims","Campanula",2,352873,1,FALSE,0.8,0,NA,NA,NA,NA,"Campanulaceae",NA,"Campanula collina",NA
+"194",307,"Campanula isophylla","","Campanula",2,"Campanula isophylla","Moretti","Campanula",2,352996,1,FALSE,0.8,0,NA,NA,NA,NA,"Campanulaceae",NA,"Campanula isophylla",NA
+"196",308,"Campanula prenanthoides","","Campanula",2,"Campanula prenanthoides","Durand","Campanula",2,1089266,1,FALSE,0.8,0,NA,"Smithiastrum prenanthoides","(Durand) Morin",353348,"Campanulaceae",NA,"Smithiastrum prenanthoides",NA
+"195",309,"Campanula poscharskyana","","Campanula",2,"Campanula poscharskyana","Degen","Campanula",2,353141,1,FALSE,0.8,0,NA,NA,NA,NA,"Campanulaceae",NA,"Campanula poscharskyana",NA
+"198",310,"Campanula rotundifolia","","Campanula",2,"Campanula rotundifolia"," L.","Campanula",2,353182,1,FALSE,0.8,0,NA,NA,NA,NA,"Campanulaceae",NA,"Campanula rotundifolia",NA
+"193",311,"Campanula erinus","","Campanula",2,"Campanula erinus","L.","Campanula",2,352915,1,FALSE,0.8,0,NA,NA,NA,NA,"Campanulaceae",NA,"Campanula erinus",NA
+"197",312,"Campanula rapunculus","","Campanula",2,"Campanula rapunculus"," L.","Campanula",2,353165,1,FALSE,0.8,0,NA,NA,NA,NA,"Campanulaceae",NA,"Campanula rapunculus",NA
+"1373",313,"Palmerella debilis serrata","","Palmerella",2,"Palmerella debilis var. serrata","A. Gray","Palmerella",3,1092727,1,FALSE,0.55,5,NA,"Palmerella debilis ssp. serrata","(A.Gray) Lammers",354354,"Campanulaceae",NA,"Palmerella debilis","Multiple results"
+"641",314,"Jasione montana","","Jasione",2,"Jasione montana"," L.","Jasione",2,352746,1,FALSE,0.8,0,NA,NA,NA,NA,"Campanulaceae",NA,"Jasione montana",NA
+"19",315,"Adelinia grande","","Adelinia",2,"Adelinia grande","(Douglas ex Lehm.) J.I.Cohen","Adelinia",2,349109,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Adelinia grande",NA
+"48",316,"Amsinckia menziesii","","Amsinckia",2,"Amsinckia menziesii","(Lehm.) A.Nelson & J.F.Macbr.","Amsinckia",2,349136,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Amsinckia menziesii",NA
+"52",317,"Anchusa azurea","","Anchusa",2,"Anchusa azurea","Mill.","Anchusa",2,348079,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Anchusa azurea",NA
+"54",318,"Anchusa puechii","","Anchusa",2,"Anchusa puechii","Valdés","Anchusa",2,348108,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Anchusa puechii",NA
+"141",319,"Borago officinalis","","Borago",2,"Borago officinalis","L.","Borago",2,348266,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Borago officinalis",NA
+"245",320,"Cerinthe major","","Cerinthe",2,"Cerinthe major"," L.","Cerinthe",2,347293,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Cerinthe major",NA
+"335",321,"Cryptantha flaccida","","Cryptantha",2,"Cryptantha flaccida","(Douglas) Greene","Cryptantha",2,349359,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Cryptantha flaccida",NA
+"336",322,"Cryptantha intermedia","","Cryptantha",2,"Cryptantha intermedia","(A.Gray) Greene","Cryptantha",2,349377,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Cryptantha intermedia",NA
+"348",323,"Cynoglossum clandestinum","","Cynoglossum",2,"Cynoglossum clandestinum","Desf.","Cynoglossum",2,349559,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Cynoglossum clandestinum",NA
+"349",324,"Cynoglossum creticum","","Cynoglossum",2,"Cynoglossum creticum","Mill.","Cynoglossum",2,349560,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Cynoglossum creticum",NA
+"408",325,"Echium albicans","","Echium",2,"Echium albicans"," Lag. &  Rodr.","Echium",2,347574,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Echium albicans",NA
+"410",326,"Echium boissieri","","Echium",2,"Echium boissieri","Steud.","Echium",2,347589,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Echium boissieri",NA
+"415",327,"Echium creticum","","Echium",2,"Echium creticum"," L.","Echium",2,347598,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Echium creticum",NA
+"416",328,"Echium plantagineum","","Echium",2,"Echium plantagineum","L.","Echium",2,347644,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Echium plantagineum",NA
+"419",329,"Echium vulgare","","Echium",2,"Echium vulgare"," L.","Echium",2,347681,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Echium vulgare",NA
+"457",330,"Eriodictyon californicum","","Eriodictyon",2,"Eriodictyon californicum","(Hook. &  Arn.) Greene","Eriodictyon",2,350070,1,FALSE,0.8,0,NA,NA,NA,NA,"Namaceae",NA,"Eriodictyon californicum",NA
+"458",331,"Eriodictyon crassifolium","","Eriodictyon",2,"Eriodictyon crassifolium","Benth.","Eriodictyon",2,350072,1,FALSE,0.8,0,NA,NA,NA,NA,"Namaceae",NA,"Eriodictyon crassifolium",NA
+"566",332,"Glandora prostrata","","Glandora",2,"Glandora prostrata"," (Loisel.) D.C.Thomas","Glandora",2,347352,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Glandora prostrata",NA
+"591",333,"Heliotropium curassavicum","","Heliotropium",2,"Heliotropium curassavicum","L.","Heliotropium",2,350327,1,FALSE,0.8,0,NA,NA,NA,NA,"Heliotropiaceae",NA,"Heliotropium curassavicum",NA
+"594",334,"Heliotropium europaeum","","Heliotropium",2,"Heliotropium europaeum","L.","Heliotropium",2,350351,1,FALSE,0.8,0,NA,NA,NA,NA,"Heliotropiaceae",NA,"Heliotropium europaeum",NA
+"616",335,"Huynhia pulchra","","Huynhia",2,"Huynhia pulchra","(Willd. ex Roem. &  Schult.) Greuter & Burdet","Huynhia",2,347304,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Huynhia pulchra",NA
+"709",336,"Lithospermum officinale","","Lithospermum",2,"Lithospermum officinale","L.","Lithospermum",2,347413,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Lithospermum officinale",NA
+"808",337,"Moltkia petraea","","Moltkia",2,"Moltkia petraea","(Tratt.) Griseb.","Moltkia",2,347310,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Moltkia petraea",NA
+"819",338,"Myosotis arvensis","","Myosotis",2,"Myosotis arvensis","(L.) Hill","Myosotis",2,348871,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Myosotis arvensis",NA
+"832",339,"Nemophila menziesii","","Nemophila",2,"Nemophila menziesii","Hook. &  Arn.","Nemophila",2,349982,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrophyllaceae",NA,"Nemophila menziesii",NA
+"833",340,"Nemophila parviflora","","Nemophila",2,"Nemophila parviflora","Douglas ex Benth.","Nemophila",2,349985,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrophyllaceae",NA,"Nemophila parviflora",NA
+"841",341,"Nonea vesicaria","","Nonea",2,"Nonea vesicaria","(L.) Rchb.","Nonea",2,348215,1,FALSE,0.8,0,NA,NA,NA,NA,"Boraginaceae",NA,"Nonea vesicaria",NA
+"942",342,"Phacelia californica","","Phacelia",2,"Phacelia californica","Cham.","Phacelia",2,349721,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrophyllaceae",NA,"Phacelia californica",NA
+"943",343,"Phacelia campanularia","","Phacelia",2,"Phacelia campanularia","A.Gray","Phacelia",2,349723,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrophyllaceae",NA,"Phacelia campanularia",NA
+"944",344,"Phacelia cicutaria","","Phacelia",2,"Phacelia cicutaria","Greene","Phacelia",2,349729,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrophyllaceae",NA,"Phacelia cicutaria",NA
+"945",345,"Phacelia distans","","Phacelia",2,"Phacelia distans","Benth.","Phacelia",2,349757,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrophyllaceae",NA,"Phacelia distans",NA
+"946",346,"Phacelia insularis","","Phacelia",2,"Phacelia insularis","Munz","Phacelia",2,349817,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrophyllaceae",NA,"Phacelia insularis",NA
+"955",347,"Pholisma arenarium","","Pholisma",2,"Pholisma arenarium","Nutt.","Pholisma",2,350646,1,FALSE,0.8,0,NA,NA,NA,NA,"Ehretiaceae",NA,"Pholisma arenarium",NA
+"956",348,"Pholistoma auritum","","Pholistoma",2,"Pholistoma auritum","(Lindl.) Lilja ex Lindl.","Pholistoma",2,349959,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrophyllaceae",NA,"Pholistoma auritum",NA
+"77",349,"Arabis caucasica","","Arabis",2,"Arabis caucasica","Willd.","Arabis",2,872000,1,FALSE,0.8,0,NA,"Arabis alpina ssp. caucasica","(Willd.) Briq.",241371,"Brassicaceae",NA,"Arabis alpina","Multiple results"
+"78",350,"Arabis verna","","Arabis",2,"Arabis verna","(L.) R.Br.","Arabis",2,241475,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Arabis verna",NA
+"111",351,"Aubrieta deltoidea","","Aubrieta",2,"Aubrieta deltoidea","(L.) DC.","Aubrieta",2,241349,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Aubrieta deltoidea",NA
+"119",352,"Barbarea orthoceras","","Barbarea",2,"Barbarea orthoceras","Ledeb.","Barbarea",2,242128,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Barbarea orthoceras",NA
+"134",353,"Biscutella auriculata","","Biscutella",2,"Biscutella auriculata","L.","Biscutella",2,241979,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Biscutella auriculata",NA
+"137",354,"Biscutella variegata","","Biscutella",2,"Biscutella variegata"," Boiss. &  Reut.","Biscutella",2,242047,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Biscutella variegata",NA
+"148",355,"Brassica nigra","","Brassica",2,"Brassica nigra","(L.) Koch","Brassica",2,244959,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Brassica nigra",NA
+"165",356,"Cakile maritima","","Cakile",2,"Cakile maritima"," Scop.","Cakile",2,244697,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Cakile maritima",NA
+"203",357,"Capsella bursa-pastoris","","Capsella",2,"Capsella bursa-pastoris"," (L.) Medik.","Capsella",2,243613,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Capsella bursa-pastoris",NA
+"204",358,"Cardamine californica","","Cardamine",2,"Cardamine californica","Greene","Cardamine",2,242323,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Cardamine californica",NA
+"206",359,"Cardamine flexuosa","","Cardamine",2,"Cardamine flexuosa","With.","Cardamine",2,242373,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Cardamine flexuosa",NA
+"207",360,"Cardamine pratensis","","Cardamine",2,"Cardamine pratensis"," L.","Cardamine",2,242479,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Cardamine pratensis",NA
+"301",361,"Cochlearia anglica","","Cochlearia",2,"Cochlearia anglica","L.","Cochlearia",2,244183,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Cochlearia anglica",NA
+"325",362,"Crambe filiformis","","Crambe",2,"Crambe filiformis","Jacq.","Crambe",2,244634,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Crambe filiformis",NA
+"376",363,"Descurainia pinnata","","Descurainia",2,"Descurainia pinnata"," (Walter) Britton","Descurainia",2,242951,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Descurainia pinnata",NA
+"390",364,"Diplotaxis erucoides","","Diplotaxis",2,"Diplotaxis erucoides"," (L.) DC.","Diplotaxis",2,244873,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Diplotaxis erucoides",NA
+"391",365,"Diplotaxis virgata","","Diplotaxis",2,"Diplotaxis virgata"," (Cav.) DC.","Diplotaxis",2,244915,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Diplotaxis virgata",NA
+"475",366,"Erophila verna","","Erophila",2,"Erophila verna","(L.) Chevall.","Erophila",2,873364,1,FALSE,0.8,0,NA,"Draba verna","L.",241907,"Brassicaceae",NA,"Draba verna","Multiple results"
+"477",367,"Eruca sativa","","Eruca",2,"Eruca sativa","Mill.","Eruca",2,882524,1,FALSE,0.8,0,NA,"Eruca vesicaria ssp. sativa","(Mill.) Thell.",244925,"Brassicaceae",NA,"Eruca vesicaria",NA
+"479",368,"Erysimum ammophilum","","Erysimum",2,"Erysimum ammophilum","A.Heller","Erysimum",2,243047,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Erysimum ammophilum",NA
+"480",369,"Erysimum capitatum","","Erysimum",2,"Erysimum capitatum","(Douglas) Greene","Erysimum",2,243091,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Erysimum capitatum",NA
+"481",370,"Erysimum franciscanum","","Erysimum",2,"Erysimum franciscanum","Rossbach","Erysimum",2,243148,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Erysimum franciscanum",NA
+"482",371,"Erysimum insulare","","Erysimum",2,"Erysimum insulare","Greene","Erysimum",2,243195,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Erysimum insulare",NA
+"483",372,"Erysimum menziesii","","Erysimum",2,"Erysimum menziesii","(Hook.) Wettst.","Erysimum",2,243241,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Erysimum menziesii",NA
+"484",373,"Erysimum suffrutescens","","Erysimum",2,"Erysimum suffrutescens","(Abrams) Rossbach","Erysimum",2,243329,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Erysimum suffrutescens",NA
+"485",374,"Erysimum teretifolium","","Erysimum",2,"Erysimum teretifolium","Eastw.","Erysimum",2,243337,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Erysimum teretifolium",NA
+"606",375,"Hirschfeldia incana","","Hirschfeldia",2,"Hirschfeldia incana"," (L.) Lagr.-Foss.","Hirschfeldia",2,244785,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Hirschfeldia incana",NA
+"636",376,"Isatis platyloba","","Isatis",2,"Isatis platyloba","Link ex Steud.","Isatis",2,245103,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Isatis platyloba",NA
+"763",377,"Malcolmia littorea","","Malcolmia",2,"Malcolmia littorea","(L.) Aiton","Malcolmia",2,1195859,1,FALSE,0.8,0,NA,"Marcus-kochia littorea","(L.) Al-Shehbaz",410363,"Brassicaceae",NA,"Marcus-kochia littorea",NA
+"786",378,"Matthiola fruticulosa","","Matthiola",2,"Matthiola fruticulosa"," (L.) Maire","Matthiola",2,240893,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Matthiola fruticulosa",NA
+"813",379,"Moricandia arvensis","","Moricandia",2,"Moricandia arvensis","(L.) DC.","Moricandia",2,244849,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Moricandia arvensis",NA
+"814",380,"Moricandia moricandioides","","Moricandia",2,"Moricandia moricandioides"," (Boiss.) Heywood","Moricandia",2,244852,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Moricandia moricandioides",NA
+"1018",381,"Raphanus raphanistrum","","Raphanus",2,"Raphanus raphanistrum"," L.","Raphanus",2,245010,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Raphanus raphanistrum",NA
+"1170",382,"Sinapis alba","","Sinapis",2,"Sinapis alba","L.","Sinapis",2,244734,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Sinapis alba",NA
+"1171",383,"Sinapis arvernensis","","Sinapis",2,"Sinapis arvernensis","Rouy & Foucaud","Sinapis",2,881558,1,FALSE,0.8,0,NA,"Coincya monensis ssp. cheiranthos","(Vill.) Aedo, Leadlay & J.Muñoz Garm.",244715,"Brassicaceae",NA,"Coincya monensis",NA
+"1220",384,"Streptanthus glandulosus","","Streptanthus",2,"Streptanthus glandulosus"," Hook.","Streptanthus",2,245332,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Streptanthus glandulosus",NA
+"1173",385,"Sisymbrium austriacum","","Sisymbrium",2,"Sisymbrium austriacum"," Jacq.","Sisymbrium",2,245442,1,FALSE,0.8,0,NA,NA,NA,NA,"Brassicaceae",NA,"Sisymbrium austriacum",NA
+"297",386,"Cleomella arborea","","Cleomella",2,"Cleomella arborea","(Nutt.) Roalson & J.C.Hall","Cleomella",2,245495,1,FALSE,0.8,0,NA,NA,NA,NA,"Cleomaceae",NA,"Cleomella arborea",NA
+"202",387,"Capparis spinosa","","Capparis",2,"Capparis spinosa"," L.","Capparis",2,246033,1,FALSE,0.8,0,NA,NA,NA,NA,"Capparaceae",NA,"Capparis spinosa",NA
+"688",388,"Limnanthes douglasii","","Limnanthes",2,"Limnanthes douglasii"," R.Br.","Limnanthes",2,240452,1,FALSE,0.8,0,NA,NA,NA,NA,"Limnanthaceae",NA,"Limnanthes douglasii",NA
+"1022",389,"Reseda lutea","","Reseda",2,"Reseda lutea"," L.","Reseda",2,246383,1,FALSE,0.8,0,NA,NA,NA,NA,"Resedaceae",NA,"Reseda lutea",NA
+"1023",390,"Reseda luteola","","Reseda",2,"Reseda luteola","L.","Reseda",2,246388,1,FALSE,0.8,0,NA,NA,NA,NA,"Resedaceae",NA,"Reseda luteola",NA
+"1024",391,"Reseda media","","Reseda",2,"Reseda media","Lag.","Reseda",2,246391,1,FALSE,0.8,0,NA,NA,NA,NA,"Resedaceae",NA,"Reseda media",NA
+"1278",392,"Tropaeolum majus","","Tropaeolum",2,"Tropaeolum majus","L.","Tropaeolum",2,240332,1,FALSE,0.8,0,NA,NA,NA,NA,"Tropaeolaceae",NA,"Tropaeolum majus",NA
+"86",393,"Arenaria hispanica","","Arenaria",2,"Arenaria hispanica","Spreng.","Arenaria",2,256348,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Arenaria hispanica",NA
+"242",394,"Cerastium fontanum","","Cerastium",2,"Cerastium fontanum"," Baumg.","Cerastium",2,256730,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Cerastium fontanum",NA
+"243",395,"Cerastium glomeratum","","Cerastium",2,"Cerastium glomeratum","Thuill.","Cerastium",2,256737,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Cerastium glomeratum",NA
+"611",396,"Honckenya peploides","","Honckenya",2,"Honckenya peploides"," (L.) Ehrh.","Honckenya",2,256914,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Honckenya peploides",NA
+"806",397,"Moehringia trinervia","","Moehringia",2,"Moehringia trinervia","(L.) Clairv.","Moehringia",2,256245,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Moehringia trinervia",NA
+"913",398,"Paronychia argentea","","Paronychia",2,"Paronychia argentea","Lam.","Paronychia",2,253366,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Paronychia argentea",NA
+"1138",399,"Silene colorata","","Silene",2,"Silene colorata"," Poir.","Silene",2,255268,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene colorata",NA
+"1142",400,"Silene dioica","","Silene",2,"Silene dioica"," (L.) Clairv.","Silene",2,255337,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene dioica",NA
+"1143",401,"Silene flos-cuculi","","Silene",2,"Silene flos-cuculi","(L.) Greuter & Burdet","Silene",2,255409,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene flos-cuculi",NA
+"1144",402,"Silene gallica","","Silene",2,"Silene gallica","L.","Silene",2,255426,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene gallica",NA
+"1148",403,"Silene latifolia","","Silene",2,"Silene latifolia"," Poir.","Silene",2,255624,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene latifolia",NA
+"1146",404,"Silene laciniata","","Silene",2,"Silene laciniata"," Cav.","Silene",2,255611,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene laciniata",NA
+"1151",405,"Silene littorea","","Silene",2,"Silene littorea"," Brot.","Silene",2,255649,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene littorea",NA
+"1154",406,"Silene nicaeensis","","Silene",2,"Silene nicaeensis","All.","Silene",2,255768,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene nicaeensis",NA
+"1155",407,"Silene pendula","","Silene",2,"Silene pendula","L.","Silene",2,255868,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene pendula",NA
+"1159",408,"Silene ramosissima","","Silene",2,"Silene ramosissima","Desf.","Silene",2,255931,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene ramosissima",NA
+"1162",409,"Silene scabriflora","","Silene",2,"Silene scabriflora"," Brot.","Silene",2,255992,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene scabriflora",NA
+"1163",410,"Silene secundiflora","","Silene",2,"Silene secundiflora"," Otth","Silene",2,256016,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene secundiflora",NA
+"1168",411,"Silene vulgaris","","Silene",2,"Silene vulgaris"," (Moench) Garcke","Silene",2,256182,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene vulgaris",NA
+"1167",412,"Silene uniflora","","Silene",2,"Silene uniflora"," Roth","Silene",2,256140,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Silene uniflora",NA
+"1197",413,"Spergula arvensis","","Spergula",2,"Spergula arvensis"," L.","Spergula",2,253869,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Spergula arvensis",NA
+"1198",414,"Spergularia media","","Spergularia",2,"Spergularia media"," (L.) J.Presl","Spergularia",2,253837,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Spergularia media",NA
+"1199",415,"Spergularia rubra","","Spergularia",2,"Spergularia rubra","(L.) J.Presl & J.Presl","Spergularia",2,253858,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Spergularia rubra",NA
+"1211",416,"Stellaria graminea","","Stellaria",2,"Stellaria graminea","L.","Stellaria",2,408858,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Stellaria graminea",NA
+"1215",417,"Stellaria holostea","","Stellaria",2,"Stellaria holostea","L.","Stellaria",2,906175,1,FALSE,0.8,0,NA,"Rabelera holostea","(L.) M.T.Sharples & E.A.Tripp",256609,"Caryophyllaceae",NA,"Rabelera holostea",NA
+"1216",418,"Stellaria media","","Stellaria",2,"Stellaria media","(L.) Vill.","Stellaria",2,408901,1,FALSE,0.8,0,NA,NA,NA,NA,"Caryophyllaceae",NA,"Stellaria media",NA
+"396",419,"Drosophyllum lusitanicum","","Drosophyllum",2,"Drosophyllum lusitanicum","(L.) Link","Drosophyllum",2,253149,1,FALSE,0.8,0,NA,NA,NA,NA,"Drosophyllaceae",NA,"Drosophyllum lusitanicum",NA
+"520",420,"Frankenia laevis","","Frankenia",2,"Frankenia laevis"," L.","Frankenia",2,249252,1,FALSE,0.8,0,NA,NA,NA,NA,"Frankeniaceae",NA,"Frankenia laevis",NA
+"523",421,"Frankenia salina","","Frankenia",2,"Frankenia salina","I.M.Johnst.","Frankenia",2,249283,1,FALSE,0.8,0,NA,NA,NA,NA,"Frankeniaceae",NA,"Frankenia salina",NA
+"292",422,"Claytonia exigua","","Claytonia",2,"Claytonia exigua"," Douglas ex Torr. &  A.Gray","Claytonia",2,266184,1,FALSE,0.8,0,NA,NA,NA,NA,"Montiaceae",NA,"Claytonia exigua",NA
+"294",423,"Claytonia perfoliata","","Claytonia",2,"Claytonia perfoliata"," Donn.","Claytonia",2,266216,1,FALSE,0.8,0,NA,NA,NA,NA,"Montiaceae",NA,"Claytonia perfoliata",NA
+"261",424,"Chorizanthe cuspidata","","Chorizanthe",2,"Chorizanthe cuspidata","S.Watson","Chorizanthe",2,251428,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Chorizanthe cuspidata",NA
+"262",425,"Chorizanthe robusta","","Chorizanthe",2,"Chorizanthe robusta","Parry","Chorizanthe",2,251468,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Chorizanthe robusta",NA
+"459",426,"Eriogonum fasciculatum","","Eriogonum",2,"Eriogonum fasciculatum","Benth.","Eriogonum",2,251077,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Eriogonum fasciculatum",NA
+"460",427,"Eriogonum giganteum","","Eriogonum",2,"Eriogonum giganteum","S.Watson","Eriogonum",2,251090,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Eriogonum giganteum",NA
+"461",428,"Eriogonum grande","","Eriogonum",2,"Eriogonum grande","Greene","Eriogonum",2,251101,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Eriogonum grande",NA
+"462",429,"Eriogonum latifolium","","Eriogonum",2,"Eriogonum latifolium","Sm.","Eriogonum",2,251154,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Eriogonum latifolium",NA
+"463",430,"Eriogonum nudum","","Eriogonum",2,"Eriogonum nudum","Douglas ex Benth.","Eriogonum",2,251206,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Eriogonum nudum",NA
+"464",431,"Eriogonum parvifolium","","Eriogonum",2,"Eriogonum parvifolium","Sm.","Eriogonum",2,251245,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Eriogonum parvifolium",NA
+"465",432,"Eriogonum saxatile","","Eriogonum",2,"Eriogonum saxatile","S.Watson","Eriogonum",2,251278,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Eriogonum saxatile",NA
+"466",433,"Eriogonum umbellatum","","Eriogonum",2,"Eriogonum umbellatum","Torr.","Eriogonum",2,251322,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Eriogonum umbellatum",NA
+"935",434,"Persicaria amphibia","","Persicaria",2,"Persicaria amphibia","(L.) Gray","Persicaria",2,251547,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Persicaria amphibia",NA
+"936",435,"Persicaria punctata","","Persicaria",2,"Persicaria punctata","(Elliott) Small","Persicaria",2,251683,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Persicaria punctata",NA
+"972",436,"Polygonum paronychia","","Polygonum",2,"Polygonum paronychia","Cham. &  Schltdl.","Polygonum",2,252593,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygonaceae",NA,"Polygonum paronychia",NA
+"90",437,"Armeria pungens","","Armeria",2,"Armeria pungens","(Link) Hoffmanns. &  Link","Armeria",2,250652,1,FALSE,0.8,0,NA,NA,NA,NA,"Plumbaginaceae",NA,"Armeria pungens",NA
+"1359",438,"Armeria maritima californica","","Armeria",2,"Armeria maritima ssp. californica","(Boiss.) A.E.Porsild","Armeria",3,250630,1,FALSE,0.55,5,NA,NA,NA,NA,"Plumbaginaceae",NA,"Armeria maritima","Multiple results"
+"689",439,"Limoniastrum monopetalum","","Limoniastrum",2,"Limoniastrum monopetalum","(L.) Boiss.","Limoniastrum",2,249458,1,FALSE,0.8,0,NA,NA,NA,NA,"Plumbaginaceae",NA,"Limoniastrum monopetalum",NA
+"690",440,"Limonium algarvense","","Limonium",2,"Limonium algarvense","Erben","Limonium",2,249874,1,FALSE,0.8,0,NA,NA,NA,NA,"Plumbaginaceae",NA,"Limonium algarvense",NA
+"691",441,"Limonium bonduellei","","Limonium",2,"Limonium bonduellei","(F. Lestib.) Kuntze","Limonium",2,893435,1,FALSE,0.8,0,NA,"Limonium sinense ssp. bonduellei","(F.Lestib.) Sauvage & Vindt",250417,"Plumbaginaceae",NA,"Limonium sinense",NA
+"692",442,"Limonium minutum","","Limonium",2,"Limonium minutum"," (L.) Chaz.","Limonium",2,250249,1,FALSE,0.8,0,NA,NA,NA,NA,"Plumbaginaceae",NA,"Limonium minutum",NA
+"494",443,"Euonymus occidentalis","","Euonymus",2,"Euonymus occidentalis"," Nutt. ex Torr.","Euonymus",2,136977,1,FALSE,0.8,0,NA,NA,NA,NA,"Celastraceae",NA,"Euonymus occidentalis",NA
+"319",444,"Cornus sanguinea","","Cornus",2,"Cornus sanguinea"," L.","Cornus",2,266507,1,FALSE,0.8,0,NA,NA,NA,NA,"Cornaceae",NA,"Cornus sanguinea",NA
+"320",445,"Cornus sericea","","Cornus",2,"Cornus sericea"," L.","Cornus",2,266516,1,FALSE,0.8,0,NA,NA,NA,NA,"Cornaceae",NA,"Cornus sericea",NA
+"211",446,"Carpenteria californica","","Carpenteria",2,"Carpenteria californica","Torr.","Carpenteria",2,266729,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrangeaceae",NA,"Carpenteria californica",NA
+"950",447,"Philadelphus lewisii","","Philadelphus",2,"Philadelphus lewisii","Pursh","Philadelphus",2,266685,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrangeaceae",NA,"Philadelphus lewisii",NA
+"949",448,"Philadelphus coronarius","","Philadelphus",2,"Philadelphus coronarius","L.","Philadelphus",2,266664,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrangeaceae",NA,"Philadelphus coronarius",NA
+"792",449,"Mentzelia lindleyi","","Mentzelia",2,"Mentzelia lindleyi","Torr. &  A.Gray","Mentzelia",2,267185,1,FALSE,0.8,0,NA,NA,NA,NA,"Loasaceae",NA,"Mentzelia lindleyi",NA
+"937",450,"Petalonyx thurberi","","Petalonyx",2,"Petalonyx thurberi"," A.Gray","Petalonyx",2,267256,1,FALSE,0.8,0,NA,NA,NA,NA,"Loasaceae",NA,"Petalonyx thurberi",NA
+"1209",451,"Staphylea bolanderi","","Staphylea",2,"Staphylea bolanderi","A.Gray","Staphylea",2,224078,1,FALSE,0.8,0,NA,NA,NA,NA,"Staphyleaceae",NA,"Staphylea bolanderi",NA
+"407",452,"Ecballium elaterium","","Ecballium",2,"Ecballium elaterium"," (L.) A.Rich.","Ecballium",2,204056,1,FALSE,0.8,0,NA,NA,NA,NA,"Cucurbitaceae",NA,"Ecballium elaterium",NA
+"155",453,"Bryonia dioica","","Bryonia",2,"Bryonia dioica","Jacq.","Bryonia",2,204065,1,FALSE,0.8,0,NA,NA,NA,NA,"Cucurbitaceae",NA,"Bryonia dioica",NA
+"780",454,"Marah fabacea","","Marah",2,"Marah fabacea","(Naudin) Greene","Marah",2,204405,1,FALSE,0.8,0,NA,NA,NA,NA,"Cucurbitaceae",NA,"Marah fabacea",NA
+"239",455,"Centranthus calcitrapae","","Centranthus",2,"Centranthus calcitrapae","(L.) Dufr. (Sm.) Meikle","Centranthus",2,406800,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Centranthus calcitrapae",NA
+"240",456,"Centranthus ruber","","Centranthus",2,"Centranthus ruber"," (L.) DC.","Centranthus",2,406811,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Centranthus ruber",NA
+"510",457,"Fedia cornucopiae","","Fedia",2,"Fedia cornucopiae","(L.) Gaertn.","Fedia",2,406786,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Fedia cornucopiae",NA
+"711",458,"Lonicera hispidula","","Lonicera",2,"Lonicera hispidula","(Lindl.) Douglas ex Lindl.","Lonicera",2,406011,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Lonicera hispidula",NA
+"712",459,"Lonicera interrupta","","Lonicera",2,"Lonicera interrupta","Benth.","Lonicera",2,406024,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Lonicera interrupta",NA
+"713",460,"Lonicera involucrata","","Lonicera",2,"Lonicera involucrata","(Richards.) Banks ex Spreng.","Lonicera",2,406025,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Lonicera involucrata",NA
+"715",461,"Lonicera japonica","","Lonicera",2,"Lonicera japonica","Thunb.","Lonicera",2,406027,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Lonicera japonica",NA
+"717",462,"Lonicera periclymenum","","Lonicera",2,"Lonicera periclymenum"," L.","Lonicera",2,406086,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Lonicera periclymenum",NA
+"719",463,"Lonicera subspicata","","Lonicera",2,"Lonicera subspicata","Hook. &  Arn.","Lonicera",2,406132,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Lonicera subspicata",NA
+"1102",464,"Scabiosa atropurpurea","","Scabiosa",2,"Scabiosa atropurpurea","L.","Scabiosa",2,1188549,1,FALSE,0.8,0,NA,"Sixalix atropurpurea ssp. atropurpurea",NA,406603,"Caprifoliaceae",NA,"Sixalix atropurpurea",NA
+"1104",465,"Scabiosa columbaria","","Scabiosa",2,"Scabiosa columbaria"," L.","Scabiosa",2,406629,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Scabiosa columbaria",NA
+"1087",466,"Sambucus nigra","","Sambucus",2,"Sambucus nigra","L.","Sambucus",2,405847,1,FALSE,0.8,0,NA,NA,NA,NA,"Adoxaceae",NA,"Sambucus nigra",NA
+"1223",467,"Succisa pratensis","","Succisa",2,"Succisa pratensis","Moench","Succisa",2,406246,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Succisa pratensis",NA
+"1224",468,"Symphoricarpos mollis","","Symphoricarpos",2,"Symphoricarpos mollis","Nutt. ex Torr. &  Gray","Symphoricarpos",2,406182,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Symphoricarpos mollis",NA
+"1296",469,"Valeriana officinalis","","Valeriana",2,"Valeriana officinalis","L.","Valeriana",2,407063,1,FALSE,0.8,0,NA,NA,NA,NA,"Caprifoliaceae",NA,"Valeriana officinalis",NA
+"1310",470,"Viburnum tinus","","Viburnum",2,"Viburnum tinus","L.","Viburnum",2,405809,1,FALSE,0.8,0,NA,NA,NA,NA,"Adoxaceae",NA,"Viburnum tinus",NA
+"1309",471,"Viburnum opulus","","Viburnum",2,"Viburnum opulus","L.","Viburnum",2,405743,1,FALSE,0.8,0,NA,NA,NA,NA,"Adoxaceae",NA,"Viburnum opulus",NA
+"1086",472,"Sambucus caerulea","","Sambucus",2,"Sambucus caerulea","Raf.","Sambucus",2,405837,1,FALSE,0.8,0,NA,NA,NA,NA,"Adoxaceae",NA,"Sambucus caerulea",NA
+"1088",473,"Sambucus racemosa","","Sambucus",2,"Sambucus racemosa"," L.","Sambucus",2,405850,1,FALSE,0.8,0,NA,NA,NA,NA,"Adoxaceae",NA,"Sambucus racemosa",NA
+"82",474,"Arbutus unedo","","Arbutus",2,"Arbutus unedo","L.","Arbutus",2,278231,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Arbutus unedo",NA
+"81",475,"Arbutus menziesii","","Arbutus",2,"Arbutus menziesii","Pursh","Arbutus",2,278227,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Arbutus menziesii",NA
+"83",476,"Arctostaphylos imbricata","","Arctostaphylos",2,"Arctostaphylos imbricata","Eastw.","Arctostaphylos",2,278284,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Arctostaphylos imbricata",NA
+"84",477,"Arctostaphylos nummularia","","Arctostaphylos",2,"Arctostaphylos nummularia"," A.Gray","Arctostaphylos",2,278310,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Arctostaphylos nummularia",NA
+"85",478,"Arctostaphylos pajaroensis","","Arctostaphylos",2,"Arctostaphylos pajaroensis","(J.E.Adams ex McMinn) J.E.Adams","Arctostaphylos",2,278318,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Arctostaphylos pajaroensis",NA
+"1357",479,"Arctostaphylos tomentosa crustacea","","Arctostaphylos",2,"Arctostaphylos tomentosa ssp. crustacea","(Eastw.) P. V. Wells","Arctostaphylos",3,956609,1,FALSE,0.55,5,NA,"Arctostaphylos crustacea ssp. crustacea",NA,278253,"Ericaceae",NA,"Arctostaphylos crustacea",NA
+"1368",480,"Comarostaphylis diversifolia planifolia","","Comarostaphylis",2,"Comarostaphylis diversifolia ssp. planifolia","(Jeps.) A. E. Murray","Comarostaphylis",3,956838,1,FALSE,0.55,5,NA,"Comarostaphylis diversifolia ssp. planifolia","(Jeps.) G.D.Wallace",278387,"Ericaceae",NA,"Comarostaphylis diversifolia","Multiple results"
+"436",481,"Erica andevalensis","","Erica",2,"Erica andevalensis","Cabezudo & J. Rivera","Erica",2,958236,1,FALSE,0.8,0,NA,"Erica mackaiana ssp. andevalensis","(Cabezudo & Rivera) D.C.McClint. &  E.C.Nelson",279109,"Ericaceae",NA,"Erica mackaiana",NA
+"439",482,"Erica arborea","","Erica",2,"Erica arborea","L.","Erica",2,278545,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Erica arborea",NA
+"440",483,"Erica australis","","Erica",2,"Erica australis","L.","Erica",2,278575,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Erica australis",NA
+"441",484,"Erica scoparia","","Erica",2,"Erica scoparia","L.","Erica",2,279400,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Erica scoparia",NA
+"444",485,"Erica umbellata","","Erica",2,"Erica umbellata","L.","Erica",2,279526,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Erica umbellata",NA
+"540",486,"Gaylussacia montana","","Gaylussacia",2,"Gaylussacia montana","(Pohl) Sleumer","Gaylussacia",2,282505,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Gaylussacia montana",NA
+"1032",487,"Rhododendron columbianum","","Rhododendron",2,"Rhododendron columbianum","(Piper) Harmaja","Rhododendron",2,279894,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Rhododendron columbianum",NA
+"1033",488,"Rhododendron ferrugineum","","Rhododendron",2,"Rhododendron ferrugineum","L.","Rhododendron",2,280053,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Rhododendron ferrugineum",NA
+"1034",489,"Rhododendron japonicum","","Rhododendron",2,"Rhododendron japonicum","(A.Gray) Suringar","Rhododendron",2,280196,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Rhododendron japonicum",NA
+"1036",490,"Rhododendron luteum","","Rhododendron",2,"Rhododendron luteum","Sweet","Rhododendron",2,280354,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Rhododendron luteum",NA
+"1037",491,"Rhododendron macrophyllum","","Rhododendron",2,"Rhododendron macrophyllum","D.Don ex G.Don","Rhododendron",2,280360,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Rhododendron macrophyllum",NA
+"1038",492,"Rhododendron occidentale","","Rhododendron",2,"Rhododendron occidentale","(Torr. &  A.Gray) A.Gray","Rhododendron",2,280509,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Rhododendron occidentale",NA
+"1093",493,"Sarcodes sanguinea","","Sarcodes",2,"Sarcodes sanguinea","Torr.","Sarcodes",2,278221,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Sarcodes sanguinea",NA
+"1295",494,"Vaccinium ovatum","","Vaccinium",2,"Vaccinium ovatum","Pursh","Vaccinium",2,282223,1,FALSE,0.8,0,NA,NA,NA,NA,"Ericaceae",NA,"Vaccinium ovatum",NA
+"435",495,"Eriastrum densifolium","","Eriastrum",2,"Eriastrum densifolium"," (Benth.) Mason","Eriastrum",2,269276,1,FALSE,0.8,0,NA,NA,NA,NA,"Polemoniaceae",NA,"Eriastrum densifolium",NA
+"562",496,"Gilia achilleifolia","","Gilia",2,"Gilia achilleifolia"," Benth.","Gilia",2,268983,1,FALSE,0.8,0,NA,NA,NA,NA,"Polemoniaceae",NA,"Gilia achilleifolia",NA
+"681",497,"Leptosiphon ambiguus","","Leptosiphon",2,"Leptosiphon ambiguus","(Rattan) J.M.Porter & L.A.Johnson","Leptosiphon",2,268768,1,FALSE,0.8,0,NA,NA,NA,NA,"Polemoniaceae",NA,"Leptosiphon ambiguus",NA
+"682",498,"Leptosiphon androsaceus","","Leptosiphon",2,"Leptosiphon androsaceus","Benth.","Leptosiphon",2,268769,1,FALSE,0.8,0,NA,NA,NA,NA,"Polemoniaceae",NA,"Leptosiphon androsaceus",NA
+"693",499,"Linanthus californicus","","Linanthus",2,"Linanthus californicus"," (Hook. &  Arn.) J.M.Porter & L.A.Johnson","Linanthus",2,268732,1,FALSE,0.8,0,NA,NA,NA,NA,"Polemoniaceae",NA,"Linanthus californicus",NA
+"831",500,"Navarretia leptalea","","Navarretia",2,"Navarretia leptalea"," (A.Gray) L.A.Johnson","Navarretia",2,269106,1,FALSE,0.8,0,NA,NA,NA,NA,"Polemoniaceae",NA,"Navarretia leptalea",NA
+"954",501,"Phlox pilosa","","Phlox",2,"Phlox pilosa"," L.","Phlox",2,268923,1,FALSE,0.8,0,NA,NA,NA,NA,"Polemoniaceae",NA,"Phlox pilosa",NA
+"953",502,"Phlox drummondii","","Phlox",2,"Phlox drummondii"," Hook.","Phlox",2,268864,1,FALSE,0.8,0,NA,NA,NA,NA,"Polemoniaceae",NA,"Phlox drummondii",NA
+"57",503,"Androsace obtusifolia","","Androsace",2,"Androsace obtusifolia","All.","Androsace",2,273047,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Androsace obtusifolia",NA
+"55",504,"Androsace lanuginosa","","Androsace",2,"Androsace lanuginosa","Wall.","Androsace",2,273021,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Androsace lanuginosa",NA
+"318",505,"Coris monspeliensis","","Coris",2,"Coris monspeliensis"," L.","Coris",2,273993,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Coris monspeliensis",NA
+"340",506,"Cyclamen persicum","","Cyclamen",2,"Cyclamen persicum","Mill.","Cyclamen",2,274349,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Cyclamen persicum",NA
+"381",507,"Dionysia aretioides","","Dionysia",2,"Dionysia aretioides","(Lehm.) Boiss.","Dionysia",2,273842,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Dionysia aretioides",NA
+"382",508,"Dionysia revoluta","","Dionysia",2,"Dionysia revoluta"," Boiss.","Dionysia",2,273884,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Dionysia revoluta",NA
+"394",509,"Dodecatheon meadia","","Dodecatheon",2,"Dodecatheon meadia"," L.","Dodecatheon",2,273960,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Dodecatheon meadia",NA
+"739",510,"Lysimachia arvensis","","Lysimachia",2,"Lysimachia arvensis"," (L.) U.Manns & Anderb.","Lysimachia",2,274020,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Lysimachia arvensis",NA
+"740",511,"Lysimachia ciliata","","Lysimachia",2,"Lysimachia ciliata","L.","Lysimachia",2,274058,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Lysimachia ciliata",NA
+"742",512,"Lysimachia clethroides","","Lysimachia",2,"Lysimachia clethroides","Duby","Lysimachia",2,274060,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Lysimachia clethroides",NA
+"743",513,"Lysimachia europaea","","Lysimachia",2,"Lysimachia europaea","(L.) U.Manns & Anderb.","Lysimachia",2,274088,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Lysimachia europaea",NA
+"744",514,"Lysimachia latifolia","","Lysimachia",2,"Lysimachia latifolia","(Hook.) Cholewa","Lysimachia",2,274148,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Lysimachia latifolia",NA
+"745",515,"Lysimachia maritima","","Lysimachia",2,"Lysimachia maritima","(L.) Galasso, Banfi & Soldano","Lysimachia",2,274165,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Lysimachia maritima",NA
+"746",516,"Lysimachia monellii","","Lysimachia",2,"Lysimachia monellii"," (L.) U.Manns & Anderb.","Lysimachia",2,274179,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Lysimachia monellii",NA
+"747",517,"Lysimachia nemorum","","Lysimachia",2,"Lysimachia nemorum","L.","Lysimachia",2,274189,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Lysimachia nemorum",NA
+"748",518,"Lysimachia nummularia","","Lysimachia",2,"Lysimachia nummularia","L.","Lysimachia",2,274190,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Lysimachia nummularia",NA
+"749",519,"Lysimachia tenella","","Lysimachia",2,"Lysimachia tenella","L.","Lysimachia",2,274283,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Lysimachia tenella",NA
+"980",520,"Primula baileyana","","Primula",2,"Primula baileyana","Kingdon-Ward","Primula",2,273180,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Primula baileyana",NA
+"981",521,"Primula clevelandii","","Primula",2,"Primula clevelandii","(Greene) A. R. Mast & Reveal","Primula",2,949395,1,FALSE,0.8,0,NA,"Dodecatheon clevelandii ssp. clevelandii",NA,273941,"Primulaceae",NA,"Dodecatheon clevelandii",NA
+"982",522,"Primula helodoxa","","Primula",2,"Primula helodoxa","Balf.fil.","Primula",2,273425,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Primula helodoxa",NA
+"983",523,"Primula hendersonii","","Primula",2,"Primula hendersonii","(A. Gray) A. R. Mast & Reveal","Primula",2,949423,1,FALSE,0.8,0,NA,"Dodecatheon hendersonii ssp. hendersonii",NA,273953,"Primulaceae",NA,"Dodecatheon hendersonii",NA
+"984",524,"Primula matthioli","","Primula",2,"Primula matthioli"," K.Richt.","Primula",2,273530,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Primula matthioli",NA
+"986",525,"Primula veris","","Primula",2,"Primula veris"," L.","Primula",2,273782,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Primula veris",NA
+"988",526,"Primula vulgaris","","Primula",2,"Primula vulgaris","Huds.","Primula",2,948129,1,FALSE,0.8,0,NA,"Primula acaulis ssp. acaulis",NA,273131,"Primulaceae",NA,"Primula acaulis",NA
+"1089",527,"Samolus valerandi","","Samolus",2,"Samolus valerandi"," L.","Samolus",2,272794,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Samolus valerandi",NA
+"1190",528,"Soldanella alpina","","Soldanella",2,"Soldanella alpina"," L.","Soldanella",2,273906,1,FALSE,0.8,0,NA,NA,NA,NA,"Primulaceae",NA,"Soldanella alpina",NA
+"1210",529,"Steironema heterophyllum","","Steironema",2,"Steironema heterophyllum","(Michx.) Raf.","Steironema",2,949847,1,FALSE,0.8,0,NA,"Lysimachia lanceolata","Walter",274146,"Primulaceae",NA,"Lysimachia lanceolata",NA
+"1337",530,"Vitaliana primuliflora","","Vitaliana",2,"Vitaliana primuliflora","Bertol.","Vitaliana",2,948040,1,FALSE,0.8,0,NA,"Androsace vitaliana ssp. vitaliana",NA,273102,"Primulaceae",NA,"Androsace vitaliana",NA
+"1222",531,"Styrax redivivus","","Styrax",2,"Styrax redivivus","(Torr.) Wheeler","Styrax",2,277336,1,FALSE,0.8,0,NA,NA,NA,NA,"Styracaceae",NA,"Styrax redivivus",NA
+"188",532,"Camellia petelotii","","Camellia",2,"Camellia petelotii","(Merr.) Sealy","Camellia",2,276553,1,FALSE,0.8,0,NA,NA,NA,NA,"Theaceae",NA,"Camellia petelotii",NA
+"186",533,"Camellia japonica","","Camellia",2,"Camellia japonica","L.","Camellia",2,276496,1,FALSE,0.8,0,NA,NA,NA,NA,"Theaceae",NA,"Camellia japonica",NA
+"8",534,"Acacia dealbata","","Acacia",2,"Acacia dealbata"," Link","Acacia",2,409372,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Acacia dealbata",NA
+"1221",535,"Stylosanthes guianensis","","Stylosanthes",2,"Stylosanthes guianensis","(Aubl.) Sw.","Stylosanthes",2,173707,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Stylosanthes guianensis",NA
+"910",536,"Parkinsonia florida","","Parkinsonia",2,"Parkinsonia florida"," (Benth. ex Gray) S.Watson","Parkinsonia",2,163578,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Parkinsonia florida",NA
+"254",537,"Chamaecrista ramosa","","Chamaecrista",2,"Chamaecrista ramosa","(Vogel) Irwin & Barneby","Chamaecrista",2,164849,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Chamaecrista ramosa",NA
+"249",538,"Chamaecrista cathartica","","Chamaecrista",2,"Chamaecrista cathartica","(Mart.) Irwin & Barneby","Chamaecrista",2,164518,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Chamaecrista cathartica",NA
+"252",539,"Chamaecrista flexuosa","","Chamaecrista",2,"Chamaecrista flexuosa","(L.) Greene","Chamaecrista",2,164632,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Chamaecrista flexuosa",NA
+"250",540,"Chamaecrista conferta","","Chamaecrista",2,"Chamaecrista conferta","(Benth.) Irwin & Barneby","Chamaecrista",2,164545,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Chamaecrista conferta",NA
+"251",541,"Chamaecrista desvauxii","","Chamaecrista",2,"Chamaecrista desvauxii","(Collad.) Killip","Chamaecrista",2,164580,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Chamaecrista desvauxii",NA
+"253",542,"Chamaecrista ochnacea","","Chamaecrista",2,"Chamaecrista ochnacea","(Vogel) Irwin & Barneby","Chamaecrista",2,164789,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Chamaecrista ochnacea",NA
+"1366",543,"Cercis canadensis texensis","","Cercis",2,"Cercis canadensis var. texensis","(S. Watson) M. Hopkins","Cercis",3,726455,1,FALSE,0.55,5,NA,"Cercis canadensis ssp. texensis","(S.Watson) A.E.Murray",161931,"Fabaceae",NA,"Cercis canadensis","Multiple results"
+"998",544,"Pterocarpus marsupium","","Pterocarpus",2,"Pterocarpus marsupium"," Roxb.","Pterocarpus",2,173923,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Pterocarpus marsupium",NA
+"4",545,"Hymenaea","","Hymenaea",1,"Hymenaea",NA,"Hymenaea",1,NA,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Hymenaea","Matching only genus level"
+"201",546,"Camptosema isopetalum","","Camptosema",2,"Camptosema isopetalum","(Lam.) Taub.","Camptosema",2,175991,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Camptosema isopetalum",NA
+"108",547,"Astragalus nuttallii","","Astragalus",2,"Astragalus nuttallii","(Torr. &  A.Gray) Howell","Astragalus",2,183281,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Astragalus nuttallii",NA
+"1360",548,"Astragalus pulsiferae suksdorfii","","Astragalus",2,"Astragalus pulsiferae var. suksdorfii","(Howell) Barneby","Astragalus",3,183650,1,FALSE,0.55,5,NA,NA,NA,NA,"Fabaceae",NA,"Astragalus pulsiferae",NA
+"110",549,"Astragalus pelecinus","","Astragalus",2,"Astragalus pelecinus"," (L.) Barneby","Astragalus",2,183427,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Astragalus pelecinus",NA
+"307",550,"Colutea atlantica","","Colutea",2,"Colutea atlantica","Browicz","Colutea",2,186012,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Colutea atlantica",NA
+"354",551,"Cytisus balansae","","Cytisus",2,"Cytisus balansae"," (Boiss.) Ball","Cytisus",2,171630,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Cytisus balansae",NA
+"355",552,"Cytisus grandiflorus","","Cytisus",2,"Cytisus grandiflorus"," (Brot.) DC.","Cytisus",2,171644,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Cytisus grandiflorus",NA
+"356",553,"Cytisus multiflorus","","Cytisus",2,"Cytisus multiflorus","(L?Hér.) Sweet","Cytisus",2,171649,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Cytisus multiflorus",NA
+"542",554,"Genista canariensis","","Genista",2,"Genista canariensis","L.","Genista",2,171779,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Genista canariensis",NA
+"544",555,"Genista cinerea","","Genista",2,"Genista cinerea"," (Vill.) DC.","Genista",2,171790,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Genista cinerea",NA
+"546",556,"Genista hirsuta","","Genista",2,"Genista hirsuta"," Vahl","Genista",2,171825,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Genista hirsuta",NA
+"550",557,"Genista linifolia","","Genista",2,"Genista linifolia","L.","Genista",2,171847,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Genista linifolia",NA
+"552",558,"Genista triacanthos","","Genista",2,"Genista triacanthos"," Brot.","Genista",2,171955,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Genista triacanthos",NA
+"553",559,"Genista tridentata","","Genista",2,"Genista tridentata"," L.","Genista",2,171962,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Genista tridentata",NA
+"1026",560,"Retama sphaerocarpa","","Retama",2,"Retama sphaerocarpa","(L.) Boiss.","Retama",2,743520,1,FALSE,0.8,0,NA,"Genista sphaerocarpa","(L.) Lam.",171926,"Fabaceae",NA,"Genista sphaerocarpa",NA
+"1025",561,"Retama monosperma","","Retama",2,"Retama monosperma","(L.) Boiss.","Retama",2,743276,1,FALSE,0.8,0,NA,"Genista monosperma","(L.) Lam.",171863,"Fabaceae",NA,"Genista monosperma",NA
+"1196",562,"Spartium junceum","","Spartium",2,"Spartium junceum","L.","Spartium",2,171990,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Spartium junceum",NA
+"1285",563,"Ulex borgiae","","Ulex",2,"Ulex borgiae","Rivas Mart.","Ulex",2,172003,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Ulex borgiae",NA
+"1286",564,"Ulex europaeus","","Ulex",2,"Ulex europaeus"," L.","Ulex",2,172009,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Ulex europaeus",NA
+"1288",565,"Ulex genistoides","","Ulex",2,"Ulex genistoides","Brot.","Ulex",2,743836,1,FALSE,0.8,0,NA,"Stauracanthus genistoides","(Brot.) Samp.",171992,"Fabaceae",NA,"Stauracanthus genistoides","Multiple results"
+"1289",566,"Ulex parviflorus","","Ulex",2,"Ulex parviflorus"," Pourr.","Ulex",2,172016,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Ulex parviflorus",NA
+"581",567,"Hedysarum coronarium","","Hedysarum",2,"Hedysarum coronarium","L.","Hedysarum",2,766690,1,FALSE,0.8,0,NA,"Sulla coronaria","(L.) Medik.",185505,"Fabaceae",NA,"Sulla coronaria",NA
+"859",568,"Onobrychis humilis","","Onobrychis",2,"Onobrychis humilis"," (Loefl.) G.López","Onobrychis",2,185637,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Onobrychis humilis",NA
+"16",569,"Acmispon americanum","","Acmispon",2,"Acmispon americanum","(Nutt.) Rydb.","Acmispon",2,180602,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Acmispon americanum",NA
+"17",570,"Acmispon brachycarpus","","Acmispon",2,"Acmispon brachycarpus","(Benth.) D.D.Sokoloff","Acmispon",2,180613,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Acmispon brachycarpus",NA
+"18",571,"Acmispon glaber","","Acmispon",2,"Acmispon glaber","(Vogel) Brouillet","Acmispon",2,180621,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Acmispon glaber",NA
+"1356",572,"Acmispon junceus biolettii","","Acmispon",2,"Acmispon junceus var. biolettii","(Greene) Brouillet","Acmispon",3,180631,1,FALSE,0.55,5,NA,NA,NA,NA,"Fabaceae",NA,"Acmispon junceus",NA
+"68",573,"Anthyllis hamosa","","Anthyllis",2,"Anthyllis hamosa","Desf.","Anthyllis",2,756962,1,FALSE,0.8,0,NA,"Hymenocarpos hamosus","(Desf.) Lassen",180380,"Fabaceae",NA,"Hymenocarpos hamosus",NA
+"69",574,"Anthyllis vulneraria","","Anthyllis",2,"Anthyllis vulneraria"," L.","Anthyllis",2,180323,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Anthyllis vulneraria",NA
+"321",575,"Coronilla valentina","","Coronilla",2,"Coronilla valentina"," L.","Coronilla",2,180219,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Coronilla valentina",NA
+"395",576,"Dorycnium hirsutum","","Dorycnium",2,"Dorycnium hirsutum","(L.) Ser.","Dorycnium",2,757294,1,FALSE,0.8,0,NA,"Lotus hirsutus","L.",180484,"Fabaceae",NA,"Lotus hirsutus",NA
+"720",577,"Lotus corniculatus","","Lotus",2,"Lotus corniculatus"," L.","Lotus",2,180420,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lotus corniculatus",NA
+"721",578,"Lotus creticus","","Lotus",2,"Lotus creticus","L.","Lotus",2,180442,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lotus creticus",NA
+"722",579,"Lotus pedunculatus","","Lotus",2,"Lotus pedunculatus","Cav.","Lotus",2,180526,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lotus pedunculatus",NA
+"723",580,"Lotus tetragonolobus","","Lotus",2,"Lotus tetragonolobus"," L.","Lotus",2,180558,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lotus tetragonolobus",NA
+"1110",581,"Scorpiurus muricatus","","Scorpiurus",2,"Scorpiurus muricatus","L.","Scorpiurus",2,180242,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Scorpiurus muricatus",NA
+"1111",582,"Scorpiurus vermiculatus","","Scorpiurus",2,"Scorpiurus vermiculatus","L.","Scorpiurus",2,180243,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Scorpiurus vermiculatus",NA
+"803",583,"Mimosa alleniana","","Mimosa",2,"Mimosa alleniana","Morong","Mimosa",2,165182,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Mimosa alleniana",NA
+"804",584,"Mimosa debilis","","Mimosa",2,"Mimosa debilis","Humb. &  Bonpl. ex Willd.","Mimosa",2,165343,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Mimosa debilis",NA
+"160",585,"Butea monosperma","","Butea",2,"Butea monosperma","(Lam.) Kuntze","Butea",2,178300,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Butea monosperma",NA
+"490",586,"Erythrina crista-galli","","Erythrina",2,"Erythrina crista-galli","L.","Erythrina",2,179026,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Erythrina crista-galli",NA
+"138",587,"Bituminaria bituminosa","","Bituminaria",2,"Bituminaria bituminosa"," (L.) Stirt.","Bituminaria",2,179988,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Bituminaria bituminosa",NA
+"607",588,"Hoita macrostachya","","Hoita",2,"Hoita macrostachya","(DC.) Rydb.","Hoita",2,179998,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Hoita macrostachya",NA
+"608",589,"Hoita strobilina","","Hoita",2,"Hoita strobilina","(Hook. &  Arn.) Rydb.","Hoita",2,180000,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Hoita strobilina",NA
+"1069",590,"Rupertia physodes","","Rupertia",2,"Rupertia physodes","(Douglas ex Hook.) J.W.Grimes","Rupertia",2,179904,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Rupertia physodes",NA
+"474",591,"Erophaca baetica","","Erophaca",2,"Erophaca baetica","(L.) Boiss. (L.) Boiss.","Erophaca",2,184515,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Erophaca baetica",NA
+"791",592,"Melilotus indicus","","Melilotus",2,"Melilotus indicus","(L.) All.","Melilotus",2,187352,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Melilotus indicus",NA
+"788",593,"Medicago marina","","Medicago",2,"Medicago marina","L.","Medicago",2,187410,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Medicago marina",NA
+"789",594,"Medicago sativa","","Medicago",2,"Medicago sativa"," L.","Medicago",2,187452,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Medicago sativa",NA
+"861",595,"Ononis mitissima","","Ononis",2,"Ononis mitissima","L.","Ononis",2,187145,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Ononis mitissima",NA
+"862",596,"Ononis natrix","","Ononis",2,"Ononis natrix"," L.","Ononis",2,187147,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Ononis natrix",NA
+"863",597,"Ononis pubescens","","Ononis",2,"Ononis pubescens","L.","Ononis",2,187168,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Ononis pubescens",NA
+"864",598,"Ononis spinosa","","Ononis",2,"Ononis spinosa"," L.","Ononis",2,187184,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Ononis spinosa",NA
+"866",599,"Ononis viscosa","","Ononis",2,"Ononis viscosa"," L.","Ononis",2,187211,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Ononis viscosa",NA
+"1254",600,"Trifolium albopurpureum","","Trifolium",2,"Trifolium albopurpureum","Torr. &  A.Gray","Trifolium",2,186103,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Trifolium albopurpureum",NA
+"1256",601,"Trifolium angustifolium","","Trifolium",2,"Trifolium angustifolium","L.","Trifolium",2,186126,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Trifolium angustifolium",NA
+"1257",602,"Trifolium campestre","","Trifolium",2,"Trifolium campestre","Schreb.","Trifolium",2,186168,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Trifolium campestre",NA
+"1259",603,"Trifolium fragiferum","","Trifolium",2,"Trifolium fragiferum","L.","Trifolium",2,186228,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Trifolium fragiferum",NA
+"1260",604,"Trifolium fucatum","","Trifolium",2,"Trifolium fucatum","Lindl.","Trifolium",2,186232,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Trifolium fucatum",NA
+"1261",605,"Trifolium gracilentum","","Trifolium",2,"Trifolium gracilentum","Torr. &  A.Gray","Trifolium",2,186242,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Trifolium gracilentum",NA
+"1262",606,"Trifolium repens","","Trifolium",2,"Trifolium repens","L.","Trifolium",2,186416,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Trifolium repens",NA
+"1264",607,"Trifolium scabrum","","Trifolium",2,"Trifolium scabrum","L.","Trifolium",2,186440,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Trifolium scabrum",NA
+"1266",608,"Trifolium stellatum","","Trifolium",2,"Trifolium stellatum","L.","Trifolium",2,186459,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Trifolium stellatum",NA
+"1267",609,"Trifolium subterraneum","","Trifolium",2,"Trifolium subterraneum"," L.","Trifolium",2,186466,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Trifolium subterraneum",NA
+"1268",610,"Trifolium willdenovii","","Trifolium",2,"Trifolium willdenovii","Spreng.","Trifolium",2,186500,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Trifolium willdenovii",NA
+"658",611,"Lathyrus cicera","","Lathyrus",2,"Lathyrus cicera","L.","Lathyrus",2,186850,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lathyrus cicera",NA
+"659",612,"Lathyrus clymenum","","Lathyrus",2,"Lathyrus clymenum","L.","Lathyrus",2,186856,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lathyrus clymenum",NA
+"660",613,"Lathyrus ochrus","","Lathyrus",2,"Lathyrus ochrus","(L.) DC.","Lathyrus",2,186980,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lathyrus ochrus",NA
+"663",614,"Lathyrus sphaericus","","Lathyrus",2,"Lathyrus sphaericus","Retz.","Lathyrus",2,187036,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lathyrus sphaericus",NA
+"664",615,"Lathyrus tingitanus","","Lathyrus",2,"Lathyrus tingitanus","L.","Lathyrus",2,187048,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lathyrus tingitanus",NA
+"1370",616,"Lupinus albifrons collinus","","Lupinus",2,"Lupinus albifrons var. collinus","Greene","Lupinus",3,170800,1,FALSE,0.55,5,NA,NA,NA,NA,"Fabaceae",NA,"Lupinus albifrons",NA
+"726",617,"Lupinus angustifolius","","Lupinus",2,"Lupinus angustifolius","L.","Lupinus",2,170832,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lupinus angustifolius",NA
+"727",618,"Lupinus arboreus","","Lupinus",2,"Lupinus arboreus","Sims","Lupinus",2,170838,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lupinus arboreus",NA
+"728",619,"Lupinus bicolor","","Lupinus",2,"Lupinus bicolor","(Merino) Rothm.","Lupinus",2,741604,1,FALSE,0.8,0,NA,"Lupinus gredensis","Gand.",171093,"Fabaceae",NA,"Lupinus gredensis",NA
+"729",620,"Lupinus chamissonis","","Lupinus",2,"Lupinus chamissonis","Eschsch.","Lupinus",2,170960,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lupinus chamissonis",NA
+"730",621,"Lupinus coriaceus","","Lupinus",2,"Lupinus coriaceus","Benth.","Lupinus",2,170990,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lupinus coriaceus",NA
+"731",622,"Lupinus latifolius","","Lupinus",2,"Lupinus latifolius"," Lindl. ex J.Agardh","Lupinus",2,171165,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lupinus latifolius",NA
+"732",623,"Lupinus lepidus","","Lupinus",2,"Lupinus lepidus","Douglas ex Lindl.","Lupinus",2,171179,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lupinus lepidus",NA
+"733",624,"Lupinus luteus","","Lupinus",2,"Lupinus luteus","L.","Lupinus",2,171201,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lupinus luteus",NA
+"1371",625,"Lupinus microcarpus densiflorus","","Lupinus",2,"Lupinus microcarpus var. densiflorus","(Benth.) Jeps.","Lupinus",3,741512,1,FALSE,0.55,5,NA,"Lupinus densiflorus","Benth.",171019,"Fabaceae",NA,"Lupinus densiflorus",NA
+"734",626,"Lupinus succulentus","","Lupinus",2,"Lupinus succulentus","Douglas ex W.D.J.Koch","Lupinus",2,171474,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Lupinus succulentus",NA
+"1312",627,"Vicia benghalensis","","Vicia",2,"Vicia benghalensis"," L.","Vicia",2,186532,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Vicia benghalensis",NA
+"1313",628,"Vicia cracca","","Vicia",2,"Vicia cracca","L.","Vicia",2,186563,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Vicia cracca",NA
+"1315",629,"Vicia faba","","Vicia",2,"Vicia faba","L.","Vicia",2,186587,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Vicia faba",NA
+"1318",630,"Vicia hybrida","","Vicia",2,"Vicia hybrida","L.","Vicia",2,186617,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Vicia hybrida",NA
+"1320",631,"Vicia lutea","","Vicia",2,"Vicia lutea"," L.","Vicia",2,186656,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Vicia lutea",NA
+"1322",632,"Vicia sativa","","Vicia",2,"Vicia sativa"," L.","Vicia",2,186744,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Vicia sativa",NA
+"1323",633,"Vicia villosa","","Vicia",2,"Vicia villosa"," Roth","Vicia",2,186799,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Vicia villosa",NA
+"961",634,"Pickeringia montana","","Pickeringia",2,"Pickeringia montana","Nutt. ex Torr. &  A.Gray","Pickeringia",2,168251,1,FALSE,0.8,0,NA,NA,NA,NA,"Fabaceae",NA,"Pickeringia montana",NA
+"968",635,"Polygala celosioides","","Polygala",2,"Polygala celosioides","Mart. ex A.W.Benn.","Polygala",2,187867,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygalaceae",NA,"Polygala celosioides",NA
+"967",636,"Polygala apparicioi","","Polygala",2,"Polygala apparicioi","Brade","Polygala",2,187777,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygalaceae",NA,"Polygala apparicioi",NA
+"971",637,"Polygala subtilis","","Polygala",2,"Polygala subtilis","Kunth","Polygala",2,188402,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygalaceae",NA,"Polygala subtilis",NA
+"969",638,"Polygala cneorum","","Polygala",2,"Polygala cneorum","A.St.-Hil.","Polygala",2,187874,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygalaceae",NA,"Polygala cneorum",NA
+"970",639,"Polygala glochidiata","","Polygala",2,"Polygala glochidiata","Kunth","Polygala",2,187988,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygalaceae",NA,"Polygala glochidiata",NA
+"1029",640,"Rhinotropis californica","","Rhinotropis",2,"Rhinotropis californica","(Nutt.) J.R.Abbott","Rhinotropis",2,187702,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygalaceae",NA,"Rhinotropis californica",NA
+"1030",641,"Rhinotropis cornuta","","Rhinotropis",2,"Rhinotropis cornuta","(Kellogg) J.R.Abbott","Rhinotropis",2,187703,1,FALSE,0.8,0,NA,NA,NA,NA,"Polygalaceae",NA,"Rhinotropis cornuta",NA
+"539",642,"Garrya elliptica","","Garrya",2,"Garrya elliptica","Douglas ex Lindl.","Garrya",2,284008,1,FALSE,0.8,0,NA,NA,NA,NA,"Garryaceae",NA,"Garrya elliptica",NA
+"29",643,"Allamanda cathartica","","Allamanda",2,"Allamanda cathartica","L.","Allamanda",2,303274,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Allamanda cathartica",NA
+"73",644,"Apocynum cannabinum","","Apocynum",2,"Apocynum cannabinum","L.","Apocynum",2,304188,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Apocynum cannabinum",NA
+"95",645,"Asclepias eriocarpa","","Asclepias",2,"Asclepias eriocarpa","Benth.","Asclepias",2,307362,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Asclepias eriocarpa",NA
+"97",646,"Asclepias fascicularis","","Asclepias",2,"Asclepias fascicularis","Decne.","Asclepias",2,307369,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Asclepias fascicularis",NA
+"98",647,"Asclepias speciosa","","Asclepias",2,"Asclepias speciosa","Torr.","Asclepias",2,307477,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Asclepias speciosa",NA
+"99",648,"Asclepias vestita","","Asclepias",2,"Asclepias vestita"," Hook. &  Arn.","Asclepias",2,307501,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Asclepias vestita",NA
+"210",649,"Carissa macrocarpa","","Carissa",2,"Carissa macrocarpa","(Eckl.) A.DC.","Carissa",2,303364,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Carissa macrocarpa",NA
+"835",650,"Nerium oleander","","Nerium",2,"Nerium oleander"," L.","Nerium",2,303431,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Nerium oleander",NA
+"776",651,"Mandevilla tenuifolia","","Mandevilla",2,"Mandevilla tenuifolia","(J.C.Mikan) Woodson","Mandevilla",2,304101,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Mandevilla tenuifolia",NA
+"5",652,"Prestonia","","Prestonia",1,"Prestonia",NA,"Prestonia",1,NA,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Prestonia","Matching only genus level"
+"1106",653,"Schubertia grandiflora","","Schubertia",2,"Schubertia grandiflora","Mart. ex Zucc.","Schubertia",2,307995,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Schubertia grandiflora",NA
+"1233",654,"Temnadenia violacea","","Temnadenia",2,"Temnadenia violacea","(Vell.) Miers","Temnadenia",2,303874,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Temnadenia violacea",NA
+"1328",655,"Vinca major","","Vinca",2,"Vinca major"," L.","Vinca",2,302595,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Vinca major",NA
+"1327",656,"Vinca difformis","","Vinca",2,"Vinca difformis"," Pourr.","Vinca",2,302589,1,FALSE,0.8,0,NA,NA,NA,NA,"Apocynaceae",NA,"Vinca difformis",NA
+"236",657,"Centaurium pulchellum","","Centaurium",2,"Centaurium pulchellum"," (Sw.) Druce","Centaurium",2,299914,1,FALSE,0.8,0,NA,NA,NA,NA,"Gentianaceae",NA,"Centaurium pulchellum",NA
+"233",658,"Centaurium erythraea","","Centaurium",2,"Centaurium erythraea"," Rafn","Centaurium",2,299892,1,FALSE,0.8,0,NA,NA,NA,NA,"Gentianaceae",NA,"Centaurium erythraea",NA
+"234",659,"Centaurium grandiflorum","","Centaurium",2,"Centaurium grandiflorum"," Druce","Centaurium",2,299903,1,FALSE,0.8,0,NA,NA,NA,NA,"Gentianaceae",NA,"Centaurium grandiflorum",NA
+"238",660,"Centaurium tenuiflorum","","Centaurium",2,"Centaurium tenuiflorum"," (Hoffmanns. &  Link) Fritsch","Centaurium",2,299931,1,FALSE,0.8,0,NA,NA,NA,NA,"Gentianaceae",NA,"Centaurium tenuiflorum",NA
+"235",661,"Centaurium maritimum","","Centaurium",2,"Centaurium maritimum","(L.) Fritsch","Centaurium",2,299911,1,FALSE,0.8,0,NA,NA,NA,NA,"Gentianaceae",NA,"Centaurium maritimum",NA
+"139",662,"Blackstonia perfoliata","","Blackstonia",2,"Blackstonia perfoliata"," (L.) Huds.","Blackstonia",2,299872,1,FALSE,0.8,0,NA,NA,NA,NA,"Gentianaceae",NA,"Blackstonia perfoliata",NA
+"635",663,"Irlbachia pedunculata","","Irlbachia",2,"Irlbachia pedunculata","(Cham. & Schltdl.) Maas","Irlbachia",2,990591,1,FALSE,0.8,0,NA,"Calolisianthus pedunculatus","(Cham. &  Schltdl.) Gilg",301603,"Gentianaceae",NA,"Calolisianthus pedunculatus",NA
+"1375",664,"Triodanis perfoliata biflora","","Triodanis",2,"Triodanis perfoliata var. biflora","(Ruiz & Pav.) T. R. Bradley","Triodanis",3,1089853,1,FALSE,0.55,5,NA,"Triodanis perfoliata ssp. biflora","(Ruiz & Pav.) Lammers",353464,"Campanulaceae",NA,"Triodanis perfoliata","Multiple results"
+"1355",665,"Zeltnera davyi","","Zeltnera",2,"Zeltnera davyi","(Jeps.) G.Mans.","Zeltnera",2,299955,1,FALSE,0.8,0,NA,NA,NA,NA,"Gentianaceae",NA,"Zeltnera davyi",NA
+"1204",666,"Spigelia aceifolia","","Spigelia",2,"Spigelia aceifolia","Woodson","Spigelia",2,302051,1,FALSE,0.8,0,NA,NA,NA,NA,"Loganiaceae",NA,"Spigelia aceifolia",NA
+"100",667,"Asperula hirsuta","","Asperula",2,"Asperula hirsuta","Desf.","Asperula",2,290439,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Asperula hirsuta",NA
+"333",668,"Cruciata laevipes","","Cruciata",2,"Cruciata laevipes"," Opiz","Cruciata",2,291468,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Cruciata laevipes",NA
+"364",669,"Declieuxia fruticosa","","Declieuxia",2,"Declieuxia fruticosa","(Roem. &  Schult.) Kuntze","Declieuxia",2,285259,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Declieuxia fruticosa",NA
+"365",670,"Declieuxia passerina","","Declieuxia",2,"Declieuxia passerina","Mart. &  Zucc. ex Schult. &  Schult.","Declieuxia",2,285271,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Declieuxia passerina",NA
+"534",671,"Galium aparine","","Galium",2,"Galium aparine","L.","Galium",2,290646,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Galium aparine",NA
+"535",672,"Galium porrigens","","Galium",2,"Galium porrigens","Dempster","Galium",2,291203,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Galium porrigens",NA
+"533",673,"Galianthe peruviana","","Galianthe",2,"Galianthe peruviana","(Pers.) E.L.Cabral","Galianthe",2,292304,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Galianthe peruviana",NA
+"536",674,"Galium verum","","Galium",2,"Galium verum"," L.","Galium",2,291403,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Galium verum",NA
+"816",675,"Mussaenda hirsutissima","","Mussaenda",2,"Mussaenda hirsutissima","(Hook.fil.) Hutch. ex Gamble","Mussaenda",2,295600,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Mussaenda hirsutissima",NA
+"1001",676,"Putoria calabrica","","Putoria",2,"Putoria calabrica","(L. fil.) DC.","Putoria",2,971893,1,FALSE,0.8,0,NA,"Plocama calabrica","(L.fil.) M.Backlund & Thulin",290149,"Rubiaceae",NA,"Plocama calabrica",NA
+"1136",677,"Sherardia arvensis","","Sherardia",2,"Sherardia arvensis","L.","Sherardia",2,290592,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Sherardia arvensis",NA
+"1201",678,"Spermacoce capitata","","Spermacoce",2,"Spermacoce capitata","Ruiz & Pav.","Spermacoce",2,292410,1,FALSE,0.8,0,NA,NA,NA,NA,"Rubiaceae",NA,"Spermacoce capitata",NA
+"470",679,"Erodium cicutarium","","Erodium",2,"Erodium cicutarium"," (L.) L´Hér.","Erodium",2,207348,1,FALSE,0.8,0,NA,NA,NA,NA,"Geraniaceae",NA,"Erodium cicutarium",NA
+"471",680,"Erodium laciniatum","","Erodium",2,"Erodium laciniatum","(Cav.) Willd.","Erodium",2,207385,1,FALSE,0.8,0,NA,NA,NA,NA,"Geraniaceae",NA,"Erodium laciniatum",NA
+"472",681,"Erodium malacoides","","Erodium",2,"Erodium malacoides"," (L.) L´Hér.","Erodium",2,207392,1,FALSE,0.8,0,NA,NA,NA,NA,"Geraniaceae",NA,"Erodium malacoides",NA
+"473",682,"Erodium moschatum","","Erodium",2,"Erodium moschatum","(L.) L´Hér.","Erodium",2,207403,1,FALSE,0.8,0,NA,NA,NA,NA,"Geraniaceae",NA,"Erodium moschatum",NA
+"554",683,"Geranium molle","","Geranium",2,"Geranium molle","L.","Geranium",2,207103,1,FALSE,0.8,0,NA,NA,NA,NA,"Geraniaceae",NA,"Geranium molle",NA
+"556",684,"Geranium purpureum","","Geranium",2,"Geranium purpureum","Vill.","Geranium",2,207174,1,FALSE,0.8,0,NA,NA,NA,NA,"Geraniaceae",NA,"Geranium purpureum",NA
+"557",685,"Geranium rotundifolium","","Geranium",2,"Geranium rotundifolium","L.","Geranium",2,207199,1,FALSE,0.8,0,NA,NA,NA,NA,"Geraniaceae",NA,"Geranium rotundifolium",NA
+"917",686,"Pelargonium zonale","","Pelargonium",2,"Pelargonium zonale","(L.) L´Hér.[ex Sol.]","Pelargonium",2,207817,1,FALSE,0.8,0,NA,NA,NA,NA,"Geraniaceae",NA,"Pelargonium zonale",NA
+"645",687,"Justicia californica","","Justicia",2,"Justicia californica","(Benth.) D.N.Gibson","Justicia",2,338414,1,FALSE,0.8,0,NA,NA,NA,NA,"Acanthaceae",NA,"Justicia californica",NA
+"1238",688,"Thunbergia alata","","Thunbergia",2,"Thunbergia alata","Bojer ex Sims","Thunbergia",2,335694,1,FALSE,0.8,0,NA,NA,NA,NA,"Acanthaceae",NA,"Thunbergia alata",NA
+"1239",689,"Thunbergia grandiflora","","Thunbergia",2,"Thunbergia grandiflora","(Roxb. ex Rottler) Roxb.","Thunbergia",2,335753,1,FALSE,0.8,0,NA,NA,NA,NA,"Acanthaceae",NA,"Thunbergia grandiflora",NA
+"62",690,"Anemopaegma chamberlaynii","","Anemopaegma",2,"Anemopaegma chamberlaynii","(Sims) Bureau & K.Schum.","Anemopaegma",2,335271,1,FALSE,0.8,0,NA,NA,NA,NA,"Bignoniaceae",NA,"Anemopaegma chamberlaynii",NA
+"47",691,"Amphilophium elongatum","","Amphilophium",2,"Amphilophium elongatum","(Vahl) L.G.Lohmann","Amphilophium",2,335213,1,FALSE,0.8,0,NA,NA,NA,NA,"Bignoniaceae",NA,"Amphilophium elongatum",NA
+"200",692,"Campsis radicans","","Campsis",2,"Campsis radicans","(L.) Seem.","Campsis",2,334582,1,FALSE,0.8,0,NA,NA,NA,NA,"Bignoniaceae",NA,"Campsis radicans",NA
+"224",693,"Catalpa bignonioides","","Catalpa",2,"Catalpa bignonioides","Walter","Catalpa",2,335022,1,FALSE,0.8,0,NA,NA,NA,NA,"Bignoniaceae",NA,"Catalpa bignonioides",NA
+"257",694,"Chilopsis linearis","","Chilopsis",2,"Chilopsis linearis"," (Cav.) Sweet","Chilopsis",2,335032,1,FALSE,0.8,0,NA,NA,NA,NA,"Bignoniaceae",NA,"Chilopsis linearis",NA
+"623",695,"Incarvillea delavayi","","Incarvillea",2,"Incarvillea delavayi","Bureau & Franch.","Incarvillea",2,334605,1,FALSE,0.8,0,NA,NA,NA,NA,"Bignoniaceae",NA,"Incarvillea delavayi",NA
+"638",696,"Jacaranda paucifoliolata","","Jacaranda",2,"Jacaranda paucifoliolata","Mart. ex DC.","Jacaranda",2,334549,1,FALSE,0.8,0,NA,NA,NA,NA,"Bignoniaceae",NA,"Jacaranda paucifoliolata",NA
+"1002",697,"Pyrostegia venusta","","Pyrostegia",2,"Pyrostegia venusta","(Ker Gawl.) Miers","Pyrostegia",2,335247,1,FALSE,0.8,0,NA,NA,NA,NA,"Bignoniaceae",NA,"Pyrostegia venusta",NA
+"576",698,"Handroanthus chrysanthus","","Handroanthus",2,"Handroanthus chrysanthus"," (Jacq.) S.O.Grose","Handroanthus",2,334940,1,FALSE,0.8,0,NA,NA,NA,NA,"Bignoniaceae",NA,"Handroanthus chrysanthus",NA
+"13",699,"Achimenes erecta","","Achimenes",2,"Achimenes erecta","(Lam.) H.P.Fuchs","Achimenes",2,311228,1,FALSE,0.8,0,NA,NA,NA,NA,"Gesneriaceae",NA,"Achimenes erecta",NA
+"12",700,"Achimenes cettoana","","Achimenes",2,"Achimenes cettoana","H.E.Moore","Achimenes",2,311226,1,FALSE,0.8,0,NA,NA,NA,NA,"Gesneriaceae",NA,"Achimenes cettoana",NA
+"302",701,"Codonoboea malayana","","Codonoboea",2,"Codonoboea malayana","(Hook.fil.) Kiew","Codonoboea",2,312767,1,FALSE,0.8,0,NA,NA,NA,NA,"Gesneriaceae",NA,"Codonoboea malayana",NA
+"797",702,"Microchirita micromusa","","Microchirita",2,"Microchirita micromusa","(B.L.Burtt) A.Weber & D.J.Middleton","Microchirita",2,312674,1,FALSE,0.8,0,NA,NA,NA,NA,"Gesneriaceae",NA,"Microchirita micromusa",NA
+"654",703,"Kohleria hirsuta","","Kohleria",2,"Kohleria hirsuta","(Kunth) Regel","Kohleria",2,311183,1,FALSE,0.8,0,NA,NA,NA,NA,"Gesneriaceae",NA,"Kohleria hirsuta",NA
+"10",704,"Acanthomintha lanceolata","","Acanthomintha",2,"Acanthomintha lanceolata","Curran","Acanthomintha",2,325509,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Acanthomintha lanceolata",NA
+"25",705,"Agastache urticifolia","","Agastache",2,"Agastache urticifolia","(Benth.) Kuntze","Agastache",2,324556,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Agastache urticifolia",NA
+"27",706,"Ajuga iva","","Ajuga",2,"Ajuga iva","(L.) Schreb.","Ajuga",2,327256,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Ajuga iva",NA
+"299",707,"Clinopodium nepeta","","Clinopodium",2,"Clinopodium nepeta","(L.) Kuntze","Clinopodium",2,325051,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Clinopodium nepeta",NA
+"309",708,"Condea emoryi","","Condea",2,"Condea emoryi","(Torr.) Harley & J.F.B.Pastore","Condea",2,322685,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Condea emoryi",NA
+"655",709,"Lamium amplexicaule","","Lamium",2,"Lamium amplexicaule"," L.","Lamium",2,329953,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Lamium amplexicaule",NA
+"666",710,"Lavandula dentata","","Lavandula",2,"Lavandula dentata","L.","Lavandula",2,323968,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Lavandula dentata",NA
+"669",711,"Lavandula multifida","","Lavandula",2,"Lavandula multifida","L.","Lavandula",2,323983,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Lavandula multifida",NA
+"670",712,"Lavandula pedunculata","","Lavandula",2,"Lavandula pedunculata"," (Mill.) Cav.","Lavandula",2,323986,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Lavandula pedunculata",NA
+"671",713,"Lavandula stoechas","","Lavandula",2,"Lavandula stoechas"," L.","Lavandula",2,324003,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Lavandula stoechas",NA
+"680",714,"Lepechinia calycina","","Lepechinia",2,"Lepechinia calycina","(Benth.) Epling","Lepechinia",2,323893,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Lepechinia calycina",NA
+"783",715,"Marrubium vulgare","","Marrubium",2,"Marrubium vulgare","L.","Marrubium",2,329921,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Marrubium vulgare",NA
+"800",716,"Micromeria douglasii","","Micromeria",2,"Micromeria douglasii","(Benth.) Benth.","Micromeria",2,1033926,1,FALSE,0.8,0,NA,"Clinopodium douglasii","(Benth.) Kuntze",324976,"Lamiaceae",NA,"Clinopodium douglasii",NA
+"801",717,"Micromeria graeca","","Micromeria",2,"Micromeria graeca"," (L.) Benth. ex Rchb.","Micromeria",2,324693,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Micromeria graeca",NA
+"809",718,"Monardella douglasii","","Monardella",2,"Monardella douglasii","Benth.","Monardella",2,325421,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Monardella douglasii",NA
+"810",719,"Monardella macrantha","","Monardella",2,"Monardella macrantha"," A.Gray","Monardella",2,325442,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Monardella macrantha",NA
+"811",720,"Monardella odoratissima","","Monardella",2,"Monardella odoratissima"," Benth.","Monardella",2,325451,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Monardella odoratissima",NA
+"951",721,"Phlomis lychnitis","","Phlomis",2,"Phlomis lychnitis","L.","Phlomis",2,329484,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Phlomis lychnitis",NA
+"952",722,"Phlomis purpurea","","Phlomis",2,"Phlomis purpurea"," L.","Phlomis",2,329504,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Phlomis purpurea",NA
+"991",723,"Prunella vulgaris","","Prunella",2,"Prunella vulgaris"," L.","Prunella",2,323877,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Prunella vulgaris",NA
+"1057",724,"Rosmarinus officinalis","","Rosmarinus",2,"Rosmarinus officinalis","L.","Rosmarinus",2,1027417,1,FALSE,0.8,0,NA,"Salvia rosmarinus","Schleid.",322315,"Lamiaceae",NA,"Salvia rosmarinus",NA
+"1075",725,"Salvia brandegeei","","Salvia",2,"Salvia brandegeei","Munz","Salvia",2,321550,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia brandegeei",NA
+"1076",726,"Salvia clevelandii","","Salvia",2,"Salvia clevelandii","(Gray) Greene","Salvia",2,321641,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia clevelandii",NA
+"1077",727,"Salvia dorrii","","Salvia",2,"Salvia dorrii"," (Kellogg) Abrams","Salvia",2,321727,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia dorrii",NA
+"1078",728,"Salvia leucophylla","","Salvia",2,"Salvia leucophylla","Greene","Salvia",2,321994,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia leucophylla",NA
+"1079",729,"Salvia mellifera","","Salvia",2,"Salvia mellifera","Greene","Salvia",2,322046,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia mellifera",NA
+"1080",730,"Salvia microphylla","","Salvia",2,"Salvia microphylla","Kunth","Salvia",2,322054,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia microphylla",NA
+"1082",731,"Salvia munzii","","Salvia",2,"Salvia munzii","Epling","Salvia",2,322079,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia munzii",NA
+"1083",732,"Salvia sonomensis","","Salvia",2,"Salvia sonomensis","Greene","Salvia",2,322410,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia sonomensis",NA
+"1084",733,"Salvia spathacea","","Salvia",2,"Salvia spathacea","Greene","Salvia",2,322413,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia spathacea",NA
+"1085",734,"Salvia verbenaca","","Salvia",2,"Salvia verbenaca","L.","Salvia",2,322540,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Salvia verbenaca",NA
+"1095",735,"Satureja obovata","","Satureja",2,"Satureja obovata","Lag.","Satureja",2,1032721,1,FALSE,0.8,0,NA,"Satureja cuneifolia","Ten.",324598,"Lamiaceae",NA,"Satureja cuneifolia","Multiple results"
+"1122",736,"Scutellaria tuberosa","","Scutellaria",2,"Scutellaria tuberosa","Benth.","Scutellaria",2,328196,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Scutellaria tuberosa",NA
+"1206",737,"Stachys bullata","","Stachys",2,"Stachys bullata","Benth.","Stachys",2,328659,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Stachys bullata",NA
+"1207",738,"Stachys chamissonis","","Stachys",2,"Stachys chamissonis","Benth.","Stachys",2,328672,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Stachys chamissonis",NA
+"1208",739,"Stachys ocymastrum","","Stachys",2,"Stachys ocymastrum","(L.) Briq.","Stachys",2,328878,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Stachys ocymastrum",NA
+"1234",740,"Teucrium capitatum","","Teucrium",2,"Teucrium capitatum"," L.","Teucrium",2,326417,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Teucrium capitatum",NA
+"1235",741,"Teucrium fruticans","","Teucrium",2,"Teucrium fruticans","L.","Teucrium",2,326507,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Teucrium fruticans",NA
+"1236",742,"Teucrium glandulosum","","Teucrium",2,"Teucrium glandulosum","Kellogg","Teucrium",2,326509,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Teucrium glandulosum",NA
+"1240",743,"Thymus mastichina","","Thymus",2,"Thymus mastichina"," (L.) L.","Thymus",2,325756,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Thymus mastichina",NA
+"1252",744,"Trichostema lanatum","","Trichostema",2,"Trichostema lanatum","Benth.","Trichostema",2,327510,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Trichostema lanatum",NA
+"1253",745,"Trichostema lanceolatum","","Trichostema",2,"Trichostema lanceolatum","Benth.","Trichostema",2,327511,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Trichostema lanceolatum",NA
+"1338",746,"Vitex agnus-castus","","Vitex",2,"Vitex agnus-castus","L.","Vitex",2,321050,1,FALSE,0.8,0,NA,NA,NA,NA,"Lamiaceae",NA,"Vitex agnus-castus",NA
+"964",747,"Pinguicula vulgaris","","Pinguicula",2,"Pinguicula vulgaris","L.","Pinguicula",2,341530,1,FALSE,0.8,0,NA,NA,NA,NA,"Lentibulariaceae",NA,"Pinguicula vulgaris",NA
+"1293",748,"Utricularia tricolor","","Utricularia",2,"Utricularia tricolor","A.St.-Hil.","Utricularia",2,341803,1,FALSE,0.8,0,NA,NA,NA,NA,"Lentibulariaceae",NA,"Utricularia tricolor",NA
+"1294",749,"Utricularia triloba","","Utricularia",2,"Utricularia triloba","Benj.","Utricularia",2,341807,1,FALSE,0.8,0,NA,NA,NA,NA,"Lentibulariaceae",NA,"Utricularia triloba",NA
+"889",750,"Osmanthus fragrans","","Osmanthus",2,"Osmanthus fragrans","(Thunb.) Lour.","Osmanthus",2,310311,1,FALSE,0.8,0,NA,NA,NA,NA,"Oleaceae",NA,"Osmanthus fragrans",NA
+"514",751,"Forsythia ovata","","Forsythia",2,"Forsythia ovata","Nakai","Forsythia",2,1006069,1,FALSE,0.8,0,NA,"Forsythia japonica","Makino",309488,"Oleaceae",NA,"Forsythia japonica",NA
+"642",752,"Jasminum beesianum","","Jasminum",2,"Jasminum beesianum","Forrest & Diels","Jasminum",2,309567,1,FALSE,0.8,0,NA,NA,NA,NA,"Oleaceae",NA,"Jasminum beesianum",NA
+"643",753,"Jasminum officinale","","Jasminum",2,"Jasminum officinale","L.","Jasminum",2,309712,1,FALSE,0.8,0,NA,NA,NA,NA,"Oleaceae",NA,"Jasminum officinale",NA
+"685",754,"Ligustrum vulgare","","Ligustrum",2,"Ligustrum vulgare","L.","Ligustrum",2,309876,1,FALSE,0.8,0,NA,NA,NA,NA,"Oleaceae",NA,"Ligustrum vulgare",NA
+"24",755,"Agalinis brachyphylla","","Agalinis",2,"Agalinis brachyphylla","(Cham. &  Schltdl.) D´Arcy","Agalinis",2,332908,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Agalinis brachyphylla",NA
+"72",756,"Aphyllon fasciculatum","","Aphyllon",2,"Aphyllon fasciculatum","Torr. &  Gray","Aphyllon",2,410333,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Aphyllon fasciculatum",NA
+"120",757,"Bellardia trixago","","Bellardia",2,"Bellardia trixago","(L.) All.","Bellardia",2,331301,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Bellardia trixago",NA
+"213",758,"Castilleja affinis","","Castilleja",2,"Castilleja affinis","Hook. &  Arn.","Castilleja",2,333041,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Castilleja affinis",NA
+"215",759,"Castilleja ambigua","","Castilleja",2,"Castilleja ambigua","Hook. &  Arn.","Castilleja",2,333046,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Castilleja ambigua",NA
+"216",760,"Castilleja applegatei","","Castilleja",2,"Castilleja applegatei","Fernald","Castilleja",2,333054,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Castilleja applegatei",NA
+"217",761,"Castilleja densiflora","","Castilleja",2,"Castilleja densiflora","(Benth.) T.I.Chuang & Heckard","Castilleja",2,333100,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Castilleja densiflora",NA
+"218",762,"Castilleja exserta","","Castilleja",2,"Castilleja exserta","(A.Heller) T.I.Chuang & Heckard","Castilleja",2,333111,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Castilleja exserta",NA
+"219",763,"Castilleja foliolosa","","Castilleja",2,"Castilleja foliolosa","Hook. &  Arn.","Castilleja",2,333119,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Castilleja foliolosa",NA
+"220",764,"Castilleja latifolia","","Castilleja",2,"Castilleja latifolia","Hook. &  Arn.","Castilleja",2,333155,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Castilleja latifolia",NA
+"221",765,"Castilleja mendocinensis","","Castilleja",2,"Castilleja mendocinensis","(Eastw.) Pennell","Castilleja",2,333175,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Castilleja mendocinensis",NA
+"222",766,"Castilleja miniata","","Castilleja",2,"Castilleja miniata","Douglas","Castilleja",2,333178,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Castilleja miniata",NA
+"223",767,"Castilleja minor","","Castilleja",2,"Castilleja minor","(Gray) Gray","Castilleja",2,333182,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Castilleja minor",NA
+"275",768,"Cistanche phelipaea","","Cistanche",2,"Cistanche phelipaea","(L.) Cout.","Cistanche",2,330588,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Cistanche phelipaea",NA
+"313",769,"Cordylanthus rigidus","","Cordylanthus",2,"Cordylanthus rigidus"," (Benth.) Jeps.","Cordylanthus",2,332991,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Cordylanthus rigidus",NA
+"506",770,"Euphrasia parviflora","","Euphrasia",2,"Euphrasia parviflora","Schag.","Euphrasia",2,331195,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Euphrasia parviflora",NA
+"883",771,"Orobanche crenata","","Orobanche",2,"Orobanche crenata","Forssk.","Orobanche",2,330723,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Orobanche crenata",NA
+"884",772,"Orobanche gracilis","","Orobanche",2,"Orobanche gracilis","Sm.","Orobanche",2,330745,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Orobanche gracilis",NA
+"886",773,"Orobanche latisquama","","Orobanche",2,"Orobanche latisquama","(F.W.Schultz) Batt.","Orobanche",2,330768,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Orobanche latisquama",NA
+"887",774,"Orthocarpus cuspidatus","","Orthocarpus",2,"Orthocarpus cuspidatus"," Greene","Orthocarpus",2,333020,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Orthocarpus cuspidatus",NA
+"908",775,"Parentucellia latifolia","","Parentucellia",2,"Parentucellia latifolia"," (L.) Caruel","Parentucellia",2,331304,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Parentucellia latifolia",NA
+"909",776,"Parentucellia viscosa","","Parentucellia",2,"Parentucellia viscosa","(L.) Caruel","Parentucellia",2,1049011,1,FALSE,0.8,0,NA,"Bellardia viscosa","(L.) Fisch. &  C.A.Mey.",331302,"Orobanchaceae",NA,"Bellardia viscosa",NA
+"915",777,"Pedicularis densiflora","","Pedicularis",2,"Pedicularis densiflora","Benth.","Pedicularis",2,332094,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Pedicularis densiflora",NA
+"916",778,"Pedicularis sylvatica","","Pedicularis",2,"Pedicularis sylvatica"," L.","Pedicularis",2,332698,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Pedicularis sylvatica",NA
+"948",779,"Phelipanche ramosa","","Phelipanche",2,"Phelipanche ramosa","(L.) Pomel","Phelipanche",2,330663,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Phelipanche ramosa",NA
+"960",780,"Physocalyx major","","Physocalyx",2,"Physocalyx major","Mart.","Physocalyx",2,331494,1,FALSE,0.8,0,NA,NA,NA,NA,"Orobanchaceae",NA,"Physocalyx major",NA
+"384",781,"Diplacus aurantiacus","","Diplacus",2,"Diplacus aurantiacus","(Curtis) Jeps.","Diplacus",2,330327,1,FALSE,0.8,0,NA,NA,NA,NA,"Phrymaceae",NA,"Diplacus aurantiacus",NA
+"385",782,"Diplacus brevipes","","Diplacus",2,"Diplacus brevipes","(Benth.) G.L.Nesom","Diplacus",2,330333,1,FALSE,0.8,0,NA,NA,NA,NA,"Phrymaceae",NA,"Diplacus brevipes",NA
+"386",783,"Diplacus kelloggii","","Diplacus",2,"Diplacus kelloggii","(Curran ex Greene) G.L.Nesom","Diplacus",2,330350,1,FALSE,0.8,0,NA,NA,NA,NA,"Phrymaceae",NA,"Diplacus kelloggii",NA
+"387",784,"Diplacus longiflorus","","Diplacus",2,"Diplacus longiflorus","Nutt.","Diplacus",2,330354,1,FALSE,0.8,0,NA,NA,NA,NA,"Phrymaceae",NA,"Diplacus longiflorus",NA
+"388",785,"Diplacus parviflorus","","Diplacus",2,"Diplacus parviflorus","Greene","Diplacus",2,330360,1,FALSE,0.8,0,NA,NA,NA,NA,"Phrymaceae",NA,"Diplacus parviflorus",NA
+"389",786,"Diplacus puniceus","","Diplacus",2,"Diplacus puniceus","Nutt.","Diplacus",2,330363,1,FALSE,0.8,0,NA,NA,NA,NA,"Phrymaceae",NA,"Diplacus puniceus",NA
+"489",787,"Erythranthe pardalis","","Erythranthe",2,"Erythranthe pardalis","(Pennell) G.L.Nesom","Erythranthe",2,330479,1,FALSE,0.8,0,NA,NA,NA,NA,"Phrymaceae",NA,"Erythranthe pardalis",NA
+"486",788,"Erythranthe guttata","","Erythranthe",2,"Erythranthe guttata","(DC.) G.L.Nesom","Erythranthe",2,330441,1,FALSE,0.8,0,NA,NA,NA,NA,"Phrymaceae",NA,"Erythranthe guttata",NA
+"487",789,"Erythranthe lutea","","Erythranthe",2,"Erythranthe lutea","(L.) G.L.Nesom","Erythranthe",2,330459,1,FALSE,0.8,0,NA,NA,NA,NA,"Phrymaceae",NA,"Erythranthe lutea",NA
+"488",790,"Erythranthe moschata","","Erythranthe",2,"Erythranthe moschata","(Douglas ex Lindl.) G.L.Nesom","Erythranthe",2,330468,1,FALSE,0.8,0,NA,NA,NA,NA,"Phrymaceae",NA,"Erythranthe moschata",NA
+"70",791,"Antirrhinum majus","","Antirrhinum",2,"Antirrhinum majus","L.","Antirrhinum",2,315853,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Antirrhinum majus",NA
+"71",792,"Antirrhinum meonanthum","","Antirrhinum",2,"Antirrhinum meonanthum","Hoffmanns. &  Link","Antirrhinum",2,315855,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Antirrhinum meonanthum",NA
+"247",793,"Chaenorhinum villosum","","Chaenorhinum",2,"Chaenorhinum villosum"," (L.) Lange","Chaenorhinum",2,315819,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Chaenorhinum villosum",NA
+"306",794,"Collinsia heterophylla","","Collinsia",2,"Collinsia heterophylla","Buist ex Graham","Collinsia",2,315594,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Collinsia heterophylla",NA
+"343",795,"Cymbalaria muralis","","Cymbalaria",2,"Cymbalaria muralis"," P.Gaertn., B.Mey. &  Scherb.","Cymbalaria",2,315723,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Cymbalaria muralis",NA
+"537",796,"Gambelia juncea","","Gambelia",2,"Gambelia juncea","(Benth.) D.A.Sutton","Gambelia",2,315756,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Gambelia juncea",NA
+"538",797,"Gambelia speciosa","","Gambelia",2,"Gambelia speciosa","Nutt.","Gambelia",2,315758,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Gambelia speciosa",NA
+"647",798,"Keckiella breviflora","","Keckiella",2,"Keckiella breviflora","(Lindl.) Straw","Keckiella",2,315185,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Keckiella breviflora",NA
+"648",799,"Keckiella cordifolia","","Keckiella",2,"Keckiella cordifolia","(Benth.) Straw","Keckiella",2,315187,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Keckiella cordifolia",NA
+"649",800,"Keckiella corymbosa","","Keckiella",2,"Keckiella corymbosa","(Benth.) Straw","Keckiella",2,315188,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Keckiella corymbosa",NA
+"694",801,"Linaria nivea","","Linaria",2,"Linaria nivea","Boiss. &  Reut.","Linaria",2,316060,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Linaria nivea",NA
+"695",802,"Linaria platycalyx","","Linaria",2,"Linaria platycalyx","Boiss.","Linaria",2,316081,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Linaria platycalyx",NA
+"696",803,"Linaria spartea","","Linaria",2,"Linaria spartea","(L.) Willd.","Linaria",2,316125,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Linaria spartea",NA
+"698",804,"Linaria tristis","","Linaria",2,"Linaria tristis"," (L.) Mill.","Linaria",2,316140,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Linaria tristis",NA
+"699",805,"Linaria viscida","","Linaria",2,"Linaria viscida","Moench","Linaria",2,1016568,1,FALSE,0.8,0,NA,"Chaenorhinum minus ssp. minus",NA,315795,"Plantaginaceae",NA,"Chaenorhinum minus",NA
+"787",806,"Maurandella antirrhiniflora","","Maurandella",2,"Maurandella antirrhiniflora","(Humb. &  Bonpl. ex Willd.) Rothm.","Maurandella",2,315892,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Maurandella antirrhiniflora",NA
+"805",807,"Misopates orontium","","Misopates",2,"Misopates orontium"," (L.) Raf.","Misopates",2,315836,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Misopates orontium",NA
+"918",808,"Penstemon barbatus","","Penstemon",2,"Penstemon barbatus","(Cav.) Roth","Penstemon",2,315229,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Penstemon barbatus",NA
+"920",809,"Penstemon centranthifolius","","Penstemon",2,"Penstemon centranthifolius","Benth.","Penstemon",2,315260,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Penstemon centranthifolius",NA
+"921",810,"Penstemon clevelandii","","Penstemon",2,"Penstemon clevelandii","A.Gray","Penstemon",2,315262,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Penstemon clevelandii",NA
+"922",811,"Penstemon eatonii","","Penstemon",2,"Penstemon eatonii","A.Gray","Penstemon",2,315305,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Penstemon eatonii",NA
+"923",812,"Penstemon grinnellii","","Penstemon",2,"Penstemon grinnellii","Eastw.","Penstemon",2,315353,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Penstemon grinnellii",NA
+"925",813,"Penstemon heterophyllus","","Penstemon",2,"Penstemon heterophyllus","Lindl.","Penstemon",2,315365,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Penstemon heterophyllus",NA
+"926",814,"Penstemon newberryi","","Penstemon",2,"Penstemon newberryi","Gray","Penstemon",2,315437,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Penstemon newberryi",NA
+"927",815,"Penstemon parryi","","Penstemon",2,"Penstemon parryi","A.Gray","Penstemon",2,315457,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Penstemon parryi",NA
+"928",816,"Penstemon rattanii","","Penstemon",2,"Penstemon rattanii"," A.Gray","Penstemon",2,315493,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Penstemon rattanii",NA
+"929",817,"Penstemon rostriflorus","","Penstemon",2,"Penstemon rostriflorus","Kellogg","Penstemon",2,315504,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Penstemon rostriflorus",NA
+"1031",818,"Rhodochiton atrosanguineum","","Rhodochiton",2,"Rhodochiton atrosanguineum","(Zucc.) Rothm.","Rhodochiton",2,315741,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Rhodochiton atrosanguineum",NA
+"1073",819,"Sairocarpus multiflorus","","Sairocarpus",2,"Sairocarpus multiflorus","(Pennell) D.A.Sutton","Sairocarpus",2,315881,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Sairocarpus multiflorus",NA
+"1074",820,"Sairocarpus vexillocalyculatus","","Sairocarpus",2,"Sairocarpus vexillocalyculatus"," (Kellogg) D.A.Sutton","Sairocarpus",2,315884,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Sairocarpus vexillocalyculatus",NA
+"1307",821,"Veronica chamaedrys","","Veronica",2,"Veronica chamaedrys"," L.","Veronica",2,316899,1,FALSE,0.8,0,NA,NA,NA,NA,"Plantaginaceae",NA,"Veronica chamaedrys",NA
+"157",822,"Buddleja davidii","","Buddleja",2,"Buddleja davidii","Franch.","Buddleja",2,318132,1,FALSE,0.8,0,NA,NA,NA,NA,"Scrophulariaceae",NA,"Buddleja davidii",NA
+"1112",823,"Scrophularia auriculata","","Scrophularia",2,"Scrophularia auriculata"," L.","Scrophularia",2,319769,1,FALSE,0.8,0,NA,NA,NA,NA,"Scrophulariaceae",NA,"Scrophularia auriculata",NA
+"1117",824,"Scrophularia californica","","Scrophularia",2,"Scrophularia californica","Cham. &  Schltdl.","Scrophularia",2,319787,1,FALSE,0.8,0,NA,NA,NA,NA,"Scrophulariaceae",NA,"Scrophularia californica",NA
+"1119",825,"Scrophularia canina","","Scrophularia",2,"Scrophularia canina"," L.","Scrophularia",2,319792,1,FALSE,0.8,0,NA,NA,NA,NA,"Scrophulariaceae",NA,"Scrophularia canina",NA
+"1121",826,"Scrophularia sambucifolia","","Scrophularia",2,"Scrophularia sambucifolia"," L.","Scrophularia",2,320014,1,FALSE,0.8,0,NA,NA,NA,NA,"Scrophulariaceae",NA,"Scrophularia sambucifolia",NA
+"1299",827,"Verbascum giganteum","","Verbascum",2,"Verbascum giganteum"," Willk.","Verbascum",2,319099,1,FALSE,0.8,0,NA,NA,NA,NA,"Scrophulariaceae",NA,"Verbascum giganteum",NA
+"1301",828,"Verbascum sinuatum","","Verbascum",2,"Verbascum sinuatum","L.","Verbascum",2,319354,1,FALSE,0.8,0,NA,NA,NA,NA,"Scrophulariaceae",NA,"Verbascum sinuatum",NA
+"706",829,"Lippia balansae","","Lippia",2,"Lippia balansae","Briq.","Lippia",2,333879,1,FALSE,0.8,0,NA,NA,NA,NA,"Verbenaceae",NA,"Lippia balansae",NA
+"941",830,"Petrea volubilis","","Petrea",2,"Petrea volubilis","L.","Petrea",2,333331,1,FALSE,0.8,0,NA,NA,NA,NA,"Verbenaceae",NA,"Petrea volubilis",NA
+"957",831,"Phyla nodiflora","","Phyla",2,"Phyla nodiflora","(L.) Greene","Phyla",2,334055,1,FALSE,0.8,0,NA,NA,NA,NA,"Verbenaceae",NA,"Phyla nodiflora",NA
+"1303",832,"Verbena lasiostachys","","Verbena",2,"Verbena lasiostachys","Link","Verbena",2,334166,1,FALSE,0.8,0,NA,NA,NA,NA,"Verbenaceae",NA,"Verbena lasiostachys",NA
+"1304",833,"Verbena lilacina","","Verbena",2,"Verbena lilacina","Greene","Verbena",2,1053166,1,FALSE,0.8,0,NA,"Glandularia lilacina","(Greene) Umber",334264,"Verbenaceae",NA,"Glandularia lilacina",NA
+"1305",834,"Verbena officinalis","","Verbena",2,"Verbena officinalis","L.","Verbena",2,334181,1,FALSE,0.8,0,NA,NA,NA,NA,"Verbenaceae",NA,"Verbena officinalis",NA
+"650",835,"Kielmeyera petiolaris","","Kielmeyera",2,"Kielmeyera petiolaris","Mart.","Kielmeyera",2,156827,1,FALSE,0.8,0,NA,NA,NA,NA,"Calophyllaceae",NA,"Kielmeyera petiolaris",NA
+"651",836,"Kielmeyera regalis","","Kielmeyera",2,"Kielmeyera regalis","Saddi","Kielmeyera",2,156832,1,FALSE,0.8,0,NA,NA,NA,NA,"Calophyllaceae",NA,"Kielmeyera regalis",NA
+"351",837,"Cytinus hypocistis","","Cytinus",2,"Cytinus hypocistis"," (L.) L.","Cytinus",2,234211,1,FALSE,0.8,0,NA,NA,NA,NA,"Cytinaceae",NA,"Cytinus hypocistis",NA
+"353",838,"Cytinus ruber","","Cytinus",2,"Cytinus ruber","(Fourr.) Fritsch","Cytinus",2,234216,1,FALSE,0.8,0,NA,NA,NA,NA,"Cytinaceae",NA,"Cytinus ruber",NA
+"620",839,"Hypericum perforatum","","Hypericum",2,"Hypericum perforatum"," L.","Hypericum",2,156136,1,FALSE,0.8,0,NA,NA,NA,NA,"Hypericaceae",NA,"Hypericum perforatum",NA
+"621",840,"Hypericum spruneri","","Hypericum",2,"Hypericum spruneri","Boiss.","Hypericum",2,156268,1,FALSE,0.8,0,NA,NA,NA,NA,"Hypericaceae",NA,"Hypericum spruneri",NA
+"622",841,"Hypericum undulatum","","Hypericum",2,"Hypericum undulatum","Schousb. ex Willd.","Hypericum",2,156314,1,FALSE,0.8,0,NA,NA,NA,NA,"Hypericaceae",NA,"Hypericum undulatum",NA
+"332",842,"Croton californicus","","Croton",2,"Croton californicus","Müll.Arg.","Croton",2,143335,1,FALSE,0.8,0,NA,NA,NA,NA,"Euphorbiaceae",NA,"Croton californicus",NA
+"495",843,"Euphorbia exigua","","Euphorbia",2,"Euphorbia exigua"," L.","Euphorbia",2,148090,1,FALSE,0.8,0,NA,NA,NA,NA,"Euphorbiaceae",NA,"Euphorbia exigua",NA
+"496",844,"Euphorbia helioscopia","","Euphorbia",2,"Euphorbia helioscopia"," L.","Euphorbia",2,148348,1,FALSE,0.8,0,NA,NA,NA,NA,"Euphorbiaceae",NA,"Euphorbia helioscopia",NA
+"498",845,"Euphorbia misera","","Euphorbia",2,"Euphorbia misera","Benth.","Euphorbia",2,148798,1,FALSE,0.8,0,NA,NA,NA,NA,"Euphorbiaceae",NA,"Euphorbia misera",NA
+"499",846,"Euphorbia peplus","","Euphorbia",2,"Euphorbia peplus","L.","Euphorbia",2,149074,1,FALSE,0.8,0,NA,NA,NA,NA,"Euphorbiaceae",NA,"Euphorbia peplus",NA
+"502",847,"Euphorbia segetalis","","Euphorbia",2,"Euphorbia segetalis","L.","Euphorbia",2,149430,1,FALSE,0.8,0,NA,NA,NA,NA,"Euphorbiaceae",NA,"Euphorbia segetalis",NA
+"504",848,"Euphorbia serrata","","Euphorbia",2,"Euphorbia serrata","L.","Euphorbia",2,149460,1,FALSE,0.8,0,NA,NA,NA,NA,"Euphorbiaceae",NA,"Euphorbia serrata",NA
+"701",849,"Linum bienne","","Linum",2,"Linum bienne","Mill.","Linum",2,150441,1,FALSE,0.8,0,NA,NA,NA,NA,"Linaceae",NA,"Linum bienne",NA
+"700",850,"Linum bavaricum","","Linum",2,"Linum bavaricum","Schult.","Linum",2,708885,1,FALSE,0.8,0,NA,"Linum alpinum ssp. alpinum",NA,150406,"Linaceae",NA,"Linum alpinum",NA
+"702",851,"Linum tenue","","Linum",2,"Linum tenue"," Desf.","Linum",2,150669,1,FALSE,0.8,0,NA,NA,NA,NA,"Linaceae",NA,"Linum tenue",NA
+"704",852,"Linum trigynum","","Linum",2,"Linum trigynum","L.","Linum",2,150681,1,FALSE,0.8,0,NA,NA,NA,NA,"Linaceae",NA,"Linum trigynum",NA
+"705",853,"Linum usitatissimum","","Linum",2,"Linum usitatissimum","L.","Linum",2,150686,1,FALSE,0.8,0,NA,NA,NA,NA,"Linaceae",NA,"Linum usitatissimum",NA
+"116",854,"Banisteriopsis campestris","","Banisteriopsis",2,"Banisteriopsis campestris","(A.Juss.) Little","Banisteriopsis",2,161157,1,FALSE,0.8,0,NA,NA,NA,NA,"Malpighiaceae",NA,"Banisteriopsis campestris",NA
+"117",855,"Banisteriopsis stellaris","","Banisteriopsis",2,"Banisteriopsis stellaris","(Griseb.) B.Gates","Banisteriopsis",2,161204,1,FALSE,0.8,0,NA,NA,NA,NA,"Malpighiaceae",NA,"Banisteriopsis stellaris",NA
+"162",856,"Byrsonima basiloba","","Byrsonima",2,"Byrsonima basiloba","A.Juss.","Byrsonima",2,160128,1,FALSE,0.8,0,NA,NA,NA,NA,"Malpighiaceae",NA,"Byrsonima basiloba",NA
+"164",857,"Byrsonima intermedia","","Byrsonima",2,"Byrsonima intermedia","A.Juss.","Byrsonima",2,160181,1,FALSE,0.8,0,NA,NA,NA,NA,"Malpighiaceae",NA,"Byrsonima intermedia",NA
+"163",858,"Byrsonima dealbata","","Byrsonima",2,"Byrsonima dealbata","Griseb.","Byrsonima",2,160154,1,FALSE,0.8,0,NA,NA,NA,NA,"Malpighiaceae",NA,"Byrsonima dealbata",NA
+"735",859,"Luxemburgia ciliosa","","Luxemburgia",2,"Luxemburgia ciliosa","(Mart.) Gardner","Luxemburgia",2,158204,1,FALSE,0.8,0,NA,NA,NA,NA,"Ochnaceae",NA,"Luxemburgia ciliosa",NA
+"914",860,"Passiflora amethystina","","Passiflora",2,"Passiflora amethystina","J.C.Mikan","Passiflora",2,152885,1,FALSE,0.8,0,NA,NA,NA,NA,"Passifloraceae",NA,"Passiflora amethystina",NA
+"958",861,"Phyllanthus klotzschianus","","Phyllanthus",2,"Phyllanthus klotzschianus","Müll.Arg.","Phyllanthus",2,141398,1,FALSE,0.8,0,NA,NA,NA,NA,"Phyllanthaceae",NA,"Phyllanthus klotzschianus",NA
+"1284",862,"Turnera hilaireana","","Turnera",2,"Turnera hilaireana","Urb.","Turnera",2,153613,1,FALSE,0.8,0,NA,NA,NA,NA,"Turneraceae",NA,"Turnera hilaireana",NA
+"1330",863,"Viola adunca","","Viola",2,"Viola adunca","Sm.","Viola",2,154081,1,FALSE,0.8,0,NA,NA,NA,NA,"Violaceae",NA,"Viola adunca",NA
+"1331",864,"Viola demetria","","Viola",2,"Viola demetria","Prolongo ex Boiss.","Viola",2,154289,1,FALSE,0.8,0,NA,NA,NA,NA,"Violaceae",NA,"Viola demetria",NA
+"1332",865,"Viola glabella","","Viola",2,"Viola glabella","Nutt.","Viola",2,154369,1,FALSE,0.8,0,NA,NA,NA,NA,"Violaceae",NA,"Viola glabella",NA
+"1333",866,"Viola ocellata","","Viola",2,"Viola ocellata","Torr. &  A.Gray","Viola",2,154574,1,FALSE,0.8,0,NA,NA,NA,NA,"Violaceae",NA,"Viola ocellata",NA
+"1334",867,"Viola riviniana","","Viola",2,"Viola riviniana","Rchb.","Viola",2,154688,1,FALSE,0.8,0,NA,NA,NA,NA,"Violaceae",NA,"Viola riviniana",NA
+"1336",868,"Viola tricolor","","Viola",2,"Viola tricolor"," L.","Viola",2,154799,1,FALSE,0.8,0,NA,NA,NA,NA,"Violaceae",NA,"Viola tricolor",NA
+"1335",869,"Viola sempervirens","","Viola",2,"Viola sempervirens","Greene","Viola",2,154727,1,FALSE,0.8,0,NA,NA,NA,NA,"Violaceae",NA,"Viola sempervirens",NA
+"276",870,"Cistus albidus","","Cistus",2,"Cistus albidus","L.","Cistus",2,233419,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Cistus albidus",NA
+"277",871,"Cistus atriplicifolius","","Cistus",2,"Cistus atriplicifolius","Lam.","Cistus",2,858076,1,FALSE,0.8,0,NA,"Halimium atriplicifolium","(Lam.) Spach",233404,"Cistaceae",NA,"Halimium atriplicifolium",NA
+"278",872,"Cistus calycinus","","Cistus",2,"Cistus calycinus","L.","Cistus",2,858086,1,FALSE,0.8,0,NA,"Halimium calycinum","(L.) K.Koch",233405,"Cistaceae",NA,"Halimium calycinum",NA
+"279",873,"Cistus crispus","","Cistus",2,"Cistus crispus","L.","Cistus",2,233432,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Cistus crispus",NA
+"280",874,"Cistus halimifolius","","Cistus",2,"Cistus halimifolius","L.","Cistus",2,858095,1,FALSE,0.8,0,NA,"Halimium halimifolium ssp. halimifolium",NA,233407,"Cistaceae",NA,"Halimium halimifolium",NA
+"281",875,"Cistus ladanifer","","Cistus",2,"Cistus ladanifer"," L.","Cistus",2,233440,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Cistus ladanifer",NA
+"282",876,"Cistus libanotis","","Cistus",2,"Cistus libanotis","L.","Cistus",2,233445,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Cistus libanotis",NA
+"283",877,"Cistus monspeliensis","","Cistus",2,"Cistus monspeliensis"," L.","Cistus",2,233446,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Cistus monspeliensis",NA
+"284",878,"Cistus populifolius","","Cistus",2,"Cistus populifolius"," L.","Cistus",2,233457,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Cistus populifolius",NA
+"285",879,"Cistus salviifolius","","Cistus",2,"Cistus salviifolius","L.","Cistus",2,233461,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Cistus salviifolius",NA
+"329",880,"Crocanthemum scoparium","","Crocanthemum",2,"Crocanthemum scoparium","Millsp.","Crocanthemum",2,233172,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Crocanthemum scoparium",NA
+"527",881,"Fumana lacidulemiensis","","Fumana",2,"Fumana lacidulemiensis","Güemes","Fumana",2,233107,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Fumana lacidulemiensis",NA
+"584",882,"Helianthemum cinereum","","Helianthemum",2,"Helianthemum cinereum"," (Cav.) Pers.","Helianthemum",2,233218,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Helianthemum cinereum",NA
+"1279",883,"Tuberaria guttata","","Tuberaria",2,"Tuberaria guttata"," (L.) Fourr.","Tuberaria",2,233394,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Tuberaria guttata",NA
+"1280",884,"Tuberaria lignosa","","Tuberaria",2,"Tuberaria lignosa","(Sweet) Samp.","Tuberaria",2,233398,1,FALSE,0.8,0,NA,NA,NA,NA,"Cistaceae",NA,"Tuberaria lignosa",NA
+"603",885,"Hibiscus denudatus","","Hibiscus",2,"Hibiscus denudatus","Benth.","Hibiscus",2,237653,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Hibiscus denudatus",NA
+"145",886,"Brachychiton acerifolius","","Brachychiton",2,"Brachychiton acerifolius","(A.Cunn. ex G.Don) F.Muell.","Brachychiton",2,236943,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Brachychiton acerifolius",NA
+"146",887,"Brachychiton populneus","","Brachychiton",2,"Brachychiton populneus"," (Schott & Endl.) R.Br.","Brachychiton",2,236968,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Brachychiton populneus",NA
+"760",888,"Malacothamnus fasciculatus","","Malacothamnus",2,"Malacothamnus fasciculatus","(Nutt. ex Torr. &  A.Gray) Greene","Malacothamnus",2,239392,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Malacothamnus fasciculatus",NA
+"761",889,"Malacothamnus palmeri","","Malacothamnus",2,"Malacothamnus palmeri","(S.Watson) Greene","Malacothamnus",2,239397,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Malacothamnus palmeri",NA
+"765",890,"Malva assurgentiflora","","Malva",2,"Malva assurgentiflora"," (Kellogg) M.F.Ray","Malva",2,239978,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Malva assurgentiflora",NA
+"766",891,"Malva maroccana","","Malva",2,"Malva maroccana","(Batt. &  Trab.) Verloove & Lambinon","Malva",2,239999,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Malva maroccana",NA
+"769",892,"Malva multiflora","","Malva",2,"Malva multiflora","(Cav.) Soldano, Banfi & Galasso","Malva",2,240002,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Malva multiflora",NA
+"770",893,"Malva nicaeensis","","Malva",2,"Malva nicaeensis","All.","Malva",2,240004,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Malva nicaeensis",NA
+"771",894,"Malva parviflora","","Malva",2,"Malva parviflora","L.","Malva",2,240011,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Malva parviflora",NA
+"773",895,"Malva sylvestris","","Malva",2,"Malva sylvestris","L.","Malva",2,240022,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Malva sylvestris",NA
+"775",896,"Malva trimestris","","Malva",2,"Malva trimestris","(L.) Salisb.","Malva",2,240029,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Malva trimestris",NA
+"1137",897,"Sidalcea malviflora","","Sidalcea",2,"Sidalcea malviflora"," (DC.) Gray ex Benth.","Sidalcea",2,240082,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Sidalcea malviflora",NA
+"1203",898,"Sphaeralcea fulva","","Sphaeralcea",2,"Sphaeralcea fulva","Greene","Sphaeralcea",2,239468,1,FALSE,0.8,0,NA,NA,NA,NA,"Malvaceae",NA,"Sphaeralcea fulva",NA
+"359",899,"Daphne gnidium","","Daphne",2,"Daphne gnidium"," L.","Daphne",2,232278,1,FALSE,0.8,0,NA,NA,NA,NA,"Thymelaeaceae",NA,"Daphne gnidium",NA
+"360",900,"Daphne laureola","","Daphne",2,"Daphne laureola","L.","Daphne",2,232302,1,FALSE,0.8,0,NA,NA,NA,NA,"Thymelaeaceae",NA,"Daphne laureola",NA
+"337",901,"Cuphea ericoides","","Cuphea",2,"Cuphea ericoides","Cham. &  Schltdl.","Cuphea",2,210068,1,FALSE,0.8,0,NA,NA,NA,NA,"Lythraceae",NA,"Cuphea ericoides",NA
+"338",902,"Cuphea linarioides","","Cuphea",2,"Cuphea linarioides","Cham. &  Schltdl.","Cuphea",2,210124,1,FALSE,0.8,0,NA,NA,NA,NA,"Lythraceae",NA,"Cuphea linarioides",NA
+"392",903,"Diplusodon orbicularis","","Diplusodon",2,"Diplusodon orbicularis","Koehne","Diplusodon",2,210345,1,FALSE,0.8,0,NA,NA,NA,NA,"Lythraceae",NA,"Diplusodon orbicularis",NA
+"752",904,"Lythrum salicaria","","Lythrum",2,"Lythrum salicaria"," L.","Lythrum",2,209673,1,FALSE,0.8,0,NA,NA,NA,NA,"Lythraceae",NA,"Lythrum salicaria",NA
+"751",905,"Lythrum junceum","","Lythrum",2,"Lythrum junceum","Banks & Sol.","Lythrum",2,209662,1,FALSE,0.8,0,NA,NA,NA,NA,"Lythraceae",NA,"Lythrum junceum",NA
+"1000",906,"Punica granatum","","Punica",2,"Punica granatum","L.","Punica",2,210279,1,FALSE,0.8,0,NA,NA,NA,NA,"Lythraceae",NA,"Punica granatum",NA
+"183",907,"Cambessedesia corymbosa","","Cambessedesia",2,"Cambessedesia corymbosa","DC.","Cambessedesia",2,223936,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Cambessedesia corymbosa",NA
+"184",908,"Cambessedesia semidecandra","","Cambessedesia",2,"Cambessedesia semidecandra","A.St.-Hil. ex A.B.Martins","Cambessedesia",2,223956,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Cambessedesia semidecandra",NA
+"248",909,"Chaetostoma armatum","","Chaetostoma",2,"Chaetostoma armatum","(Spreng.) Cogn.","Chaetostoma",2,222729,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Chaetostoma armatum",NA
+"672",910,"Lavoisiera confertiflora","","Lavoisiera",2,"Lavoisiera confertiflora","Naudin","Lavoisiera",2,222509,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Lavoisiera confertiflora",NA
+"673",911,"Lavoisiera imbricata","","Lavoisiera",2,"Lavoisiera imbricata","DC.","Lavoisiera",2,222519,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Lavoisiera imbricata",NA
+"781",912,"Marcetia taxifolia","","Marcetia",2,"Marcetia taxifolia","(A.St.-Hil.) DC.","Marcetia",2,222936,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Marcetia taxifolia",NA
+"793",913,"Miconia irwinii","","Miconia",2,"Miconia irwinii","Wurdack","Miconia",2,219744,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Miconia irwinii",NA
+"794",914,"Miconia rubiginosa","","Miconia",2,"Miconia rubiginosa","(Bonpl.) DC.","Miconia",2,220472,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Miconia rubiginosa",NA
+"798",915,"Microlicia amplexicaulis","","Microlicia",2,"Microlicia amplexicaulis","Cogn.","Microlicia",2,222542,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Microlicia amplexicaulis",NA
+"799",916,"Microlicia cardiophora","","Microlicia",2,"Microlicia cardiophora","Naudin","Microlicia",2,222556,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Microlicia cardiophora",NA
+"965",917,"Pleroma heteromalla","","Pleroma",2,"Pleroma heteromalla","(D.Don) D.Don","Pleroma",2,223681,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Pleroma heteromalla",NA
+"1172",918,"Siphanthera arenaria","","Siphanthera",2,"Siphanthera arenaria","(DC.) Cogn.","Siphanthera",2,222761,1,FALSE,0.8,0,NA,NA,NA,NA,"Melastomataceae",NA,"Siphanthera arenaria",NA
+"199",919,"Campomanesia pubescens","","Campomanesia",2,"Campomanesia pubescens","(DC.) Berg","Campomanesia",2,216143,1,FALSE,0.8,0,NA,NA,NA,NA,"Myrtaceae",NA,"Campomanesia pubescens",NA
+"6",920,"Eugenia","","Eugenia",1,"Eugenia",NA,"Eugenia",1,NA,1,FALSE,0.8,0,NA,NA,NA,NA,"Myrtaceae",NA,"Eugenia","Matching only genus level"
+"820",921,"Myrcia guianensis","","Myrcia",2,"Myrcia guianensis","(Aubl.) DC.","Myrcia",2,215354,1,FALSE,0.8,0,NA,NA,NA,NA,"Myrtaceae",NA,"Myrcia guianensis",NA
+"822",922,"Myrtus communis","","Myrtus",2,"Myrtus communis"," L.","Myrtus",2,215938,1,FALSE,0.8,0,NA,NA,NA,NA,"Myrtaceae",NA,"Myrtus communis",NA
+"189",923,"Camissonia ovata","","Camissonia",2,"Camissonia ovata","(Nutt. ex Torr. &  A.Gray) Raven","Camissonia",2,209607,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Camissonia ovata",NA
+"190",924,"Camissoniopsis cheiranthifolia","","Camissoniopsis",2,"Camissoniopsis cheiranthifolia"," (Hornem. ex Spreng.) W.L.Wagner & Hoch","Camissoniopsis",2,209624,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Camissoniopsis cheiranthifolia",NA
+"191",925,"Camissoniopsis micrantha","","Camissoniopsis",2,"Camissoniopsis micrantha","(Hornem. ex Spreng.) W.L.Wagner & Hoch","Camissoniopsis",2,209637,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Camissoniopsis micrantha",NA
+"266",926,"Circaea alpina","","Circaea",2,"Circaea alpina"," L.","Circaea",2,208655,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Circaea alpina",NA
+"267",927,"Circaea lutetiana","","Circaea",2,"Circaea lutetiana","L.","Circaea",2,208667,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Circaea lutetiana",NA
+"287",928,"Clarkia concinna","","Clarkia",2,"Clarkia concinna"," (Fisch. &  C.A.Mey.) Greene","Clarkia",2,209172,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Clarkia concinna",NA
+"288",929,"Clarkia purpurea","","Clarkia",2,"Clarkia purpurea"," (Curtis) A.Nelson & J.F.Macbr.","Clarkia",2,209203,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Clarkia purpurea",NA
+"289",930,"Clarkia rhomboidea","","Clarkia",2,"Clarkia rhomboidea","Douglas","Clarkia",2,209207,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Clarkia rhomboidea",NA
+"290",931,"Clarkia rubicunda","","Clarkia",2,"Clarkia rubicunda","(Lindl.) H. &  M.E.Lewis","Clarkia",2,209209,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Clarkia rubicunda",NA
+"291",932,"Clarkia unguiculata","","Clarkia",2,"Clarkia unguiculata","Lindl.","Clarkia",2,209227,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Clarkia unguiculata",NA
+"424",933,"Epilobium angustifolium","","Epilobium",2,"Epilobium angustifolium","Lam.","Epilobium",2,817586,1,FALSE,0.8,0,NA,"Chamaenerion dodonaei","(Vill.) Schur ex Fuss.",208847,"Onagraceae",NA,"Chamaenerion dodonaei","Multiple results"
+"425",934,"Epilobium canum","","Epilobium",2,"Epilobium canum"," (Greene) P.H.Raven","Epilobium",2,208892,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Epilobium canum",NA
+"426",935,"Epilobium ciliatum","","Epilobium",2,"Epilobium ciliatum"," Raf.","Epilobium",2,208901,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Epilobium ciliatum",NA
+"427",936,"Epilobium montanum","","Epilobium",2,"Epilobium montanum"," L.","Epilobium",2,208981,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Epilobium montanum",NA
+"432",937,"Epilobium septentrionale","","Epilobium",2,"Epilobium septentrionale","(D.D.Keck) R.N.Bowman & Hoch","Epilobium",2,209032,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Epilobium septentrionale",NA
+"526",938,"Fuchsia magellanica","","Fuchsia",2,"Fuchsia magellanica","Lam.","Fuchsia",2,208741,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Fuchsia magellanica",NA
+"724",939,"Ludwigia peploides","","Ludwigia",2,"Ludwigia peploides"," (Kunth) P.H.Raven","Ludwigia",2,208611,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Ludwigia peploides",NA
+"855",940,"Oenothera cambrica","","Oenothera",2,"Oenothera cambrica","Rostanski","Oenothera",2,209314,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Oenothera cambrica",NA
+"854",941,"Oenothera biennis","","Oenothera",2,"Oenothera biennis","L.","Oenothera",2,209302,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Oenothera biennis",NA
+"856",942,"Oenothera elata","","Oenothera",2,"Oenothera elata"," Kunth","Oenothera",2,209361,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Oenothera elata",NA
+"857",943,"Oenothera rosea","","Oenothera",2,"Oenothera rosea","Aiton","Oenothera",2,209516,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Oenothera rosea",NA
+"858",944,"Oenothera speciosa","","Oenothera",2,"Oenothera speciosa","Nutt.","Oenothera",2,209534,1,FALSE,0.8,0,NA,NA,NA,NA,"Onagraceae",NA,"Oenothera speciosa",NA
+"1339",945,"Vochysia elliptica","","Vochysia",2,"Vochysia elliptica","Mart.","Vochysia",2,210430,1,FALSE,0.8,0,NA,NA,NA,NA,"Vochysiaceae",NA,"Vochysia elliptica",NA
+"1340",946,"Vochysia pygmaea","","Vochysia",2,"Vochysia pygmaea","Bong.","Vochysia",2,210504,1,FALSE,0.8,0,NA,NA,NA,NA,"Vochysiaceae",NA,"Vochysia pygmaea",NA
+"1341",947,"Vochysia tucanorum","","Vochysia",2,"Vochysia tucanorum","Mart.","Vochysia",2,210541,1,FALSE,0.8,0,NA,NA,NA,NA,"Vochysiaceae",NA,"Vochysia tucanorum",NA
+"892",948,"Oxalis articulata","","Oxalis",2,"Oxalis articulata"," Savigny","Oxalis",2,137954,1,FALSE,0.8,0,NA,NA,NA,NA,"Oxalidaceae",NA,"Oxalis articulata",NA
+"893",949,"Oxalis oregana","","Oxalis",2,"Oxalis oregana","Nutt. ex Torr. &  A.Gray","Oxalis",2,138350,1,FALSE,0.8,0,NA,NA,NA,NA,"Oxalidaceae",NA,"Oxalis oregana",NA
+"894",950,"Oxalis pes-caprae","","Oxalis",2,"Oxalis pes-caprae","L.","Oxalis",2,138377,1,FALSE,0.8,0,NA,NA,NA,NA,"Oxalidaceae",NA,"Oxalis pes-caprae",NA
+"896",951,"Oxalis stricta","","Oxalis",2,"Oxalis stricta","L.","Oxalis",2,688829,1,FALSE,0.8,0,NA,"Oxalis corniculata","L.",138046,"Oxalidaceae",NA,"Oxalis corniculata","Multiple results"
+"572",952,"Grevillea banksii","","Grevillea",2,"Grevillea banksii","R.Br.","Grevillea",2,127925,1,FALSE,0.8,0,NA,NA,NA,NA,"Proteaceae",NA,"Grevillea banksii",NA
+"123",953,"Berberis aquifolium","","Berberis",2,"Berberis aquifolium","Pursh","Berberis",2,656518,1,FALSE,0.8,0,NA,"Mahonia aquifolium","(Pursh) Nutt.",120561,"Berberidaceae",NA,"Mahonia aquifolium",NA
+"124",954,"Berberis nevinii","","Berberis",2,"Berberis nevinii","A. Gray ex A. Gray et S. Watson","Berberis",2,656788,1,FALSE,0.8,0,NA,"Alloberberis nevinii","(A.Gray ex A.Gray & S.Watson) C.C.Yu & K.F.Chung",120644,"Berberidaceae",NA,"Alloberberis nevinii",NA
+"127",955,"Berberis pinnata","","Berberis",2,"Berberis pinnata","Roxb.","Berberis",2,656737,1,FALSE,0.8,0,NA,"Mahonia roxburghii","(DC.) Takeda",120625,"Berberidaceae",NA,"Mahonia roxburghii","Multiple results"
+"130",956,"Berberis vulgaris","","Berberis",2,"Berberis vulgaris"," L.","Berberis",2,120512,1,FALSE,0.8,0,NA,NA,NA,NA,"Berberidaceae",NA,"Berberis vulgaris",NA
+"256",957,"Chelidonium majus","","Chelidonium",2,"Chelidonium majus","L.","Chelidonium",2,126149,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Chelidonium majus",NA
+"374",958,"Dendromecon harfordii","","Dendromecon",2,"Dendromecon harfordii","Kellogg","Dendromecon",2,125644,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Dendromecon harfordii",NA
+"375",959,"Dendromecon rigida","","Dendromecon",2,"Dendromecon rigida"," Benth.","Dendromecon",2,125645,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Dendromecon rigida",NA
+"377",960,"Dicentra formosa","","Dicentra",2,"Dicentra formosa"," (Andrews) Walp.","Dicentra",2,126189,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Dicentra formosa",NA
+"420",961,"Ehrendorferia chrysantha","","Ehrendorferia",2,"Ehrendorferia chrysantha","(Hook. &  Arn.) J.Rylander","Ehrendorferia",2,126183,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Ehrendorferia chrysantha",NA
+"421",962,"Emmenanthe penduliflora","","Emmenanthe",2,"Emmenanthe penduliflora","Benth.","Emmenanthe",2,349956,1,FALSE,0.8,0,NA,NA,NA,NA,"Hydrophyllaceae",NA,"Emmenanthe penduliflora",NA
+"491",963,"Eschscholzia californica","","Eschscholzia",2,"Eschscholzia californica"," Cham.","Eschscholzia",2,125650,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Eschscholzia californica",NA
+"493",964,"Eschscholzia minutiflora","","Eschscholzia",2,"Eschscholzia minutiflora"," S.Watson","Eschscholzia",2,125659,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Eschscholzia minutiflora",NA
+"528",965,"Fumaria agraria","","Fumaria",2,"Fumaria agraria","Lag.","Fumaria",2,126856,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Fumaria agraria",NA
+"529",966,"Fumaria capreolata","","Fumaria",2,"Fumaria capreolata","L.","Fumaria",2,126868,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Fumaria capreolata",NA
+"530",967,"Fumaria officinalis","","Fumaria",2,"Fumaria officinalis"," L.","Fumaria",2,126909,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Fumaria officinalis",NA
+"567",968,"Glaucium bracteatum","","Glaucium",2,"Glaucium bracteatum","Popov","Glaucium",2,666728,1,FALSE,0.8,0,NA,"Glaucium elegans ssp. bracteatum","(Popov) Mory",126128,"Papaveraceae",NA,"Glaucium elegans",NA
+"902",969,"Papaver argemone","","Papaver",2,"Papaver argemone","L.","Papaver",2,125872,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Papaver argemone",NA
+"904",970,"Papaver dubium","","Papaver",2,"Papaver dubium"," L.","Papaver",2,125911,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Papaver dubium",NA
+"905",971,"Papaver hybridum","","Papaver",2,"Papaver hybridum","L.","Papaver",2,125936,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Papaver hybridum",NA
+"907",972,"Papaver rhoeas","","Papaver",2,"Papaver rhoeas"," L.","Papaver",2,126037,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Papaver rhoeas",NA
+"1049",973,"Romneya coulteri","","Romneya",2,"Romneya coulteri","Harv.","Romneya",2,126089,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Romneya coulteri",NA
+"1092",974,"Sarcocapnos enneaphylla","","Sarcocapnos",2,"Sarcocapnos enneaphylla"," (L.) DC.","Sarcocapnos",2,126992,1,FALSE,0.8,0,NA,NA,NA,NA,"Papaveraceae",NA,"Sarcocapnos enneaphylla",NA
+"434",975,"Eranthis cilicicus","","Eranthis",2,"Eranthis cilicicus","Schott & Kotschy","Eranthis",2,665490,1,FALSE,0.8,0,NA,"Eranthis hyemalis","(L.) Salisb.",125596,"Ranunculaceae",NA,"Eranthis hyemalis",NA
+"23",976,"Adonis microcarpa","","Adonis",2,"Adonis microcarpa","DC.","Adonis",2,125446,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Adonis microcarpa",NA
+"1277",977,"Trollius europaeus","","Trollius",2,"Trollius europaeus","L.","Trollius",2,125485,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Trollius europaeus",NA
+"61",978,"Anemonoides grayi","","Anemonoides",2,"Anemonoides grayi","(Behr & Kellogg) Starod.","Anemonoides",2,660148,1,FALSE,0.8,0,NA,"Anemone oregana","A.Gray",122663,"Ranunculaceae",NA,"Anemone oregana",NA
+"59",979,"Anemone nemorosa","","Anemone",2,"Anemone nemorosa","L.","Anemone",2,122660,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Anemone nemorosa",NA
+"60",980,"Anemone palmata","","Anemone",2,"Anemone palmata","L.","Anemone",2,122666,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Anemone palmata",NA
+"295",981,"Clematis cirrhosa","","Clematis",2,"Clematis cirrhosa","L.","Clematis",2,122999,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Clematis cirrhosa",NA
+"296",982,"Clematis ligusticifolia","","Clematis",2,"Clematis ligusticifolia","Nutt. ex Torr. &  A.Gray","Clematis",2,123165,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Clematis ligusticifolia",NA
+"172",983,"Caltha palustris","","Caltha",2,"Caltha palustris"," L.","Caltha",2,125401,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Caltha palustris",NA
+"366",984,"Delphinium gracile","","Delphinium",2,"Delphinium gracile","DC.","Delphinium",2,122140,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Delphinium gracile",NA
+"369",985,"Delphinium menziesii","","Delphinium",2,"Delphinium menziesii"," DC.","Delphinium",2,122286,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Delphinium menziesii",NA
+"370",986,"Delphinium nudicaule","","Delphinium",2,"Delphinium nudicaule","Torr. &  A.Gray","Delphinium",2,122316,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Delphinium nudicaule",NA
+"372",987,"Delphinium pentagynum","","Delphinium",2,"Delphinium pentagynum"," Lam.","Delphinium",2,122366,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Delphinium pentagynum",NA
+"595",988,"Helleborus foetidus","","Helleborus",2,"Helleborus foetidus"," L.","Helleborus",2,125557,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Helleborus foetidus",NA
+"596",989,"Helleborus niger","","Helleborus",2,"Helleborus niger"," L.","Helleborus",2,125567,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Helleborus niger",NA
+"74",990,"Aquilegia eximia","","Aquilegia",2,"Aquilegia eximia","Van Houtte ex Planch.","Aquilegia",2,121122,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Aquilegia eximia",NA
+"75",991,"Aquilegia formosa","","Aquilegia",2,"Aquilegia formosa","Fisch.","Aquilegia",2,121127,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Aquilegia formosa",NA
+"838",992,"Nigella damascena","","Nigella",2,"Nigella damascena","L.","Nigella",2,121287,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Nigella damascena",NA
+"839",993,"Nigella papillosa","","Nigella",2,"Nigella papillosa"," G.López","Nigella",2,121307,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Nigella papillosa",NA
+"511",994,"Ficaria verna","","Ficaria",2,"Ficaria verna"," Huds.","Ficaria",2,123478,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Ficaria verna",NA
+"1005",995,"Ranunculus acris","","Ranunculus",2,"Ranunculus acris","Willk. ex Freyn","Ranunculus",2,664883,1,FALSE,0.8,0,NA,"Ranunculus tuberosus","Lapeyr.",125273,"Ranunculaceae",NA,"Ranunculus tuberosus","Multiple results"
+"1006",996,"Ranunculus arvensis","","Ranunculus",2,"Ranunculus arvensis","L.","Ranunculus",2,123653,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Ranunculus arvensis",NA
+"1007",997,"Ranunculus bulbosus","","Ranunculus",2,"Ranunculus bulbosus"," L.","Ranunculus",2,123766,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Ranunculus bulbosus",NA
+"1009",998,"Ranunculus californicus","","Ranunculus",2,"Ranunculus californicus","Benth.","Ranunculus",2,123780,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Ranunculus californicus",NA
+"1013",999,"Ranunculus paludosus","","Ranunculus",2,"Ranunculus paludosus"," Poir.","Ranunculus",2,124702,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Ranunculus paludosus",NA
+"1015",1000,"Ranunculus peltatus","","Ranunculus",2,"Ranunculus peltatus"," Schrank","Ranunculus",2,124760,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Ranunculus peltatus",NA
+"1011",1001,"Ranunculus muricatus","","Ranunculus",2,"Ranunculus muricatus","L.","Ranunculus",2,124585,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Ranunculus muricatus",NA
+"1016",1002,"Ranunculus repens","","Ranunculus",2,"Ranunculus repens","L.","Ranunculus",2,124970,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Ranunculus repens",NA
+"1017",1003,"Ranunculus trilobus","","Ranunculus",2,"Ranunculus trilobus","Desf.","Ranunculus",2,125262,1,FALSE,0.8,0,NA,NA,NA,NA,"Ranunculaceae",NA,"Ranunculus trilobus",NA
+"225",1004,"Ceanothus arboreus","","Ceanothus",2,"Ceanothus arboreus","Greene","Ceanothus",2,196981,1,FALSE,0.8,0,NA,NA,NA,NA,"Rhamnaceae",NA,"Ceanothus arboreus",NA
+"1364",1005,"Ceanothus cuneatus fascicularis","","Ceanothus",2,"Ceanothus cuneatus ssp. fascicularis","C. L. Schmidt","Ceanothus",3,792971,1,FALSE,0.55,5,NA,"Ceanothus cuneatus var. fascicularis","(McMinn) Hoover",196989,"Rhamnaceae",NA,"Ceanothus cuneatus","Multiple results"
+"226",1006,"Ceanothus gloriosus","","Ceanothus",2,"Ceanothus gloriosus","Howell","Ceanothus",2,197008,1,FALSE,0.8,0,NA,NA,NA,NA,"Rhamnaceae",NA,"Ceanothus gloriosus",NA
+"227",1007,"Ceanothus integerrimus","","Ceanothus",2,"Ceanothus integerrimus","Hook. &  Arn.","Ceanothus",2,197021,1,FALSE,0.8,0,NA,NA,NA,NA,"Rhamnaceae",NA,"Ceanothus integerrimus",NA
+"228",1008,"Ceanothus papillosus","","Ceanothus",2,"Ceanothus papillosus"," Torr. &  A.Gray","Ceanothus",2,197037,1,FALSE,0.8,0,NA,NA,NA,NA,"Rhamnaceae",NA,"Ceanothus papillosus",NA
+"519",1009,"Frangula californica","","Frangula",2,"Frangula californica"," (Eschsch.) A.Gray","Frangula",2,196139,1,FALSE,0.8,0,NA,NA,NA,NA,"Rhamnaceae",NA,"Frangula californica",NA
+"1028",1010,"Rhamnus crocea","","Rhamnus",2,"Rhamnus crocea","Nutt.","Rhamnus",2,791726,1,FALSE,0.8,0,NA,"Endotropis crocea ssp. crocea",NA,196206,"Rhamnaceae",NA,"Endotropis crocea",NA
+"21",1011,"Adenostoma fasciculatum","","Adenostoma",2,"Adenostoma fasciculatum","Hook. &  Arn.","Adenostoma",2,194043,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Adenostoma fasciculatum",NA
+"22",1012,"Adenostoma sparsifolium","","Adenostoma",2,"Adenostoma sparsifolium","Torr.","Adenostoma",2,194045,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Adenostoma sparsifolium",NA
+"46",1013,"Amelanchier utahensis","","Amelanchier",2,"Amelanchier utahensis","Koehne","Amelanchier",2,194738,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Amelanchier utahensis",NA
+"244",1014,"Cercocarpus montanus","","Cercocarpus",2,"Cercocarpus montanus","Raf.","Cercocarpus",2,188992,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Cercocarpus montanus",NA
+"327",1015,"Crataegus monogyna","","Crataegus",2,"Crataegus monogyna","Jacq.","Crataegus",2,194494,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Crataegus monogyna",NA
+"361",1016,"Dasiphora fruticosa","","Dasiphora",2,"Dasiphora fruticosa","(L.) Rydb.","Dasiphora",2,193495,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Dasiphora fruticosa",NA
+"397",1017,"Dryas octopetala","","Dryas",2,"Dryas octopetala"," L.","Dryas",2,188959,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Dryas octopetala",NA
+"398",1018,"Drymocallis glandulosa","","Drymocallis",2,"Drymocallis glandulosa"," (Lindl.) Rydb.","Drymocallis",2,193465,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Drymocallis glandulosa",NA
+"399",1019,"Drymocallis rupestris","","Drymocallis",2,"Drymocallis rupestris","(L.) Soják","Drymocallis",2,193486,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Drymocallis rupestris",NA
+"517",1020,"Fragaria chiloensis","","Fragaria",2,"Fragaria chiloensis"," (L.) Duchesne","Fragaria",2,193326,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Fragaria chiloensis",NA
+"518",1021,"Fragaria vesca","","Fragaria",2,"Fragaria vesca"," L.","Fragaria",2,193348,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Fragaria vesca",NA
+"559",1022,"Geum macrophyllum","","Geum",2,"Geum macrophyllum","Willd.","Geum",2,189064,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Geum macrophyllum",NA
+"561",1023,"Geum urbanum","","Geum",2,"Geum urbanum","L.","Geum",2,189102,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Geum urbanum",NA
+"601",1024,"Heteromeles arbutifolia","","Heteromeles",2,"Heteromeles arbutifolia","(Lindl.) M.Roem.","Heteromeles",2,195172,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Heteromeles arbutifolia",NA
+"610",1025,"Holodiscus discolor","","Holodiscus",2,"Holodiscus discolor","(Pursh) Maxim.","Holodiscus",2,194277,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Holodiscus discolor",NA
+"612",1026,"Horkelia californica","","Horkelia",2,"Horkelia californica"," Cham. &  Schltdl.","Horkelia",2,193366,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Horkelia californica",NA
+"613",1027,"Horkelia marinensis","","Horkelia",2,"Horkelia marinensis","(Elmer) Crum ex D.D.Keck","Horkelia",2,193393,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Horkelia marinensis",NA
+"738",1028,"Lyonothamnus floribundus","","Lyonothamnus",2,"Lyonothamnus floribundus"," A.Gray","Lyonothamnus",2,193503,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Lyonothamnus floribundus",NA
+"764",1029,"Malus fusca","","Malus",2,"Malus fusca","(Raf.) C. K. Schneid.","Malus",2,790085,1,FALSE,0.8,0,NA,"Sinomalus fusca","(Raf.) Rushforth",195616,"Rosaceae",NA,"Sinomalus fusca",NA
+"846",1030,"Oemleria cerasiformis","","Oemleria",2,"Oemleria cerasiformis","(Torr. &  A.Gray) J.W.Landon","Oemleria",2,193543,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Oemleria cerasiformis",NA
+"974",1031,"Potentilla anserina","","Potentilla",2,"Potentilla anserina","L.","Potentilla",2,782559,1,FALSE,0.8,0,NA,"Argentina anserina ssp. anserina",NA,192403,"Rosaceae",NA,"Argentina anserina",NA
+"975",1032,"Potentilla bolanderi","","Potentilla",2,"Potentilla bolanderi","Greene","Potentilla",2,783465,1,FALSE,0.8,0,NA,"Horkelia bolanderi","A.Gray",193365,"Rosaceae",NA,"Horkelia bolanderi",NA
+"977",1033,"Potentilla gracilis","","Potentilla",2,"Potentilla gracilis","Douglas","Potentilla",2,191923,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Potentilla gracilis",NA
+"978",1034,"Potentilla hickmanii","","Potentilla",2,"Potentilla hickmanii","Eastw.","Potentilla",2,191948,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Potentilla hickmanii",NA
+"979",1035,"Potentilla sterilis","","Potentilla",2,"Potentilla sterilis","(L.) Garcke","Potentilla",2,192206,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Potentilla sterilis",NA
+"992",1036,"Prunus avium","","Prunus",2,"Prunus avium","(L.) L.","Prunus",2,193585,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Prunus avium",NA
+"1051",1037,"Rosa arvensis","","Rosa",2,"Rosa arvensis","Huds.","Rosa",2,191329,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rosa arvensis",NA
+"1052",1038,"Rosa californica","","Rosa",2,"Rosa californica","Cham. &  Schltdl.","Rosa",2,191357,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rosa californica",NA
+"1053",1039,"Rosa canina","","Rosa",2,"Rosa canina","L.","Rosa",2,191359,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rosa canina",NA
+"1054",1040,"Rosa gymnocarpa","","Rosa",2,"Rosa gymnocarpa"," Nutt. ex Torr. &  A.Gray","Rosa",2,191432,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rosa gymnocarpa",NA
+"1055",1041,"Rosa minutifolia","","Rosa",2,"Rosa minutifolia","Parry","Rosa",2,191505,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rosa minutifolia",NA
+"1059",1042,"Rubus idaeus","","Rubus",2,"Rubus idaeus"," L.","Rubus",2,189839,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rubus idaeus",NA
+"1062",1043,"Rubus parviflorus","","Rubus",2,"Rubus parviflorus","Walter","Rubus",2,776540,1,FALSE,0.8,0,NA,"Rubus cuneifolius","Pursh",189481,"Rosaceae",NA,"Rubus cuneifolius","Multiple results"
+"1063",1044,"Rubus spectabilis","","Rubus",2,"Rubus spectabilis","Pursh","Rubus",2,190661,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rubus spectabilis",NA
+"1065",1045,"Rubus ulmifolius","","Rubus",2,"Rubus ulmifolius","Schott","Rubus",2,190793,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rubus ulmifolius",NA
+"1067",1046,"Rubus ursinus","","Rubus",2,"Rubus ursinus"," Cham. &  Schltdl.","Rubus",2,190799,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Rubus ursinus",NA
+"1205",1047,"Spiraea splendens","","Spiraea",2,"Spiraea splendens","Baumann ex K.Koch","Spiraea",2,194229,1,FALSE,0.8,0,NA,NA,NA,NA,"Rosaceae",NA,"Spiraea splendens",NA
+"996",1048,"Psittacanthus plagiophyllus","","Psittacanthus",2,"Psittacanthus plagiophyllus","Eichler","Psittacanthus",2,247047,1,FALSE,0.8,0,NA,NA,NA,NA,"Loranthaceae",NA,"Psittacanthus plagiophyllus",NA
+"891",1049,"Osyris lanceolata","","Osyris",2,"Osyris lanceolata","Steud. & Hochst. ex A. DC.","Osyris",2,890840,1,FALSE,0.8,0,NA,"Osyris wightiana","Wall. ex Wight",248465,"Santalaceae",NA,"Osyris wightiana",NA
+"1039",1050,"Rhus integrifolia","","Rhus",2,"Rhus integrifolia","(Nutt.) Benth. &  Hook.fil. ex Brewer & S.Watson","Rhus",2,225255,1,FALSE,0.8,0,NA,NA,NA,NA,"Anacardiaceae",NA,"Rhus integrifolia",NA
+"570",1051,"Gluta aptera","","Gluta",2,"Gluta aptera","(King) Ding Hou","Gluta",2,224549,1,FALSE,0.8,0,NA,NA,NA,NA,"Anacardiaceae",NA,"Gluta aptera",NA
+"790",1052,"Melia azedarach","","Melia",2,"Melia azedarach","L.","Melia",2,231016,1,FALSE,0.8,0,NA,NA,NA,NA,"Meliaceae",NA,"Melia azedarach",NA
+"142",1053,"Boronia elatior","","Boronia",2,"Boronia elatior","Bartl.","Boronia",2,851491,1,FALSE,0.8,0,NA,"Boronia molloyae","J.R.Drumm.",230530,"Rutaceae",NA,"Boronia molloyae",NA
+"143",1054,"Boronia megastigma","","Boronia",2,"Boronia megastigma","Nees ex Bartl.","Boronia",2,230526,1,FALSE,0.8,0,NA,NA,NA,NA,"Rutaceae",NA,"Boronia megastigma",NA
+"260",1055,"Choisya ternata","","Choisya",2,"Choisya ternata","Kunth","Choisya",2,229101,1,FALSE,0.8,0,NA,NA,NA,NA,"Rutaceae",NA,"Choisya ternata",NA
+"997",1056,"Ptelea crenulata","","Ptelea",2,"Ptelea crenulata","Greene","Ptelea",2,228795,1,FALSE,0.8,0,NA,NA,NA,NA,"Rutaceae",NA,"Ptelea crenulata",NA
+"1070",1057,"Ruta angustifolia","","Ruta",2,"Ruta angustifolia","Pers.","Ruta",2,228371,1,FALSE,0.8,0,NA,NA,NA,NA,"Rutaceae",NA,"Ruta angustifolia",NA
+"1072",1058,"Ruta chalepensis","","Ruta",2,"Ruta chalepensis"," L.","Ruta",2,228372,1,FALSE,0.8,0,NA,NA,NA,NA,"Rutaceae",NA,"Ruta chalepensis",NA
+"400",1059,"Dudleya brittonii","","Dudleya",2,"Dudleya brittonii","D.A.Johans.","Dudleya",2,131929,1,FALSE,0.8,0,NA,NA,NA,NA,"Crassulaceae",NA,"Dudleya brittonii",NA
+"401",1060,"Dudleya caespitosa","","Dudleya",2,"Dudleya caespitosa","(Haw.) Britton & Rose","Dudleya",2,131930,1,FALSE,0.8,0,NA,NA,NA,NA,"Crassulaceae",NA,"Dudleya caespitosa",NA
+"402",1061,"Dudleya cymosa","","Dudleya",2,"Dudleya cymosa"," (Lem.) Britton & Rose","Dudleya",2,131938,1,FALSE,0.8,0,NA,NA,NA,NA,"Crassulaceae",NA,"Dudleya cymosa",NA
+"403",1062,"Dudleya farinosa","","Dudleya",2,"Dudleya farinosa","(Lindl.) Britton & Rose","Dudleya",2,131948,1,FALSE,0.8,0,NA,NA,NA,NA,"Crassulaceae",NA,"Dudleya farinosa",NA
+"404",1063,"Dudleya lanceolata","","Dudleya",2,"Dudleya lanceolata","(Nutt.) Britton & Rose","Dudleya",2,131956,1,FALSE,0.8,0,NA,NA,NA,NA,"Crassulaceae",NA,"Dudleya lanceolata",NA
+"405",1064,"Dudleya traskae","","Dudleya",2,"Dudleya traskae","(Rose) Moran","Dudleya",2,131976,1,FALSE,0.8,0,NA,NA,NA,NA,"Crassulaceae",NA,"Dudleya traskae",NA
+"1123",1065,"Sedum acre","","Sedum",2,"Sedum acre"," L.","Sedum",2,131988,1,FALSE,0.8,0,NA,NA,NA,NA,"Crassulaceae",NA,"Sedum acre",NA
+"1124",1066,"Sedum album","","Sedum",2,"Sedum album"," L.","Sedum",2,131998,1,FALSE,0.8,0,NA,NA,NA,NA,"Crassulaceae",NA,"Sedum album",NA
+"1125",1067,"Sedum amplexicaule","","Sedum",2,"Sedum amplexicaule","DC.","Sedum",2,676400,1,FALSE,0.8,0,NA,"Petrosedum amplexicaule ssp. amplexicaule",NA,131640,"Crassulaceae",NA,"Petrosedum amplexicaule",NA
+"1126",1068,"Sedum mucizonia","","Sedum",2,"Sedum mucizonia"," (Ortega) Raym.-Hamet","Sedum",2,132317,1,FALSE,0.8,0,NA,NA,NA,NA,"Crassulaceae",NA,"Sedum mucizonia",NA
+"1128",1069,"Sedum sediforme","","Sedum",2,"Sedum sediforme","(Jacq.) Pau","Sedum",2,676503,1,FALSE,0.8,0,NA,"Petrosedum sediforme","(Jacq.) Grulich",131653,"Crassulaceae",NA,"Petrosedum sediforme","Multiple results"
+"646",1070,"Kalanchoe daigremontiana","","Kalanchoe",2,"Kalanchoe daigremontiana","Raym.-Hamet & Perrier","Kalanchoe",2,131103,1,FALSE,0.8,0,NA,NA,NA,NA,"Crassulaceae",NA,"Kalanchoe daigremontiana",NA
+"1291",1071,"Umbilicus rupestris","","Umbilicus",2,"Umbilicus rupestris","(Salisb.) Dandy","Umbilicus",2,131414,1,FALSE,0.8,0,NA,NA,NA,NA,"Crassulaceae",NA,"Umbilicus rupestris",NA
+"350",1072,"Cynomorium coccineum","","Cynomorium",2,"Cynomorium coccineum"," L.","Cynomorium",2,134496,1,FALSE,0.8,0,NA,NA,NA,NA,"Cynomoriaceae",NA,"Cynomorium coccineum",NA
+"1041",1073,"Ribes aureum","","Ribes",2,"Ribes aureum","Pursh","Ribes",2,133089,1,FALSE,0.8,0,NA,NA,NA,NA,"Grossulariaceae",NA,"Ribes aureum",NA
+"1042",1074,"Ribes californicum","","Ribes",2,"Ribes californicum"," Hook. &  Arn.","Ribes",2,133103,1,FALSE,0.8,0,NA,NA,NA,NA,"Grossulariaceae",NA,"Ribes californicum",NA
+"1043",1075,"Ribes malvaceum","","Ribes",2,"Ribes malvaceum","Sm.","Ribes",2,133214,1,FALSE,0.8,0,NA,NA,NA,NA,"Grossulariaceae",NA,"Ribes malvaceum",NA
+"1044",1076,"Ribes menziesii","","Ribes",2,"Ribes menziesii","Pursh","Ribes",2,133225,1,FALSE,0.8,0,NA,NA,NA,NA,"Grossulariaceae",NA,"Ribes menziesii",NA
+"1045",1077,"Ribes sanguineum","","Ribes",2,"Ribes sanguineum","Pursh","Ribes",2,133283,1,FALSE,0.8,0,NA,NA,NA,NA,"Grossulariaceae",NA,"Ribes sanguineum",NA
+"1046",1078,"Ribes speciosum","","Ribes",2,"Ribes speciosum","Pursh","Ribes",2,133293,1,FALSE,0.8,0,NA,NA,NA,NA,"Grossulariaceae",NA,"Ribes speciosum",NA
+"1047",1079,"Ribes viburnifolium","","Ribes",2,"Ribes viburnifolium","A.Gray","Ribes",2,133323,1,FALSE,0.8,0,NA,NA,NA,NA,"Grossulariaceae",NA,"Ribes viburnifolium",NA
+"575",1080,"Hamamelis mollis","","Hamamelis",2,"Hamamelis mollis","Oliv.","Hamamelis",2,130625,1,FALSE,0.8,0,NA,NA,NA,NA,"Hamamelidaceae",NA,"Hamamelis mollis",NA
+"897",1081,"Paeonia broteroi","","Paeonia",2,"Paeonia broteroi","Boiss. &  Reut.","Paeonia",2,130418,1,FALSE,0.8,0,NA,NA,NA,NA,"Paeoniaceae",NA,"Paeonia broteroi",NA
+"898",1082,"Paeonia delavayi","","Paeonia",2,"Paeonia delavayi"," Franch.","Paeonia",2,130431,1,FALSE,0.8,0,NA,NA,NA,NA,"Paeoniaceae",NA,"Paeonia delavayi",NA
+"131",1083,"Bergenia crassifolia","","Bergenia",2,"Bergenia crassifolia","(L.) Fritsch","Bergenia",2,134114,1,FALSE,0.8,0,NA,NA,NA,NA,"Saxifragaceae",NA,"Bergenia crassifolia",NA
+"144",1084,"Boykinia occidentalis","","Boykinia",2,"Boykinia occidentalis","Torr. &  A.Gray","Boykinia",2,134096,1,FALSE,0.8,0,NA,NA,NA,NA,"Saxifragaceae",NA,"Boykinia occidentalis",NA
+"263",1085,"Chrysosplenium alternifolium","","Chrysosplenium",2,"Chrysosplenium alternifolium","L.","Chrysosplenium",2,134134,1,FALSE,0.8,0,NA,NA,NA,NA,"Saxifragaceae",NA,"Chrysosplenium alternifolium",NA
+"708",1086,"Lithophragma heterophyllum","","Lithophragma",2,"Lithophragma heterophyllum","(Hook. &  Arn.) Torr. &  A.Gray","Lithophragma",2,134370,1,FALSE,0.8,0,NA,NA,NA,NA,"Saxifragaceae",NA,"Lithophragma heterophyllum",NA
+"795",1087,"Micranthes japonica","","Micranthes",2,"Micranthes japonica","(Boissieu) S.Akiyama & H.Ohba","Micranthes",2,134280,1,FALSE,0.8,0,NA,NA,NA,NA,"Saxifragaceae",NA,"Micranthes japonica",NA
+"1097",1088,"Saxifraga granulata","","Saxifraga",2,"Saxifraga granulata","L.","Saxifraga",2,133582,1,FALSE,0.8,0,NA,NA,NA,NA,"Saxifragaceae",NA,"Saxifraga granulata",NA
+"1100",1089,"Saxifraga hypnoides","","Saxifraga",2,"Saxifraga hypnoides","L.","Saxifraga",2,133623,1,FALSE,0.8,0,NA,NA,NA,NA,"Saxifragaceae",NA,"Saxifraga hypnoides",NA
+"1101",1090,"Saxifraga spathularis","","Saxifraga",2,"Saxifraga spathularis","Brot.","Saxifraga",2,133875,1,FALSE,0.8,0,NA,NA,NA,NA,"Saxifragaceae",NA,"Saxifraga spathularis",NA
+"1231",1091,"Tellima grandiflora","","Tellima",2,"Tellima grandiflora","(Pursh) Douglas ex Lindl.","Tellima",2,134457,1,FALSE,0.8,0,NA,NA,NA,NA,"Saxifragaceae",NA,"Tellima grandiflora",NA
+"1241",1092,"Tiarella trifoliata","","Tiarella",2,"Tiarella trifoliata","L.","Tiarella",2,134493,1,FALSE,0.8,0,NA,NA,NA,NA,"Saxifragaceae",NA,"Tiarella trifoliata",NA
+"178",1093,"Calystegia sepium","","Calystegia",2,"Calystegia sepium"," (L.) R.Br.","Calystegia",2,343023,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Calystegia sepium",NA
+"176",1094,"Calystegia collina","","Calystegia",2,"Calystegia collina"," (Greene) Brummitt","Calystegia",2,342985,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Calystegia collina",NA
+"177",1095,"Calystegia macrostegia","","Calystegia",2,"Calystegia macrostegia"," (Greene) Brummitt","Calystegia",2,342996,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Calystegia macrostegia",NA
+"1362",1096,"Calystegia purpurata purpurata","","Calystegia",2,"Calystegia purpurata ssp. purpurata",NA,"Calystegia",3,343020,1,FALSE,0.55,5,NA,NA,NA,NA,"Convolvulaceae",NA,"Calystegia purpurata",NA
+"179",1097,"Calystegia silvatica","","Calystegia",2,"Calystegia silvatica"," (Kit.) Griseb.","Calystegia",2,343033,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Calystegia silvatica",NA
+"180",1098,"Calystegia soldanella","","Calystegia",2,"Calystegia soldanella","(L.) R.Br.","Calystegia",2,343038,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Calystegia soldanella",NA
+"311",1099,"Convolvulus arvensis","","Convolvulus",2,"Convolvulus arvensis","L.","Convolvulus",2,342731,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Convolvulus arvensis",NA
+"310",1100,"Convolvulus althaeoides","","Convolvulus",2,"Convolvulus althaeoides","L.","Convolvulus",2,342725,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Convolvulus althaeoides",NA
+"312",1101,"Convolvulus tricolor","","Convolvulus",2,"Convolvulus tricolor"," L.","Convolvulus",2,342952,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Convolvulus tricolor",NA
+"339",1102,"Cuscuta californica","","Cuscuta",2,"Cuscuta californica","Choisy","Cuscuta",2,342474,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Cuscuta californica",NA
+"509",1103,"Evolvulus lithospermoides","","Evolvulus",2,"Evolvulus lithospermoides","Mart.","Evolvulus",2,342134,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Evolvulus lithospermoides",NA
+"624",1104,"Ipomoea granulosa","","Ipomoea",2,"Ipomoea granulosa","Chodat & Hassl.","Ipomoea",2,343536,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Ipomoea granulosa",NA
+"625",1105,"Ipomopsis aggregata","","Ipomopsis",2,"Ipomopsis aggregata"," (Pursh) V.E.Grant","Ipomopsis",2,269209,1,FALSE,0.8,0,NA,NA,NA,NA,"Polemoniaceae",NA,"Ipomopsis aggregata",NA
+"626",1106,"Ipomopsis tenuituba","","Ipomopsis",2,"Ipomopsis tenuituba"," (Rydb.) V.E.Grant","Ipomopsis",2,269266,1,FALSE,0.8,0,NA,NA,NA,NA,"Polemoniaceae",NA,"Ipomopsis tenuituba",NA
+"640",1107,"Jacquemontia prostrata","","Jacquemontia",2,"Jacquemontia prostrata","Choisy","Jacquemontia",2,342407,1,FALSE,0.8,0,NA,NA,NA,NA,"Convolvulaceae",NA,"Jacquemontia prostrata",NA
+"246",1108,"Cestrum elegans","","Cestrum",2,"Cestrum elegans","(Brongn.) Schltdl.","Cestrum",2,344442,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Cestrum elegans",NA
+"362",1109,"Datura wrightii","","Datura",2,"Datura wrightii","Hort. ex Regel","Datura",2,345139,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Datura wrightii",NA
+"777",1110,"Mandragora autumnalis","","Mandragora",2,"Mandragora autumnalis","Bertol.","Mandragora",2,1072242,1,FALSE,0.8,0,NA,"Mandragora officinarum","L.",345062,"Solanaceae",NA,"Mandragora officinarum",NA
+"836",1111,"Nicotiana glauca","","Nicotiana",2,"Nicotiana glauca","Graham","Nicotiana",2,344642,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Nicotiana glauca",NA
+"837",1112,"Nicotiana obtusifolia","","Nicotiana",2,"Nicotiana obtusifolia","M.Martens & Galeotti","Nicotiana",2,344664,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Nicotiana obtusifolia",NA
+"959",1113,"Physalis crassifolia","","Physalis",2,"Physalis crassifolia","Benth.","Physalis",2,347168,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Physalis crassifolia",NA
+"1179",1114,"Solanum bonariense","","Solanum",2,"Solanum bonariense","L.","Solanum",2,345390,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum bonariense",NA
+"1180",1115,"Solanum didymum","","Solanum",2,"Solanum didymum","Dunal","Solanum",2,345602,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum didymum",NA
+"1181",1116,"Solanum douglasii","","Solanum",2,"Solanum douglasii","Dunal","Solanum",2,345626,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum douglasii",NA
+"1182",1117,"Solanum dulcamara","","Solanum",2,"Solanum dulcamara","L.","Solanum",2,345628,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum dulcamara",NA
+"1183",1118,"Solanum lycocarpum","","Solanum",2,"Solanum lycocarpum","A.St.-Hil.","Solanum",2,345971,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum lycocarpum",NA
+"1184",1119,"Solanum nigrum","","Solanum",2,"Solanum nigrum","L.","Solanum",2,346096,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum nigrum",NA
+"1186",1120,"Solanum paniculatum","","Solanum",2,"Solanum paniculatum","L.","Solanum",2,346160,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum paniculatum",NA
+"1187",1121,"Solanum umbelliferum","","Solanum",2,"Solanum umbelliferum","Eschsch.","Solanum",2,346575,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum umbelliferum",NA
+"1188",1122,"Solanum wallacei","","Solanum",2,"Solanum wallacei"," (A.Gray) Parish","Solanum",2,346636,1,FALSE,0.8,0,NA,NA,NA,NA,"Solanaceae",NA,"Solanum wallacei",NA
+"656",1123,"Larrea tridentata","","Larrea",2,"Larrea tridentata"," (Sessé & Moc. ex DC.) Coult.","Larrea",2,135785,1,FALSE,0.8,0,NA,NA,NA,NA,"Zygophyllaceae",NA,"Larrea tridentata",NA

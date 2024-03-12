@@ -9,9 +9,13 @@ editor_options:
 1. Install and load packages
 
 ```{r, echo = F}
-#devtools::install_github("jinyizju/V.PhyloMaker")
-library(V.PhyloMaker)
+#library("devtools")
+#devtools::install_github("jinyizju/V.PhyloMaker2")
+library(V.PhyloMaker2)
 
+# github (requires `remotes` or `devtools`)
+#devtools::install_github("ecoinfor/U.Taxonstand")
+library(U.Taxonstand)
 
 ```
 
@@ -19,9 +23,8 @@ library(V.PhyloMaker)
 3. Frequency matrix.
 
 ```{r, echo = F}
-mydata <- read.csv("./PIGMENT_EVOLUTION_V4.csv") 
+mydata <- read.csv("./PIGMENT_EVOLUTION_V7.csv") 
 dim(mydata)
-mydata <- mydata[1:693,1:17]
 ```
 
 
@@ -30,58 +33,49 @@ mydata <- mydata[1:693,1:17]
 
 ```{r, echo = F}
 
+# load the database
+
+library(openxlsx)
+#dat1 <- read.xlsx("WFO_v2.1_20230304_part1.xlsx")
+#dat2 <- read.xlsx("WFO_v2.1_20230304_part2.xlsx")
+#dat3 <- read.xlsx("WFO_v2.1_20230304_part3.xlsx")
+dat1 <- read.xlsx("Plants_WP_database_part1.xlsx")
+dat2 <- read.xlsx("Plants_WP_database_part2.xlsx")
+dat3 <- read.xlsx("Plants_WP_database_part3.xlsx")
+database <- rbind(dat1, dat2, dat3)
+#We are going to use the WP database but there are many differnt options
+#Check here https://github.com/nameMatch/Database/tree/main
+
+rm(dat1, dat2, dat3)
+
+corrected.species <- nameMatch(mydata$Species..names.WFO.2,spSource=database, author = FALSE, max.distance= 1, matchFirst=TRUE)
+
+corrected.species
+#make corrections to your database if necessary
+names(corrected.species)
+write.csv(corrected.species, file = "corrected.species.csv")
+
+c1<- corrected.species$Accepted_SPNAME
+c2<- corrected.species$Genus_in_database
+c3<- corrected.species$Family
+mydata2 <- data.frame(species = c1, genus = c2, family = c3)
+
+mytree <- phylo.maker(sp.list = mydata2, tree = GBOTB.extended.WP, nodes = nodes.info.1.WP, scenarios = "S2")
+#There is available S1 and S3 and nodes.info.2.WP.csv
+
+plot(mytree$scenario.2, cex = 0.5)
 
 
-genera<-sapply(strsplit(as.character(mydata[,5]),"_"),function(x) x[1])
-epithet<-sapply(strsplit(as.character(mydata[,5]),"_"),function(x) x[2])
-
-library(Taxonstand)
-correctednames <- TPL(genus = genera, species = epithet, infrasp = NULL,infra = TRUE, corr = TRUE, diffchar = 2, max.distance = 1,version = "1.1", encoding = "UTF-8", author = TRUE,drop.lower.level = FALSE, file = "", silent = TRUE, repeats = 6)
-write.csv(correctednames,"correctednames.csv", row.names = FALSE)
 
 
-species <- paste(correctednames$New.Genus,correctednames$New.Species, sep = "_")
-duplicated(species)
 
-mydata[,5] <- as.character(mydata[,5])
-mydata[,5][duplicated(species)]
-species[duplicated(species)]
-species[duplicated(species)] <- mydata[,5][duplicated(species)]
-
-duplicated(species)
-
-#mydata[,5][duplicated(species, fromLast = TRUE)]
-#species[duplicated(species, fromLast = TRUE)]
-#species[duplicated(species, fromLast = TRUE)] <- mydata[,5][duplicated(species, fromLast = TRUE)]
-
-#duplicated(species)
-
-loaddata <- data.frame(species = species, genus = correctednames$New.Genus, family = mydata[,3])
-my.phylo.maker <- phylo.maker(data, tree = GBOTB.extended, nodes = nodes.info.1, output.sp.list = TRUE, output.tree = FALSE, scenarios = c("S1","S2","S3"), r = 1)
-
-
-speciesnamesversions <- cbind(as.character(mydata[,5]), paste(correctednames$New.Genus,correctednames$New.Species, sep = "_"), species )
-
-my.phylo.maker$scenario.3$tip.label <- speciesnamesversions[,1][match(my.phylo.maker$scenario.3$tip.label,speciesnamesversions[,3])]
-pdffn = paste0("myphylo", ".scenario3.pdf")
-pdf(file=pdffn, width=6, height=60)
-plot(my.phylo.maker$scenario.3, cex = 0.5)
-dev.off()
-write.tree(my.phylo.maker$scenario.3, file = "mytree3.tree")
-
-my.phylo.maker$scenario.2$run.1$tip.label <- speciesnamesversions[,1][match(my.phylo.maker$scenario.2$run.1$tip.label,speciesnamesversions[,3])]
 pdffn = paste0("myphylo", ".scenario2.pdf")
 pdf(file=pdffn, width=6, height=60)
 plot(my.phylo.maker$scenario.2$run.1, cex = 0.5)
 dev.off()
-write.tree(my.phylo.maker$scenario.2$run.1, file = "mytree2.tree")
+write.tree(my.phylo.maker$scenario.2, file = "mytree2.tree")
 
-my.phylo.maker$scenario.1$tip.label <- speciesnamesversions[,1][match(my.phylo.maker$scenario.1$tip.label,speciesnamesversions[,3])]
-pdffn = paste0("myphylo", ".scenario1.pdf")
-pdf(file=pdffn, width=6, height=60)
-plot(my.phylo.maker$scenario.1, cex = 0.5)
-dev.off()
-write.tree(my.phylo.maker$scenario.1, file = "mytree1.tree")
+
 
 ```
 

@@ -1,0 +1,605 @@
+---
+title: "Color y recompensas"
+author: "Marcial"
+date: "01/09/2019"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+1. Install and load packages
+
+```{r, echo = F}
+#library("devtools")
+#devtools::install_github("jinyizju/V.PhyloMaker2")
+library(V.PhyloMaker2)
+
+# github (requires `remotes` or `devtools`)
+#devtools::install_github("ecoinfor/U.Taxonstand")
+library(U.Taxonstand)
+
+```
+
+
+3. Frequency matrix.
+
+```{r, echo = F}
+mydata <- read.csv("./PIGMENT_EVOLUTION_V7.csv") 
+dim(mydata)
+```
+
+
+
+3. Create your tree and plot
+
+```{r, echo = F}
+
+# load the database
+
+library(openxlsx)
+#dat1 <- read.xlsx("WFO_v2.1_20230304_part1.xlsx")
+#dat2 <- read.xlsx("WFO_v2.1_20230304_part2.xlsx")
+#dat3 <- read.xlsx("WFO_v2.1_20230304_part3.xlsx")
+dat1 <- read.xlsx("Plants_WP_database_part1.xlsx")
+dat2 <- read.xlsx("Plants_WP_database_part2.xlsx")
+dat3 <- read.xlsx("Plants_WP_database_part3.xlsx")
+database <- rbind(dat1, dat2, dat3)
+#We are going to use the WP database but there are many differnt options
+#Check here https://github.com/nameMatch/Database/tree/main
+
+rm(dat1, dat2, dat3)
+
+corrected.species <- nameMatch(mydata$Species..names.WFO.2,spSource=database, author = FALSE, max.distance= 1, matchFirst=TRUE)
+
+corrected.species
+#make corrections to your database if necessary
+names(corrected.species)
+write.csv(corrected.species, file = "corrected.species.csv")
+
+c1<- corrected.species$Accepted_SPNAME
+c2<- corrected.species$Genus_in_database
+c3<- corrected.species$Family
+mydata2 <- data.frame(species = c1, genus = c2, family = c3)
+
+mytree <- phylo.maker(sp.list = mydata2, tree = GBOTB.extended.WP, nodes = nodes.info.1.WP, scenarios = "S2")
+#There is available S1 and S3 and nodes.info.2.WP.csv
+
+plot(mytree$scenario.2, cex = 0.5)
+
+
+
+
+
+pdffn = paste0("myphylo", ".scenario2.pdf")
+pdf(file=pdffn, width=6, height=60)
+plot(mytree$scenario.2, cex = 0.5)
+dev.off()
+write.tree(my.phylo.maker$scenario.2, file = "mytree2.tree")
+
+
+
+```
+
+
+
+Analyses with corHMM
+```{r}
+
+library(corHMM)
+
+names(mydata)
+mydata <- cbind(mydata,corrected.species$Accepted_SPNAME)
+names(mydata)[12]<-"Accepted_SPNAME"
+mydata[,12]<- gsub(" ", "_", mydata[,12])
+
+
+Anthocyanins <- cbind (as.character(mydata[,12][!is.na(mydata[,7])]),mydata[,7][!is.na(mydata[,7])])
+library(phytools)
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Anthocyanins[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+pp.Anthocyanins.ARD.2<-corHMM(tree,Anthocyanins,rate.cat=2,node.states="marginal")
+pp.Anthocyanins.ARD.2
+pp.Anthocyanins.ARD.1<-corHMM(tree,Anthocyanins,rate.cat=1,node.states="marginal")
+pp.Anthocyanins.ARD.1
+pp.Anthocyanins.ER.2<-corHMM(tree,Anthocyanins,rate.cat=2, model = "ER", node.states="marginal")
+pp.Anthocyanins.ER.2
+pp.Anthocyanins.ER.1<-corHMM(tree,Anthocyanins,rate.cat=1, model = "ER", node.states="marginal")
+pp.Anthocyanins.ER.1
+pp.Anthocyanins.ARD.3<-corHMM(tree,Anthocyanins,rate.cat=3, node.states="marginal")
+pp.Anthocyanins.ARD.3
+pp.Anthocyanins.ER.3<-corHMM(tree,Anthocyanins,rate.cat=3, model = "ER", node.states="marginal")
+pp.Anthocyanins.ER.3
+
+simmap.Anthocyanins <- makeSimmap(tree=tree, data=Anthocyanins, model=pp.Anthocyanins.ER.2$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Anthocyanins)
+
+pdffn = paste0("Anthocyanins2rates.ER.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Anthocyanins.ER.2$states,cex=0.5, pie.cex=0.5,title="Anthocyanins 2 rates ER")
+dev.off()
+
+pdffn = paste0("Anthocyanins2rates.ER.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Anthocyanins.2$states,cex=0.5, pie.cex=0.5,title="Anthocyanins 2 rates ER")
+dev.off()
+
+
+cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
+pdffn = paste0("Anthocyanins2ratesfanER.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Anthocyanins.2$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+names(mydata)
+Aurones <- cbind (as.character(mydata[,5][!is.na(mydata[,11])]),mydata[,11][!is.na(mydata[,11])])
+tree <- multi2di(my.phylo.maker$scenario.2$run.1)
+library(phytools)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Aurones[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+pp.Aurones<-corHMM(tree,Aurones,rate.cat=2,node.states="marginal")
+pp.Aurones
+pp.Aurones.1<-corHMM(tree,Aurones,rate.cat=1,node.states="marginal")
+pp.Aurones.1
+pp.Aurones.2<-corHMM(tree,Aurones,model = "ER", rate.cat=2,node.states="marginal")
+pp.Aurones.2
+pp.Aurones.3<-corHMM(tree,Aurones,model = "ER", rate.cat=1,node.states="marginal")
+pp.Aurones.3
+
+simmap.Aurones <- makeSimmap(tree=tree, data=Aurones, model=pp.Aurones$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Aurones)
+
+pdffn = paste0("Aurones2rates.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Aurones$states,cex=0.5, pie.cex=0.5,title="Aurones 2 rates")
+dev.off()
+
+
+cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
+pdffn = paste0("Aurones2ratesfan.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Aurones$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+names(mydata)
+Carotenoids <- cbind (as.character(mydata[,5][!is.na(mydata[,12])]),mydata[,12][!is.na(mydata[,12])])
+tree <- multi2di(my.phylo.maker$scenario.2$run.1)
+library(phytools)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Carotenoids[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+pp.Carotenoids<-corHMM(tree,Carotenoids,rate.cat=2,node.states="marginal")
+pp.Carotenoids
+pp.Carotenoids.1<-corHMM(tree,Carotenoids,rate.cat=1,node.states="marginal")
+pp.Carotenoids.1
+pp.Carotenoids.2<-corHMM(tree,Carotenoids,model = "ER", rate.cat=2,node.states="marginal")
+pp.Carotenoids.2
+pp.Carotenoids.3<-corHMM(tree,Carotenoids,model = "ER", rate.cat=1,node.states="marginal")
+pp.Carotenoids.3
+
+simmap.Carotenoids <- makeSimmap(tree=tree, data=Carotenoids, model=pp.Carotenoids$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Carotenoids)
+
+pdffn = paste0("Carotenoids2rates.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Carotenoids$states,cex=0.5, pie.cex=0.5,title="Carotenoids 2 rates")
+dev.off()
+
+
+cols <- c("white", "black", "red", "yellow")
+pdffn = paste0("Carotenoids2ratesfan.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Carotenoids$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+names(mydata)
+Chlorophylls <- cbind (as.character(mydata[,5][!is.na(mydata[,13])]),mydata[,13][!is.na(mydata[,13])])
+tree <- multi2di(my.phylo.maker$scenario.2$run.1)
+library(phytools)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Chlorophylls[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+pp.Chlorophylls<-corHMM(tree,Chlorophylls,rate.cat=2,node.states="marginal")
+pp.Chlorophylls
+pp.Chlorophylls.1<-corHMM(tree,Chlorophylls,rate.cat=1,node.states="marginal")
+pp.Chlorophylls.1
+pp.Chlorophylls.2<-corHMM(tree,Chlorophylls,model = "ER", rate.cat=2,node.states="marginal")
+pp.Chlorophylls.2
+pp.Chlorophylls.3<-corHMM(tree,Chlorophylls,model = "ER",rate.cat=1,node.states="marginal")
+pp.Chlorophylls.3
+
+simmap.Chlorophylls <- makeSimmap(tree=tree, data=Chlorophylls, model=pp.Chlorophylls$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Chlorophylls)
+
+pdffn = paste0("Chlorophylls2rates.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Chlorophylls$states,cex=0.5, pie.cex=0.5,title="Chlorophylls 2 rates")
+dev.off()
+
+
+cols <- c("white", "black", "red", "yellow")
+pdffn = paste0("Chlorophylls2ratesfan.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Chlorophylls$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+names(mydata)
+Anthocyanins <- mydata[,10]
+names(Anthocyanins) <- mydata[,5]
+Aurones <- mydata[,11]
+names(Aurones) <- mydata[,5]
+
+tree <- multi2di(my.phylo.maker$scenario.1)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+
+Anthocyanins<-Anthocyanins[!is.na(Anthocyanins)]
+Aurones<-Aurones[!is.na(Aurones)]
+setdiff(names(Anthocyanins),names(Aurones))
+setdiff(names(Aurones),names(Anthocyanins))
+Anthocyanins <- Anthocyanins[which(names(Anthocyanins) %in% names(Aurones))]
+Aurones<- Aurones[which(names(Aurones) %in% names(Anthocyanins) )]
+tipstoremove <- setdiff(tree$tip.label,names(Anthocyanins))
+tree <- drop.tip(tree, tipstoremove)
+Anthocyanins.Aurones <- cbind(names(Anthocyanins), Anthocyanins, Aurones)
+
+
+#pp.Anthocyanins.Aurones.ER.null<-corDISC(tree,Anthocyanins.Aurones,ntraits=2,model="ER", node.states="marginal")
+#pp.Anthocyanins.Aurones.ER.null
+#pp.Anthocyanins.Aurones.ARD.null<-corDISC(tree,Anthocyanins.Aurones,ntraits=2,model="ARD", node.states="marginal")
+#pp.Anthocyanins.Aurones.ARD.null
+#pp.Anthocyanins.Aurones.paint<-corPAINT(tree,Anthocyanins.Aurones,ntraits=2,model=c("ER","ARD"), node.states="marginal")
+#pp.Anthocyanins.Aurones.paint
+#We need here a column to define the selective regimes!!!!! Ask to Edur
+
+```
+
+Independent vs. dependent evolution with corHMM
+
+```{r}
+
+```
+
+
+Phylogenetic signal of Anthocyanins
+```{r}
+
+#library(geiger)
+Anthocyanins[Anthocyanins==0] <- 2
+lambda.Anthocyanins <- fitDiscrete(tree, Anthocyanins, model = "ER", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Anthocyanins.bm <- fitDiscrete(tree, Anthocyanins, model = "ER", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+tree.lambda <- rescale(tree, "lambda")
+tree.lambda(0)
+lambda.Anthocyanins.0 <- fitDiscrete(tree.lambda(0), Anthocyanins, model = "ER", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Anthocyanins
+lambda.Anthocyanins.bm
+lambda.Anthocyanins.0
+
+```
+
+
+
+Phylogenetic signal of Aurones
+```{r}
+
+#library(geiger)
+Aurones[Aurones==0] <- 2
+lambda.Aurones <- fitDiscrete(tree, Aurones, model = "ARD", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Aurones.bm <- fitDiscrete(tree, Aurones, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+tree.lambda <- rescale(tree, "lambda")
+tree.lambda(0)
+lambda.Aurones.0 <- fitDiscrete(tree.lambda(0), Aurones, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Aurones
+lambda.Aurones.bm
+lambda.Aurones.0
+
+```
+
+
+Phylogenetic signal of Carotenoids
+```{r}
+
+#library(geiger)
+Carotenoids[Carotenoids==0] <- 2
+lambda.Carotenoids <- fitDiscrete(tree, Carotenoids, model = "ARD", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Carotenoids.bm <- fitDiscrete(tree, Carotenoids, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+tree.lambda <- rescale(tree, "lambda")
+lambda.Carotenoids.0 <- fitDiscrete(tree.lambda(0), Carotenoids, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Carotenoids
+lambda.Carotenoids.bm
+lambda.Carotenoids.0
+```
+
+
+Phylogenetic signal of Chlorophylls
+```{r}
+
+#library(geiger)
+Chlorophylls[Chlorophylls==0] <- 2
+lambda.Chlorophylls <- fitDiscrete(tree, Chlorophylls, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Chlorophylls.bm <- fitDiscrete(tree, Chlorophylls, model = "ARD", transform = "none", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+tree.lambda <- rescale(tree, "lambda")
+lambda.Chlorophylls.0 <- fitDiscrete(tree.lambda(0), Chlorophylls, model = "ARD", transform = "none", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Chlorophylls
+lambda.Chlorophylls.bm
+lambda.Chlorophylls.0
+
+```
+
+
+ML reconstruction number of pigments.
+
+```{r}
+library(phytools)
+
+names(mydata)
+NPigments <- mydata[,14]
+names(NPigments) <- mydata[,5]
+tree <- multi2di(my.phylo.maker$scenario.2$run.1)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+
+NPigments<-NPigments[!is.na(NPigments)]
+tipstoremove <- setdiff(tree$tip.label,names(NPigments))
+tree <- drop.tip(tree, tipstoremove)
+
+
+
+pdffn = paste0("NPigments.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(NPigments[tree$tip.label],
+    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+fitER.NPigments<-ace(NPigments, tree,model="ER",type="discrete")
+names(fitER.NPigments)
+
+pdffn = paste0("ML_ER_NPigments.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(NPigments[tree$tip.label],
+    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=fitER.NPigments$lik.anc,piecol=cols,cex=0.2)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+fitARD.NPigments<-ace(NPigments,tree,model="ARD",type="discrete")
+fitARD.NPigments
+pdffn = paste0("ML_ARD_NPigments.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(NPigments[tree$tip.label],
+    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=fitARD.NPigments$lik.anc,piecol=cols,cex=0.2)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+fitSYM.NPigments<-ace(NPigments,tree,model="SYM",type="discrete")
+fitSYM.NPigments
+pdffn = paste0("ML_SYM_NPigments.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+tiplabels(pie=to.matrix(NPigments[tree$tip.label],
+    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=fitSYM.NPigments$lik.anc,piecol=cols,cex=0.2)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+ARDstep <- matrix(c(0, 1, 0, 0, 2, 0, 3, 0, 0, 4, 0, 5, 0, 0, 6, 0), 4)
+fitARDstep.NPigments<-ace(NPigments,tree,model=ARDstep,type="discrete")
+fitARDstep.NPigments
+
+
+names(mydata)
+Flavonoids <- mydata[,9]
+names(Flavonoids) <- mydata[,5]
+Flavonoids[Flavonoids==0] <- 2
+#Flavonoids[is.na(Flavonoids)] <- "3"
+Flavonoids
+Anthocyanins <- mydata[,10]
+names(Anthocyanins) <- mydata[,5]
+Anthocyanins[Anthocyanins==0] <- 2
+#Anthocyanins[is.na(Anthocyanins)] <- "3"
+Anthocyanins
+Aurones <- mydata[,11]
+names(Aurones) <- mydata[,5]
+Aurones[Aurones==0] <- 2
+#Aurones[is.na(Aurones)] <- "3"
+Aurones
+Carotenoids <- mydata[,12]
+names(Carotenoids) <- mydata[,5]
+Carotenoids[Carotenoids==0] <- 2
+#Carotenoids[is.na(Carotenoids)] <- "3"
+Carotenoids
+Chlorophylls <- mydata[,13]
+names(Chlorophylls) <- mydata[,5]
+Chlorophylls[Chlorophylls==0] <- 2
+#Chlorophylls[is.na(Chlorophylls)] <- "3"
+Chlorophylls
+
+#cols<-setNames(c("lightpink","#e75480","purple","#301934"),levels(as.factor(NPigments)))
+cols<-setNames(c("white","lightgrey","#555555","black"),levels(as.factor(NPigments)))
+cols5<-setNames(c("lightyellow","lightgrey"),levels(as.factor(Flavonoids)))
+cols2<-setNames(c("blue","lightgrey"),levels(as.factor(Anthocyanins)))
+cols3<-setNames(c("orange","lightgrey"),levels(as.factor(Carotenoids)))
+cols4<-setNames(c("#FFCC00","lightgrey"),levels(as.factor(Aurones)))
+cols6<-setNames(c("darkgreen","lightgrey"),levels(as.factor(Chlorophylls)))
+node1 <- getMRCA(tree, c("Acritopappus_sp","Richterago_arenaria"))
+node2 <- getMRCA(tree, c("Orchis_anthropophora","Gomesa_hydrophila"))
+node3 <- getMRCA(tree, c("Clinopodium_nepeta","Stachys_ocymastrum"))
+node4 <- getMRCA(tree, c("Pedicularis_sylvatica","Cistanche_phelypaea"))
+node5 <- getMRCA(tree, c("Silene_adscendens","Paronychia_argentea"))
+node6 <- getMRCA(tree, c("Solanum_paniculatum","Evolvulus_lithospermoides"))
+node7<- getMRCA(tree, c("Trifolium_fragiferum","Hymenaea_sp"))
+node8<- getMRCA(tree, c("Heliotropium_europaeum","Cynoglossum_clandestinum"))
+node9<- getMRCA(tree, c("Sisymbrium_austriacum","Malcolmia_littorea"))
+node10<- getMRCA(tree, c("Cistus_crispus","Malva_maroccana"))
+node11<- getMRCA(tree, c("Nigella_damascena","Papaver_argemone"))
+node12<- getMRCA(tree, c("Linum_trigynum","Euphorbia_segetalis"))
+node13<- getMRCA(tree, c("Rosa_canina","Crataegus_monogyna"))
+node14<- getMRCA(tree, c("Banisteriopsis_campestris","Byrsonima_dealbata"))
+node15<- getMRCA(tree, c("Geranium_molle","Erodium_moschatum"))
+node16<- getMRCA(tree, c("Cambessedesia_corymbosa","Miconia_rubiginosa"))
+node17<- getMRCA(tree, c("Declieuxia_fruticosa","Asperula_hirsuta"))
+node18<- getMRCA(tree, c("Cymbalaria_muralis","Linaria_spartea"))
+node19<- getMRCA(tree, c("Romulea_bulbocodium","Iris_planifolia"))
+node20<- getMRCA(tree, c("Allium_roseum","Acis_autumnalis"))
+node21<- getMRCA(tree, c("Scilla_peruviana","Prospero_autumnale"))
+node22<- getMRCA(tree, c("Xyris_asperula","Xyris_piranii"))
+
+pdffn = paste0("ML_ARDstep_NPigments.pdf")
+pdf(file=pdffn, width=30, height=30)
+par(mar = c(0.1, 0.1, 0.1, 0.1))
+plot(tree,type="fan",show.tip.label = T, cex = 0.1,  tip.color="white", edge.color = "grey", edge.width = 5, no.margin = F)
+tiplabels(pie=to.matrix(NPigments[tree$tip.label],
+    levels(as.factor(NPigments))),piecol=cols, bg=cols,cex=0.1,offset = 1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=fitARDstep.NPigments$lik.anc,piecol=cols,cex=0.2)
+add.simmap.legend(colors=cols,prompt=FALSE,x=1*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+tiplabels(pie=to.matrix(Flavonoids[tree$tip.label],
+    levels(as.factor(Flavonoids))),piecol=cols5, bg=cols5,cex=0.1, offset = 2.5)
+add.simmap.legend(colors=cols5,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+tiplabels(pie=to.matrix(Anthocyanins[tree$tip.label],
+    levels(as.factor(Anthocyanins))),piecol=cols2, bg=cols2,cex=0.1, offset = 4)
+add.simmap.legend(colors=cols2,prompt=FALSE,x=0.8*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+tiplabels(pie=to.matrix(Carotenoids[tree$tip.label],
+    levels(as.factor(Carotenoids))),piecol=cols3, bg=cols3,cex=0.1, offset = 5.5)
+add.simmap.legend(colors=cols3,prompt=FALSE,x=0.7*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+tiplabels(pie=to.matrix(Chlorophylls[tree$tip.label],
+    levels(as.factor(Chlorophylls))),piecol=cols6, bg=cols6,cex=0.1, offset = 7)
+add.simmap.legend(colors=cols6,prompt=FALSE,x=0.8*par()$usr[1],
+    y=0.9*par()$usr[3],fsize=2)
+tiplabels(pie=to.matrix(Aurones[tree$tip.label],
+    levels(as.factor(Aurones))),piecol=cols4, bg=cols4,cex=0.1, offset = 8.5)
+add.simmap.legend(colors=cols4,prompt=FALSE,x=0.7*par()$usr[1],
+    y=0.9*par()$usr[3],fsize=2)
+arc.cladelabels(tree, "Asteraceae", node1, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Orchidaceae", node2, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Lamiaceae", node3, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Orobanchaceae", node4, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Caryophyllaceae", node5, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Solanaceae-Convolvulaceae", node6, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Fabaceae", node7, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Boraginaceae", node8, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Brassicaceae", node9, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Malvaceae-Cistaceae", node10, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Papaveraceae-Ranunculaceae", node11, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Linaceae-Euphorbiaceae", node12, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Rosaceae", node13, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Malpighiaceae", node14, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Geraniaceae", node15, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Melastomataceae", node16, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Rubiaceae", node17, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Plantaginaceae", node18, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Iridaceae", node19, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Amaryllidaceae", node20, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.8,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Asparagaceae", node21, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Xyridaceae", node22, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+dev.off()
+
+```
+
+
+Stochastic mapping Number of Pigments: This could take very long, we are not goint to do it for now.
+```{r}
+
+mtree<-make.simmap(tree,NPigments,model=ARDstep, nsim=1)
+mtree
+cols<-setNames(c("red","blue", "green", "yellow"),levels(as.factor(NPigments)))
+
+pdffn = paste0("BSM_1map_NPigments.pdf")
+pdf(file=pdffn, width=27, height=27)
+plotSimmap(mtree,cols,type="fan",fsize=0.6,ftype="i", offset=1)
+add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+dev.off()
+
+mtrees.NPigments<-make.simmap(tree,NPigments,model=ARDstep,nsim=100)
+
+
+pd.NPigments<-summary(mtrees.NPigments)
+pd.NPigments
+
+
+
+############################################
+# Open a PDF
+############################################
+pdffn = paste0("BSMs100_NPigments_v1.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotSimmap(sample(mtrees.NPigments,1)[[1]],cols,fsize=0.6,ftype="i",offset = 1)
+nodelabels(pie=pd.NPigments$ace,piecol=cols,cex=0.5)
+add.simmap.legend(colors=cols[4:1],prompt=FALSE,x=0,y=-4,
+    vertical=FALSE)
+############################################
+# Close PDF
+############################################
+dev.off()
+
+
+
+
+```
+
+Phylogenetic signal of NPigments
+```{r}
+
+library(geiger)
+NPigments[NPigments==0] <- "zero"
+lambda.NPigments <- fitDiscrete(tree, NPigments, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.NPigments.bm <- fitDiscrete(tree, NPigments, model = "ARD", transform = "none", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+
+tree.lambda <- rescale(tree, "lambda")
+tree.lambda(0)
+lambda.NPigments.0 <- fitDiscrete(tree.lambda(0), NPigments, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+
+lambda.NPigments
+lambda.NPigments.bm
+lambda.NPigments.0
+
+```
+
+
+
