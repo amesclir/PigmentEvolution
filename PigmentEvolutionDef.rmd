@@ -133,8 +133,188 @@ nodelabels(node=1:tree$Nnode+Ntip(tree),
     pie=pp.Anthocyanins.2$states,piecol=cols,cex=0.2)
 dev.off()
 
+#Aurones
+Aurones <- cbind (as.character(mydata[,12][!is.na(mydata[,8])]),mydata[,8][!is.na(mydata[,8])])
+library(phytools)
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Aurones[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+pp.Aurones.ARD.2<-corHMM(tree,Aurones,rate.cat=2,node.states="marginal")
+pp.Aurones.ARD.2
+pp.Aurones.ARD.1<-corHMM(tree,Aurones,rate.cat=1,node.states="marginal")
+pp.Aurones.ARD.1
+pp.Aurones.ER.2<-corHMM(tree,Aurones,rate.cat=2, model = "ER", node.states="marginal")
+pp.Aurones.ER.2
+pp.Aurones.ER.1<-corHMM(tree,Aurones,rate.cat=1, model = "ER", node.states="marginal")
+pp.Aurones.ER.1
+pp.Aurones.ARD.3<-corHMM(tree,Aurones,rate.cat=3, node.states="marginal")
+pp.Aurones.ARD.3
+pp.Aurones.ER.3<-corHMM(tree,Aurones,rate.cat=3, model = "ER", node.states="marginal")
+pp.Aurones.ER.3
+
+simmap.Aurones <- makeSimmap(tree=tree, data=Aurones, model=pp.Aurones.ARD.2$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Aurones)
+
+pdffn = paste0("Model.Aurones2rates.ARD.pdf")
+pdf(file=pdffn, width=6, height=8)
+plotMKmodel(pp.Aurones.ARD.2)
+dev.off()
+
+pdffn = paste0("Aurones2rates.ARD.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Aurones.ARD.2$states,cex=0.5, pie.cex=0.5,title="Aurones 2 rates ER")
+dev.off()
+
+cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
+pdffn = paste0("Aurones2ratesfanARD.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Aurones.ARD.2$states,piecol=cols,cex=0.2)
+dev.off()
+
+#Carotenoids
+Carotenoids <- cbind (as.character(mydata[,12][!is.na(mydata[,9])]),mydata[,9][!is.na(mydata[,9])])
+library(phytools)
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Carotenoids[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+pp.Carotenoids.ARD.2<-corHMM(tree,Carotenoids,rate.cat=2,node.states="marginal")
+pp.Carotenoids.ARD.2
+pp.Carotenoids.ARD.1<-corHMM(tree,Carotenoids,rate.cat=1,node.states="marginal")
+pp.Carotenoids.ARD.1
+pp.Carotenoids.ER.2<-corHMM(tree,Carotenoids,rate.cat=2, model = "ER", node.states="marginal")
+pp.Carotenoids.ER.2
+pp.Carotenoids.ER.1<-corHMM(tree,Carotenoids,rate.cat=1, model = "ER", node.states="marginal")
+pp.Carotenoids.ER.1
+pp.Carotenoids.ARD.3<-corHMM(tree,Carotenoids,rate.cat=3, node.states="marginal")
+pp.Carotenoids.ARD.3
+pp.Carotenoids.ER.3<-corHMM(tree,Carotenoids,rate.cat=3, model = "ER", node.states="marginal")
+pp.Carotenoids.ER.3
+
+simmap.Carotenoids <- makeSimmap(tree=tree, data=Carotenoids, model=pp.Carotenoids.ARD.2$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Carotenoids)
+
+pdffn = paste0("Model.Carotenoids2rates.ARD.pdf")
+pdf(file=pdffn, width=6, height=8)
+plotMKmodel(pp.Carotenoids.ARD.2)
+dev.off()
+
+pdffn = paste0("Carotenoids2rates.ARD.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Carotenoids.ARD.2$states,cex=0.5, pie.cex=0.5,title="Carotenoids 2 rates ER")
+dev.off()
+
+cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
+pdffn = paste0("Carotenoids2ratesfanARD.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Carotenoids.ARD.2$states,piecol=cols,cex=0.2)
+dev.off()
 
 
+#Chlorophylls
+Chlorophylls <- cbind (as.character(mydata[,12][!is.na(mydata[,10])]),mydata[,10][!is.na(mydata[,10])])
+library(phytools)
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Chlorophylls[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+pp.Chlorophylls.ARD.2<-corHMM(tree,Chlorophylls,rate.cat=2,node.states="marginal")
+pp.Chlorophylls.ARD.2
+pp.Chlorophylls.ARD.1<-corHMM(tree,Chlorophylls,rate.cat=1,node.states="marginal")
+pp.Chlorophylls.ARD.1
+pp.Chlorophylls.ER.2<-corHMM(tree,Chlorophylls,rate.cat=2, model = "ER", node.states="marginal")
+pp.Chlorophylls.ER.2
+pp.Chlorophylls.ER.1<-corHMM(tree,Chlorophylls,rate.cat=1, model = "ER", node.states="marginal")
+pp.Chlorophylls.ER.1
+pp.Chlorophylls.ARD.3<-corHMM(tree,Chlorophylls,rate.cat=3, node.states="marginal")
+pp.Chlorophylls.ARD.3
+pp.Chlorophylls.ER.3<-corHMM(tree,Chlorophylls,rate.cat=3, model = "ER", node.states="marginal")
+pp.Chlorophylls.ER.3
+
+simmap.Chlorophylls <- makeSimmap(tree=tree, data=Chlorophylls, model=pp.Chlorophylls.ARD.2$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Chlorophylls)
+
+pdffn = paste0("Model.Chlorophylls2rates.ARD.pdf")
+pdf(file=pdffn, width=6, height=8)
+plotMKmodel(pp.Chlorophylls.ARD.2)
+dev.off()
+
+pdffn = paste0("Chlorophylls2rates.ARD.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Chlorophylls.ARD.2$states,cex=0.5, pie.cex=0.5,title="Chlorophylls 2 rates ER")
+dev.off()
+
+cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
+pdffn = paste0("Chlorophylls2ratesfanARD.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Chlorophylls.ARD.2$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+#Npigments
+Npigments <- cbind (as.character(mydata[,12][!is.na(mydata[,11])]),mydata[,11][!is.na(mydata[,11])])
+library(phytools)
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Npigments[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+Npigments_LegendAndRate <- getStateMat4Dat(Npigments)
+STEP <- dropStateMatPars(Npigments_LegendAndRate$rate.mat, c(7,10,11,2,3,6))
+STEP
+
+pp.Npigments.ARD.2<-corHMM(tree,Npigments,rate.cat=2,node.states="marginal")
+pp.Npigments.ARD.2
+pp.Npigments.ARD.1<-corHMM(tree,Npigments,rate.cat=1,node.states="marginal")
+pp.Npigments.ARD.1
+pp.Npigments.ER.2<-corHMM(tree,Npigments,rate.cat=2, model = "ER", node.states="marginal")
+pp.Npigments.ER.2
+pp.Npigments.ER.1<-corHMM(tree,Npigments,rate.cat=1, model = "ER", node.states="marginal")
+pp.Npigments.ER.1
+pp.Npigments.SYM.2<-corHMM(tree,Npigments,rate.cat=2, model = "SYM", node.states="marginal")
+pp.Npigments.SYM.2
+pp.Npigments.SYM.1<-corHMM(tree,Npigments,rate.cat=1, model = "SYM", node.states="marginal")
+pp.Npigments.SYM.1
+pp.Npigments.STEP.2<-corHMM(tree,Npigments,rate.cat=2, rate.mat=STEP, node.states="marginal")
+pp.Npigments.STEP.2
+pp.Npigments.STEP.1<-corHMM(tree,Npigments,rate.cat=1, rate.mat=STEP, node.states="marginal")
+pp.Npigments.STEP.1
+
+#pp.Npigments.ARD.3<-corHMM(tree,Npigments,rate.cat=3, node.states="marginal")
+#pp.Npigments.ARD.3
+#pp.Npigments.ER.3<-corHMM(tree,Npigments,rate.cat=3, model = "ER", node.states="marginal")
+#pp.Npigments.ER.3
+
+simmap.Npigments <- makeSimmap(tree=tree, data=Npigments, model=pp.Npigments.ARD.2$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Npigments)
+
+pdffn = paste0("Model.Npigments2rates.ARD.pdf")
+pdf(file=pdffn, width=6, height=8)
+plotMKmodel(pp.Npigments.ARD.2)
+dev.off()
+
+pdffn = paste0("Npigments2rates.ARD.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Npigments.ARD.2$states,cex=0.5, pie.cex=0.5,title="Npigments 2 rates ER")
+dev.off()
+
+cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
+pdffn = paste0("Npigments2ratesfanARD.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Npigments.ARD.2$states,piecol=cols,cex=0.2)
+dev.off()
 
 ```
 
