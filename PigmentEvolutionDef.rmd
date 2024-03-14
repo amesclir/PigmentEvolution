@@ -164,7 +164,7 @@ dev.off()
 
 pdffn = paste0("Aurones2rates.ARD.pdf")
 pdf(file=pdffn, width=6, height=60)
-plotRECON(tree,pp.Aurones.ARD.2$states,cex=0.5, pie.cex=0.5,title="Aurones 2 rates ER")
+plotRECON(tree,pp.Aurones.ARD.2$states,cex=0.5, pie.cex=0.5,title="Aurones 2 rates ARD")
 dev.off()
 
 cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
@@ -206,7 +206,7 @@ dev.off()
 
 pdffn = paste0("Carotenoids2rates.ARD.pdf")
 pdf(file=pdffn, width=6, height=60)
-plotRECON(tree,pp.Carotenoids.ARD.2$states,cex=0.5, pie.cex=0.5,title="Carotenoids 2 rates ER")
+plotRECON(tree,pp.Carotenoids.ARD.2$states,cex=0.5, pie.cex=0.5,title="Carotenoids 2 rates ARD")
 dev.off()
 
 cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
@@ -249,7 +249,7 @@ dev.off()
 
 pdffn = paste0("Chlorophylls2rates.ARD.pdf")
 pdf(file=pdffn, width=6, height=60)
-plotRECON(tree,pp.Chlorophylls.ARD.2$states,cex=0.5, pie.cex=0.5,title="Chlorophylls 2 rates ER")
+plotRECON(tree,pp.Chlorophylls.ARD.2$states,cex=0.5, pie.cex=0.5,title="Chlorophylls 2 rates ARD")
 dev.off()
 
 cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
@@ -272,6 +272,11 @@ tree <- drop.tip(tree, tipstoremove)
 Npigments_LegendAndRate <- getStateMat4Dat(Npigments)
 STEP <- dropStateMatPars(Npigments_LegendAndRate$rate.mat, c(7,10,11,2,3,6))
 STEP
+RateClassMat <- getRateCatMat(2)
+RateClassMat
+StateMats <- list(STEP, STEP)
+StateMats
+STEP2 <- getFullMat(StateMats, RateClassMat)
 
 pp.Npigments.ARD.2<-corHMM(tree,Npigments,rate.cat=2,node.states="marginal")
 pp.Npigments.ARD.2
@@ -285,7 +290,7 @@ pp.Npigments.SYM.2<-corHMM(tree,Npigments,rate.cat=2, model = "SYM", node.states
 pp.Npigments.SYM.2
 pp.Npigments.SYM.1<-corHMM(tree,Npigments,rate.cat=1, model = "SYM", node.states="marginal")
 pp.Npigments.SYM.1
-pp.Npigments.STEP.2<-corHMM(tree,Npigments,rate.cat=2, rate.mat=STEP, node.states="marginal")
+pp.Npigments.STEP.2<-corHMM(tree,Npigments,rate.cat=2, rate.mat=STEP2, node.states="marginal")
 pp.Npigments.STEP.2
 pp.Npigments.STEP.1<-corHMM(tree,Npigments,rate.cat=1, rate.mat=STEP, node.states="marginal")
 pp.Npigments.STEP.1
@@ -295,20 +300,20 @@ pp.Npigments.STEP.1
 #pp.Npigments.ER.3<-corHMM(tree,Npigments,rate.cat=3, model = "ER", node.states="marginal")
 #pp.Npigments.ER.3
 
-simmap.Npigments <- makeSimmap(tree=tree, data=Npigments, model=pp.Npigments.ARD.2$solution, rate.cat=2, nSim=100, nCores=1)
+simmap.Npigments <- makeSimmap(tree=tree, data=Npigments, model=pp.Npigments.STEP.2$solution, rate.cat=2, nSim=100, nCores=1)
 summary(simmap.Npigments)
 
-pdffn = paste0("Model.Npigments2rates.ARD.pdf")
+pdffn = paste0("Model.Npigments2rates.STEP.pdf")
 pdf(file=pdffn, width=6, height=8)
-plotMKmodel(pp.Npigments.ARD.2)
+plotMKmodel(pp.Npigments.STEP.2)
 dev.off()
 
-pdffn = paste0("Npigments2rates.ARD.pdf")
+pdffn = paste0("Npigments2rates.STEP.pdf")
 pdf(file=pdffn, width=6, height=60)
-plotRECON(tree,pp.Npigments.ARD.2$states,cex=0.5, pie.cex=0.5,title="Npigments 2 rates ER")
+plotRECON(tree,pp.Npigments.STEP.2$states,cex=0.5, pie.cex=0.5,title="Npigments 2 rates STEP")
 dev.off()
 
-cols<-setNames(c("white", "black", "red", "yellow"),levels(c("(0,R1)", "(1,R1)", "(0,R2)", "(1,R2)")))
+cols<-setNames(c("white", "grey", "darkgrey", "black", "yellow", "orange", "red", "darkred"),levels(c("(0,R1)", "(1,R1)", "(2,R1)", "(3,R1)", "(0,R2)", "(1,R2)", "(2,R2)", "(3,R2)")))
 pdffn = paste0("Npigments2ratesfanARD.pdf")
 pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
