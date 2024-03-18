@@ -327,6 +327,111 @@ Independent vs. dependent evolution with corHMM
 
 ```{r}
 
+library(corHMM)
+
+
+
+Anthocyanins.Aurones <- cbind (as.character(mydata[,12][!is.na(mydata[,7]) & !is.na(mydata[,8])]),mydata[,7][!is.na(mydata[,7])& !is.na(mydata[,8])],mydata[,8][!is.na(mydata[,7])& !is.na(mydata[,8])])
+library(phytools)
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Anthocyanins.Aurones[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+Anthocyanins.Aurones_LegendAndRate <- getStateMat4Dat(Anthocyanins.Aurones) 
+Anthocyanins.Aurones_LegendAndRate
+Anthocyanins.Aurones.ind <- Anthocyanins.Aurones_LegendAndRate$rate.mat
+Anthocyanins.Aurones.ind
+Anthocyanins.Aurones.ind <- equateStateMatPars(Anthocyanins.Aurones.ind, c(1,6))
+Anthocyanins.Aurones.ind
+Anthocyanins.Aurones.ind <- equateStateMatPars(Anthocyanins.Aurones.ind, c(1,3))
+Anthocyanins.Aurones.ind
+Anthocyanins.Aurones.ind <- equateStateMatPars(Anthocyanins.Aurones.ind, c(1,4))
+Anthocyanins.Aurones.ind
+Anthocyanins.Aurones.ind <- equateStateMatPars(Anthocyanins.Aurones.ind, c(1,2))
+Anthocyanins.Aurones.ind
+
+Anthocyanins.Aurones_LegendAndRate <- getStateMat4Dat(Anthocyanins.Aurones) 
+Anthocyanins.Aurones_LegendAndRate
+Anthocyanins.Aurones.x <- Anthocyanins.Aurones_LegendAndRate$rate.mat
+Anthocyanins.Aurones.x
+Anthocyanins.Aurones.x <- equateStateMatPars(Anthocyanins.Aurones.x, c(1,6))
+Anthocyanins.Aurones.x
+Anthocyanins.Aurones.x <- equateStateMatPars(Anthocyanins.Aurones.x, c(2,6))
+Anthocyanins.Aurones.x
+
+Anthocyanins.Aurones_LegendAndRate <- getStateMat4Dat(Anthocyanins.Aurones) 
+Anthocyanins.Aurones_LegendAndRate
+Anthocyanins.Aurones.y <- Anthocyanins.Aurones_LegendAndRate$rate.mat
+Anthocyanins.Aurones.y
+Anthocyanins.Aurones.y <- equateStateMatPars(Anthocyanins.Aurones.y, c(2,4))
+Anthocyanins.Aurones.y
+Anthocyanins.Aurones.y <- equateStateMatPars(Anthocyanins.Aurones.y, c(3,5))
+Anthocyanins.Aurones.y
+
+RateClassMat <- getRateCatMat(2)
+RateClassMat
+StateMats <- list(Anthocyanins.Aurones.ind, Anthocyanins.Aurones.ind)
+StateMats
+IND2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Anthocyanins.Aurones.x, Anthocyanins.Aurones.x)
+StateMats
+ARDx2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Anthocyanins.Aurones.y, Anthocyanins.Aurones.y)
+StateMats
+ARDy2 <- getFullMat(StateMats, RateClassMat)
+
+pp.Anthocyanins.Aurones.ARD.1<-corHMM(tree,Anthocyanins.Aurones,rate.cat=1,node.states="marginal")
+pp.Anthocyanins.Aurones.ARD.1
+plotMKmodel(pp.Anthocyanins.Aurones.ARD.1)
+pp.Anthocyanins.Aurones.ER.1<-corHMM(tree,Anthocyanins.Aurones,rate.cat=1, model = "ER", node.states="marginal")
+pp.Anthocyanins.Aurones.ER.1
+plotMKmodel(pp.Anthocyanins.Aurones.ER.1)
+pp.Anthocyanins.Aurones.IND.1<-corHMM(tree,Anthocyanins.Aurones,rate.cat=1,rate.mat=Anthocyanins.Aurones.ind, node.states="marginal")
+pp.Anthocyanins.Aurones.IND.1
+plotMKmodel(pp.Anthocyanins.Aurones.IND.1)
+pp.Anthocyanins.Aurones.ARDx.1<-corHMM(tree,Anthocyanins.Aurones,rate.cat=1,rate.mat=Anthocyanins.Aurones.x, node.states="marginal")
+pp.Anthocyanins.Aurones.ARDx.1
+plotMKmodel(pp.Anthocyanins.Aurones.ARDx.1)
+pp.Anthocyanins.Aurones.ARDy.1<-corHMM(tree,Anthocyanins.Aurones,rate.cat=1,rate.mat=Anthocyanins.Aurones.y, node.states="marginal")
+pp.Anthocyanins.Aurones.ARDy.1
+plotMKmodel(pp.Anthocyanins.Aurones.ARDy.1)
+
+pp.Anthocyanins.Aurones.ARD.2<-corHMM(tree,Anthocyanins.Aurones,rate.cat=2,node.states="marginal")
+pp.Anthocyanins.Aurones.ARD.2
+pp.Anthocyanins.Aurones.ER.2<-corHMM(tree,Anthocyanins.Aurones,rate.cat=2, model = "ER", node.states="marginal")
+pp.Anthocyanins.Aurones.ER.2
+
+pp.Anthocyanins.Aurones.IND.2<-corHMM(tree,Anthocyanins.Aurones,rate.cat=2,rate.mat=IND2, node.states="marginal")
+pp.Anthocyanins.Aurones.IND.2
+
+pp.Anthocyanins.Aurones.ARDx.2<-corHMM(tree,Anthocyanins.Aurones,rate.cat=2,rate.mat=ARDx2, node.states="marginal")
+pp.Anthocyanins.Aurones.ARDx.2
+
+pp.Anthocyanins.Aurones.ARDy.2<-corHMM(tree,Anthocyanins.Aurones,rate.cat=2,rate.mat=ARDy2, node.states="marginal")
+pp.Anthocyanins.Aurones.ARDy.2
+
+simmap.Anthocyanins.Aurones <- makeSimmap(tree=tree, data=Anthocyanins.Aurones, model=pp.Anthocyanins.Aurones.ARDy.2$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Anthocyanins.Aurones)
+
+pdffn = paste0("Model.Anthocyanins.Aurones2rates.ARDy.pdf")
+pdf(file=pdffn, width=6, height=8)
+plotMKmodel(pp.Anthocyanins.Aurones.ARDy.2)
+dev.off()
+
+pdffn = paste0("Anthocyanins.Aurones2rates.ARDy.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Anthocyanins.Aurones.ARDy.2$states,cex=0.5, pie.cex=0.5,title="Anthocyanins.Aurones 2 rates ARDy")
+dev.off()
+
+cols<-setNames(c("white","lightgrey","darkgrey", "black", "red","darkorange","orange", "yellow"),levels(c("(0_0,R1)", "(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)")))
+pdffn = paste0("Anthocyanins.Aurones2ratesfanARDy.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Anthocyanins.Aurones.ARDy.2$states,piecol=cols,cex=0.2)
+dev.off()
+
 ```
 
 
