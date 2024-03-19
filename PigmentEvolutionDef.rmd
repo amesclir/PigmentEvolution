@@ -330,7 +330,7 @@ Independent vs. dependent evolution with corHMM
 library(corHMM)
 
 
-
+#Anthocyanins.Aurones
 Anthocyanins.Aurones <- cbind (as.character(mydata[,12][!is.na(mydata[,7]) & !is.na(mydata[,8])]),mydata[,7][!is.na(mydata[,7])& !is.na(mydata[,8])],mydata[,8][!is.na(mydata[,7])& !is.na(mydata[,8])])
 library(phytools)
 tree <- multi2di(mytree$scenario.2)
@@ -430,6 +430,315 @@ pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
     pie=pp.Anthocyanins.Aurones.ARDy.2$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+#Anthocyanins.Carotenoids
+Anthocyanins.Carotenoids <- cbind (as.character(mydata[,12][!is.na(mydata[,7]) & !is.na(mydata[,9])]),mydata[,7][!is.na(mydata[,7])& !is.na(mydata[,9])],mydata[,9][!is.na(mydata[,7])& !is.na(mydata[,9])])
+library(phytools)
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Anthocyanins.Carotenoids[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+Anthocyanins.Carotenoids_LegendAndRate <- getStateMat4Dat(Anthocyanins.Carotenoids) 
+Anthocyanins.Carotenoids_LegendAndRate
+Anthocyanins.Carotenoids.ind <- Anthocyanins.Carotenoids_LegendAndRate$rate.mat
+Anthocyanins.Carotenoids.ind
+Anthocyanins.Carotenoids.ind <- equateStateMatPars(Anthocyanins.Carotenoids.ind, c(1,6))
+Anthocyanins.Carotenoids.ind
+Anthocyanins.Carotenoids.ind <- equateStateMatPars(Anthocyanins.Carotenoids.ind, c(1,3))
+Anthocyanins.Carotenoids.ind
+Anthocyanins.Carotenoids.ind <- equateStateMatPars(Anthocyanins.Carotenoids.ind, c(1,4))
+Anthocyanins.Carotenoids.ind
+Anthocyanins.Carotenoids.ind <- equateStateMatPars(Anthocyanins.Carotenoids.ind, c(1,2))
+Anthocyanins.Carotenoids.ind
+
+Anthocyanins.Carotenoids_LegendAndRate <- getStateMat4Dat(Anthocyanins.Carotenoids) 
+Anthocyanins.Carotenoids_LegendAndRate
+Anthocyanins.Carotenoids.x <- Anthocyanins.Carotenoids_LegendAndRate$rate.mat
+Anthocyanins.Carotenoids.x
+Anthocyanins.Carotenoids.x <- equateStateMatPars(Anthocyanins.Carotenoids.x, c(1,6))
+Anthocyanins.Carotenoids.x
+Anthocyanins.Carotenoids.x <- equateStateMatPars(Anthocyanins.Carotenoids.x, c(2,6))
+Anthocyanins.Carotenoids.x
+
+Anthocyanins.Carotenoids_LegendAndRate <- getStateMat4Dat(Anthocyanins.Carotenoids) 
+Anthocyanins.Carotenoids_LegendAndRate
+Anthocyanins.Carotenoids.y <- Anthocyanins.Carotenoids_LegendAndRate$rate.mat
+Anthocyanins.Carotenoids.y
+Anthocyanins.Carotenoids.y <- equateStateMatPars(Anthocyanins.Carotenoids.y, c(2,4))
+Anthocyanins.Carotenoids.y
+Anthocyanins.Carotenoids.y <- equateStateMatPars(Anthocyanins.Carotenoids.y, c(3,5))
+Anthocyanins.Carotenoids.y
+
+RateClassMat <- getRateCatMat(2)
+RateClassMat
+StateMats <- list(Anthocyanins.Carotenoids.ind, Anthocyanins.Carotenoids.ind)
+StateMats
+IND2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Anthocyanins.Carotenoids.x, Anthocyanins.Carotenoids.x)
+StateMats
+ARDx2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Anthocyanins.Carotenoids.y, Anthocyanins.Carotenoids.y)
+StateMats
+ARDy2 <- getFullMat(StateMats, RateClassMat)
+
+pp.Anthocyanins.Carotenoids.ARD.1<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=1,node.states="marginal")
+pp.Anthocyanins.Carotenoids.ARD.1
+plotMKmodel(pp.Anthocyanins.Carotenoids.ARD.1)
+pp.Anthocyanins.Carotenoids.ER.1<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=1, model = "ER", node.states="marginal")
+pp.Anthocyanins.Carotenoids.ER.1
+plotMKmodel(pp.Anthocyanins.Carotenoids.ER.1)
+pp.Anthocyanins.Carotenoids.IND.1<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=1,rate.mat=Anthocyanins.Carotenoids.ind, node.states="marginal")
+pp.Anthocyanins.Carotenoids.IND.1
+plotMKmodel(pp.Anthocyanins.Carotenoids.IND.1)
+pp.Anthocyanins.Carotenoids.ARDx.1<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=1,rate.mat=Anthocyanins.Carotenoids.x, node.states="marginal")
+pp.Anthocyanins.Carotenoids.ARDx.1
+plotMKmodel(pp.Anthocyanins.Carotenoids.ARDx.1)
+pp.Anthocyanins.Carotenoids.ARDy.1<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=1,rate.mat=Anthocyanins.Carotenoids.y, node.states="marginal")
+pp.Anthocyanins.Carotenoids.ARDy.1
+plotMKmodel(pp.Anthocyanins.Carotenoids.ARDy.1)
+
+pp.Anthocyanins.Carotenoids.ARD.2<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=2,node.states="marginal")
+pp.Anthocyanins.Carotenoids.ARD.2
+pp.Anthocyanins.Carotenoids.ER.2<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=2, model = "ER", node.states="marginal")
+pp.Anthocyanins.Carotenoids.ER.2
+
+pp.Anthocyanins.Carotenoids.IND.2<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=2,rate.mat=IND2, node.states="marginal")
+pp.Anthocyanins.Carotenoids.IND.2
+
+pp.Anthocyanins.Carotenoids.ARDx.2<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=2,rate.mat=ARDx2, node.states="marginal")
+pp.Anthocyanins.Carotenoids.ARDx.2
+
+pp.Anthocyanins.Carotenoids.ARDy.2<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=2,rate.mat=ARDy2, node.states="marginal")
+pp.Anthocyanins.Carotenoids.ARDy.2
+
+simmap.Anthocyanins.Carotenoids <- makeSimmap(tree=tree, data=Anthocyanins.Carotenoids, model=pp.Anthocyanins.Carotenoids.ARDx.2$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Anthocyanins.Carotenoids)
+
+pdffn = paste0("Model.Anthocyanins.Carotenoids2rates.ARDx.pdf")
+pdf(file=pdffn, width=6, height=8)
+plotMKmodel(pp.Anthocyanins.Carotenoids.ARDx.2)
+dev.off()
+
+pdffn = paste0("Anthocyanins.Carotenoids2rates.ARDx.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Anthocyanins.Carotenoids.ARDx.2$states,cex=0.5, pie.cex=0.5,title="Anthocyanins.Carotenoids 2 rates ARDx")
+dev.off()
+
+cols<-setNames(c("white","lightgrey","darkgrey", "black", "red","darkorange","orange", "yellow"),levels(c("(0_0,R1)", "(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)")))
+pdffn = paste0("Anthocyanins.Carotenoids2ratesfanARDx.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Anthocyanins.Carotenoids.ARDx.2$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+#Anthocyanins.Chlorophylls
+Anthocyanins.Chlorophylls <- cbind (as.character(mydata[,12][!is.na(mydata[,7]) & !is.na(mydata[,10])]),mydata[,7][!is.na(mydata[,7])& !is.na(mydata[,10])],mydata[,10][!is.na(mydata[,7])& !is.na(mydata[,10])])
+library(phytools)
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Anthocyanins.Chlorophylls[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+Anthocyanins.Chlorophylls_LegendAndRate <- getStateMat4Dat(Anthocyanins.Chlorophylls) 
+Anthocyanins.Chlorophylls_LegendAndRate
+Anthocyanins.Chlorophylls.ind <- Anthocyanins.Chlorophylls_LegendAndRate$rate.mat
+Anthocyanins.Chlorophylls.ind
+Anthocyanins.Chlorophylls.ind <- equateStateMatPars(Anthocyanins.Chlorophylls.ind, c(1,6))
+Anthocyanins.Chlorophylls.ind
+Anthocyanins.Chlorophylls.ind <- equateStateMatPars(Anthocyanins.Chlorophylls.ind, c(1,3))
+Anthocyanins.Chlorophylls.ind
+Anthocyanins.Chlorophylls.ind <- equateStateMatPars(Anthocyanins.Chlorophylls.ind, c(1,4))
+Anthocyanins.Chlorophylls.ind
+Anthocyanins.Chlorophylls.ind <- equateStateMatPars(Anthocyanins.Chlorophylls.ind, c(1,2))
+Anthocyanins.Chlorophylls.ind
+
+Anthocyanins.Chlorophylls_LegendAndRate <- getStateMat4Dat(Anthocyanins.Chlorophylls) 
+Anthocyanins.Chlorophylls_LegendAndRate
+Anthocyanins.Chlorophylls.x <- Anthocyanins.Chlorophylls_LegendAndRate$rate.mat
+Anthocyanins.Chlorophylls.x
+Anthocyanins.Chlorophylls.x <- equateStateMatPars(Anthocyanins.Chlorophylls.x, c(1,6))
+Anthocyanins.Chlorophylls.x
+Anthocyanins.Chlorophylls.x <- equateStateMatPars(Anthocyanins.Chlorophylls.x, c(2,6))
+Anthocyanins.Chlorophylls.x
+
+Anthocyanins.Chlorophylls_LegendAndRate <- getStateMat4Dat(Anthocyanins.Chlorophylls) 
+Anthocyanins.Chlorophylls_LegendAndRate
+Anthocyanins.Chlorophylls.y <- Anthocyanins.Chlorophylls_LegendAndRate$rate.mat
+Anthocyanins.Chlorophylls.y
+Anthocyanins.Chlorophylls.y <- equateStateMatPars(Anthocyanins.Chlorophylls.y, c(2,4))
+Anthocyanins.Chlorophylls.y
+Anthocyanins.Chlorophylls.y <- equateStateMatPars(Anthocyanins.Chlorophylls.y, c(3,5))
+Anthocyanins.Chlorophylls.y
+
+RateClassMat <- getRateCatMat(2)
+RateClassMat
+StateMats <- list(Anthocyanins.Chlorophylls.ind, Anthocyanins.Chlorophylls.ind)
+StateMats
+IND2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Anthocyanins.Chlorophylls.x, Anthocyanins.Chlorophylls.x)
+StateMats
+ARDx2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Anthocyanins.Chlorophylls.y, Anthocyanins.Chlorophylls.y)
+StateMats
+ARDy2 <- getFullMat(StateMats, RateClassMat)
+
+pp.Anthocyanins.Chlorophylls.ARD.1<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=1,node.states="marginal")
+pp.Anthocyanins.Chlorophylls.ARD.1
+plotMKmodel(pp.Anthocyanins.Chlorophylls.ARD.1)
+pp.Anthocyanins.Chlorophylls.ER.1<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=1, model = "ER", node.states="marginal")
+pp.Anthocyanins.Chlorophylls.ER.1
+plotMKmodel(pp.Anthocyanins.Chlorophylls.ER.1)
+pp.Anthocyanins.Chlorophylls.IND.1<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=1,rate.mat=Anthocyanins.Chlorophylls.ind, node.states="marginal")
+pp.Anthocyanins.Chlorophylls.IND.1
+plotMKmodel(pp.Anthocyanins.Chlorophylls.IND.1)
+pp.Anthocyanins.Chlorophylls.ARDx.1<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=1,rate.mat=Anthocyanins.Chlorophylls.x, node.states="marginal")
+pp.Anthocyanins.Chlorophylls.ARDx.1
+plotMKmodel(pp.Anthocyanins.Chlorophylls.ARDx.1)
+pp.Anthocyanins.Chlorophylls.ARDy.1<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=1,rate.mat=Anthocyanins.Chlorophylls.y, node.states="marginal")
+pp.Anthocyanins.Chlorophylls.ARDy.1
+plotMKmodel(pp.Anthocyanins.Chlorophylls.ARDy.1)
+
+pp.Anthocyanins.Chlorophylls.ARD.2<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=2,node.states="marginal")
+pp.Anthocyanins.Chlorophylls.ARD.2
+pp.Anthocyanins.Chlorophylls.ER.2<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=2, model = "ER", node.states="marginal")
+pp.Anthocyanins.Chlorophylls.ER.2
+
+pp.Anthocyanins.Chlorophylls.IND.2<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=2,rate.mat=IND2, node.states="marginal")
+pp.Anthocyanins.Chlorophylls.IND.2
+
+pp.Anthocyanins.Chlorophylls.ARDx.2<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=2,rate.mat=ARDx2, node.states="marginal")
+pp.Anthocyanins.Chlorophylls.ARDx.2
+
+pp.Anthocyanins.Chlorophylls.ARDy.2<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=2,rate.mat=ARDy2, node.states="marginal")
+pp.Anthocyanins.Chlorophylls.ARDy.2
+
+simmap.Anthocyanins.Chlorophylls <- makeSimmap(tree=tree, data=Anthocyanins.Chlorophylls, model=pp.Anthocyanins.Chlorophylls.ARD.2$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Anthocyanins.Chlorophylls)
+
+pdffn = paste0("Model.Anthocyanins.Chlorophylls2rates.ARD.pdf")
+pdf(file=pdffn, width=6, height=8)
+plotMKmodel(pp.Anthocyanins.Chlorophylls.ARD.2)
+dev.off()
+
+pdffn = paste0("Anthocyanins.Chlorophylls2rates.ARD.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Anthocyanins.Chlorophylls.ARD.2$states,cex=0.5, pie.cex=0.5,title="Anthocyanins.Chlorophylls 2 rates ARD")
+dev.off()
+
+cols<-setNames(c("white","lightgrey","darkgrey", "black", "red","darkorange","orange", "yellow"),levels(c("(0_0,R1)", "(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)")))
+pdffn = paste0("Anthocyanins.Chlorophylls2ratesfanARD.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Anthocyanins.Chlorophylls.ARD.2$states,piecol=cols,cex=0.2)
+dev.off()
+
+
+#Carotenoids.Aurones
+Carotenoids.Aurones <- cbind (as.character(mydata[,12][!is.na(mydata[,9]) & !is.na(mydata[,8])]),mydata[,9][!is.na(mydata[,9])& !is.na(mydata[,8])],mydata[,8][!is.na(mydata[,9])& !is.na(mydata[,8])])
+library(phytools)
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,Carotenoids.Aurones[,1])
+tree <- drop.tip(tree, tipstoremove)
+
+Carotenoids.Aurones_LegendAndRate <- getStateMat4Dat(Carotenoids.Aurones) 
+Carotenoids.Aurones_LegendAndRate
+Carotenoids.Aurones.ind <- Carotenoids.Aurones_LegendAndRate$rate.mat
+Carotenoids.Aurones.ind
+Carotenoids.Aurones.ind <- equateStateMatPars(Carotenoids.Aurones.ind, c(1,6))
+Carotenoids.Aurones.ind
+Carotenoids.Aurones.ind <- equateStateMatPars(Carotenoids.Aurones.ind, c(1,3))
+Carotenoids.Aurones.ind
+Carotenoids.Aurones.ind <- equateStateMatPars(Carotenoids.Aurones.ind, c(1,4))
+Carotenoids.Aurones.ind
+Carotenoids.Aurones.ind <- equateStateMatPars(Carotenoids.Aurones.ind, c(1,2))
+Carotenoids.Aurones.ind
+
+Carotenoids.Aurones_LegendAndRate <- getStateMat4Dat(Carotenoids.Aurones) 
+Carotenoids.Aurones_LegendAndRate
+Carotenoids.Aurones.x <- Carotenoids.Aurones_LegendAndRate$rate.mat
+Carotenoids.Aurones.x
+Carotenoids.Aurones.x <- equateStateMatPars(Carotenoids.Aurones.x, c(1,6))
+Carotenoids.Aurones.x
+Carotenoids.Aurones.x <- equateStateMatPars(Carotenoids.Aurones.x, c(2,6))
+Carotenoids.Aurones.x
+
+Carotenoids.Aurones_LegendAndRate <- getStateMat4Dat(Carotenoids.Aurones) 
+Carotenoids.Aurones_LegendAndRate
+Carotenoids.Aurones.y <- Carotenoids.Aurones_LegendAndRate$rate.mat
+Carotenoids.Aurones.y
+Carotenoids.Aurones.y <- equateStateMatPars(Carotenoids.Aurones.y, c(2,4))
+Carotenoids.Aurones.y
+Carotenoids.Aurones.y <- equateStateMatPars(Carotenoids.Aurones.y, c(3,5))
+Carotenoids.Aurones.y
+
+RateClassMat <- getRateCatMat(2)
+RateClassMat
+StateMats <- list(Carotenoids.Aurones.ind, Carotenoids.Aurones.ind)
+StateMats
+IND2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Carotenoids.Aurones.x, Carotenoids.Aurones.x)
+StateMats
+ARDx2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Carotenoids.Aurones.y, Carotenoids.Aurones.y)
+StateMats
+ARDy2 <- getFullMat(StateMats, RateClassMat)
+
+pp.Carotenoids.Aurones.ARD.1<-corHMM(tree,Carotenoids.Aurones,rate.cat=1,node.states="marginal")
+pp.Carotenoids.Aurones.ARD.1
+plotMKmodel(pp.Carotenoids.Aurones.ARD.1)
+pp.Carotenoids.Aurones.ER.1<-corHMM(tree,Carotenoids.Aurones,rate.cat=1, model = "ER", node.states="marginal")
+pp.Carotenoids.Aurones.ER.1
+plotMKmodel(pp.Carotenoids.Aurones.ER.1)
+pp.Carotenoids.Aurones.IND.1<-corHMM(tree,Carotenoids.Aurones,rate.cat=1,rate.mat=Carotenoids.Aurones.ind, node.states="marginal")
+pp.Carotenoids.Aurones.IND.1
+plotMKmodel(pp.Carotenoids.Aurones.IND.1)
+pp.Carotenoids.Aurones.ARDx.1<-corHMM(tree,Carotenoids.Aurones,rate.cat=1,rate.mat=Carotenoids.Aurones.x, node.states="marginal")
+pp.Carotenoids.Aurones.ARDx.1
+plotMKmodel(pp.Carotenoids.Aurones.ARDx.1)
+pp.Carotenoids.Aurones.ARDy.1<-corHMM(tree,Carotenoids.Aurones,rate.cat=1,rate.mat=Carotenoids.Aurones.y, node.states="marginal")
+pp.Carotenoids.Aurones.ARDy.1
+plotMKmodel(pp.Carotenoids.Aurones.ARDy.1)
+
+pp.Carotenoids.Aurones.ARD.2<-corHMM(tree,Carotenoids.Aurones,rate.cat=2,node.states="marginal")
+pp.Carotenoids.Aurones.ARD.2
+pp.Carotenoids.Aurones.ER.2<-corHMM(tree,Carotenoids.Aurones,rate.cat=2, model = "ER", node.states="marginal")
+pp.Carotenoids.Aurones.ER.2
+
+pp.Carotenoids.Aurones.IND.2<-corHMM(tree,Carotenoids.Aurones,rate.cat=2,rate.mat=IND2, node.states="marginal")
+pp.Carotenoids.Aurones.IND.2
+
+pp.Carotenoids.Aurones.ARDx.2<-corHMM(tree,Carotenoids.Aurones,rate.cat=2,rate.mat=ARDx2, node.states="marginal")
+pp.Carotenoids.Aurones.ARDx.2
+
+pp.Carotenoids.Aurones.ARDy.2<-corHMM(tree,Carotenoids.Aurones,rate.cat=2,rate.mat=ARDy2, node.states="marginal")
+pp.Carotenoids.Aurones.ARDy.2
+
+simmap.Carotenoids.Aurones <- makeSimmap(tree=tree, data=Carotenoids.Aurones, model=pp.Carotenoids.Aurones.ARDy.2$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Carotenoids.Aurones)
+
+pdffn = paste0("Model.Carotenoids.Aurones2rates.ARDy.pdf")
+pdf(file=pdffn, width=6, height=8)
+plotMKmodel(pp.Carotenoids.Aurones.ARDy.2)
+dev.off()
+
+pdffn = paste0("Carotenoids.Aurones2rates.ARDy.pdf")
+pdf(file=pdffn, width=6, height=60)
+plotRECON(tree,pp.Carotenoids.Aurones.ARDy.2$states,cex=0.5, pie.cex=0.5,title="Carotenoids.Aurones 2 rates ARDy")
+dev.off()
+
+cols<-setNames(c("white","lightgrey","darkgrey", "black", "red","darkorange","orange", "yellow"),levels(c("(0_0,R1)", "(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)")))
+pdffn = paste0("Carotenoids.Aurones2ratesfanARDy.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Carotenoids.Aurones.ARDy.2$states,piecol=cols,cex=0.2)
 dev.off()
 
 ```
