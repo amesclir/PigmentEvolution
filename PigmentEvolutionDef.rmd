@@ -950,186 +950,173 @@ dev.off()
 ```
 
 
-Phylogenetic signal of Anthocyanins
+Phylogenetic signal 
 ```{r}
 
-#library(geiger)
-Anthocyanins[Anthocyanins==0] <- 2
-lambda.Anthocyanins <- fitDiscrete(tree, Anthocyanins, model = "ER", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-lambda.Anthocyanins.bm <- fitDiscrete(tree, Anthocyanins, model = "ER", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+library(geiger)
+
+#Anthocyanins
+vAnthocyanins <- mydata[,7]
+names(vAnthocyanins) <- mydata[,12]
+vAnthocyanins <- vAnthocyanins[!is.na(vAnthocyanins)]
+vAnthocyanins <- vAnthocyanins[names(vAnthocyanins) != "Genista_monosperma"]
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,names(vAnthocyanins))
+tree <- drop.tip(tree, tipstoremove)
+vAnthocyanins[vAnthocyanins==0] <- 2
+lambda.Anthocyanins <- fitDiscrete(tree, vAnthocyanins, model = "ER", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Anthocyanins.bm <- fitDiscrete(tree, vAnthocyanins, model = "ER", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 tree.lambda <- rescale(tree, "lambda")
 tree.lambda(0)
-lambda.Anthocyanins.0 <- fitDiscrete(tree.lambda(0), Anthocyanins, model = "ER", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Anthocyanins.0 <- fitDiscrete(tree.lambda(0), vAnthocyanins, model = "ER", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Anthocyanins
 lambda.Anthocyanins.bm
 lambda.Anthocyanins.0
 
-```
-
-
-
-Phylogenetic signal of Aurones
-```{r}
-
-#library(geiger)
-Aurones[Aurones==0] <- 2
-lambda.Aurones <- fitDiscrete(tree, Aurones, model = "ARD", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-lambda.Aurones.bm <- fitDiscrete(tree, Aurones, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+#Aurones
+vAurones <- mydata[,8]
+names(vAurones) <- mydata[,12]
+vAurones <- Aurones[!is.na(vAurones)]
+vAurones <- vAurones[names(vAurones) != "Genista_monosperma"]
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,names(vAurones))
+tree <- drop.tip(tree, tipstoremove)
+vAurones[vAurones==0] <- 2
+lambda.Aurones <- fitDiscrete(tree, vAurones, model = "ARD", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Aurones.bm <- fitDiscrete(tree, vAurones, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 tree.lambda <- rescale(tree, "lambda")
 tree.lambda(0)
-lambda.Aurones.0 <- fitDiscrete(tree.lambda(0), Aurones, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Aurones.0 <- fitDiscrete(tree.lambda(0), vAurones, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Aurones
 lambda.Aurones.bm
 lambda.Aurones.0
 
-```
-
-
-Phylogenetic signal of Carotenoids
-```{r}
-
-#library(geiger)
-Carotenoids[Carotenoids==0] <- 2
-lambda.Carotenoids <- fitDiscrete(tree, Carotenoids, model = "ARD", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-lambda.Carotenoids.bm <- fitDiscrete(tree, Carotenoids, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+#Carotenoids
+vCarotenoids <- mydata[,9]
+names(vCarotenoids) <- mydata[,12]
+vCarotenoids <- vCarotenoids[!is.na(vCarotenoids)]
+vCarotenoids <- vCarotenoids[names(vCarotenoids) != "Genista_monosperma"]
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,names(vCarotenoids))
+tree <- drop.tip(tree, tipstoremove)
+vCarotenoids[vCarotenoids==0] <- 2
+lambda.Carotenoids <- fitDiscrete(tree, vCarotenoids, model = "ARD", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Carotenoids.bm <- fitDiscrete(tree, vCarotenoids, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 tree.lambda <- rescale(tree, "lambda")
-lambda.Carotenoids.0 <- fitDiscrete(tree.lambda(0), Carotenoids, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+tree.lambda(0)
+lambda.Carotenoids.0 <- fitDiscrete(tree.lambda(0), vCarotenoids, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Carotenoids
 lambda.Carotenoids.bm
 lambda.Carotenoids.0
-```
 
-
-Phylogenetic signal of Chlorophylls
-```{r}
-
-#library(geiger)
-Chlorophylls[Chlorophylls==0] <- 2
-lambda.Chlorophylls <- fitDiscrete(tree, Chlorophylls, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-lambda.Chlorophylls.bm <- fitDiscrete(tree, Chlorophylls, model = "ARD", transform = "none", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+#Chlorophylls
+vChlorophylls <- mydata[,10]
+names(vChlorophylls) <- mydata[,12]
+vChlorophylls <- vChlorophylls[!is.na(vChlorophylls)]
+vChlorophylls <- vChlorophylls[names(vChlorophylls) != "Genista_monosperma"]
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,names(vChlorophylls))
+tree <- drop.tip(tree, tipstoremove)
+vChlorophylls[vChlorophylls==0] <- 2
+lambda.Chlorophylls <- fitDiscrete(tree, vChlorophylls, model = "ARD", transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Chlorophylls.bm <- fitDiscrete(tree, vChlorophylls, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 tree.lambda <- rescale(tree, "lambda")
-lambda.Chlorophylls.0 <- fitDiscrete(tree.lambda(0), Chlorophylls, model = "ARD", transform = "none", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+tree.lambda(0)
+lambda.Chlorophylls.0 <- fitDiscrete(tree.lambda(0), vChlorophylls, model = "ARD", transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
 lambda.Chlorophylls
 lambda.Chlorophylls.bm
 lambda.Chlorophylls.0
 
+
+#Npigments
+ARDstep <- matrix(c(0, 1, 0, 0, 2, 0, 3, 0, 0, 4, 0, 5, 0, 0, 6, 0), 4)
+vNpigments <- mydata[,11]
+names(vNpigments) <- mydata[,12]
+vNpigments <- vNpigments[!is.na(vNpigments)]
+vNpigments <- vNpigments[names(vNpigments) != "Genista_monosperma"]
+tree <- multi2di(mytree$scenario.2)
+tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+tipstoremove <- setdiff(tree$tip.label,names(vNpigments))
+tree <- drop.tip(tree, tipstoremove)
+vNpigments[vNpigments==0] <- "zero"
+vNpigments[vNpigments==1] <- "one"
+vNpigments[vNpigments==2] <- "two"
+vNpigments[vNpigments==3] <- "three"
+vNpigments <- factor(vNpigments)
+lambda.Npigments <- fitDiscrete(tree, vNpigments, model = ARDstep, transform = "lambda", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Npigments.bm <- fitDiscrete(tree, vNpigments, model = ARDstep, transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+tree.lambda <- rescale(tree, "lambda")
+tree.lambda(0)
+lambda.Npigments.0 <- fitDiscrete(tree.lambda(0), vNpigments, model = ARDstep, transform = "none", niter = 1000, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
+lambda.Npigments
+lambda.Npigments.bm
+lambda.Npigments.0
+
+
+
 ```
+
+
 
 
 ML reconstruction number of pigments.
 
 ```{r}
-library(phytools)
-
+  library(phytools)
+  
+  names(mydata)
+  vvNPigments <- mydata[,11]
+  names(vvNPigments) <- mydata[,12]
+  tree <- multi2di(mytree$scenario.2)
+  tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+  
+  vvNPigments<-vvNPigments[!is.na(vvNPigments)]
+  tipstoremove <- setdiff(tree$tip.label,names(NPigments))
+  tree <- drop.tip(tree, tipstoremove)
+  
+  
 names(mydata)
-NPigments <- mydata[,14]
-names(NPigments) <- mydata[,5]
-tree <- multi2di(my.phylo.maker$scenario.2$run.1)
-tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
+vvFlavonoids <- mydata[,7]
+names(vvFlavonoids) <- mydata[,12]
+vvFlavonoids[vvFlavonoids==0] <- 1
+vvFlavonoids
+vvAnthocyanins <- mydata[,7]
+names(vvAnthocyanins) <- mydata[,12]
+vvAnthocyanins[vvAnthocyanins==0] <- 2
+vvAnthocyanins
+vvAurones <- mydata[,8]
+names(vvAurones) <- mydata[,12]
+vvAurones[vvAurones==0] <- 2
+vvAurones
+vvCarotenoids <- mydata[,9]
+names(vvCarotenoids) <- mydata[,12]
+vvCarotenoids[vvCarotenoids==0] <- 2
+vvCarotenoids
+vvChlorophylls <- mydata[,10]
+names(vvChlorophylls) <- mydata[,12]
+vvChlorophylls[vvChlorophylls==0] <- 2
+vvChlorophylls
 
-NPigments<-NPigments[!is.na(NPigments)]
-tipstoremove <- setdiff(tree$tip.label,names(NPigments))
-tree <- drop.tip(tree, tipstoremove)
-
-
-
-pdffn = paste0("NPigments.pdf")
-pdf(file=pdffn, width=27, height=27)
-plot(tree,type="fan",cex=0.6,font=3,lwd=1)
-tiplabels(pie=to.matrix(NPigments[tree$tip.label],
-    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
-add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
-    y=0.8*par()$usr[3],fsize=2)
-dev.off()
-
-fitER.NPigments<-ace(NPigments, tree,model="ER",type="discrete")
-names(fitER.NPigments)
-
-pdffn = paste0("ML_ER_NPigments.pdf")
-pdf(file=pdffn, width=27, height=27)
-plot(tree,type="fan",cex=0.6,font=3,lwd=1)
-tiplabels(pie=to.matrix(NPigments[tree$tip.label],
-    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
-nodelabels(node=1:tree$Nnode+Ntip(tree),
-    pie=fitER.NPigments$lik.anc,piecol=cols,cex=0.2)
-add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
-    y=0.8*par()$usr[3],fsize=2)
-dev.off()
-
-fitARD.NPigments<-ace(NPigments,tree,model="ARD",type="discrete")
-fitARD.NPigments
-pdffn = paste0("ML_ARD_NPigments.pdf")
-pdf(file=pdffn, width=27, height=27)
-plot(tree,type="fan",cex=0.6,font=3,lwd=1)
-tiplabels(pie=to.matrix(NPigments[tree$tip.label],
-    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
-nodelabels(node=1:tree$Nnode+Ntip(tree),
-    pie=fitARD.NPigments$lik.anc,piecol=cols,cex=0.2)
-add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
-    y=0.8*par()$usr[3],fsize=2)
-dev.off()
-
-fitSYM.NPigments<-ace(NPigments,tree,model="SYM",type="discrete")
-fitSYM.NPigments
-pdffn = paste0("ML_SYM_NPigments.pdf")
-pdf(file=pdffn, width=27, height=27)
-plot(tree,type="fan",cex=0.6,font=3,lwd=1)
-tiplabels(pie=to.matrix(NPigments[tree$tip.label],
-    levels(as.factor(NPigments))),piecol=cols,cex=0.1)
-nodelabels(node=1:tree$Nnode+Ntip(tree),
-    pie=fitSYM.NPigments$lik.anc,piecol=cols,cex=0.2)
-add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
-    y=0.8*par()$usr[3],fsize=2)
-dev.off()
-
-ARDstep <- matrix(c(0, 1, 0, 0, 2, 0, 3, 0, 0, 4, 0, 5, 0, 0, 6, 0), 4)
-fitARDstep.NPigments<-ace(NPigments,tree,model=ARDstep,type="discrete")
-fitARDstep.NPigments
-
-
-names(mydata)
-Flavonoids <- mydata[,9]
-names(Flavonoids) <- mydata[,5]
-Flavonoids[Flavonoids==0] <- 2
-#Flavonoids[is.na(Flavonoids)] <- "3"
-Flavonoids
-Anthocyanins <- mydata[,10]
-names(Anthocyanins) <- mydata[,5]
-Anthocyanins[Anthocyanins==0] <- 2
-#Anthocyanins[is.na(Anthocyanins)] <- "3"
-Anthocyanins
-Aurones <- mydata[,11]
-names(Aurones) <- mydata[,5]
-Aurones[Aurones==0] <- 2
-#Aurones[is.na(Aurones)] <- "3"
-Aurones
-Carotenoids <- mydata[,12]
-names(Carotenoids) <- mydata[,5]
-Carotenoids[Carotenoids==0] <- 2
-#Carotenoids[is.na(Carotenoids)] <- "3"
-Carotenoids
-Chlorophylls <- mydata[,13]
-names(Chlorophylls) <- mydata[,5]
-Chlorophylls[Chlorophylls==0] <- 2
-#Chlorophylls[is.na(Chlorophylls)] <- "3"
-Chlorophylls
-
-#cols<-setNames(c("lightpink","#e75480","purple","#301934"),levels(as.factor(NPigments)))
-cols<-setNames(c("white","lightgrey","#555555","black"),levels(as.factor(NPigments)))
-cols5<-setNames(c("lightyellow","lightgrey"),levels(as.factor(Flavonoids)))
-cols2<-setNames(c("blue","lightgrey"),levels(as.factor(Anthocyanins)))
-cols3<-setNames(c("orange","lightgrey"),levels(as.factor(Carotenoids)))
-cols4<-setNames(c("#FFCC00","lightgrey"),levels(as.factor(Aurones)))
-cols6<-setNames(c("darkgreen","lightgrey"),levels(as.factor(Chlorophylls)))
-node1 <- getMRCA(tree, c("Acritopappus_sp","Richterago_arenaria"))
+#cols<-setNames(c("lightpink","#e75480","purple","#301934"),levels(as.factor(vvNPigments)))
+cols<-setNames(c("white","lightgrey","#555555","black"),levels(as.factor(vvNPigments)))
+cols5<-setNames(c("lightyellow","lightgrey"),levels(as.factor(vvFlavonoids)))
+cols2<-setNames(c("blue","lightgrey"),levels(as.factor(vvAnthocyanins)))
+cols3<-setNames(c("orange","lightgrey"),levels(as.factor(vvCarotenoids)))
+cols4<-setNames(c("#FFCC00","lightgrey"),levels(as.factor(vvAurones)))
+cols6<-setNames(c("darkgreen","lightgrey"),levels(as.factor(vvChlorophylls)))
+#node1 <- getMRCA(tree, c("Acritopappus_sp","Richterago_arenaria"))
 node2 <- getMRCA(tree, c("Orchis_anthropophora","Gomesa_hydrophila"))
 node3 <- getMRCA(tree, c("Clinopodium_nepeta","Stachys_ocymastrum"))
-node4 <- getMRCA(tree, c("Pedicularis_sylvatica","Cistanche_phelypaea"))
-node5 <- getMRCA(tree, c("Silene_adscendens","Paronychia_argentea"))
+#node4 <- getMRCA(tree, c("Pedicularis_sylvatica","Cistanche_phelypaea"))
+#node5 <- getMRCA(tree, c("Silene_adscendens","Paronychia_argentea"))
 node6 <- getMRCA(tree, c("Solanum_paniculatum","Evolvulus_lithospermoides"))
-node7<- getMRCA(tree, c("Trifolium_fragiferum","Hymenaea_sp"))
+#node7<- getMRCA(tree, c("Trifolium_fragiferum","Hymenaea_sp"))
 node8<- getMRCA(tree, c("Heliotropium_europaeum","Cynoglossum_clandestinum"))
-node9<- getMRCA(tree, c("Sisymbrium_austriacum","Malcolmia_littorea"))
+#node9<- getMRCA(tree, c("Sisymbrium_austriacum","Malcolmia_littorea"))
 node10<- getMRCA(tree, c("Cistus_crispus","Malva_maroccana"))
 node11<- getMRCA(tree, c("Nigella_damascena","Papaver_argemone"))
 node12<- getMRCA(tree, c("Linum_trigynum","Euphorbia_segetalis"))
@@ -1139,50 +1126,50 @@ node15<- getMRCA(tree, c("Geranium_molle","Erodium_moschatum"))
 node16<- getMRCA(tree, c("Cambessedesia_corymbosa","Miconia_rubiginosa"))
 node17<- getMRCA(tree, c("Declieuxia_fruticosa","Asperula_hirsuta"))
 node18<- getMRCA(tree, c("Cymbalaria_muralis","Linaria_spartea"))
-node19<- getMRCA(tree, c("Romulea_bulbocodium","Iris_planifolia"))
+#node19<- getMRCA(tree, c("Romulea_bulbocodium","Iris_planifolia"))
 node20<- getMRCA(tree, c("Allium_roseum","Acis_autumnalis"))
-node21<- getMRCA(tree, c("Scilla_peruviana","Prospero_autumnale"))
+#node21<- getMRCA(tree, c("Scilla_peruviana","Prospero_autumnale"))
 node22<- getMRCA(tree, c("Xyris_asperula","Xyris_piranii"))
 
-pdffn = paste0("ML_ARDstep_NPigments.pdf")
+pdffn = paste0("ML_ARDstep2_NPigments.pdf")
 pdf(file=pdffn, width=30, height=30)
 par(mar = c(0.1, 0.1, 0.1, 0.1))
 plot(tree,type="fan",show.tip.label = T, cex = 0.1,  tip.color="white", edge.color = "grey", edge.width = 5, no.margin = F)
-tiplabels(pie=to.matrix(NPigments[tree$tip.label],
-    levels(as.factor(NPigments))),piecol=cols, bg=cols,cex=0.1,offset = 1)
+tiplabels(pie=to.matrix(vvNPigments[tree$tip.label],
+    levels(as.factor(vvNPigments))),piecol=cols, bg=cols,cex=0.1,offset = 1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
-    pie=fitARDstep.NPigments$lik.anc,piecol=cols,cex=0.2)
+    pie=pp.Npigments.ARD.2$states,piecol=cols,cex=0.2)
 add.simmap.legend(colors=cols,prompt=FALSE,x=1*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
-tiplabels(pie=to.matrix(Flavonoids[tree$tip.label],
-    levels(as.factor(Flavonoids))),piecol=cols5, bg=cols5,cex=0.1, offset = 2.5)
+tiplabels(pie=to.matrix(vvFlavonoids[tree$tip.label],
+    levels(as.factor(vvFlavonoids))),piecol=cols5, bg=cols5,cex=0.1, offset = 2.5)
 add.simmap.legend(colors=cols5,prompt=FALSE,x=0.9*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
-tiplabels(pie=to.matrix(Anthocyanins[tree$tip.label],
-    levels(as.factor(Anthocyanins))),piecol=cols2, bg=cols2,cex=0.1, offset = 4)
+tiplabels(pie=to.matrix(vvAnthocyanins[tree$tip.label],
+    levels(as.factor(vvAnthocyanins))),piecol=cols2, bg=cols2,cex=0.1, offset = 4)
 add.simmap.legend(colors=cols2,prompt=FALSE,x=0.8*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
-tiplabels(pie=to.matrix(Carotenoids[tree$tip.label],
-    levels(as.factor(Carotenoids))),piecol=cols3, bg=cols3,cex=0.1, offset = 5.5)
+tiplabels(pie=to.matrix(vvCarotenoids[tree$tip.label],
+    levels(as.factor(vvCarotenoids))),piecol=cols3, bg=cols3,cex=0.1, offset = 5.5)
 add.simmap.legend(colors=cols3,prompt=FALSE,x=0.7*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
-tiplabels(pie=to.matrix(Chlorophylls[tree$tip.label],
-    levels(as.factor(Chlorophylls))),piecol=cols6, bg=cols6,cex=0.1, offset = 7)
+tiplabels(pie=to.matrix(vvChlorophylls[tree$tip.label],
+    levels(as.factor(vvChlorophylls))),piecol=cols6, bg=cols6,cex=0.1, offset = 7)
 add.simmap.legend(colors=cols6,prompt=FALSE,x=0.8*par()$usr[1],
     y=0.9*par()$usr[3],fsize=2)
-tiplabels(pie=to.matrix(Aurones[tree$tip.label],
-    levels(as.factor(Aurones))),piecol=cols4, bg=cols4,cex=0.1, offset = 8.5)
+tiplabels(pie=to.matrix(vvAurones[tree$tip.label],
+    levels(as.factor(vvAurones))),piecol=cols4, bg=cols4,cex=0.1, offset = 8.5)
 add.simmap.legend(colors=cols4,prompt=FALSE,x=0.7*par()$usr[1],
     y=0.9*par()$usr[3],fsize=2)
-arc.cladelabels(tree, "Asteraceae", node1, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Asteraceae", node1, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Orchidaceae", node2, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Lamiaceae", node3, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
-arc.cladelabels(tree, "Orobanchaceae", node4, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
-arc.cladelabels(tree, "Caryophyllaceae", node5, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Orobanchaceae", node4, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Caryophyllaceae", node5, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Solanaceae-Convolvulaceae", node6, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
-arc.cladelabels(tree, "Fabaceae", node7, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Fabaceae", node7, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Boraginaceae", node8, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
-arc.cladelabels(tree, "Brassicaceae", node9, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Brassicaceae", node9, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Malvaceae-Cistaceae", node10, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Papaveraceae-Ranunculaceae", node11, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Linaceae-Euphorbiaceae", node12, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1,orientation="curved", stretch=1)
@@ -1192,73 +1179,12 @@ arc.cladelabels(tree, "Geraniaceae", node15, ln.offset=1.1, lab.offset=1.12,mark
 arc.cladelabels(tree, "Melastomataceae", node16, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Rubiaceae", node17, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Plantaginaceae", node18, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
-arc.cladelabels(tree, "Iridaceae", node19, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Iridaceae", node19, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Amaryllidaceae", node20, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.8,orientation="curved", stretch=1)
-arc.cladelabels(tree, "Asparagaceae", node21, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Asparagaceae", node21, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Xyridaceae", node22, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
 dev.off()
 
 ```
-
-
-Stochastic mapping Number of Pigments: This could take very long, we are not goint to do it for now.
-```{r}
-
-mtree<-make.simmap(tree,NPigments,model=ARDstep, nsim=1)
-mtree
-cols<-setNames(c("red","blue", "green", "yellow"),levels(as.factor(NPigments)))
-
-pdffn = paste0("BSM_1map_NPigments.pdf")
-pdf(file=pdffn, width=27, height=27)
-plotSimmap(mtree,cols,type="fan",fsize=0.6,ftype="i", offset=1)
-add.simmap.legend(colors=cols,prompt=FALSE,x=0.9*par()$usr[1],
-    y=0.8*par()$usr[3],fsize=2)
-dev.off()
-
-mtrees.NPigments<-make.simmap(tree,NPigments,model=ARDstep,nsim=100)
-
-
-pd.NPigments<-summary(mtrees.NPigments)
-pd.NPigments
-
-
-
-############################################
-# Open a PDF
-############################################
-pdffn = paste0("BSMs100_NPigments_v1.pdf")
-pdf(file=pdffn, width=6, height=60)
-plotSimmap(sample(mtrees.NPigments,1)[[1]],cols,fsize=0.6,ftype="i",offset = 1)
-nodelabels(pie=pd.NPigments$ace,piecol=cols,cex=0.5)
-add.simmap.legend(colors=cols[4:1],prompt=FALSE,x=0,y=-4,
-    vertical=FALSE)
-############################################
-# Close PDF
-############################################
-dev.off()
-
-
-
-
-```
-
-Phylogenetic signal of NPigments
-```{r}
-
-library(geiger)
-NPigments[NPigments==0] <- "zero"
-lambda.NPigments <- fitDiscrete(tree, NPigments, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-lambda.NPigments.bm <- fitDiscrete(tree, NPigments, model = "ARD", transform = "none", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-
-tree.lambda <- rescale(tree, "lambda")
-tree.lambda(0)
-lambda.NPigments.0 <- fitDiscrete(tree.lambda(0), NPigments, model = "ARD", transform = "lambda", niter = 100, FAIL = 1e+200, hessian = FALSE, CI = 0.95, ncores=NULL)
-
-lambda.NPigments
-lambda.NPigments.bm
-lambda.NPigments.0
-
-```
-
 
 
