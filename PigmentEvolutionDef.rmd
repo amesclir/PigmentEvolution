@@ -314,7 +314,7 @@ plotRECON(tree,pp.Npigments.STEP.2$states,cex=0.5, pie.cex=0.5,title="Npigments 
 dev.off()
 
 cols<-setNames(c("white", "grey", "darkgrey", "black", "yellow", "orange", "red", "darkred"),levels(c("(0,R1)", "(1,R1)", "(2,R1)", "(3,R1)", "(0,R2)", "(1,R2)", "(2,R2)", "(3,R2)")))
-pdffn = paste0("Npigments2ratesfanARD.pdf")
+pdffn = paste0("Npigments2ratesfanSTEP.pdf")
 pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
@@ -380,6 +380,10 @@ ARDx2 <- getFullMat(StateMats, RateClassMat)
 StateMats <- list(Anthocyanins.Aurones.y, Anthocyanins.Aurones.y)
 StateMats
 ARDy2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Anthocyanins.Aurones.x, Anthocyanins.Aurones.y)
+StateMats
+ARDxy2 <- getFullMat(StateMats, RateClassMat)
+
 
 pp.Anthocyanins.Aurones.ARD.1<-corHMM(tree,Anthocyanins.Aurones,rate.cat=1,node.states="marginal")
 pp.Anthocyanins.Aurones.ARD.1
@@ -411,6 +415,9 @@ pp.Anthocyanins.Aurones.ARDx.2
 pp.Anthocyanins.Aurones.ARDy.2<-corHMM(tree,Anthocyanins.Aurones,rate.cat=2,rate.mat=ARDy2, node.states="marginal")
 pp.Anthocyanins.Aurones.ARDy.2
 
+pp.Anthocyanins.Aurones.ARDxy.2<-corHMM(tree,Anthocyanins.Aurones,rate.cat=2,rate.mat=ARDxy2, node.states="marginal")
+pp.Anthocyanins.Aurones.ARDxy.2
+
 simmap.Anthocyanins.Aurones <- makeSimmap(tree=tree, data=Anthocyanins.Aurones, model=pp.Anthocyanins.Aurones.ARDy.2$solution, rate.cat=2, nSim=100, nCores=1)
 summary(simmap.Anthocyanins.Aurones)
 
@@ -432,6 +439,22 @@ nodelabels(node=1:tree$Nnode+Ntip(tree),
     pie=pp.Anthocyanins.Aurones.ARDy.2$states,piecol=cols,cex=0.2)
 dev.off()
 
+#cols<-setNames(c("white","white","yellow", "yellow", "pink","pink","red", "red"),levels(c("(0_0,R1)", "(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)")))
+cols<-setNames(c("white","white","yellow", "yellow", "pink","pink","red", "red"),levels(c("(1,R1)", "(1,R2)", "(2,R1)", "(2,R2)", "(3,R1)", "(3,R2)", "(4,R1)", "(4,R2)")))
+pdffn = paste0("Anthocyanins.Aurones2ratesfanARDy.color.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Anthocyanins.Aurones.ARDy.2$states,piecol=cols,cex=0.2)
+dev.off()
+
+cols<-setNames(c("white","grey","white","grey","white","grey","white","grey"),levels(c("(0_0,R1)", "(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)")))
+pdffn = paste0("Anthocyanins.Aurones2ratesfanARDy.regimes.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Anthocyanins.Aurones.ARDy.2$states,piecol=cols,cex=0.2)
+dev.off()
 
 #Anthocyanins.Carotenoids
 Anthocyanins.Carotenoids <- cbind (as.character(mydata[,12][!is.na(mydata[,7]) & !is.na(mydata[,9])]),mydata[,7][!is.na(mydata[,7])& !is.na(mydata[,9])],mydata[,9][!is.na(mydata[,7])& !is.na(mydata[,9])])
@@ -483,6 +506,9 @@ ARDx2 <- getFullMat(StateMats, RateClassMat)
 StateMats <- list(Anthocyanins.Carotenoids.y, Anthocyanins.Carotenoids.y)
 StateMats
 ARDy2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Anthocyanins.Carotenoids.x, Anthocyanins.Carotenoids.y)
+StateMats
+ARDxy2 <- getFullMat(StateMats, RateClassMat)
 
 pp.Anthocyanins.Carotenoids.ARD.1<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=1,node.states="marginal")
 pp.Anthocyanins.Carotenoids.ARD.1
@@ -514,6 +540,9 @@ pp.Anthocyanins.Carotenoids.ARDx.2
 pp.Anthocyanins.Carotenoids.ARDy.2<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=2,rate.mat=ARDy2, node.states="marginal")
 pp.Anthocyanins.Carotenoids.ARDy.2
 
+pp.Anthocyanins.Carotenoids.ARDxy.2<-corHMM(tree,Anthocyanins.Carotenoids,rate.cat=2,rate.mat=ARDxy2, node.states="marginal")
+pp.Anthocyanins.Carotenoids.ARDxy.2
+
 simmap.Anthocyanins.Carotenoids <- makeSimmap(tree=tree, data=Anthocyanins.Carotenoids, model=pp.Anthocyanins.Carotenoids.ARDx.2$solution, rate.cat=2, nSim=100, nCores=1)
 summary(simmap.Anthocyanins.Carotenoids)
 
@@ -529,6 +558,14 @@ dev.off()
 
 cols<-setNames(c("white","lightgrey","darkgrey", "black", "red","darkorange","orange", "yellow"),levels(c("(0_0,R1)", "(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)")))
 pdffn = paste0("Anthocyanins.Carotenoids2ratesfanARDx.pdf")
+pdf(file=pdffn, width=27, height=27)
+plot(tree,type="fan",cex=0.6,font=3,lwd=1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),
+    pie=pp.Anthocyanins.Carotenoids.ARDx.2$states,piecol=cols,cex=0.2)
+dev.off()
+
+cols<-setNames(c("white","white", "yellow", "yellow","pink","pink", "red", "red"),levels(c("(0_0,R1)", "(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)")))
+pdffn = paste0("Anthocyanins.Carotenoids2ratesfanARDx.color.pdf")
 pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
@@ -586,6 +623,9 @@ ARDx2 <- getFullMat(StateMats, RateClassMat)
 StateMats <- list(Anthocyanins.Chlorophylls.y, Anthocyanins.Chlorophylls.y)
 StateMats
 ARDy2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Anthocyanins.Chlorophylls.x, Anthocyanins.Chlorophylls.y)
+StateMats
+ARDxy2 <- getFullMat(StateMats, RateClassMat)
 
 pp.Anthocyanins.Chlorophylls.ARD.1<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=1,node.states="marginal")
 pp.Anthocyanins.Chlorophylls.ARD.1
@@ -617,25 +657,28 @@ pp.Anthocyanins.Chlorophylls.ARDx.2
 pp.Anthocyanins.Chlorophylls.ARDy.2<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=2,rate.mat=ARDy2, node.states="marginal")
 pp.Anthocyanins.Chlorophylls.ARDy.2
 
-simmap.Anthocyanins.Chlorophylls <- makeSimmap(tree=tree, data=Anthocyanins.Chlorophylls, model=pp.Anthocyanins.Chlorophylls.ARD.2$solution, rate.cat=2, nSim=100, nCores=1)
+pp.Anthocyanins.Chlorophylls.ARDxy.2<-corHMM(tree,Anthocyanins.Chlorophylls,rate.cat=2,rate.mat=ARDxy2, node.states="marginal")
+pp.Anthocyanins.Chlorophylls.ARDxy.2
+
+simmap.Anthocyanins.Chlorophylls <- makeSimmap(tree=tree, data=Anthocyanins.Chlorophylls, model=pp.Anthocyanins.Chlorophylls.ARDxy.2$solution, rate.cat=2, nSim=100, nCores=1)
 summary(simmap.Anthocyanins.Chlorophylls)
 
-pdffn = paste0("Model.Anthocyanins.Chlorophylls2rates.ARD.pdf")
+pdffn = paste0("Model.Anthocyanins.Chlorophylls2rates.ARDxy.pdf")
 pdf(file=pdffn, width=6, height=8)
-plotMKmodel(pp.Anthocyanins.Chlorophylls.ARD.2)
+plotMKmodel(pp.Anthocyanins.Chlorophylls.ARDxy.2)
 dev.off()
 
-pdffn = paste0("Anthocyanins.Chlorophylls2rates.ARD.pdf")
+pdffn = paste0("Anthocyanins.Chlorophylls2rates.ARDxy.pdf")
 pdf(file=pdffn, width=6, height=60)
-plotRECON(tree,pp.Anthocyanins.Chlorophylls.ARD.2$states,cex=0.5, pie.cex=0.5,title="Anthocyanins.Chlorophylls 2 rates ARD")
+plotRECON(tree,pp.Anthocyanins.Chlorophylls.ARDxy.2$states,cex=0.5, pie.cex=0.5,title="Anthocyanins.Chlorophylls 2 rates ARDxy")
 dev.off()
 
 cols<-setNames(c("white","lightgrey","darkgrey", "black", "red","darkorange","orange", "yellow"),levels(c("(0_0,R1)", "(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)")))
-pdffn = paste0("Anthocyanins.Chlorophylls2ratesfanARD.pdf")
+pdffn = paste0("Anthocyanins.Chlorophylls2ratesfanARDxy.pdf")
 pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
-    pie=pp.Anthocyanins.Chlorophylls.ARD.2$states,piecol=cols,cex=0.2)
+    pie=pp.Anthocyanins.Chlorophylls.ARDxy.2$states,piecol=cols,cex=0.2)
 dev.off()
 
 
@@ -689,6 +732,9 @@ ARDx2 <- getFullMat(StateMats, RateClassMat)
 StateMats <- list(Carotenoids.Aurones.y, Carotenoids.Aurones.y)
 StateMats
 ARDy2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Carotenoids.Aurones.x, Carotenoids.Aurones.y)
+StateMats
+ARDxy2 <- getFullMat(StateMats, RateClassMat)
 
 pp.Carotenoids.Aurones.ARD.1<-corHMM(tree,Carotenoids.Aurones,rate.cat=1,node.states="marginal")
 pp.Carotenoids.Aurones.ARD.1
@@ -719,6 +765,9 @@ pp.Carotenoids.Aurones.ARDx.2
 
 pp.Carotenoids.Aurones.ARDy.2<-corHMM(tree,Carotenoids.Aurones,rate.cat=2,rate.mat=ARDy2, node.states="marginal")
 pp.Carotenoids.Aurones.ARDy.2
+
+pp.Carotenoids.Aurones.ARDxy.2<-corHMM(tree,Carotenoids.Aurones,rate.cat=2,rate.mat=ARDxy2, node.states="marginal")
+pp.Carotenoids.Aurones.ARDxy.2
 
 simmap.Carotenoids.Aurones <- makeSimmap(tree=tree, data=Carotenoids.Aurones, model=pp.Carotenoids.Aurones.IND.2$solution, rate.cat=2, nSim=100, nCores=1)
 summary(simmap.Carotenoids.Aurones)
@@ -792,6 +841,9 @@ ARDx2 <- getFullMat(StateMats, RateClassMat)
 StateMats <- list(Carotenoids.Chlorophylls.y, Carotenoids.Chlorophylls.y)
 StateMats
 ARDy2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Carotenoids.Chlorophylls.x, Carotenoids.Chlorophylls.y)
+StateMats
+ARDxy2 <- getFullMat(StateMats, RateClassMat)
 
 pp.Carotenoids.Chlorophylls.ARD.1<-corHMM(tree,Carotenoids.Chlorophylls,rate.cat=1,node.states="marginal")
 pp.Carotenoids.Chlorophylls.ARD.1
@@ -822,6 +874,9 @@ pp.Carotenoids.Chlorophylls.ARDx.2
 
 pp.Carotenoids.Chlorophylls.ARDy.2<-corHMM(tree,Carotenoids.Chlorophylls,rate.cat=2,rate.mat=ARDy2, node.states="marginal")
 pp.Carotenoids.Chlorophylls.ARDy.2
+
+pp.Carotenoids.Chlorophylls.ARDxy.2<-corHMM(tree,Carotenoids.Chlorophylls,rate.cat=2,rate.mat=ARDxy2, node.states="marginal")
+pp.Carotenoids.Chlorophylls.ARDxy.2
 
 simmap.Carotenoids.Chlorophylls <- makeSimmap(tree=tree, data=Carotenoids.Chlorophylls, model=pp.Carotenoids.Chlorophylls.ARDy.2$solution, rate.cat=2, nSim=100, nCores=1)
 summary(simmap.Carotenoids.Chlorophylls)
@@ -894,6 +949,9 @@ ARDx2 <- getFullMat(StateMats, RateClassMat)
 StateMats <- list(Aurones.Chlorophylls.y, Aurones.Chlorophylls.y)
 StateMats
 ARDy2 <- getFullMat(StateMats, RateClassMat)
+StateMats <- list(Aurones.Chlorophylls.x, Aurones.Chlorophylls.y)
+StateMats
+ARDxy2 <- getFullMat(StateMats, RateClassMat)
 
 pp.Aurones.Chlorophylls.ARD.1<-corHMM(tree,Aurones.Chlorophylls,rate.cat=1,node.states="marginal")
 pp.Aurones.Chlorophylls.ARD.1
@@ -925,12 +983,23 @@ pp.Aurones.Chlorophylls.ARDx.2
 pp.Aurones.Chlorophylls.ARDy.2<-corHMM(tree,Aurones.Chlorophylls,rate.cat=2,rate.mat=ARDy2, node.states="marginal")
 pp.Aurones.Chlorophylls.ARDy.2
 
+pp.Aurones.Chlorophylls.ARDxy.2<-corHMM(tree,Aurones.Chlorophylls,rate.cat=2,rate.mat=ARDxy2, node.states="marginal")
+pp.Aurones.Chlorophylls.ARDxy.2
+
 simmap.Aurones.Chlorophylls <- makeSimmap(tree=tree, data=Aurones.Chlorophylls, model=pp.Aurones.Chlorophylls.IND.2$solution, rate.cat=2, nSim=100, nCores=1)
 summary(simmap.Aurones.Chlorophylls)
+#only a little bit better the xy2 model than ind2
+simmap.Aurones.Chlorophylls2 <- makeSimmap(tree=tree, data=Aurones.Chlorophylls, model=pp.Aurones.Chlorophylls.ARDxy.2$solution, rate.cat=2, nSim=100, nCores=1)
+summary(simmap.Aurones.Chlorophylls2)
 
 pdffn = paste0("Model.Aurones.Chlorophylls2rates.IND.pdf")
 pdf(file=pdffn, width=6, height=8)
 plotMKmodel(pp.Aurones.Chlorophylls.IND.2)
+dev.off()
+
+pdffn = paste0("Model.Aurones.Chlorophylls2rates.ARDsy.pdf")
+pdf(file=pdffn, width=6, height=8)
+plotMKmodel(pp.Aurones.Chlorophylls.ARDxy.2)
 dev.off()
 
 pdffn = paste0("Aurones.Chlorophylls2rates.IND.pdf")
