@@ -625,6 +625,27 @@ nodelabels(node=1:tree$Nnode+Ntip(tree),
     pie=pp.Anthocyanins.Aurones.ARDy.2$states,piecol=cols,cex=0.2)
 dev.off()
 
+
+cols<-setNames(c("white","red","lightgrey","darkorange","darkgrey", "orange","black", "yellow"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Anthocyanins.Aurones.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Anthocyanins.Aurones, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+
+cols<-setNames(c("white","grey","white","grey","white","grey","white","grey"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Anthocyanins.Aurones.rates.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Anthocyanins.Aurones, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+cols<-setNames(c("white","white","yellow","yellow","pink","pink", "red","red"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Anthocyanins.Aurones.color.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Anthocyanins.Aurones, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+
 #Anthocyanins.Carotenoids
 Anthocyanins.Carotenoids <- cbind (as.character(mydata[,12][!is.na(mydata[,7]) & !is.na(mydata[,9])]),mydata[,7][!is.na(mydata[,7])& !is.na(mydata[,9])],mydata[,9][!is.na(mydata[,7])& !is.na(mydata[,9])])
 library(phytools)
@@ -748,6 +769,25 @@ pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
     pie=pp.Anthocyanins.Carotenoids.ARDx.2$states,piecol=cols,cex=0.2)
+dev.off()
+
+cols<-setNames(c("white","red","lightgrey","darkorange","darkgrey", "orange","black", "yellow"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Anthocyanins.Carotenoids.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Anthocyanins.Carotenoids, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+
+cols<-setNames(c("white","grey","white","grey","white","grey","white","grey"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Anthocyanins.Carotenoids.rates.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Anthocyanins.Carotenoids, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+cols<-setNames(c("white","white","yellow","yellow","pink","pink", "red","red"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Anthocyanins.Carotenoids.color.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Anthocyanins.Carotenoids, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
 dev.off()
 
 
@@ -876,6 +916,24 @@ nodelabels(node=1:tree$Nnode+Ntip(tree),
     pie=pp.Anthocyanins.Chlorophylls.ARDxy.2$states,piecol=cols,cex=0.2)
 dev.off()
 
+cols<-setNames(c("white","red","lightgrey","darkorange","darkgrey", "orange","black", "yellow"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Anthocyanins.Chlorophylls.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Anthocyanins.Chlorophylls, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+
+cols<-setNames(c("white","grey","white","grey","white","grey","white","grey"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Anthocyanins.Chlorophylls.rates.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Anthocyanins.Chlorophylls, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+cols<-setNames(c("white","white","yellow","yellow","pink","pink", "red","red"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Anthocyanins.Chlorophylls.color.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Anthocyanins.Chlorophylls, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
 
 #Carotenoids.Aurones
 Carotenoids.Aurones <- cbind (as.character(mydata[,12][!is.na(mydata[,9]) & !is.na(mydata[,8])]),mydata[,9][!is.na(mydata[,9])& !is.na(mydata[,8])],mydata[,8][!is.na(mydata[,9])& !is.na(mydata[,8])])
@@ -1002,6 +1060,25 @@ nodelabels(node=1:tree$Nnode+Ntip(tree),
     pie=pp.Carotenoids.Aurones.IND.2$states,piecol=cols,cex=0.2)
 dev.off()
 
+cols<-setNames(c("white","red","lightgrey","darkorange","darkgrey", "orange","black", "yellow"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Carotenoids.Aurones.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Carotenoids.Aurones, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+
+cols<-setNames(c("white","grey","white","grey","white","grey","white","grey"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Carotenoids.Aurones.rates.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Carotenoids.Aurones, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+cols<-setNames(c("white","white","yellow","yellow","pink","pink", "red","red"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Carotenoids.Aurones.color.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Carotenoids.Aurones, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
 #Carotenoids.Chlorophylls
 Carotenoids.Chlorophylls <- cbind (as.character(mydata[,12][!is.na(mydata[,9]) & !is.na(mydata[,10])]),mydata[,9][!is.na(mydata[,9])& !is.na(mydata[,10])],mydata[,10][!is.na(mydata[,9])& !is.na(mydata[,10])])
 library(phytools)
@@ -1125,6 +1202,25 @@ pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
     pie=pp.Carotenoids.Chlorophylls.ARDy.2$states,piecol=cols,cex=0.2)
+dev.off()
+
+cols<-setNames(c("white","red","lightgrey","darkorange","darkgrey", "orange","black", "yellow"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Carotenoids.Chlorophylls.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Carotenoids.Chlorophylls, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+
+cols<-setNames(c("white","grey","white","grey","white","grey","white","grey"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Carotenoids.Chlorophylls.rates.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Carotenoids.Chlorophylls, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+cols<-setNames(c("white","white","yellow","yellow","pink","pink", "red","red"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Carotenoids.Chlorophylls.color.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Carotenoids.Chlorophylls, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
 dev.off()
 
 #Aurones.Chlorophylls
@@ -1260,6 +1356,26 @@ plot(tree,type="fan",cex=0.6,font=3,lwd=1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
     pie=pp.Aurones.Chlorophylls.IND.2$states,piecol=cols,cex=0.2)
 dev.off()
+
+cols<-setNames(c("white","red","lightgrey","darkorange","darkgrey", "orange","black", "yellow"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Aurones.Chlorophylls.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Aurones.Chlorophylls, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+
+cols<-setNames(c("white","grey","white","grey","white","grey","white","grey"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Aurones.Chlorophylls.rates.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Aurones.Chlorophylls, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
+cols<-setNames(c("white","white","yellow","yellow","pink","pink", "red","red"),c("0_0,R1)","(0_0,R2)", "(0_1,R1)", "(0_1,R2)", "(1_0,R1)", "(1_0,R2)", "(1_1,R1)", "(1_1,R2)"))
+pdffn = paste0("summary.simmap.Aurones.Chlorophylls.color.pdf")
+pdf(file=pdffn, width=100, height=100)
+plot(summary.simmap.Aurones.Chlorophylls, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
+dev.off()
+
 ```
 
 
