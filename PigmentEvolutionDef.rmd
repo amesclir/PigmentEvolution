@@ -455,7 +455,7 @@ nodelabels(node=1:tree$Nnode+Ntip(tree),
     pie=pp.Npigments.ARD.2$states,piecol=cols,cex=0.2)
 dev.off()
 
-cols<-setNames(c("grey", "grey", "grey", "grey", "orange", "orange", "orange", "orange"),levels(c("(1,R1)", "(2,R1)", "(3,R1)", "(4,R1)", "(1,R2)", "(2,R2)", "(3,R2)", "(4,R2)")))
+cols<-setNames(c("green", "green", "green", "green", "red", "red", "red", "red"),(c("(1,R1)", "(2,R1)", "(3,R1)", "(4,R1)", "(1,R2)", "(2,R2)", "(3,R2)", "(4,R2)")))
 pdffn = paste0("Npigments2ratesfanSTEP.rates.pdf")
 pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
@@ -477,7 +477,8 @@ pdf(file=pdffn, width=100, height=100)
 plot(summary.simmap.Npigments, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
 dev.off()
 
-cols<-setNames(c("grey", "grey", "grey", "grey", "orange", "orange", "orange", "orange"),(c("(0,R1)", "(1,R1)", "(2,R1)", "(3,R1)", "(0,R2)", "(1,R2)", "(2,R2)", "(3,R2)")))
+cols<-setNames(c("green", "red", "green", "red", "green", "red", "green", "red"),(c("(0,R1)", "(0,R2)", "(1,R1)", "(1,R2)", "(2,R1)", "(2,R2)", "(3,R1)", "(3,R2)" 
+)))
 pdffn = paste0("summary.simmap.Npigments.rates.pdf")
 pdf(file=pdffn, width=100, height=100)
 plot(summary.simmap.Npigments, cex = 0.3, fsize=0.2, lwd = 0.8, type="fan", colors = cols)
