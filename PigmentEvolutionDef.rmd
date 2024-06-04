@@ -73,7 +73,7 @@ pdffn = paste0("myphylo", ".scenario2.pdf")
 pdf(file=pdffn, width=6, height=60)
 plot(mytree$scenario.2, cex = 0.5)
 dev.off()
-write.tree(my.phylo.maker$scenario.2, file = "mytree2.tree")
+write.tree(mytree$scenario.2, file = "mytree2.tree")
 
 
 
@@ -568,6 +568,7 @@ pp.Anthocyanins.Aurones.ARDx.1
 plotMKmodel(pp.Anthocyanins.Aurones.ARDx.1)
 pp.Anthocyanins.Aurones.ARDy.1<-corHMM(tree,Anthocyanins.Aurones,rate.cat=1,rate.mat=Anthocyanins.Aurones.y, node.states="marginal")
 pp.Anthocyanins.Aurones.ARDy.1
+
 plotMKmodel(pp.Anthocyanins.Aurones.ARDy.1)
 
 pp.Anthocyanins.Aurones.ARD.2<-corHMM(tree,Anthocyanins.Aurones,rate.cat=2,node.states="marginal")
@@ -587,43 +588,43 @@ pp.Anthocyanins.Aurones.ARDy.2
 pp.Anthocyanins.Aurones.ARDxy.2<-corHMM(tree,Anthocyanins.Aurones,rate.cat=2,rate.mat=ARDxy2, node.states="marginal")
 pp.Anthocyanins.Aurones.ARDxy.2
 
-simmap.Anthocyanins.Aurones <- makeSimmap(tree=tree, data=Anthocyanins.Aurones, model=pp.Anthocyanins.Aurones.ARDy.2$solution, rate.cat=2, nSim=100, nCores=1)
+simmap.Anthocyanins.Aurones <- makeSimmap(tree=tree, data=Anthocyanins.Aurones, model=pp.Anthocyanins.Aurones.ARDx.2$solution, rate.cat=2, nSim=100, nCores=1)
 summary.simmap.Anthocyanins.Aurones <- summary(simmap.Anthocyanins.Aurones)
 
-pdffn = paste0("Model.Anthocyanins.Aurones2rates.ARDy.pdf")
+pdffn = paste0("Model.Anthocyanins.Aurones2rates.ARDx.pdf")
 pdf(file=pdffn, width=6, height=8)
-plotMKmodel(pp.Anthocyanins.Aurones.ARDy.2)
+plotMKmodel(pp.Anthocyanins.Aurones.ARDx.2)
 dev.off()
 
-pdffn = paste0("Anthocyanins.Aurones2rates.ARDy.pdf")
+pdffn = paste0("Anthocyanins.Aurones2rates.ARDx.pdf")
 pdf(file=pdffn, width=6, height=60)
-plotRECON(tree,pp.Anthocyanins.Aurones.ARDy.2$states,cex=0.5, pie.cex=0.5,title="Anthocyanins.Aurones 2 rates ARDy")
+plotRECON(tree,pp.Anthocyanins.Aurones.ARDx.2$states,cex=0.5, pie.cex=0.5,title="Anthocyanins.Aurones 2 rates ARDx")
 dev.off()
 
 cols<-setNames(c("white","lightgrey","darkgrey", "black", "red","darkorange","orange", "yellow"),levels(c("(1,R1)", "(2,R1)", "(3,R1)", "(4,R1)", "(1,R2)", "(2,R2)", "(3,R2)", "(4,R2)")))
-pdffn = paste0("Anthocyanins.Aurones2ratesfanARDy.pdf")
+pdffn = paste0("Anthocyanins.Aurones2ratesfanARDx.pdf")
 pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
-    pie=pp.Anthocyanins.Aurones.ARDy.2$states,piecol=cols,cex=0.2)
+    pie=pp.Anthocyanins.Aurones.ARDx.2$states,piecol=cols,cex=0.2)
 dev.off()
 
 
 cols<-setNames(c("white","yellow","pink", "red", "white","yellow","pink", "red"),levels(c("(1,R1)", "(2,R1)", "(3,R1)", "(4,R1)", "(1,R2)", "(2,R2)", "(3,R2)", "(4,R2)")))
-pdffn = paste0("Anthocyanins.Aurones2ratesfanARDy.color.pdf")
+pdffn = paste0("Anthocyanins.Aurones2ratesfanARDx.color.pdf")
 pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
-    pie=pp.Anthocyanins.Aurones.ARDy.2$states,piecol=cols,cex=0.2)
+    pie=pp.Anthocyanins.Aurones.ARDx.2$states,piecol=cols,cex=0.2)
 dev.off()
 
 
 cols<-setNames(c("white","white","white", "white", "grey","grey","grey", "grey"),levels(c("(1,R1)", "(2,R1)", "(3,R1)", "(4,R1)", "(1,R2)", "(2,R2)", "(3,R2)", "(4,R2)")))
-pdffn = paste0("Anthocyanins.Aurones2ratesfanARDy.regimes.pdf")
+pdffn = paste0("Anthocyanins.Aurones2ratesfanARDx.regimes.pdf")
 pdf(file=pdffn, width=27, height=27)
 plot(tree,type="fan",cex=0.6,font=3,lwd=1)
 nodelabels(node=1:tree$Nnode+Ntip(tree),
-    pie=pp.Anthocyanins.Aurones.ARDy.2$states,piecol=cols,cex=0.2)
+    pie=pp.Anthocyanins.Aurones.ARDx.2$states,piecol=cols,cex=0.2)
 dev.off()
 
 
