@@ -1487,7 +1487,7 @@ lambda.Npigments.0
 
 
 
-ML reconstruction number of pigments.
+Figure 1. Colors.
 
 ```{r}
   library(phytools)
@@ -1497,16 +1497,16 @@ ML reconstruction number of pigments.
   names(vvNPigments) <- mydata[,12]
   tree <- multi2di(mytree$scenario.2)
   tree$edge.length[tree$edge.length==0]<-max(nodeHeights(tree))*1e-6
-  
   vvNPigments<-vvNPigments[!is.na(vvNPigments)]
-  tipstoremove <- setdiff(tree$tip.label,names(NPigments))
+  tipstoremove <- setdiff(tree$tip.label,names(vvNPigments))
   tree <- drop.tip(tree, tipstoremove)
   
   
 names(mydata)
-vvFlavonoids <- mydata[,7]
+#mydata <- mydata[!is.na(mydata[,11]),]
+
+vvFlavonoids <- rep(1,1123)
 names(vvFlavonoids) <- mydata[,12]
-vvFlavonoids[vvFlavonoids==0] <- 1
 vvFlavonoids
 vvAnthocyanins <- mydata[,7]
 names(vvAnthocyanins) <- mydata[,12]
@@ -1519,6 +1519,8 @@ vvAurones
 vvCarotenoids <- mydata[,9]
 names(vvCarotenoids) <- mydata[,12]
 vvCarotenoids[vvCarotenoids==0] <- 2
+vvCarotenoids[is.na(vvCarotenoids)]
+vvCarotenoids[names(vvCarotenoids)=="Amphilophium_elongatum"] <- 2
 vvCarotenoids
 vvChlorophylls <- mydata[,10]
 names(vvChlorophylls) <- mydata[,12]
@@ -1527,20 +1529,21 @@ vvChlorophylls
 
 #cols<-setNames(c("lightpink","#e75480","purple","#301934"),levels(as.factor(vvNPigments)))
 cols<-setNames(c("white","lightgrey","#555555","black"),levels(as.factor(vvNPigments)))
+colsnode<-setNames(c("white","white","lightgrey","lightgrey","#555555","#555555","black","black"),c("(0,R1)", "(0,R2)", "(1,R1)", "(1,R2)", "(2,R1)", "(2,R2)", "(3,R1)", "(3,R2)"))
 cols5<-setNames(c("lightyellow","lightgrey"),levels(as.factor(vvFlavonoids)))
 cols2<-setNames(c("blue","lightgrey"),levels(as.factor(vvAnthocyanins)))
 cols3<-setNames(c("orange","lightgrey"),levels(as.factor(vvCarotenoids)))
 cols4<-setNames(c("#FFCC00","lightgrey"),levels(as.factor(vvAurones)))
 cols6<-setNames(c("darkgreen","lightgrey"),levels(as.factor(vvChlorophylls)))
-#node1 <- getMRCA(tree, c("Acritopappus_sp","Richterago_arenaria"))
+node1 <- getMRCA(tree, c("Acritopappus","Richterago_arenaria"))
 node2 <- getMRCA(tree, c("Orchis_anthropophora","Gomesa_hydrophila"))
 node3 <- getMRCA(tree, c("Clinopodium_nepeta","Stachys_ocymastrum"))
-#node4 <- getMRCA(tree, c("Pedicularis_sylvatica","Cistanche_phelypaea"))
-#node5 <- getMRCA(tree, c("Silene_adscendens","Paronychia_argentea"))
+node4 <- getMRCA(tree, c("Pedicularis_sylvatica","Cistanche_phelipaea"))
+node5 <- getMRCA(tree, c("Silene_nicaeensis","Paronychia_argentea"))
 node6 <- getMRCA(tree, c("Solanum_paniculatum","Evolvulus_lithospermoides"))
-#node7<- getMRCA(tree, c("Trifolium_fragiferum","Hymenaea_sp"))
+node7<- getMRCA(tree, c("Trifolium_fragiferum","Hymenaea"))
 node8<- getMRCA(tree, c("Heliotropium_europaeum","Cynoglossum_clandestinum"))
-#node9<- getMRCA(tree, c("Sisymbrium_austriacum","Malcolmia_littorea"))
+node9<- getMRCA(tree, c("Sisymbrium_austriacum","Marcus-kochia_littorea"))
 node10<- getMRCA(tree, c("Cistus_crispus","Malva_maroccana"))
 node11<- getMRCA(tree, c("Nigella_damascena","Papaver_argemone"))
 node12<- getMRCA(tree, c("Linum_trigynum","Euphorbia_segetalis"))
@@ -1550,19 +1553,18 @@ node15<- getMRCA(tree, c("Geranium_molle","Erodium_moschatum"))
 node16<- getMRCA(tree, c("Cambessedesia_corymbosa","Miconia_rubiginosa"))
 node17<- getMRCA(tree, c("Declieuxia_fruticosa","Asperula_hirsuta"))
 node18<- getMRCA(tree, c("Cymbalaria_muralis","Linaria_spartea"))
-#node19<- getMRCA(tree, c("Romulea_bulbocodium","Iris_planifolia"))
+node19<- getMRCA(tree, c("Romulea_bulbocodium","Juno_planifolia"))
 node20<- getMRCA(tree, c("Allium_roseum","Acis_autumnalis"))
-#node21<- getMRCA(tree, c("Scilla_peruviana","Prospero_autumnale"))
+node21<- getMRCA(tree, c("Melomphis_peruviana","Prospero_autumnale"))
 node22<- getMRCA(tree, c("Xyris_asperula","Xyris_piranii"))
 
-pdffn = paste0("ML_ARDstep2_NPigments.pdf")
+pdffn = paste0("SM_2R.STEP_NPigments.pdf")
 pdf(file=pdffn, width=30, height=30)
 par(mar = c(0.1, 0.1, 0.1, 0.1))
 plot(tree,type="fan",show.tip.label = T, cex = 0.1,  tip.color="white", edge.color = "grey", edge.width = 5, no.margin = F)
 tiplabels(pie=to.matrix(vvNPigments[tree$tip.label],
     levels(as.factor(vvNPigments))),piecol=cols, bg=cols,cex=0.1,offset = 1)
-nodelabels(node=1:tree$Nnode+Ntip(tree),
-    pie=pp.Npigments.ARD.2$states,piecol=cols,cex=0.2)
+nodelabels(node=1:tree$Nnode+Ntip(tree),pie=summary.simmap.Npigments$ace,piecol=colsnode,cex=0.2)
 add.simmap.legend(colors=cols,prompt=FALSE,x=1*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
 tiplabels(pie=to.matrix(vvFlavonoids[tree$tip.label],
@@ -1585,30 +1587,106 @@ tiplabels(pie=to.matrix(vvAurones[tree$tip.label],
     levels(as.factor(vvAurones))),piecol=cols4, bg=cols4,cex=0.1, offset = 8.5)
 add.simmap.legend(colors=cols4,prompt=FALSE,x=0.7*par()$usr[1],
     y=0.9*par()$usr[3],fsize=2)
-#arc.cladelabels(tree, "Asteraceae", node1, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Asteraceae", node1, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Orchidaceae", node2, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Lamiaceae", node3, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
-#arc.cladelabels(tree, "Orobanchaceae", node4, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
-#arc.cladelabels(tree, "Caryophyllaceae", node5, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Orobanchaceae", node4, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Caryophyllaceae", node5, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Solanaceae-Convolvulaceae", node6, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
-#arc.cladelabels(tree, "Fabaceae", node7, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Fabaceae", node7, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Boraginaceae", node8, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
-#arc.cladelabels(tree, "Brassicaceae", node9, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Brassicaceae", node9, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Malvaceae-Cistaceae", node10, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
-arc.cladelabels(tree, "Papaveraceae-Ranunculaceae", node11, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Papaveraceae-Ranunculaceae", node11, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Linaceae-Euphorbiaceae", node12, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Rosaceae", node13, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
-arc.cladelabels(tree, "Malpighiaceae", node14, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Malpighiaceae", node14, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Geraniaceae", node15, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
-arc.cladelabels(tree, "Melastomataceae", node16, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Melastomataceae", node16, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Rubiaceae", node17, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
 arc.cladelabels(tree, "Plantaginaceae", node18, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
-#arc.cladelabels(tree, "Iridaceae", node19, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
-arc.cladelabels(tree, "Amaryllidaceae", node20, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.8,orientation="curved", stretch=1)
-#arc.cladelabels(tree, "Asparagaceae", node21, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
-arc.cladelabels(tree, "Xyridaceae", node22, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Iridaceae", node19, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Amaryllidaceae", node20, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Asparagaceae", node21, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Xyridaceae", node22, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1,orientation="curved", stretch=1)
 dev.off()
 
 ```
 
+
+Figure 1 Rates!
+```{r}
+
+
+colsrates<-setNames(c("green","red","green","red","green","red","green","red"),c("(0,R1)", "(0,R2)", "(1,R1)", "(1,R2)", "(2,R1)", "(2,R2)", "(3,R1)", "(3,R2)"))
+cols5<-setNames(c("lightyellow","lightgrey"),levels(as.factor(vvFlavonoids)))
+cols2<-setNames(c("blue","lightgrey"),levels(as.factor(vvAnthocyanins)))
+cols3<-setNames(c("orange","lightgrey"),levels(as.factor(vvCarotenoids)))
+cols4<-setNames(c("#FFCC00","lightgrey"),levels(as.factor(vvAurones)))
+cols6<-setNames(c("darkgreen","lightgrey"),levels(as.factor(vvChlorophylls)))
+#Magnolids
+node24<- getMRCA(tree, c("Chimonanthus_praecox","Magnolia_sprengeri"))
+#Monocots
+node25<- getMRCA(tree, c("Arum_italicum","Xyris_piranii"))
+#Eudicots
+node26<- getMRCA(tree, c("Ranunculus_bulbosus","Solanum_wallacei"))
+#Superasteridae
+node27<- getMRCA(tree, c("Silene_scabriflora","Lamium_amplexicaule"))
+#Asteridae
+node28<- getMRCA(tree, c("Cornus_sericea","Lamium_amplexicaule"))
+#Lamids
+node29<- getMRCA(tree, c("Garrya_elliptica","Lamium_amplexicaule"))
+#Campanulids
+node30<- getMRCA(tree, c("Oenanthe_globulosa","Achillea_millefolium"))
+#Superrodidae
+node31<- getMRCA(tree, c("Saxifraga_granulata","Malva_sylvestris"))
+#Rodidae
+node32<- getMRCA(tree, c("Larrea_tridentata","Malva_sylvestris"))
+#Fabids
+node33<- getMRCA(tree, c("Larrea_tridentata","Trifolium_subterraneum"))
+#Malvids
+node34<- getMRCA(tree, c("Geranium_molle","Malva_sylvestris"))
+
+
+pdffn = paste0("SM_2R.STEP_NPigments_rates.pdf")
+pdf(file=pdffn, width=30, height=30)
+par(mar = c(0.1, 0.1, 0.1, 0.1))
+plot(tree,type="fan",show.tip.label = T, cex = 0.1,  tip.color="white", edge.color = "grey", edge.width = 5, no.margin = F)
+tiplabels(pie=summary.simmap.Npigments$tips,piecol=colsrates, bg=colsrates,cex=0.1,offset = 1)
+nodelabels(node=1:tree$Nnode+Ntip(tree),pie=summary.simmap.Npigments$ace,piecol=colsrates,cex=0.2)
+add.simmap.legend(colors=colsrates,prompt=FALSE,x=1*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+tiplabels(pie=to.matrix(vvFlavonoids[tree$tip.label],
+    levels(as.factor(vvFlavonoids))),piecol=cols5, bg=cols5,cex=0.1, offset = 2.5)
+add.simmap.legend(colors=cols5,prompt=FALSE,x=0.9*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+tiplabels(pie=to.matrix(vvAnthocyanins[tree$tip.label],
+    levels(as.factor(vvAnthocyanins))),piecol=cols2, bg=cols2,cex=0.1, offset = 4)
+add.simmap.legend(colors=cols2,prompt=FALSE,x=0.8*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+tiplabels(pie=to.matrix(vvCarotenoids[tree$tip.label],
+    levels(as.factor(vvCarotenoids))),piecol=cols3, bg=cols3,cex=0.1, offset = 5.5)
+add.simmap.legend(colors=cols3,prompt=FALSE,x=0.7*par()$usr[1],
+    y=0.8*par()$usr[3],fsize=2)
+tiplabels(pie=to.matrix(vvChlorophylls[tree$tip.label],
+    levels(as.factor(vvChlorophylls))),piecol=cols6, bg=cols6,cex=0.1, offset = 7)
+add.simmap.legend(colors=cols6,prompt=FALSE,x=0.8*par()$usr[1],
+    y=0.9*par()$usr[3],fsize=2)
+tiplabels(pie=to.matrix(vvAurones[tree$tip.label],
+    levels(as.factor(vvAurones))),piecol=cols4, bg=cols4,cex=0.1, offset = 8.5)
+add.simmap.legend(colors=cols4,prompt=FALSE,x=0.7*par()$usr[1],
+    y=0.9*par()$usr[3],fsize=2)
+arc.cladelabels(tree, "Magnolids", node24, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Monocots", node25, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Eudicots", node26, ln.offset=1.13, lab.offset=1.23,mark.node=FALSE, cex=2,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Superasterids", node27, ln.offset=1.2, lab.offset=1.3,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Asterids", node28, ln.offset=1.11, lab.offset=1.121,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Lamiids", node29, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Campanulids", node30, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Superrosids", node31, ln.offset=1.12, lab.offset=1.122,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+#arc.cladelabels(tree, "Rosids", node32, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Favids", node33, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+arc.cladelabels(tree, "Malvids", node34, ln.offset=1.1, lab.offset=1.12,mark.node=FALSE, cex=1.5,orientation="curved", stretch=1)
+dev.off()
+```
 
