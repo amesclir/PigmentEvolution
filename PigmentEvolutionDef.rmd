@@ -2270,17 +2270,8 @@ Carotenoids
 tree <- multi2di(mytree$scenario.2)
 tipstoremove <- setdiff(tree$tip.label,names(vCarotenoids))
 tree <- drop.tip(tree, tipstoremove)
-tipstoremove <- setdiff(tree$tip.label,names(vAnthocyanins))
-tree <- drop.tip(tree, tipstoremove)
 setdiff(tree$tip.label,names(vCarotenoids))
 setdiff(names(vCarotenoids),tree$tip.label)
-
-vCarotenoids <- vCarotenoids[names(vCarotenoids) != "Loncomelos_narbonensis"]
-vCarotenoids <- vCarotenoids[names(vCarotenoids) != "Limniris_macrosiphon"]
-vCarotenoids <- vCarotenoids[names(vCarotenoids) != "Thrincia_saxatilis"]
-vCarotenoids <- vCarotenoids[names(vCarotenoids) != "Satureja_cuneifolia"]
-vCarotenoids <- vCarotenoids[names(vCarotenoids) != "Oxalis_corniculata"]
-vCarotenoids <- vCarotenoids[names(vCarotenoids) !=  "Ranunculus_tuberosus"]
 
 node1 <- getMRCA(tree, c("Acritopappus","Richterago_arenaria"))
 node2 <- getMRCA(tree, c("Orchis_anthropophora","Gomesa_hydrophila"))
