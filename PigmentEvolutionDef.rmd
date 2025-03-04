@@ -2126,8 +2126,10 @@ node43<- getMRCA(tree, c("Fumana_lacidulemiensis","Tuberaria_lignosa"))
 node44<- getMRCA(tree, c("Nigella_damascena","Ranunculus_bulbosus"))  
 node45<- getMRCA(tree, c("Scrophularia_auriculata","Verbascum_sinuatum"))
 
-cols<-setNames(c("#e32be3","lightyellow"),levels(as.factor(vAnthocyanins)))
-colsnode<-setNames(c("#e32be3","#e32be3","lightyellow", "lightyellow"),c("(0,R1)", "(0,R2)", "(1,R1)", "(1,R2)"))
+cols<-setNames(c("lightyellow","#e32be3"),levels(as.factor(vAnthocyanins)))
+cols
+colsnode<-setNames(c("lightyellow", "lightyellow","#e32be3","#e32be3"),c("(0,R1)", "(0,R2)", "(1,R1)", "(1,R2)"))
+colsnode
 pdffn = paste0("Figure.Anthocyanins.pdf")
 pdf(file=pdffn, width=30, height=30)
 par(mar = c(0.1, 0.1, 0.1, 0.1))
@@ -2143,8 +2145,8 @@ tiplabels(pie=to.matrix(vvFlavonoids[tree$tip.label],
 add.simmap.legend(colors=cols5,prompt=FALSE,x=0.9*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
 tiplabels(pie=to.matrix(vAnthocyanins[tree$tip.label],
-    levels(as.factor(vAnthocyanins))),piecol=cols2, bg=cols2,cex=0.1, offset = 4)
-add.simmap.legend(colors=cols2,prompt=FALSE,x=0.8*par()$usr[1],
+    levels(as.factor(vAnthocyanins))),piecol=cols2b, bg=cols2b,cex=0.1, offset = 4)
+add.simmap.legend(colors=cols2b,prompt=FALSE,x=0.8*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
 tiplabels(pie=to.matrix(vvCarotenoids[tree$tip.label],
     levels(as.factor(vvCarotenoids))),piecol=cols3, bg=cols3,cex=0.1, offset = 5.5)
@@ -2308,8 +2310,8 @@ node43<- getMRCA(tree, c("Fumana_lacidulemiensis","Tuberaria_lignosa"))
 node44<- getMRCA(tree, c("Nigella_damascena","Ranunculus_bulbosus"))  
 node45<- getMRCA(tree, c("Scrophularia_auriculata","Verbascum_sinuatum"))
 
-cols<-setNames(c("#fa8c00","lightyellow"),levels(as.factor(vCarotenoids)))
-colsnode<-setNames(c("#fa8c00","#fa8c00","lightyellow", "lightyellow"),c("(0,R1)", "(0,R2)", "(1,R1)", "(1,R2)"))
+cols<-setNames(c("lightyellow","#fa8c00"),levels(as.factor(vCarotenoids)))
+colsnode<-setNames(c("lightyellow", "lightyellow","#fa8c00","#fa8c00"),c("(0,R1)", "(0,R2)", "(1,R1)", "(1,R2)"))
 pdffn = paste0("Figure.Carotenoids.pdf")
 pdf(file=pdffn, width=30, height=30)
 par(mar = c(0.1, 0.1, 0.1, 0.1))
@@ -2329,8 +2331,8 @@ tiplabels(pie=to.matrix(vvAnthocyanins[tree$tip.label],
 add.simmap.legend(colors=cols2,prompt=FALSE,x=0.8*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
 tiplabels(pie=to.matrix(vCarotenoids[tree$tip.label],
-    levels(as.factor(vCarotenoids))),piecol=cols3, bg=cols3,cex=0.1, offset = 5.5)
-add.simmap.legend(colors=cols3,prompt=FALSE,x=0.7*par()$usr[1],
+    levels(as.factor(vCarotenoids))),piecol=cols3b, bg=cols3b,cex=0.1, offset = 5.5)
+add.simmap.legend(colors=cols3b,prompt=FALSE,x=0.7*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
 tiplabels(pie=to.matrix(vvChlorophylls[tree$tip.label],
     levels(as.factor(vvChlorophylls))),piecol=cols6, bg=cols6,cex=0.1, offset = 7)
