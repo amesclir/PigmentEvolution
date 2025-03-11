@@ -2419,8 +2419,8 @@ tiplabels(pie=to.matrix(vvAnthocyanins[tree$tip.label],
 add.simmap.legend(colors=cols2,prompt=FALSE,x=0.8*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
 tiplabels(pie=to.matrix(vCarotenoids[tree$tip.label],
-    levels(as.factor(vCarotenoids))),piecol=cols3, bg=cols3,cex=0.1, offset = 5.5)
-add.simmap.legend(colors=cols3,prompt=FALSE,x=0.7*par()$usr[1],
+    levels(as.factor(vCarotenoids))),piecol=cols3b, bg=cols3,cex=0.1, offset = 5.5)
+add.simmap.legend(colors=cols3b,prompt=FALSE,x=0.7*par()$usr[1],
     y=0.8*par()$usr[3],fsize=2)
 tiplabels(pie=to.matrix(vvChlorophylls[tree$tip.label],
     levels(as.factor(vvChlorophylls))),piecol=cols6, bg=cols6,cex=0.1, offset = 7)
